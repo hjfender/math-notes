@@ -1,0 +1,32 @@
+\subsection{Categories}\label{category}
+
+\subsubsection{Directed Graph}\label{directedgraph}
+\begin{itemize}
+  \item $A$ - a set of arrows
+  \item $O$ - a set of objects
+  \item $\textbf{dom}: A \rightarrow O$, $\textbf{cod}: A \rightarrow O$
+\end{itemize}
+
+Set of composable pairs of arrows: $$A \times_O A = \{ \langle g, f \rangle | g, f \in A \textrm{ and } \textbf{dom} (g) = \textbf{cod} (f) \}$$
+
+\subsubsection{Categories}\label{categorydefinition}
+Add the following structure to a directed graph\dots
+\begin{itemize}
+  \item $O \xrightarrow[]{id} A$, $c \mapsto id_C$
+  \item $A \times_O A \xrightarrow[]{\circ} A$, $\langle g, f \rangle \mapsto g \circ f$
+\end{itemize}
+which satisfy $\forall a \in O \textrm{ and } \forall \langle g, f \rangle \in A \times_O A$\dots
+\begin{itemize}
+  \item $\textbf{dom}(\textbf{id}(a)) = a = \textbf{cod}(\textbf{id}(a))$
+  \item $\textbf{dom}(g \circ f) = \textbf{dom}(f)$
+  \item $\textbf{cod}(g \circ f) = \textbf{cod}(g)$
+  \item metacategorical axioms
+\end{itemize}
+
+Small categories use \hyperref[smallsets]{small sets} for their objects. \label{smallcategories}
+
+\subsubsection{Hom Sets}\label{homset}
+$hom(b,c) = \{f | f \in C, \textbf{dom}(f) = b, \textbf{cod}(f) = c \}$
+
+\subsubsection{Groupoids}\label{groupoid}
+A category in which every arrow is an isomorphism.

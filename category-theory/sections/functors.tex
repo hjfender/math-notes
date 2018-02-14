@@ -1,0 +1,17 @@
+\subsection{Functors}\label{functor}
+Morphisms $T: C \rightarrow B$ with domain and codomain both categories. It consists of two suitably related functions
+\begin{itemize}
+  \item object function $T$, $c \mapsto Tc$
+  \item arrow function $T$, $f:c \rightarrow c' \mapsto Tf:Tc \rightarrow Tc'$
+\end{itemize}
+which satisfy\dots
+\begin{itemize}
+  \item $T(1_c) = 1_c$
+  \item $T(g \circ f) = T_g \circ T_f$
+\end{itemize}
+
+\subsubsection{Full}\label{full}
+$\forall c, c' \in C \textrm{ and } g:Tc \rightarrow Tc' \in B, \exists f:c \rightarrow c' \in C \textrm{ s.t. } g \in Tf$
+
+\subsubsection{Faithful}\label{faithful}
+$\forall c, c' \in C \textrm { and } f_1,f_2:c \rightarrow c', Tf_1 = Tf_2 \Rightarrow f_1=f_2$

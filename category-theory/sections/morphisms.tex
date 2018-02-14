@@ -1,0 +1,37 @@
+\subsection{Morphisms}\label{morphism}
+Arrows in categories.
+
+\subsubsection{Isomorphisms}\label{isomorphism}
+A morphism $f \in hom(b,c)$ that has a two-sided inverse $g \in hom(c,b)$ under composition such that
+$$gf = 1_b, \textrm{ } fg = 1_c.$$
+
+\begin{proposition}
+The inverse of an isomorphism is unique.
+\end{proposition}
+
+\begin{proof}
+For inverses $g_1,g_2$ of $f$ observe\dots
+$$g_1 = g_11_c = g_1(fg_2) = (g_1f)g_2 = 1_bg_2 = g_2$$
+\end{proof}
+
+\begin{proposition}
+Supposing $f^{-1}$ is the inverse of $f$\dots
+\begin{itemize}
+  \item Each identity $1_c$ is an isomorphism and is its own inverse.
+  \item If $f$ is an isomorphism, then $f^{-1}$ is an isomorphism and further $(f^{-1})^{-1} = f$.
+  \item If $f \in hom(a,b)$, $g \in hom(b,c)$ are isomorphisms, then the composition $gf$ is an isomorphism and $(gf)^{-1} = f^{-1}g^{-1}$. 
+\end{itemize}
+\end{proposition}
+
+\subsubsection{Automorphisms}\label{automorphism}
+An isomorphism of an object to itself. Denoted:
+$$hom(c,c) = aut(c)$$
+Observe $aut(c)$ is a group.
+
+\subsubsection{Monomorphisms}\label{monomorphism}
+A morphism $f \in hom(b,c)$ such that $\forall z \in C \textrm{ and } \forall \alpha',\alpha'' \in hom(z,b)$:
+$$f\circ\alpha'=f\circ\alpha'' \Rightarrow \alpha'=\alpha''$$
+
+\subsubsection{Epimorphisms}\label{epimorphism}
+A morphism $f \in hom(b,c)$ such that $\forall z \in C \textrm{ and } \forall \beta',\beta'' \in hom(b,z)$:
+$$\beta'\circ f = \beta''\circ f \Rightarrow \beta'=\beta''$$
