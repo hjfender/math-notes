@@ -1,23 +1,22 @@
 \documentclass{article}
 
-\usepackage{tikz-cd}
-\usepackage{mathtools}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage{amsthm}
-\usepackage{hyperref}
-\usepackage{amssymb}
-\usepackage{graphicx}
+\input{definitions/package-definitions}
 
-\newtheorem{proposition}{Proposition}[subsection]
-\newtheorem{theorem}{Theorem}[subsection]
-\newtheorem{corollary}{Corollary}[theorem]
-\newtheorem{lemma}[theorem]{Lemma}
+\input{definitions/theorem-definitions}
+
+\input{definitions/subsubsubsection-definition}
 
 \begin{document}
 
-\input{set-theory/main}
-\input{category-theory/main}
-\input{group-theory/main}
+\input{topics/set-theory/main}
+\input{topics/combinatorics/main}
+\input{topics/graph-theory/main}
+\input{topics/category-theory/main}
+\input{topics/group-theory/main}
+\input{topics/ring-theory/main}
+\input{topics/modules/main}
+\input{topics/homology/main}
+\input{topics/topology/main}
+\input{topics/homotopy/main}
 
 \end{document}

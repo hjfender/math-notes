@@ -1,0 +1,73 @@
+\subsection{Relations}\label{relations}
+$\mathcal{R} :\subseteq A \times B \textrm{ for some } A \times B$
+
+\subsubsection{Equivalence Relations}\label{equivalencerelation}
+Relations $\sim \subseteq A \times A$ such that $\forall a,b,c \in A$\dots
+\begin{itemize}
+  \item $a \sim a$
+  \item $a \sim b \Rightarrow b \sim a$
+  \item $a \sim b \land b \sim c \Rightarrow a \sim c$
+\end{itemize}
+
+\subsubsubsection{Equivalence Class}
+$[a]_{\sim} := \{ b \in S | b \sim a \}$ 
+
+\subsubsubsection{Set Partition:}
+A set $P :\subseteq \mathcal{P}(X)$ such that\dots
+\begin{itemize}
+  \item $\bigcup P = X$
+  \item $\forall S_1, S_2 \in P (S_1 \cap S_2 \neq \emptyset \Rightarrow S_1 = S_2)$
+\end{itemize}
+
+\subsubsection{Functions}\label{function}
+A relation $f: A \rightarrow B$ satisfying $\forall a \in A$ \mbox{$\exists! b \in B \textrm{ such that } afb \textrm{, denoted } f(a) = b$.}
+
+\subsubsubsection{Injection}\label{injection}
+A function $\ensuremath{f: A \hookrightarrow B}$ such that $\forall \, x,y \in A \textrm{ if } x \neq y, \textrm{ then } f(x) \neq f(y)$. (See: \hyperref[monomorphism]{monomorphism}. Injections have right inverses.)
+
+\subsubsubsection{Surjection}\label{surjection}
+A function $\ensuremath{f: A \twoheadrightarrow B}$ such that $\forall \, b \in B \; \exists \, a \in A \textrm{ such that } f(a) = b$. (See: \hyperref[epimorphism]{epimorphism}. Surjections have left inverses, called \emph{sections}.)
+
+\subsubsubsection{Bijection}\label{bijection}
+A function $f: A \xrightarrow{\sim} B$ which is an injection and a surjection. (See: \hyperref[isomorphism]{isomorphism})
+
+\subsubsubsection{Restriction}\label{restriction}
+For $C \subseteq A$ and $f:A \rightarrow B$, $\ensuremath{f\mathord{\upharpoonright}_C:C \rightarrow B}$ where \mbox{$\forall c \in C \, \ensuremath{f\mathord{\upharpoonright}_C(c)} := f(c)$}
+
+\subsubsubsection{Image}\label{image}
+$f(A) := \{f(a) | a \in A \}$
+
+\begin{proposition}
+For a function $f : A \rightarrow B$ and a family $\{X_i\}_{i \in I}$ where $\forall i \in I$ $X_i \subseteq A$\dots
+\begin{itemize}
+  \item $f(\bigcup_i X_i) = \bigcup_i f(X_i)$
+  \item $\textrm{In general, } f(\bigcap_i X_i) \neq \bigcap_i f(X_i)$
+  \item $\textrm{In general, } f(X)^c \neq f(X^c)$
+\end{itemize}
+\end{proposition}
+
+\subsubsubsection{Preimage}\label{preimage}
+$f^{-1}(A) := \{a \in A | f(a) \in B \}$
+
+\begin{proposition}
+Given a function $f: X \rightarrow Y$, $f$ is surjective if and only if $\forall A \subseteq Y$, where $A \neq \emptyset$, $f^{-1}(A) \neq \emptyset$.
+\end{proposition}
+
+\begin{proposition}
+Given a function $f: X \rightarrow Y$, $f$ is injective if and only if $\forall A \subseteq$ ran $f$, where $A$ is a singleton, $f^{-1}(A)$ is a singleton.
+\end{proposition}
+
+\begin{proposition}
+Given a function $f : X \rightarrow Y$\dots
+\begin{itemize}
+  \item If $B \subseteq Y$, then $f(f^{-1}(B)) \subseteq B.$
+  \item If $f$ is surjective, then $f(f^{-1}(B)) = B.$
+  \item If $A \subseteq X$, then $A \subseteq f^{-1}(f(A)).$
+  \item If $f$ is injective, then $A = f(f^{-1}(A)).$
+  \item If $\{B_i\}$ is a family of subset of $Y$, then $f^{-1}(\bigcup_i B_i)=\bigcup_i f^{-1}(B_i)$ and $f^{-1}(\bigcap_i B_i)=\bigcap_i f^{-1}(B_i).$
+\end{itemize}
+\end{proposition}
+
+\subsubsubsection{Function Composition}\label{functioncomposition}
+$f:X \rightarrow Y \textrm{ and } g:Y \rightarrow Z \Rightarrow g \circ f:X \rightarrow Z \textrm{ where } \forall \, x \in X, \, g \circ f(x) := g(f(x))$
+
