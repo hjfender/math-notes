@@ -1,0 +1,43 @@
+\subsection{Applications of Basic Methods}\label{applicationsofbasicmethods}
+
+\subsubsection{Multisets}\label{multisets}
+
+Given a set $A$, a \emph{multiset} is defined via a function $m : A \rightarrow \mathbb{N} \cup \{ 0 \}$. It is a set containing $a \in A$ $m(a)$ many times.
+
+\subsubsubsection{Multinomial Coefficients}
+
+\begin{theorem}
+Given a multiset $A$ of $n$ elements over a $k$ element sets. The number of ways to linearly order the elements of $A$ is\dots
+$${n \choose a_1,a_2,\dots,a_k} = \frac{n!}{a_1!a_2!\dots a_k!}.$$
+\end{theorem}
+
+\subsubsection{Weak Compositions}\label{weakcompositions}
+
+Let $a_1,a_2,\dots,a_k$ be nonnegative integers satisfying
+$$\sum^k_{i=1} a_i = n.$$
+Then the ordered $k$-tuple $(a_1,a_2,\dots,a_k)$ is called a \emph{weak composition} of $n$ into $k$ parts.
+
+\begin{theorem}
+The number of weak compositions of $n$ into $k$ parts is\dots
+$${n + k - 1 \choose n} = {n + k - 1 \choose k - 1}.$$
+\end{theorem}
+
+\begin{corollary}
+The number of $n$-element multisets over a $k$-elemnt set is\dots
+$${n + k - 1 \choose n} = {n + k - 1 \choose k - 1}.$$
+\end{corollary}
+
+\subsubsection{Compositions}\label{compositions}
+
+Let $a_1,a_2,\dots,a_k$ be positive integers satisfying
+$$\sum^k_{i=1} a_i = n.$$
+Then the ordered $k$-tuple $(a_1,a_2,\dots,a_k)$ is called a \emph{composition} of $n$ into $k$ parts.
+
+\begin{corollary}
+The number of compositions of $n$ into $k$ parts is\dots
+$${n - 1 \choose k - 1}.$$
+\end{corollary}
+
+\subsubsection{Stirling numbers of the second kind}\label{secondstirlingnumbers}
+
+Given a finite set $A$, $|A| = n$, the number of set partitions of $A$ into $0 < k \leq n$ classes is denoted $S(n,k)$, the \emph{Stirling number of the second kind}.

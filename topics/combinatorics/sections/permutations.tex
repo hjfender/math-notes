@@ -1,0 +1,13 @@
+\subsection{Permutations}\label{permutation}
+Given a set $A$, a \emph{permutation} of $A$ is a \hyperref[bijection]{bijection} $f : A \rightarrow A$.
+
+\begin{proposition}\label{factorial}
+Given a finite set $A$, if $n = |A|$ the number of permutations of $A$ is $n!$.
+\end{proposition}
+
+Intuitively permutations represent the reordering of an ordered list\label{list}. Looking at the idea of "sub-orderings" of lists we come up with the following proposition\dots
+
+\begin{proposition}[k-lists]\label{k-list}
+Let $n$ and $k$ be positive integers so that $n \geq k$. Then the number of injections $f : [k] \rightarrow [n]$ is\dots
+$$(n)_k := n(n-1)(n-2)\cdots(n-k+1).$$
+\end{proposition}
