@@ -1,0 +1,96 @@
+\subsection{Constructing Number Systems}\label{numberconstructions}
+
+For the purposes of this subsection let $\mathbb{N} := \omega_0$.
+
+\subsubsection{The Integers}\label{integers}
+
+Let $\sim_{\mathbb{Z}}$ be the equivalence relation on $\mathbb{N} \times \mathbb{N}$ for which\dots
+$$\langle m,n \rangle \Leftrightarrow m+q=p+n.$$
+
+\noindent Then the set of \emph{Integers}, denoted $\mathbb{Z}$, is the set $\mathbb{N} \times \mathbb{N} / \sim_{\mathbb{Z}}.$\newline
+
+\noindent Addition of integers $a = \langle m, n \rangle$ and $b = \langle p, q \rangle$ is defined as\dots
+$$a +_{\mathbb{Z}} b = [\langle m+p, n+q \rangle]$$
+
+\begin{lemma}
+Addition of integers ($+_{\mathbb{Z}}$) is well defined, i.e. if $\langle m,n \rangle \sim_{\mathbb{Z}} \langle m',n' \rangle$ and $\langle p,q \rangle \sim_{\mathbb{Z}} \langle p',q' \rangle$, then\dots
+$$\langle m + p, n + q \rangle \sim_{\mathbb{Z}} \langle m' + p', n' + q' \rangle$$
+\end{lemma}
+
+\noindent The integers under addition form an \hyperref[grouptheory]{abelian group}.\newline
+
+\noindent Multiplication of integers $a = \langle m, n \rangle$ and $b = \langle p, q \rangle$ is defined as\dots
+$$a \cdot_{\mathbb{Z}} b = [\langle mp + nq, mq + np \rangle]$$
+
+\begin{lemma}
+Multiplication of integers ($\cdot_{\mathbb{Z}}$) is well defined, i.e. if $\langle m,n \rangle \sim_{\mathbb{Z}} \langle m',n' \rangle$ and $\langle p,q \rangle \sim_{\mathbb{Z}} \langle p',q' \rangle$, then\dots
+$$\langle mp+nq, mq+np \rangle \sim_{\mathbb{Z}} \langle m'p' + n'q', m'q' + n'p' \rangle$$
+\end{lemma}
+
+\noindent The integers under multiplication form an \hyperref[grouptheory]{abelian group}.\newline
+
+\noindent Order of integers $a = \langle m, n \rangle$ and $b = \langle p, q \rangle$ is defined as\dots
+$$a <_{\mathbb{Z}} b \Leftrightarrow m + q \in p + n$$
+
+\begin{lemma}
+Order of integers ($<_{\mathbb{Z}}$) is well defined, i.e. if $\langle m,n \rangle \sim_{\mathbb{Z}} \langle m',n' \rangle$ and $\langle p,q \rangle \sim_{\mathbb{Z}} \langle p',q' \rangle$, then\dots
+$$m + q \in p + n \Leftrightarrow m' + q' \in p' + n'$$
+\end{lemma}
+
+\noindent The order relation so defined linearly orders the integers.
+
+\subsubsection{The Rational Numbers}\label{rationals}
+
+Let $\sim_{\mathbb{Q}}$ be the equivalence relation on $\mathbb{Z} \times (\mathbb{Z} \setminus \{0_{\mathbb{Z}}\})$ for which\dots
+$$\langle a,b \rangle \sim \langle c,d \rangle \Leftrightarrow a \cdot_{\mathbb{Z}} d = c \cdot_{\mathbb{Z}} b.$$
+
+\noindent Then the set of \emph{Rational Numbers}, denoted $\mathbb{Q}$, is the set $\mathbb{Z} \times (\mathbb{Z} \setminus \{ 0_{\mathbb{Z}} \} / \sim_{\mathbb{Q}}.$\newline
+
+\noindent Addition of rational numbers $p = \langle a, b \rangle$ and $q = \langle c, d \rangle$ is defined as\dots
+$$p +_{\mathbb{Q}} q = [\langle ad+cb, bd \rangle]$$
+
+\begin{lemma}
+Addition of rational numbers is well defined.
+\end{lemma}
+
+\noindent The rational numbers under addition form an \hyperref[grouptheory]{abelian group}.\newline
+
+\noindent Multiplication of rational numbers $p = \langle a, b \rangle$ and $q = \langle c, d \rangle$ is defined as\dots
+$$p \cdot_{\mathbb{Q}} q = [\langle ac, bd \rangle]$$
+
+\begin{lemma}
+Multiplication of rational numbers is well defined.
+\end{lemma}
+
+\noindent The rational numbers under addition and multiplication form a \hyperref[ringtheory]{field}.\newline
+
+\noindent Order of rational numbers $p = \langle a, b \rangle$ and $q = \langle c, d \rangle$ is defined as\dots
+$$p <_{\mathbb{Q}} q \Leftrightarrow ad < cb.$$
+
+\begin{lemma}
+The order of rational numbers is well-defined.
+\end{lemma}
+
+\noindent The order relation so defined linearly orders the rational numbers.
+
+\subsubsection{The Real Numbers}\label{realnumbers}
+
+\subsubsubsection{With Cauchy Sequences}\label{realnumberswithcauchysequences}
+
+Define a \emph{Cauchy sequence} to be a function $s: \omega_0 \rightarrow \mathbb{Q}$ such that\dots
+$$(\forall \varepsilon > 0)(\exists k \in \omega_0)(\forall m > k)(\forall n > k) |s_m - s_n| < \varepsilon.$$
+
+\noindent Let $C$ be the set of all Cauchy sequences. For $r,s \in C$, define $r \sim_{\mathbb{R}} s$ if and only if $|r_n - s_n|$
+is arbitrarily small for large $n$.\newline
+
+\noindent With more work we can define $\mathbb{R} := C / \sim$.
+
+\subsubsubsection{With Dedekind Cuts}\label{realnumberswithcauchysequence}
+
+A \emph{Dedekind cut} is a subset $x$ of $\mathbb{Q}$ such that:
+\begin{enumerate}
+  \item $\emptyset \neq x \neq \mathbb{Q}$
+  \item $x$ is "closed downward," i.e.,
+		$$q \in x \land r < q \Rightarrow r \in x.$$
+  \item $x$ has no largest member
+\end{enumerate}

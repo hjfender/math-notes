@@ -243,5 +243,28 @@ Let $A$ be a nonempty set of $\omega_0.$ Then there is some $m \in A$ such that 
 \end{theorem}
 
 \begin{proof}
+Assume that $A$ is a subset of $\omega_0$ without a least element; we will 
+show that $A = \emptyset$. We could attempt to do this by showing that the complement
+$\omega_0 \setminus A$ is inductive. But in order to show that $k^+ \in \omega_0 - A$,
+it is not enough to know merely that $k \in \omega_0 \setminus A$, we must know
+that all numbers smaller than $k$ are in $\omega_0 \setminus A$ as well. Given this additional
+information, we can argue that $k^+ \in \omega_0 \setminus A$ lest it be a least element of $A$.
 
+To write down what is approximately this argument, let\dots
+$$B = \{m \in \omega_0 | \textrm{ no number less than } m \textrm{ belongs to } A \}.$$
+We claim that $B$ is inductive. $0 \in B$ vacuously. Suppose that $k \in B$. Then if 
+$n$ is less that $k^+$, either $n$ is less than $k$ (in which case $n \not\in A$ since $k \in B$) or
+$n = k$ (in which case $n \not\in A$ lest, by trichotomy, it be least in $A$). In either case, 
+$n$ is outside of $A$. Hence $k^+ \in B$ and $B$ is inductive. It clearly follows that
+$A = \emptyset$.
 \end{proof}
+
+\begin{corollary}
+There is no function $f : \omega_0 \rightarrow \omega_0$ such that $f(n^+) \in f(n)$
+for every natural number $n$.
+\end{corollary}
+
+\begin{theorem}[Strong Induction Principle for $\omega_0$]
+Let $A$ be a subset of $\omega_0$, and assume the for every $n \in \omega_0$, if
+every number less than $n$ is in $A$, then $n \in A.$ Then $A = \omega_0$.
+\end{theorem}
