@@ -1,15 +1,16 @@
 \subsection{Constructing Number Systems}\label{numberconstructions}
 
-For the purposes of this subsection let $\mathbb{N} := \omega_0$.
+For the purposes of this subsection let $\mathbb{N} := \omega$.
 
 \subsubsection{The Integers}\label{integers}
 
 Let $\sim_{\mathbb{Z}}$ be the equivalence relation on $\mathbb{N} \times \mathbb{N}$ for which\dots
 $$\langle m,n \rangle \Leftrightarrow m+q=p+n.$$
 
-\noindent Then the set of \emph{Integers}, denoted $\mathbb{Z}$, is the set $\mathbb{N} \times \mathbb{N} / \sim_{\mathbb{Z}}.$\newline
+\noindent Then the set of \emph{Integers}, denoted $\mathbb{Z}$, is the set $\mathbb{N} \times \mathbb{N} / \sim_{\mathbb{Z}}.$
 
-\noindent Addition of integers $a = \langle m, n \rangle$ and $b = \langle p, q \rangle$ is defined as\dots
+\subsubsubsection{Addition}
+Addition of integers $a = \langle m, n \rangle$ and $b = \langle p, q \rangle$ is defined as\dots
 $$a +_{\mathbb{Z}} b = [\langle m+p, n+q \rangle]$$
 
 \begin{lemma}
@@ -17,9 +18,10 @@ Addition of integers ($+_{\mathbb{Z}}$) is well defined, i.e. if $\langle m,n \r
 $$\langle m + p, n + q \rangle \sim_{\mathbb{Z}} \langle m' + p', n' + q' \rangle$$
 \end{lemma}
 
-\noindent The integers under addition form an \hyperref[grouptheory]{abelian group}.\newline
+\noindent The integers under addition form an \hyperref[grouptheory]{abelian group}.
 
-\noindent Multiplication of integers $a = \langle m, n \rangle$ and $b = \langle p, q \rangle$ is defined as\dots
+\subsubsubsection{Multiplication}
+Multiplication of integers $a = \langle m, n \rangle$ and $b = \langle p, q \rangle$ is defined as\dots
 $$a \cdot_{\mathbb{Z}} b = [\langle mp + nq, mq + np \rangle]$$
 
 \begin{lemma}
@@ -27,9 +29,10 @@ Multiplication of integers ($\cdot_{\mathbb{Z}}$) is well defined, i.e. if $\lan
 $$\langle mp+nq, mq+np \rangle \sim_{\mathbb{Z}} \langle m'p' + n'q', m'q' + n'p' \rangle$$
 \end{lemma}
 
-\noindent The integers under multiplication form an \hyperref[grouptheory]{abelian group}.\newline
+\noindent The integers under multiplication form an \hyperref[grouptheory]{abelian group}.
 
-\noindent Order of integers $a = \langle m, n \rangle$ and $b = \langle p, q \rangle$ is defined as\dots
+\subsubsubsection{Order}
+Order of integers $a = \langle m, n \rangle$ and $b = \langle p, q \rangle$ is defined as\dots
 $$a <_{\mathbb{Z}} b \Leftrightarrow m + q \in p + n$$
 
 \begin{lemma}
@@ -44,27 +47,30 @@ $$m + q \in p + n \Leftrightarrow m' + q' \in p' + n'$$
 Let $\sim_{\mathbb{Q}}$ be the equivalence relation on $\mathbb{Z} \times (\mathbb{Z} \setminus \{0_{\mathbb{Z}}\})$ for which\dots
 $$\langle a,b \rangle \sim \langle c,d \rangle \Leftrightarrow a \cdot_{\mathbb{Z}} d = c \cdot_{\mathbb{Z}} b.$$
 
-\noindent Then the set of \emph{Rational Numbers}, denoted $\mathbb{Q}$, is the set $\mathbb{Z} \times (\mathbb{Z} \setminus \{ 0_{\mathbb{Z}} \} / \sim_{\mathbb{Q}}.$\newline
+\noindent Then the set of \emph{Rational Numbers}, denoted $\mathbb{Q}$, is the set $\mathbb{Z} \times (\mathbb{Z} \setminus \{ 0_{\mathbb{Z}} \} / \sim_{\mathbb{Q}}.$
 
-\noindent Addition of rational numbers $p = \langle a, b \rangle$ and $q = \langle c, d \rangle$ is defined as\dots
+\subsubsubsection{Addition}
+Addition of rational numbers $p = \langle a, b \rangle$ and $q = \langle c, d \rangle$ is defined as\dots
 $$p +_{\mathbb{Q}} q = [\langle ad+cb, bd \rangle]$$
 
 \begin{lemma}
 Addition of rational numbers is well defined.
 \end{lemma}
 
-\noindent The rational numbers under addition form an \hyperref[grouptheory]{abelian group}.\newline
+\noindent The rational numbers under addition form an \hyperref[grouptheory]{abelian group}.
 
-\noindent Multiplication of rational numbers $p = \langle a, b \rangle$ and $q = \langle c, d \rangle$ is defined as\dots
+\subsubsubsection{Multiplication}
+Multiplication of rational numbers $p = \langle a, b \rangle$ and $q = \langle c, d \rangle$ is defined as\dots
 $$p \cdot_{\mathbb{Q}} q = [\langle ac, bd \rangle]$$
 
 \begin{lemma}
 Multiplication of rational numbers is well defined.
 \end{lemma}
 
-\noindent The rational numbers under addition and multiplication form a \hyperref[ringtheory]{field}.\newline
+\noindent The rational numbers under addition and multiplication form a \hyperref[ringtheory]{field}.
 
-\noindent Order of rational numbers $p = \langle a, b \rangle$ and $q = \langle c, d \rangle$ is defined as\dots
+\subsubsubsection{Order}
+Order of rational numbers $p = \langle a, b \rangle$ and $q = \langle c, d \rangle$ is defined as\dots
 $$p <_{\mathbb{Q}} q \Leftrightarrow ad < cb.$$
 
 \begin{lemma}
@@ -73,19 +79,17 @@ The order of rational numbers is well-defined.
 
 \noindent The order relation so defined linearly orders the rational numbers.
 
-\subsubsection{The Real Numbers}\label{realnumbers}
+\subsubsection{The Real Numbers with Cauchy Sequences}\label{realnumberswithcauchysequences}
 
-\subsubsubsection{With Cauchy Sequences}\label{realnumberswithcauchysequences}
-
-Define a \emph{Cauchy sequence} to be a function $s: \omega_0 \rightarrow \mathbb{Q}$ such that\dots
-$$(\forall \varepsilon > 0)(\exists k \in \omega_0)(\forall m > k)(\forall n > k) |s_m - s_n| < \varepsilon.$$
+Define a \emph{Cauchy sequence} to be a function $s: \omega \rightarrow \mathbb{Q}$ such that\dots
+$$(\forall \varepsilon > 0)(\exists k \in \omega)(\forall m > k)(\forall n > k) |s_m - s_n| < \varepsilon.$$
 
 \noindent Let $C$ be the set of all Cauchy sequences. For $r,s \in C$, define $r \sim_{\mathbb{R}} s$ if and only if $|r_n - s_n|$
 is arbitrarily small for large $n$.\newline
 
 \noindent With more work we can define $\mathbb{R} := C / \sim$.
 
-\subsubsubsection{With Dedekind Cuts}\label{realnumberswithcauchysequence}
+\subsubsection{The Real Numbers with Dedekind Cuts}\label{realnumberswithdedekindcuts}
 
 A \emph{Dedekind cut} is a subset $x$ of $\mathbb{Q}$ such that:
 \begin{enumerate}
@@ -94,3 +98,51 @@ A \emph{Dedekind cut} is a subset $x$ of $\mathbb{Q}$ such that:
 		$$q \in x \land r < q \Rightarrow r \in x.$$
   \item $x$ has no largest member
 \end{enumerate}
+
+\noindent $\mathbb{R}$ is the set of Dedekind cuts.
+
+\subsubsubsection{Order}
+Define an ordering on $\mathbb{R}$ as\dots
+$$x <_{\mathbb{R}} y \Leftrightarrow x \subset y$$
+
+\begin{proposition}
+$<_{\mathbb{R}}$ is a linear ordering.
+\end{proposition}
+
+\begin{proof}
+$<_{\mathbb{R}}$ is clearly transitive; so it suffices to show that $<_{\mathbb{R}}$ satisfies \hyperref[trichotomy]{trichotomy} on $\mathbb{R}$. So consider $x,y \in \mathbb{R}$. Obviously \emph{at most} one 
+of the alternatives,
+$$x \subset y, \; \; x = y, \; \; y \subset x,$$
+can hold, but we must prove that at least one holds. Without loss of generality, suppose that the first two fail, i.e., that $x \not \subseteq y.$
+
+Since $x \not \subseteq y$ there is some rational $r$ in the \hyperref[complement]{relative complement} $x \setminus y$. Consider any $q \in y.$ If $r \subseteq q,$ then since $y$ is closed downward, we would 
+have $r \in y.$ But $r \not \in y$, so we must have $q < r$. Since $x$ is closed downward, it follows that $q \in x$. Since $q$ was arbitrary (and $x \neq y$), we have $y \subset x$.
+\end{proof}
+
+\begin{theorem}[Least Upper Bound Property]\label{leastupperbound}
+Any bounded nonempty subset of $\mathbb{R}$ has a least upper bound in $\mathbb{R}$.
+\end{theorem}
+
+\begin{proof}
+Let $A$ be a set of real numbers. The least upper bound is just $\bigcup A$.
+\end{proof}
+
+\subsubsubsection{Addition}
+Addition of real number $x,y$ is defined as\dots
+$$x +_{\mathbb{R}} y = {q + r | q \in x \land r \in y}$$
+
+\subsubsubsection{Multiplication}
+The \emph{absolute value}\label{absolutevalue} of a real number $x$ is defined as\dots
+$$|x| = x \cup -x$$
+
+\noindent Multiplication of real number $x,y$ is defined as follows\dots
+\begin{itemize}
+  \item If $x$ and $y$ are nonnegative real numbers, then\dots
+ 		$$x \cdot_{\mathbb{R}} y = 0_{\mathbb{R}} \cup \{ rs | 0 \leq r \in x \land 0 \leq s \in y \}.$$
+  \item It $x$ and $y$ are both negative real numbers, then\dots
+  	    $$x \cdot_{\mathbb{R}} y = |x| \cdot_{\mathbb{R}} |y|.$$
+  \item If one of the real numbers $x$ and $y$ is negative and one is nonnegative, then\dots
+  		$$x \cdot_{\mathbb{R}} y = -(|x| \cdot_{\mathbb{R}} |y|).$$
+\end{itemize}
+
+\noindent Real numbers under addition, multiplication, and their order relation form an ordered \hyperref[ringtheory]{field}.

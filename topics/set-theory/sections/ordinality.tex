@@ -1,0 +1,39 @@
+\subsection{Ordinal Numbers}\label{ordinalnumbers}
+
+\subsubsection{Partial Orderings}\label{partialorderings}
+A \emph{partial ordering} is a \hyperref[relation]{relation} $R$ such that\dots
+\begin{enumerate}
+  \item $R$ is transitive
+  \item $R$ is irreflexive, that is for all $x$ we have $x \cancel{R} x$
+\end{enumerate}
+
+\begin{proposition}
+Assume that $<$ is a partial ordering. Then for $x,y,$ and $z$:
+\begin{enumerate}
+  \item \emph{At most} one of the alternatives,
+  		$$x < y, \; \; x = y, \; \; y < x,$$
+  		can hold.
+  \item $x \leq y \leq x \Rightarrow x = y.$
+\end{enumerate}
+\end{proposition}
+
+\subsubsection{Linear Orderings}\label{partialorderings}
+A \emph{linear ordering} is a partial ordering $R$ that satisfies \hyperref[trichotomy]{trichotomy}.
+
+\subsubsection{Well Orderings}\label{wellorderings}
+A \emph{well ordering} is a linear ordering $R$ on $A$ such that every nonempty subset of $A$ has a least element.
+
+\begin{theorem}
+Let $<$ be a linear ordering on $A$. Then if is a well ordering if and only if there does not exist any function $f: \omega \rightarrow A$ with $f(n^+) < f(n)$ for every $n \in \omega$.
+\end{theorem}
+
+\begin{theorem}[Transifinite Induction Principle]\label{transfiniteinduction}
+Assume that $<$ is a well ordering on $A$. Assume that $B$ is a subset of $A$ with the special property that for every $t \in A$,
+$$\textrm{seg } t \subseteq B \Rightarrow t \in B.$$
+Then $B$ coincides with $A$.
+\end{theorem}
+
+\begin{proof}
+If $B \subset A$, then $A \setminus B$ has a least element $m$. Bu the leastness, $y \in B$ for any $y < m$. But this is to say that $\textrm{seg } m \subseteq B$, so by assumption $m \in B$ after all.
+\end{proof}
+

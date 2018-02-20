@@ -7,15 +7,15 @@ $$n^+ = n \cup n\}$$
 \subsubsection{Inductive}\label{inductive}
 A set $N$ is \emph{inductive}\label{inductive} if and only if $\emptyset \in N$ and $(\forall n \in N) \, n^+ \in N.$\newline
 
-\noindent The \hyperref[statementofsetaxioms]{Axiom of Infinity} may be restated in terms of "inductiveness," i.e.\dots $$\emph{There exists an inductive set } \omega_0.$$
+\noindent The \hyperref[statementofsetaxioms]{Axiom of Infinity} may be restated in terms of "inductiveness," i.e.\dots $$\emph{There exists an inductive set } \omega.$$
 
 \subsubsection{Natural Number}
 A \emph{natural number} is a set that belongs to every inductive set, i.e. the intersection of them all.\newline
 
 \noindent The following theorem is a consequence of the definition\dots
 
-\begin{theorem}[Induction on $\omega_0$]
-Any inductive subset of $\omega_0$ coincides with $\omega_0$.
+\begin{theorem}[Induction on $\omega$]
+Any inductive subset of $\omega$ coincides with $\omega$.
 \end{theorem}
 
 \begin{proposition}
@@ -23,7 +23,7 @@ Every natural number except $0$ is the successor of some natural number.
 \end{proposition}
 
 \begin{proof}
-Let $T = \{n \in \omega_0 | n=0 \lor (\exists p \in \omega_0) n = p^+\}$ and use induction.
+Let $T = \{n \in \omega | n=0 \lor (\exists p \in \omega) n = p^+\}$ and use induction.
 \end{proof}
 
 \subsubsection{Peano's Postulates}
@@ -37,7 +37,7 @@ An ordered triple $\langle N, S, e \rangle$ consiting of a set $N$, a function $
 \end{enumerate}
 
 \begin{proposition}
-Let $\sigma = \{\langle n, n^+ \rangle | n \in \omega_0\}$. Then $\langle \omega_0, \sigma, 0 \rangle$ is a Peano system.
+Let $\sigma = \{\langle n, n^+ \rangle | n \in \omega\}$. Then $\langle \omega, \sigma, 0 \rangle$ is a Peano system.
 \end{proposition}
 
 \subsubsubsection{Transitive Set}\label{transitiveset}
@@ -49,7 +49,7 @@ $$\bigcup(a^+) = a.$$
 \end{proposition}
 
 \begin{proposition}
-Every natural number is a transitive set and $\omega_0$ is a transitive set.
+Every natural number is a transitive set and $\omega$ is a transitive set.
 \end{proposition}
 
 \begin{proof}
@@ -58,19 +58,19 @@ Use induction.
 
 \subsubsection{Recursion}\label{recursion}
 
-\begin{theorem}[Recursion Theorem on $\omega_0$]
-Let $A$ be a set, $a \in A$, and $F: A \rightarrow A.$ Then there exists an unique function $h: \omega_0 \rightarrow A$ such that\dots
+\begin{theorem}[Recursion Theorem on $\omega$]
+Let $A$ be a set, $a \in A$, and $F: A \rightarrow A.$ Then there exists an unique function $h: \omega \rightarrow A$ such that\dots
 $$h(0) = a,$$
-and for every $n \in \omega_0$,
+and for every $n \in \omega$,
 $$h(n^+) = F(h(n)).$$
 \end{theorem}
 
 \begin{proof}
 The idea is to lef $h$ be the union of many approximating functions. For the purposes of this proof, call a function $v$ \emph{acceptable}
-if and only if dom $v \subseteq \omega_0$, ran $v \subseteq A$, and the following conditions hold:
+if and only if dom $v \subseteq \omega$, ran $v \subseteq A$, and the following conditions hold:
 \begin{enumerate}
   \item If $0 \in$ dom $v$, then $v(0) = a$.
-  \item If $n^+ \in$ dom $v$ (where $n \in \omega_0$), then also $n \in$ dom $v$ and $v(n^+) = F(v(n))$.
+  \item If $n^+ \in$ dom $v$ (where $n \in \omega$), then also $n \in$ dom $v$ and $v(n^+) = F(v(n))$.
 \end{enumerate}
 
 Let $\mathcal{H}$ be the collection of all acceptable functions, and let $h = \bigcup \mathcal{H}.$ Thus\dots
@@ -80,11 +80,11 @@ Let $\mathcal{H}$ be the collection of all acceptable functions, and let $h = \b
 \end{align*}
 
 We claim that this $h$ meets the demands of the theorem. This claim can be broken down into four parts. The four parts involve showing that (I) $h$ is a function,
-(II) $h$ is acceptable, (III) dom $h$ is all of $\omega_0$, and (IV) $h$ is unique.\newline
+(II) $h$ is acceptable, (III) dom $h$ is all of $\omega$, and (IV) $h$ is unique.\newline
 
 
 I. We first claim that $h$ is a function. Let\dots
-$$S = \{ n \in \omega_0 | \textrm{ for at most one } y, \langle n, y \rangle \in h \}.$$
+$$S = \{ n \in \omega | \textrm{ for at most one } y, \langle n, y \rangle \in h \}.$$
 We must check that $S$ is inductive. If $\langle 0, y_1 \rangle \in h$ and $\langle 0, y_2 \rangle \in h$, then by ($\star$) there exist acceptable $v_1$ and $v_2$
 such that $v_1(0) = y_1$ and $v_2(0)=y_2$. But by (1) it follows that $y_1 = a = y_2$. Thus $0 \in S$.
 
@@ -93,10 +93,10 @@ $v_1(k^+) = y_1$ and $v_2(k+) = y_2.$ By condition (2) it follows that\dots
 $$y_1 = v_1(k^+) = F(v_1(k)) \; \; \; \textrm{ and } \; \; \; y_2 = v_2(k^+) = F(v_2(k)).$$
 But since $k \in S$, we have $v_1(k) = v_2(k).$ Therefore\dots
 $$y_1 = F(v_1(k)) = F(v_2(k)) = y_2.$$
-So $k^+ \in S$, proving $S$ is inductive and conincides with $\omega_0$. Consequently $h$ is a function.\newline
+So $k^+ \in S$, proving $S$ is inductive and conincides with $\omega$. Consequently $h$ is a function.\newline
 
 
-II. Next we claime that $h$ itself is acceptable. We have just seen that $h$ is a function, and it is clear from ($\star$) that dom $h \subseteq \omega_0$ and ran $h \subseteq A.$
+II. Next we claime that $h$ itself is acceptable. We have just seen that $h$ is a function, and it is clear from ($\star$) that dom $h \subseteq \omega$ and ran $h \subseteq A.$
 
 First examine (1). If $0 \in$ dom $h$, then there must be some acceptable $v$ with $v(0) = h(0).$ Since $v(0) = a$, we have $h(0) = a$.
 
@@ -105,19 +105,19 @@ $$h(n^+) = v(n^+) = F(v(n)) = F(h(n)).$$
 Thus $h$ satisfies (2) and so is acceptable.\newline
 
 
-III. We now claim that dom $h = \omega_0$ (the function is nonempty). It suffices to show that dom $h$ is inductive. The function $\{ \langle 0,a \rangle \}$ is acceptable and hence
+III. We now claim that dom $h = \omega$ (the function is nonempty). It suffices to show that dom $h$ is inductive. The function $\{ \langle 0,a \rangle \}$ is acceptable and hence
 $0 \in$ dom $h$. Suppose the $k \in$ dome $h$. If $k^+ \not\in$ dom $h$, then let\dots
 $$v = h \cup \{ \langle k^+, F(h(k)) \rangle \}.$$
-Then $v$ is a function, dom $v \subseteq \omega_0$, and ran $v \subseteq A$. We will show that $v$ is acceptable.
+Then $v$ is a function, dom $v \subseteq \omega$, and ran $v \subseteq A$. We will show that $v$ is acceptable.
 
 Condition (1) holds since $v(0) = h(0) = a.$ For condition (2) there are two cases. If $n^+ \in$ dom $v$ where $n^+ \neq k^+$, then $n^+ \in$ dom $h$ and $v(n^+) = h(n^+) = F(h(n)) = F(v(n)).$
 The other case occurs if $n^+ = k^+$. Since the successor operation is injective, $n=k$. By assumption $k \in$ dom $h$. Thus\dots
 $$v(k^+) = F(h(k)) = F(v(k))$$
-and (2) holds. Hence $v$ is acceptable. But then $v \subseteq h$, so that $k^+ \in$ dom $h$ after all. So dom $h$ is inductive and therefore coincides with $\omega_0$.\newline
+and (2) holds. Hence $v$ is acceptable. But then $v \subseteq h$, so that $k^+ \in$ dom $h$ after all. So dom $h$ is inductive and therefore coincides with $\omega$.\newline
 
 
 IV. Finally we claim that $h$ is unique. For let $h_1$ and $h_2$ both satisfy the conclusion fo the theorem. Let\dots
-$$S = \{n \in \omega_0 | h_1(n) = h_2(n) \}.$$
+$$S = \{n \in \omega | h_1(n) = h_2(n) \}.$$
 
 $S$ is inductive, showing $h_1 = h_2$. Thus $h$ is unique.
 \end{proof}
@@ -128,12 +128,12 @@ $$h(a + 1) = h(a)^2 + 1.$$
 \end{example}
 
 \begin{proof}
-Note $h(a) > h(a-1) > h(a-2) > \dots > 0.$  Recursion on $\omega_0$ reliex on there being a starting point $0$. $\mathbb{Z}$ has no analogous starting point.
+Note $h(a) > h(a-1) > h(a-2) > \dots > 0.$  Recursion on $\omega$ reliex on there being a starting point $0$. $\mathbb{Z}$ has no analogous starting point.
 \end{proof}
 
 \begin{theorem}
-Let $\langle N, S, e \rangle$ be a Peano system. Then $\langle \omega_0, \sigma, 0 \rangle$ is isomorphic to $\langle N, S, e \rangle$, i.e. there is a funciton $h$
-mapping $\omega_0$ bijectively to $N$ in a way that preserves the successor operation
+Let $\langle N, S, e \rangle$ be a Peano system. Then $\langle \omega, \sigma, 0 \rangle$ is isomorphic to $\langle N, S, e \rangle$, i.e. there is a funciton $h$
+mapping $\omega$ bijectively to $N$ in a way that preserves the successor operation
 $$h(\sigma(n)) = S(h(n))$$
 and the zero element
 $$h(0) = e.$$
@@ -143,12 +143,12 @@ $$h(0) = e.$$
 \subsubsection{Arithmetic}\label{arithmetic}
 
 \subsubsubsection{Addition}\label{addition}
-\emph{Addition} (+) is the binary operation on $\omega_0$ such that for any $m$ and $n \in \omega_0$,
+\emph{Addition} (+) is the binary operation on $\omega$ such that for any $m$ and $n \in \omega$,
 $$m + n = A_m(n),$$
-where $A_m: \omega_0 \rightarrow \omega_0$ is the unique function given by the \hyperref[recursion]{recursion theorem} for which\dots
+where $A_m: \omega \rightarrow \omega$ is the unique function given by the \hyperref[recursion]{recursion theorem} for which\dots
 \begin{itemize}
   \item $A_m(0) = m$
-  \item $A_m(n^+) = A_m(n)^+ \; \forall n \in \omega_0.$
+  \item $A_m(n^+) = A_m(n)^+ \; \forall n \in \omega.$
 \end{itemize}
 
 \begin{proposition}
@@ -160,9 +160,9 @@ For natural numbers $m$ and $n$,
 \end{proposition}
 
 \subsubsubsection{Multiplication}\label{multiplication}
-\emph{Multiplication} ($\cdot$) is the binary operation on $\omega_0$ such that for any $m$ and $n \in \omega_0$,
+\emph{Multiplication} ($\cdot$) is the binary operation on $\omega$ such that for any $m$ and $n \in \omega$,
 $$m \cdot n = M_m(n),$$
-where $M_m: \omega_0 \rightarrow \omega_0$ is the unique function given by the \hyperref[recursion]{recursion theorem} for which\dots
+where $M_m: \omega \rightarrow \omega$ is the unique function given by the \hyperref[recursion]{recursion theorem} for which\dots
 \begin{itemize}
   \item $M_m(0) = 0$
   \item $M_m(n^+) = M_m(n) + m.$
@@ -177,9 +177,9 @@ For natural numbers $m$ and $n$,
 \end{proposition}
 
 \subsubsubsection{Exponentiation}\label{exponentiation}
-\emph{Exponentiation} is the binary operation on $\omega_0$ such that for any $m$ and $n \in \omega_0$,
+\emph{Exponentiation} is the binary operation on $\omega$ such that for any $m$ and $n \in \omega$,
 $$m^n = E_m(n),$$
-where $E_m: \omega_0 \rightarrow \omega_0$ is the unique function given by the \hyperref[recursion]{recursion theorem} for which\dots
+where $E_m: \omega \rightarrow \omega$ is the unique function given by the \hyperref[recursion]{recursion theorem} for which\dots
 \begin{itemize}
   \item $E_m(0) = 1$
   \item $M_m(n^+) = E_m(n) \cdot m.$
@@ -204,7 +204,7 @@ For any natural numbers $m$ and $n$\dots
 \end{itemize}
 \end{lemma}
 
-\begin{theorem}[Trichotomy Law for $\omega_0$]\label{trichotomy}
+\begin{theorem}[Trichotomy Law for $\omega$]\label{trichotomy}
 For any natural numbers $m$ and $n$, exactly one of the three conditions\dots
 \begin{itemize}
   \item $m \in n$
@@ -231,27 +231,27 @@ For any natural numbers $m,n$ and $p$,\dots
 \end{proposition}
 
 \begin{corollary}
-The following canncellation laws hold for $m,n,p \in \omega_0$\dots
+The following canncellation laws hold for $m,n,p \in \omega$\dots
 \begin{itemize}
   \item $m + p \in n + p \Rightarrow m = n$
   \item If, in addition, $p \neq 0$, then $m \cdot p \in n \cdot p \Rightarrow m = n$
 \end{itemize}
 \end{corollary}
 
-\begin{theorem}[Well Ordering of $\omega_0$]\label{wellorderingofnaturalnumbers}
-Let $A$ be a nonempty set of $\omega_0.$ Then there is some $m \in A$ such that $(m \in n) \lor (m=n)$ for all $n \in A$.
+\begin{theorem}[Well Ordering of $\omega$]\label{wellorderingofnaturalnumbers}
+Let $A$ be a nonempty set of $\omega.$ Then there is some $m \in A$ such that $(m \in n) \lor (m=n)$ for all $n \in A$.
 \end{theorem}
 
 \begin{proof}
-Assume that $A$ is a subset of $\omega_0$ without a least element; we will 
+Assume that $A$ is a subset of $\omega$ without a least element; we will 
 show that $A = \emptyset$. We could attempt to do this by showing that the complement
-$\omega_0 \setminus A$ is inductive. But in order to show that $k^+ \in \omega_0 - A$,
-it is not enough to know merely that $k \in \omega_0 \setminus A$, we must know
-that all numbers smaller than $k$ are in $\omega_0 \setminus A$ as well. Given this additional
-information, we can argue that $k^+ \in \omega_0 \setminus A$ lest it be a least element of $A$.
+$\omega \setminus A$ is inductive. But in order to show that $k^+ \in \omega - A$,
+it is not enough to know merely that $k \in \omega \setminus A$, we must know
+that all numbers smaller than $k$ are in $\omega \setminus A$ as well. Given this additional
+information, we can argue that $k^+ \in \omega \setminus A$ lest it be a least element of $A$.
 
 To write down what is approximately this argument, let\dots
-$$B = \{m \in \omega_0 | \textrm{ no number less than } m \textrm{ belongs to } A \}.$$
+$$B = \{m \in \omega | \textrm{ no number less than } m \textrm{ belongs to } A \}.$$
 We claim that $B$ is inductive. $0 \in B$ vacuously. Suppose that $k \in B$. Then if 
 $n$ is less that $k^+$, either $n$ is less than $k$ (in which case $n \not\in A$ since $k \in B$) or
 $n = k$ (in which case $n \not\in A$ lest, by trichotomy, it be least in $A$). In either case, 
@@ -260,11 +260,11 @@ $A = \emptyset$.
 \end{proof}
 
 \begin{corollary}
-There is no function $f : \omega_0 \rightarrow \omega_0$ such that $f(n^+) \in f(n)$
+There is no function $f : \omega \rightarrow \omega$ such that $f(n^+) \in f(n)$
 for every natural number $n$.
 \end{corollary}
 
-\begin{theorem}[Strong Induction Principle for $\omega_0$]
-Let $A$ be a subset of $\omega_0$, and assume the for every $n \in \omega_0$, if
-every number less than $n$ is in $A$, then $n \in A.$ Then $A = \omega_0$.
+\begin{theorem}[Strong Induction Principle for $\omega$]
+Let $A$ be a subset of $\omega$, and assume the for every $n \in \omega$, if
+every number less than $n$ is in $A$, then $n \in A.$ Then $A = \omega$.
 \end{theorem}
