@@ -1,0 +1,200 @@
+\subsection{Cardinality}\label{cardinality}
+
+\subsubsection{Equinumerosity}
+Two sets $A$ and $B$ are \emph{equinumerous}, denoted $A \approx B$, if and only if there is a bijection $f : A \rightarrow B.$ \label{equinumerous}
+
+\begin{proposition}
+Equinumerosity is an equivalence relation. (See: \hyperref[isomorphism]{isomorphism})
+\end{proposition}
+
+\begin{theorem}[Diagonalization]\label{diagonalization}
+The set $\omega$ is not equinumerous to the set $\mathbb{R}$ of real numbers.
+\end{theorem}
+
+\begin{proof}\renewcommand{\qedsymbol}{\Lightning}
+Suppose for the sake of contradition that there is a bijection $f: \omega \rightarrow \mathbb{R}$. Thus we can imagine a list of successive values\dots
+$$f(0) = 236.001\dots$$
+$$f(1) = -7.777\dots$$
+$$f(2) = 3.1415\dots$$
+$$\vdots$$
+Then consider the real number $0.a_1a_2a_3\dots$ where:
+\[
+	a_n = \begin{cases}
+				7 & \textrm{ if the nth decimal of } f(n) \neq 7\\
+				6 & \textrm{otherwise.}
+		  \end{cases}
+\]
+This number cannot be in the range of $f$, so it is not a bijection.
+\end{proof}
+
+\begin{theorem}[Diagonalization]
+No set is equinumerous to its power set.
+\end{theorem}
+
+\begin{proof}
+Let $g: A \rightarrow \mathcal{P}(A)$. Consider\dots
+$$B = \{ x \in A | x \not \in g(x) \}.$$
+Then $B \subseteq A$, but for each $x \in A,$
+$$x \in B \Leftrightarrow x \not\in g(x).$$
+Hence $B \not\in$ ran $g$ and $g$ is not a bijection.
+\end{proof}
+
+\subsubsection{Finite/Infinite}
+A set is \emph{finite}\label{infinite} if and only if it is equinumerous to some natural number. Otherwise it is \emph{infinite}\label{infinite}.
+
+\begin{theorem}[Pigeonhole Principle]\label{pigeonholeprinciple}
+No natural number is equinumerous to a proper subset of itself.
+\end{theorem}
+
+\begin{proof}
+Suppose $f : N \rightarrow N$ is a bijection from a finite set to itself. We will show that ran $f$ is all of the set $n$. This suffices to prove the theorem.
+
+We use the induction on $n$. Define:
+$$T = \{ n \in \omega | \textrm{ every injection from } n \textrm{ into } n \textrm{ has range } n \}$$
+
+We have that $0 \in T$; the only function from the set $0$ into the set $0$ is the empty function, which has range $0$. Now suppose that $k \in T$ and that $f$ is an injection from $k^+$ into $k+$. Note that 
+the \hyperref[restriction]{restriction} $f \mathord{\upharpoonright}_k$ maps $k$ injectively into $k^+$. There are two cases\dots
+
+Case I: The set $k$ is closed under $f$. Then $f \mathord{\upharpoonright}_k$ maps the set $k$ into the set $k$. Then because $k \in T$ we may conclude that ran $(f \mathord{\upharpoonright}_k) = k$. Since
+$f$ is injective, the only possible value for $f(k)$ is the number $k$. Hence ran $f$ is $k \cup \{ k \},$ which is the set $k^+$.
+
+Case II: Otherwise $f(p) = k$ for some number $p$ less than $k$. In this case we interchange two values of teh functino. Define $\hat{f}$ by\dots
+$$\hat{f}(p) = f(k),$$
+$$\hat{f}(k) = f(p) = k,$$
+$$\hat{f}(x) = f(x) \textrm{ for other } x \in k^+.$$
+The $\hat{f}$ maps the set $k^+$ injectively into the set $k^+$, and the set $k$ is closed under $\hat{f}$. So we can apply Case I.
+
+Thus ran $f = k^+$.
+\end{proof}
+
+\begin{corollary}
+No finite set is equinumerous to a proper subset of itself.
+\end{corollary}
+
+\begin{corollary}
+Any set equinumerous to a proper subset of itself is infinite.
+\end{corollary}
+
+\begin{corollary}
+The set $\omega$ is infinite.
+\end{corollary}
+
+\begin{corollary}
+Any finite set is equinumerous to a unique natural number.
+\end{corollary}
+
+\begin{lemma}
+If $C$ is a proper subset of a natural number $n$, the $C \approx m$ for some $m$ less than $n$.
+\end{lemma}
+
+\begin{corollary}
+Any subset of a finite set if finite.
+\end{corollary}
+
+\subsubsection{Cardinal Numbers}\label{cardinalnumbers}
+
+For any set $A$, the \hyperref[ordinalnumbers]{cardinal number} of $A$, denoted card $A$, is a set\dots
+\begin{enumerate}
+  \item For any sets $A,B$\dots
+  	$$\textrm{card } A = \textrm{card }B \Leftrightarrow A \approx B.$$
+  \item For a finite set $A$, card $A$ is the natural number $n$ for which $A \approx n$.
+\end{enumerate}
+
+(See: \hyperref[cardinalnumberdefinition]{cardinal number definition using ordinals})
+
+\subsubsubsection{Cardinal Arithmetic}
+Let $\kappa$ and $\lambda$ be any cardinal numbers.
+\begin{itemize}
+  \item $\kappa + \lambda =$ card$(K \cup L)$, where $K$ and $L$ are any disjoint sets of cardinality $\kappa$ and $\lambda$, respectively.
+  \item $\kappa \cdot \lambda =$ card$(K \times L)$, where $K$ and $L$ are any sets of cardinality $\kappa$ and $\lambda$, respectively.
+  \item $\kappa^{\lambda} =$ card$^LK$, where $K$ and $L$ are any sets of cardinality $\kappa$ and $\lambda$, respectively.
+\end{itemize}
+
+\begin{proposition}
+Assume that $K_1 \approx K_2$ and $L_1 \approx L_2$.
+\begin{enumerate}
+  \item If $K_1 \cap L_1 = K_2 \cap L_2 = \emptyset$, then $K_1 \cup L_1 \approx K_2 \cup L_2$.
+  \item $K_1 \times L_1 \approx K_2 \times L_2.$
+  \item $^{L_1}K_1 \approx ^{L_2}K_2.$
+\end{enumerate}
+\end{proposition}
+
+\begin{proposition}
+For any cardinal numbers $\kappa,\lambda,$ and $\mu$\dots
+\begin{itemize}
+  \item $\kappa + \lambda = \lambda + \kappa$ and $\kappa \cdot \lambda = \lambda \cdot \kappa$.
+  \item $\kappa + (\lambda + \mu) = (\kappa + \lambda) + \mu$ and $\kappa \cdot (\lambda \cdot \mu) = (\kappa \cdot \lambda) \cdot \mu$.
+  \item $\kappa \cdot (\lambda + \mu) = \kappa \cdot \lambda + \kappa \cdot \mu$.
+  \item $\kappa^{\lambda + \mu} = \kappa^{\lambda} \cdot \kappa^{\mu}$.
+  \item $(\kappa \cdot \lambda)^{\mu} = \kappa^{\mu} \cdot \lambda^{\mu}$.
+  \item $(\kappa^{\lambda})^{\mu} = \kappa^{\lambda \cdot \mu}$
+\end{itemize}
+\end{proposition}
+
+\begin{proposition}
+Let $m$ and $n$ be finite cardinals. Then\dots
+\begin{itemize}
+	\item $m + n = m +_{\omega} n$
+	\item $m \cdot n = m \cdot_{\omega} n$
+	\item $m^n = m^n$
+\end{itemize}
+(See: \hyperref[arithmetic]{natural number arithmetic}.)
+\end{proposition}
+
+\begin{corollary}
+If $A$ and $B$ are finite, then $A \cup B$, $A \times B$, and $^BA$ are also finite.
+\end{corollary}
+
+\subsubsubsection{Ordering Cardinal Numbers}\label{cardinalordering}
+A set $A$ is \emph{dominated}\label{dominated} by a set $B$ (written $A \preceq B$) if and only if there is an injective function from $A$ into $B$.
+
+\begin{theorem}[Schr\"oder-Bernstein Theorem]\label{schroderbernsteinthm}
+If $A \preceq B$ and $B \preceq A$, then $A \approx B$.
+\end{theorem}
+
+\begin{proof}
+The proof is accomplished with mirrors. Given injections $f : A \rightarrow B$ and $g: B \rightarrow A$. Define $C_n$ by recursion, using the formulas
+$$C_0 = A \setminus \textrm{ran } g \; \; \textrm{ and } \; \; C_{n^+} = g[f[C_n]].$$
+Thus $C_0$ is the troublesome part that keeps $g$ from being a bijection. We bounce it back and forth, obtaining $C_1, C_2, \dots$. This function showing that $A \approx B$ is the function $h: A \rightarrow B$ defined by\dots
+\[
+	h(x) = \begin{cases}
+				f(x) & \textrm{ if } x\in C_n \textrm{ for some } n,\\
+				g^{-1}(x) & \textrm{otherwise.}
+		   \end{cases}
+\]
+Note that in the second case $(x \in A$ but $x \not\in C_n$ for any $n)$ it follows that $x \not \in C_0$ and hence $x \in$ ran $g$. So $g^{-1}(x)$ makes sense in this case.
+We verify that $h$ is indeed a bijection. Define $D_n = f[C_n]$, so that $C_{n^+} = g[D_n]$. Consider distinct $x,y \in A$. Since both $f$ abd $g^{-1}$ are injective, the only possible problem arises when, say, $x \in C_m$
+and $y \in \bigcup_{n \in \omega} C_n$. In this case,
+$$h(x) = f(x) \in D_m,$$
+whereas,
+$$h(y) = g^{-1}(y) \not \in D_m,$$
+lest $y \in C_{m^+}$. So $h(x) \neq h(x')$, showing $h$ is injective.
+
+Finally, we show $h$ is surjective. Certainly each $D_n \subseteq$ ran $h$, because $D_n = h[C_n]$. Consider then a point $y$ in $B \setminus \bigcup_{n \in \omega} D_n$. Where is $g(y)$? Certainly $g(y) \not\in C_0$. Also $g(y) \not\in C_{n^+}$,
+because $C_{n^+} = g[D_n]$, $y \not\in  D_n$, and $g$ is injective. So $g(y) \not\in C_n$ for any $n$. Therefore $h(g(y))=g^{-1}(g(y)) = y.$ This shows that $y \in$ ran $h$, thereby proving part (a).
+\end{proof}
+
+\begin{theorem}[Restated Schr\"oder-Bernstein Theorem]
+For cardinal numbers $\kappa$ and $\lambda$, if $\kappa \leq \lambda$ and $\lambda \leq \kappa$, then $\kappa = \lambda$.
+\end{theorem}
+
+\begin{proposition}
+Let $\kappa, \lambda$ and $\mu$ be cardinal numbers.
+\begin{itemize}
+  \item $\kappa \leq \lambda \Rightarrow \kappa + \mu \leq \lambda + \mu$
+  \item $\kappa \leq \lambda \Rightarrow \kappa \cdot \mu \leq \lambda \cdot \mu$
+  \item $\kappa \leq \lambda \Rightarrow \kappa^{\mu} \leq \lambda^{\mu}$
+  \item $\kappa \leq \lambda \Rightarrow \mu^{\kappa} \leq \mu^{\lambda}$;	if not both $\kappa$ and $\mu$ equal zero.
+\end{itemize}
+\end{proposition}
+
+\subsubsubsection{Infinite Cardinal Arithmetic}
+
+\begin{lemma}
+For any infinite cardinal $\kappa$, we have $\kappa \cdot \kappa = \kappa.$
+\end{lemma}
+
+\begin{theorem}[Absorption Law of Cardinal Arithmetic]
+Let $\kappa$ and $\lambda$ be cardinal numbers, the larger of which is infinite and the smaller of which is nonzero. Then\dots
+$$\kappa + \lambda = \kappa \cdot \lambda = \textrm{max}(\kappa,\lambda).$$
+\end{theorem}

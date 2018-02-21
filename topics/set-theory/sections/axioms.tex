@@ -12,7 +12,7 @@
   \item \emph{Pairing:} $\forall X_1 \forall X_2 \exists A (X_1 \in A \land X_2 \in A)$
   \item \emph{Union:} $\forall \mathcal{F}_A \exists U \forall A \forall X [(X \in A \land A \in \mathcal{F}_A) \Rightarrow X \in U]$
   \item \emph{Schema of Replacement:} $\forall A \forall X_1 \forall X_2 \dots \forall X_n[\forall B(B \in A \Rightarrow \exists! D \phi) \Rightarrow \exists B \forall C (C \in A \Rightarrow \exists D(D \in B \land \phi))]$
-  \item \emph{Infinity:} $\exists \omega_0 [\emptyset \in \omega_0 \land \forall X(X \in \omega_0 \Rightarrow X \cup X\} \in \omega_0)]$
+  \item \emph{Infinity:} $\exists \omega [\emptyset \in \omega \land \forall X(X \in \omega \Rightarrow X \cup X\} \in \omega)]$
   \item \emph{Power Set:} $\forall X \exists \mathcal{P}(X) \forall S [S \subseteq X \Rightarrow S \in \mathcal{P}(X)]$
   \item \emph{Empty Set:} $\exists A \forall X (X \not\in A)$
   \item \emph{Choice:} $\forall X [\emptyset \not\in X \Rightarrow \exists (f:X \rightarrow \bigcup X) \forall A \in X (f(A) \in A)]$
@@ -33,7 +33,7 @@ A set $U$ is defined with the following properties\dots
   \item $x \in u \in U \Rightarrow x \in U$
   \item $u \in U \land v \in U \Rightarrow \{u,v\}, \langle u,v \rangle, u \times v \in U$
   \item $X \in U \Rightarrow \mathcal{P}(X) \in U \land \bigcup X \in U$
-  \item $\omega_0 \in U$ is the set of finite ordinals
+  \item $\omega \in U$ is the set of finite ordinals
   \item if $f:A \rightarrow B$ is a surjective function with $A \in U \land B \subset U$, then $B \in U$
 \end{enumerate}
 

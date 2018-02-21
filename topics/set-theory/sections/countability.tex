@@ -1,0 +1,18 @@
+\subsection{Countable Sets}\label{countable}
+A set A is \emph{countable} if and only if $A \preceq \omega$, i.e. if and only if card $A \leq \aleph_0$.
+
+\begin{theorem}
+A countable union of countable sets is countable.
+\end{theorem}
+
+\begin{proof}
+We may suppose that $\empty \not\in \mathcal{A}$, for otherwise we could simply remove it without affecting $\bigcup \mathcal{A}$. We may further suppose that $\mathcal{A} \neq \emptyset$,
+since $\bigcup \emptyset$ is certainly countable. Thus $\mathcal{A}$ is a countable (but nonempty) function from $\omega \times \omega$ onto $\bigcup \mathcal{A}$. It is easy to find a function from $\omega$ onto $\omega \times \omega$,
+and the composition will map $\omega$ onto $\bigcup \mathcal{A}$, thereby showing that $\bigcup \mathcal{A}$ is countable.
+Since $\mathcal{A}$ is countable but nonempty, there is a function $G$ from $\omega$ onto $\mathcal{A}$. We are given that each set $G(m)$ is countable and nonempty. Hence for each $m$ there is a function from $\omega$ onto $G(m)$. We must then use
+the \hyperref[axiomofchoice]{axiom of choice} to select such a function for each $m$.
+Let $H: \omega \rightarrow ^{\omega}(\bigcup \mathcal{A})$ be defined by\dots
+$$H(m) = \{g | g \textrm{ is a function from } \omega \textrm{ onto } G(m)\}.$$
+We know that $H(m)$ is nonempty for each $m$. Hence there is function $F$ with domain $\omega$ such that for each $m$, $F(m)$ is a function from $\omega$ ontop $G(m)$.
+To conclude the proof we have only to let $f(m,n) = F(m)(n)$. Then $f$ is a function from $\omega \times \omega$ onto $\bigcup \mathcal{A}$.
+\end{proof}
