@@ -10,7 +10,10 @@ Relations $\sim \subseteq A \times A$ such that $\forall a,b,c \in A$\dots
 \end{itemize}
 
 \subsubsubsection{Equivalence Class}
-$[a]_{\sim} := \{ b \in S | b \sim a \}$ 
+$[a]_{\sim} := \{ b \in S | b \sim a \}$
+
+\subsubsubsection{Set of Equivalence Classes}
+$[A] = \{[a]_{\sim} | a \in A \}$
 
 \subsubsubsection{Set Partition}
 A set $P :\subseteq \mathcal{P}(X)$ such that\dots
@@ -18,6 +21,24 @@ A set $P :\subseteq \mathcal{P}(X)$ such that\dots
   \item $\bigcup P = X$
   \item $\forall S_1, S_2 \in P (S_1 \cap S_2 \neq \emptyset \Rightarrow S_1 = S_2)$
 \end{itemize}
+
+\begin{proposition}
+Let $A$ is a set and $\sim$ an equivalence relation on $A$. Then $[A]$ is a partition of $A$.
+\end{proposition}
+
+\begin{proposition}
+Let $A$ be a set and $P$ be a partition of $A$. Define a relation $x \sim y$ if and only if $x,y \in C \in P$. Then $\sim$ is an equivalence relation.
+\end{proposition}
+
+\subsubsubsection{Congruence Relation}\label{congruencerelation}
+A \hyperref[congruence]{congruence} $\sim$ of a set $A$ with a binary operation $\mu : A \times A \rightarrow A$ is an equivalence relation such that\dots
+$$\overline{\mu}([a],[b]) = [\mu (a,b)]$$
+induces a well-defined binary operation on $[A]$.
+
+\begin{proposition}
+An equivalence relation $\sim$ on $A$ with $\mu : A \times A \rightarrow A$ is a congruence relation if for any $a,a',b,b' \in A$, whenever $[a] = [a']$ and
+[b] = [b'], we have $[\mu(a,b)]=[\mu(a',b')]$.
+\end{proposition}
 
 \subsubsection{Functions}\label{function}
 A relation $f: A \rightarrow B$ satisfying $\forall a \in A$ \mbox{$\exists! b \in B \textrm{ such that } afb \textrm{, denoted } f(a) = b$.}

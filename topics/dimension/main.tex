@@ -1,0 +1,30 @@
+\newpage
+
+\section{Dimension}\label{dimension}
+
+\begin{theorem}
+There is a one-to-one correspondence $\mathbb{R} \rightarrow \mathbb{R} \times \mathbb{R}$.
+\end{theorem}
+
+\begin{proof}
+Since the mapping $f: \mathbb{R} \rightarrow (0,1)$ given by $ r \mapsto \frac{1}{\pi}(\textrm{arctan}(r) + \frac{\pi}{2})$ is a bijection, it is sufficient
+to find a bijection $(0,1) \rightarrow (0,1) \times (0,1)$. For this we use the \hyperref[schroderbernsteinthm]{Sch\"oder-Bernstein Theorm}.
+
+Observe that $g:(0,1) \rightarrow (0,1) \times (0,1)$ given by $t \mapsto (t,t)$ is an injection. So the only real work is in constructing an injection $(0,1) \times (0,1) \rightarrow (0,1)$.
+
+To start things off, introduce the following injection $I :(0,1) \rightarrow (0,1)\cap(\mathbb{R} \setminus \mathbb{Q})$\dots
+
+\[
+I(r) = \begin{cases}
+			[0;a_1+2,a_2+2,\dots,a_n+2,2,2,\dots] & \textrm{if } r=[0;a_1,a_2,\dots,a_n],\\
+			[0;a_1+2,a_2+2,a_3+2,\dots] & \textrm{if } r=[0;a_1,a_2,a_3,\dots].
+	   \end{cases}
+\]
+
+\noindent Composed with another injection, $t:(0,1)\cap(\mathbb{R} \setminus \mathbb{Q}) \times (0,1)\cap(\mathbb{R} \setminus \mathbb{Q}) \rightarrow (0,1)$ given by $([0;a_1,a_2,\dots],[0;a_1,a_2,\dots]) \mapsto [0;a_1,b_1,a_2,b_2,\dots]$, we get
+our desired injection $t \circ (I \times I).$
+\end{proof}
+
+\begin{corollary}
+There is a bjection $f : \mathbb{R}^m \rightarrow \mathbb{R}^n$ for all positive integers $m$ and $n$. 
+\end{corollary}

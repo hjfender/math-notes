@@ -1,0 +1,27 @@
+\subsection{Metric Spaces}\label{metricspace}
+
+A \emph{metric space} is a set $X$ together with a \emph{metric}\label{metric} $d : X \times X \rightarrow \mathbb{R}$ satisfying\dots
+\begin{enumerate}
+  \item $d(x,y) \geq 0$ for all $x,y \in X$ and $d(x,y) = 0$ if and only if $x = y$.
+  \item $d(x,y) = d(y,x)$ for all $x,y \in X$.
+  \item (\emph{The Triangle Inequality}\label{triangleinequality}): $d(x,y) + d(y,z) \geq d(x,z)$ for all $x,y,z \in X.$
+\end{enumerate}
+
+\subsubsection{Open Ball}\label{metricopenball}
+The \emph{open ball} of radius $\varepsilon > 0$ centered at a point $x$ in a metric space $(X,d)$ is given by\dots
+$$B_{\varepsilon}(x) = \{ y \in X | d(x,y) < \varepsilon\}.$$
+
+\subsubsection{Continuity}\label{metriccontinuity}
+Suppose $(X,d_X)$ and $(Y,d_Y)$ are two metric spaces and $f: X \rightarrow Y$ is a function. Then $f$ is \emph{continuous at} $x\in X$ if for any $\epsilon > 0$ , there is a $\delta > 0$
+so that $B_{\delta}(x) \subset f^{-1}(B_{\varepsilon}(f(x)))$.\newline
+
+\noindent The function $f$ is \emph{continuous} if it is continous at $x$ for all $x \in X$.
+
+\subsubsection{Open Set}\label{metricopenset}
+The \emph{open set} $U$ of a metric space $(X,d)$ is \emph{open} if for any $u \in U$, there is $\varepsilon > 0$ so that $B_{\varepsilon}(x) \subseteq U$.
+
+\begin{theorem}
+A function $f:X \rightarrow Y$ between metric spaces $(X,d)$ and $(Y,d)$ is continuous if and only if for any open subset $V$ of $Y$, the subset $f^{-1}(V)$ is open in $X$.
+\end{theorem}
+
+\subsubsection{Examples}\label{metricexamples}

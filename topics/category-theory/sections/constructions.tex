@@ -139,12 +139,12 @@ The \emph{O-graph} is a graph on a fixed set $O$ of objects such that $O$-graph 
 
 \noindent We define the \emph{product over O} as a \hyperref[composablepairsofarrows]{set of composable pairs of arrows}\dots
 $$A \times_O B = \{ \langle g, f \rangle | \delta_0 g = \delta_1 f, g \in A, f \in B \}$$
+where $\delta_0$, $\delta_1$, resp., are functions representing the $\textbf{dom}$, $\textbf{cod}$, resp., operations.\newline
 
 \noindent A \hyperref[category]{category} with objects $O$ is an $O$-graph equipped with two morphisms $c:A \times_O A \rightarrow A$ and $i:O \rightarrow A$
 of $O$-graphs making the following diagrams commutative.
 
 \input{topics/category-theory/diagrams/ograph}
-
 
 \subsubsubsection{Free Category}\label{freecategory}
 
@@ -155,7 +155,6 @@ Let $G = \{A \rightrightarrows O\}$ be a small graph. There is a small category 
 the underlying graph $UC$ of $C$ with the following property. Given any category $B$ and any morphism $D:G \rightarrow UB$ of graphs, there is a unique functor $D':C \rightarrow B$
 with $(UD') \circ P = D$, as in the commutative diagram
 
-\noindent The corresponding \hyperref[universality]{universal property} is: for any functors $R$ and $T$, there is a unique functor $F$ making the digram commute\dots
 \begin{figure}[H]
 \centering
 \input{topics/category-theory/diagrams/freecategory}
@@ -171,3 +170,106 @@ $$\textrm{Hom}_{Cat}(C(G),B) \cong \textrm{Grph}(G,UB), \; D' \mapsto D = UD' \c
 \end{corollary}
 
 \subsubsection{Comma Categories}\label{commacategories}
+
+\subsubsubsection{Category of objects unber b $(b \downarrow C)$}\label{objectsunder}
+Objects $\langle f,c \rangle$:
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/objectsunderb}
+\end{figure}
+
+\noindent Arrows $\langle f,c \rangle \xrightarrow[]{h} \langle f',c' \rangle$:
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/arrowsunderb}
+\end{figure}
+
+\subsubsubsection{Category of objects over a $(C \downarrow a)$}\label{objectsover}
+
+Objects $\langle f,c \rangle$:
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/objectsovera}
+\end{figure}
+
+\noindent Arrows $\langle f,c \rangle \xrightarrow[]{h} \langle f',c' \rangle$:
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/arrowsovera}
+\end{figure}
+
+\subsubsubsection{Category of objects $S$-unber b $(b \downarrow S)$}\label{objectsunderfunctor}
+
+Given a functor $S:D \rightarrow C$.\newline
+
+\noindent Objects $\langle f,Sd \rangle$:
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/objectsunderbfunctor}
+\end{figure}
+
+\noindent Arrows $\langle f,Sd \rangle \xrightarrow[]{Sh} \langle f',Sd' \rangle$:
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/arrowsunderbfunctor}
+\end{figure}
+
+\subsubsubsection{Category of objects $T$-over a $(T \downarrow a)$}\label{objectsoverfunctor}
+
+Given a functor $T:E \rightarrow C$.\newline
+
+\noindent Objects $\langle f,Te \rangle$:
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/objectsoverafunctor}
+\end{figure}
+
+\noindent Arrows $\langle f,Te \rangle \xrightarrow[]{Th} \langle f',Te' \rangle$:
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/arrowsoverafunctor}
+\end{figure}
+
+\subsubsubsection{Comma Category $(T \downarrow S)$}\label{commacategory}
+
+Given functors $S:D \rightarrow C$ and $T:E \rightarrow C$.\newline
+
+\noindent Objects $\langle e,d,f \rangle$:
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/objectscomma}
+\end{figure}
+
+\noindent where $d \in$Obj$(D)$, $e \in$Obj$(E)$, $f:Te \rightarrow Sd$.\newline
+
+\noindent Arrows $\langle e,d,f \rangle \xrightarrow[]{\langle k,h \rangle} \langle e',d',f' \rangle$:
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/arrowscomma}
+\end{figure}
+
+\noindent where $k:e \rightarrow e'$, $h:d \rightarrow d'$ such that $f' \circ Tk = Sh \circ f$.\newline
+
+\noindent Composition $\langle k',h' \rangle \circ \langle k,h \rangle = \langle k' \circ k, h' \circ h \rangle$ when defined.
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/compositioncomma}
+\end{figure}
+
+\noindent $P$ and $Q$ are the \emph{projections} of the comma category. $C^{d_0},C^{d_1}$, resp., send arrows to domain, codomain, resp.
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/compositioncommadefinition}
+\end{figure}
