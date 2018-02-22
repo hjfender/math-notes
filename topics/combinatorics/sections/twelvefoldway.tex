@@ -1,0 +1,53 @@
+\subsection{Twelvefold Way}\label{twelvefoldway}
+
+There are $12$ fundamental counting problems. Sometimes they are formulated in terms of putting \emph{balls} into \emph{baskets}.\newline
+
+Let $N$ and $K$ be finite sets and $n$ and $k$ be their cardinality respectively\dots
+
+\subsubsection{Functions from $K$ to $N$}
+
+Count with sequences of $k$ elements in $N$, $|^KN|$.
+
+\subsubsection{Injections from $K$ to $N$}
+
+Count with \hyperref[k-list]{$k$-lists}, $(n)_k$.
+
+\subsubsection{Surjections from $K$ to $N$}
+
+Count with the \hyperref[secondstirlingnumbers]{number of surjections} from $[k]$ to $[n]$, $\sum^n_{j=0} (-1)^j {n \choose j} (n-j)^k$.
+
+\subsubsection{Injections from $K$ to $N$, up to a permutation of $K$}
+
+Count \hyperref[countingsubsets]{subsets}, \hyperref[k-list]{$k$-lists} without order, ${n \choose k}$.
+
+\subsubsection{Functions from $K$ to $N$, up to a permutation of $K$}
+
+Count \hyperref[multisets]{multisets} with $k$ elements from $N$, ${n + k - 1 \choose k}$.
+
+\subsubsection{Surjections from $K$ to $N$, up to a permutation of $K$}
+
+Count \hyperref[compositions]{compositions} of $k$ into $n$ parts, ${k - 1 \choose n - 1}$.
+
+\subsubsection{Injections from $K$ to $N$, up to a permutation of $N$}
+
+Provided $k \leq n$, there is only $1$ of these.
+
+\subsubsection{Surjections from $K$ to $N$, up to a permutation of $N$}
+
+Count \hyperref[secondstirlingnumbers]{partitions} of $K$ into $n$ non-empty subsets, $S(k,n)$.
+
+\subsubsection{Functions from $K$ to $N$, up to a permutation of $N$}
+
+Count all the partitions of $K$ up to $n$ classes, $\sum_{i=0}^n {k \choose i}$. If $k \leq n$, \hyperref[bellnumbers]{$B(k)$}.
+
+\subsubsection{Functions from $K$ to $N$, up to a permutation of $K$ and $N$}
+
+Count \hyperref[integerpartitions]{partitions} of $k$ into $\leq n$ non-empty subsets, $\sum^n_{i=0}p_i(k)$.
+
+\subsubsection{Injections from $K$ to $N$, up to a permutation of $K$ and $N$}
+
+Provided $k \leq n$, there is only $1$ of these.
+
+\subsubsection{Surjections from $K$ to $N$, up to a permutation of $K$ and $N$}
+
+Count \hyperref[integerpartitions]{partitions} of $k$ into $n$ non-empty subsets, $p_n(k)$.

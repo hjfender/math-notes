@@ -1,1 +1,89 @@
 \subsection{Graphs}\label{graph}
+
+A \emph{graph} is an \hyperref[tuple]{ordered pair} $G = \langle V,E \rangle$ comprising a set $V$ of \emph{nodes} and
+$E$ of \emph{edges}, which are $2$-element subsets of $V$.
+
+\begin{proposition}
+Let $d_1,d_2,\dots,d_n$ be the degrees of the vertices of a graph $G$ on $n$ vertices that has $e$ edges. Then we have\dots
+$$d_1 + d_2 + \cdots + d_n = 2e.$$
+\end{proposition}
+
+\subsubsection{Simple Graph}\label{simplegraph}
+A \emph{simple graph} is a graph that contains no loops and no multiple edges.
+
+\subsubsubsection{Walk}\label{walk}
+\noindent A \emph{walk} is a series $e_1e_2\dots e_k$ of edges that lead from a vertex to another one.
+
+\subsubsubsection{Cycle}\label{cycle}
+\noindent A \emph{cycle} is a walk whose starting point.
+
+\subsubsection{Graph Isomorphisms}\label{graphisomorphisms}
+
+An \hyperref[isomorphism]{isomorphism} $f$ of two graphs $G,H$ is a bijection from $V(G)$ to $V(H)$ such that if $\{a,b\} \in E(G)$, then $\{f(a),f(b)\} \in E(H)$.
+
+\subsubsubsection{Group of Automorphisms}\label{graphautomorphisms}
+
+Define the group of automorphisms of a graph $G$, $Aut(G)$, as normal.\newline
+
+\noindent Let $J$ be a graph on $n$ unlabeled vertices. Then define $\ell(J)$ as the number of possible ways to bijectively label $J$ so that the resulting graphs are non-isomorphic.
+
+\begin{proposition}
+For any graph $H$ on vertex set $[n]$,
+$$|Aut(H)|\cdot \ell(H) = n!$$
+\end{proposition}
+
+\subsubsection{Trees}\label{tree}
+
+\noindent A \emph{tree} is a simple graph that is minimally connected.
+
+\subsubsubsection{Minimally Connected Graph}\label{minimallyconnected}
+A \emph{minimally connected} graph is contains the least number of edges in order to be connected.
+
+\begin{lemma}
+Let $G$ be a connected simple graph on $n$ vertices. Then the following are equivalent.
+\begin{enumerate}
+  \item The graph $G$ is minimally connected.
+  \item There are no cycles in $G$.
+  \item The graph $G$ has exactly $n-1$ edges.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(1) $\Rightarrow$ (2) Assume there is a cycle $C$ in $G$. Then $G$ cannot be minimally connected since any one edge $e$ of $C$ can be omitted,
+and the obtained graph $G'$ is still connected. Indeed, if a path $uv$ used the edge $e$, then there would be a walk from $u$ to $v$ in which
+the edge $e$ is replaced by the set edges of $C$ that are different from $e$.
+
+(2) $\Rightarrow$ (3) Pick any vertex $x \in G$ and start walking in some direction, never revisiting a vertex. As there is no cycle in $G$, eventually
+we will get stuck, meaning that we will hit a vertex of degree $1$. This means that a connected simple graph with no cycles contains a vertex of degree $1$.
+Removing such a vertex (and the only edge adjacent to it) from $G$, we get a graph $G*$ with one less vertex and one less edge, and the statement is proved by
+induction on $n$.
+
+(3) $\Rightarrow$ (1) Suppose for the sake of contradiction that a graph on $n$ vertices and $n - 2$ edges cannot be connected. Let $H$ be such a graph with a minimum number of vertices.
+Then $H$ mus have more than $3$ vertices. As $H$ has $n-2$ edges, there has to be a vertex $y$ of degree $1$ in $H$, otherwise $H$ would need to have at least $n$ edges. Removing $y$ from
+$H$, we get an even smaller counterexample for our statement, which is a contradiction.
+\end{proof}
+
+\begin{theorem}[Cayley's formula]
+For all positive integers $n$, the number of all trees on vertex set $[n]$ is $n^{n-2}$.
+\end{theorem}
+
+\begin{proof}
+We need to prove that $T_n = n^{n-2}$, which is the number of all functions from $[n-2]$ to $[n]$. This is certainly equivalent to proving the identity\dots
+$$n^2 T_n = n^n.$$
+Here the right-hand side is the number of all functions from $[n]$ into $[n]$. The left-hand side, on the other hand, is equal to the number of all trees on $[n]$
+in which we select two vertices, called Start and End (which may be identical). Let us call these trees \emph{doubly rooted trees}.
+
+We construct a bijection $G$ to prove the above formula. Let $f \in End_{Set}([n])$ and draw its \emph{short diagram}, that is, represent $x \in [n]$ as a vertex in a graph, where there is an arrow $\langle x,y \rangle$ if and only if $f(x) = y$.
+This creates two kinds of vertices, namely, those that are in a directed cycle and those that are not. Let $C$ and $N$, respectively, denote these two subsets of $[n]$.
+
+Now we start creating the doubly rooted tree $G(f)$. First, note that $f$ acts as a permutation on $C$. If $C = \{ c_1, c_2, \dots c_k \}$ so that $c_1 < c_2 < \cdots < c_k$, call $f(c_1)$ Start and $f(c_k)$ End, and create a path with vertices
+$f(c_1),f(c_2),\dots,f(c_k)$. Note that so far we have defined a graph with $k$ vertices and $k-1$ edges.
+
+If $x \in N$, then simply connect $x$ to $f(x)$, just as in the short diagram of $f$. This will define $n-k$ more edges. Therefore, we now have a graph on $[n]$ that has $n-1$ edges and has two vertices (called Start and End, respectively).
+This is the graph that we want to call $G(f)$. In order to justify that name, we must prove that $G(f)$ is connected. This is true, however, since, in the short diagram of $f$, each directed path starting at any $x \in N$ must reach a vertex of $C$
+at some point (there is no other way it could end). So indeed, $G(f)$ is a doubly rooted tree for all $f \in End_{Set}([n])$.
+
+In order to show that $G$ is a bijection, we prove it has an inverse. Let $t$ be a doubly rooted tree. Then there is a unique path $p$ from Start to End in $t$. To find $f = G^{-1}(t)$, just put the vertices along $p$ into $C$, and put all the other
+vertices to $N$. If $x \in N$, then define $f(x)$ as the unique neighbor of $x \in t$ that is closer to $p$ than $x$. For the vertices $x \in C$, we define $f$ so that the $i$th vertex of the Start-End path is the image of the $i$th smallest element of $C$.
+It is a direct consequence of the definition of $G$ that this way we will get an $f \in End_{Set}([n])$ satisfying $G(f) = t$, and that this $f$ is the only preimage of $t$ under $G$. Therefore, G is a bijection.
+\end{proof}

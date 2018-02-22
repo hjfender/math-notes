@@ -1,0 +1,173 @@
+\subsection{Category Constructions}\label{categoryconstructions}
+
+\subsubsection{Products}\label{products}
+
+Given categories $B$ and $C$ we construct the product category $B \times C$\dots
+\begin{itemize}
+  \item Objects: pairs of objects $\langle b,c \rangle$ ($b \in B$ and $c \in C$)
+  \item Arrows: $\langle b,c \rangle \rightarrow \langle b',c' \rangle$ are a pair $\langle f,g \rangle$ of arrows ($f \in B$ and $g \in C$)
+  \item Composition: $\langle f', g' \rangle \circ \langle f, g \rangle = \langle f' \circ f, g' \circ g \rangle$
+\end{itemize}
+
+\noindent The corresponding \hyperref[universality]{universal property} is: for any functors $R$ and $T$, there is a unique functor $F$ making the digram commute\dots
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/products}
+\end{figure}
+
+\noindent Note: $P\langle f,g \rangle = f$ and $Q\langle f,g \rangle = g$ are called the \emph{projections}\label{projections} of the product.
+
+\subsubsubsection{Products of Functors}\label{functorproducts}
+Given functors $U$ and $V$, the functor product $U \times V$ satisfies\dots
+\begin{itemize}
+  \item $(U \times V)\langle b,c \rangle = \langle Ub,Uc \rangle$ for objects
+  \item $(U \times V)\langle f,g \rangle = \langle Uf,Ug \rangle$ for arrows
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/functorproduct}
+\end{figure}
+
+\subsubsubsection{Bifunctors}\label{bifunctors}
+
+A functor $S : B \times C \rightarrow D$. Intuitively, "a functor of two variables."\newline
+
+\noindent Determined by the functors that result when any one object of exactly one of the categories is fixed. This is
+recorded more explicitly in the following proposition\dots
+
+\begin{proposition}
+Let $B,C$, and $D$ be categories. For all objects $c \in C$ and $b \in B$, let
+$$L_c : B \rightarrow D, \; M_b : C \rightarrow D$$
+be functors such that $M_b(c) = L_c(b)$ for all $b$ and $c$. Then there exists a bifunctor $S: B \times C \rightarrow D$
+with $S(-, c) = L_c$ for all $c$ and $S(b,-) = M_b$ for all $b$ if and only if for every pair of arrows $f:b \rightarrow b'$
+and $g:c \rightarrow c'$ one has
+$$M_{b'}g \circ L_cf = L_{c'}f \circ M_bg.$$
+These equal arrows in $D$ are then the value $S(f,g)$ of the arrow function of $S$ at $f$ and $g$.
+\end{proposition}
+
+\begin{proof}
+Observe\dots
+$$\langle b',g \rangle \circ \langle f,c \rangle  = \langle b'f,gc \rangle = \langle f,g \rangle =  \langle fb,c'g \rangle = \langle f,c' \rangle \circ \langle b,g \rangle$$
+(where $b,b',c,c'$ are identity arrows).\newline
+
+\noindent This implies\dots
+$$S(b',g)S(f,c)=S(f,c')S(b,g).$$
+Which further implies\dots
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/bifunctor}
+\end{figure}
+
+\end{proof}
+
+\subsubsubsection{Natural transformations between bifunctors}
+Given $S,S':B \times C \rightarrow D$. Consider $\alpha(b,c) : S(b,c) \rightarrow S'(b,c)$. We say $\alpha$ is \emph{natural in}\label{naturalin} $b$ if $\forall c \in C$ the components $\alpha(b,c)$
+for all $b$ define $\alpha(-,c): S(-,c) \xrightarrow[]{\cdot} S'(-,c)$, a natural transformation of functors $B \rightarrow D$.
+
+\begin{proposition}
+For bifunctors $S,S'$, the function $\alpha$ displayed above is a natural transformation $\alpha:S \xrightarrow[]{\cdot} S'$ (i.e., of bifunctors) if and only if $\alpha(b,c)$ is natural
+in $b$ for each $c \in C$ and natural in $c$ for each $b \in B$.
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/bifunctornaturaltransformation}
+\end{figure}
+
+\end{proposition}
+
+\subsubsubsection{The Universal Natural Transformation}\label{universalnaturaltransformation}
+
+Given any natural transformation $\tau: S \xrightarrow[]{\cdot} T$ between $S,T: C \rightarrow B$ there is a unique functor $F: C \times 2 \rightarrow B$ with $F \mu c = \tau c$ for any object $c$.
+\begin{itemize}
+  \item $F\langle f,0 \rangle = Sf$
+  \item $F\langle f,1 \rangle = Tf$
+  \item $F\langle f, \downarrow \rangle = Tf \circ \tau c = \tau c' \circ Sf$ (where $\downarrow : 0 \rightarrow 1$)
+\end{itemize}
+
+\noindent Observe $C \times 2$ below\dots
+
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/universalnaturaltransformation}
+\end{figure}
+
+\noindent where $\mu c = \langle c, \downarrow \rangle$
+
+\subsubsection{Coproducts}\label{products}
+
+Given categories $B$ and $C$ the dual of the product category is coproduct category $B \coprod C$.\newline
+
+\noindent The corresponding \hyperref[universality]{universal property} is: for any functors $R$ and $T$, there is a unique functor $F$ making the digram commute\dots
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/coproducts}
+\end{figure}
+
+\subsubsection{Quotients}\label{quotients}
+
+The \emph{quotient category} is specified in the following proposition.
+
+\begin{proposition}
+For a given category $C$, let $R$ be a function which assigns to each pair of objects $a,b$ of $C$ a binary relation $R_{a,b}$ on the hom-set $C(a,b)$.
+Then there exist a category $C/R$ and a functor $Q = Q_R:C \rightarrow C/R$ such that\dots
+\begin{enumerate}
+  \item If $fR_{a,b}f'$ in $C$, then $Qf = Qf'$.
+  \item If $H:C \rightarrow D$ is any functor from $C$ for which $f R_{a,b} f'$ implies $Hf = Hf'$ for all $f$ and $f'$, then there is a unique functor $H':C/R \rightarrow D$
+  with $H' \circ Q_R = H$.
+\end{enumerate}
+Moreover, the functor $Q_R$ is a bijection on objects.
+\end{proposition}
+
+\noindent The corresponding \hyperref[universality]{universal property} is represented in the following diagram\dots
+
+\input{topics/category-theory/diagrams/quotients}
+
+\subsubsubsection{Congruence}\label{congruence}
+A \emph{congruence} is a relation $R$ on a category $C$ such that\dots
+\begin{itemize}
+  \item $\forall a,b \in \text{Obj}(C)$, $R_{a,b}$ is an \hyperref[equivalencerelation]{equivalence relation}
+  \item if $f,f':a \rightarrow b$ have $f R_{a,b} f'$, then for all $g: a' \rightarrow a$ and all $h: b \rightarrow b'$ one has $(hfg)R_{a',b'}(hf'g)$.
+\end{itemize}
+
+\subsubsection{Free Categories}\label{freecategories}
+
+\subsubsubsection{O-graph}\label{ograph}
+The \emph{O-graph} is a graph on a fixed set $O$ of objects such that $O$-graph morphisms $D_O$ are always equal to $id_O$.\newline
+
+\noindent We define the \emph{product over O} as a \hyperref[composablepairsofarrows]{set of composable pairs of arrows}\dots
+$$A \times_O B = \{ \langle g, f \rangle | \delta_0 g = \delta_1 f, g \in A, f \in B \}$$
+
+\noindent A \hyperref[category]{category} with objects $O$ is an $O$-graph equipped with two morphisms $c:A \times_O A \rightarrow A$ and $i:O \rightarrow A$
+of $O$-graphs making the following diagrams commutative.
+
+\input{topics/category-theory/diagrams/ograph}
+
+
+\subsubsubsection{Free Category}\label{freecategory}
+
+Let $C(G)$ be the \emph{free category} generated by graph $G$, specified in the subsequent theorem\dots
+
+\begin{theorem}
+Let $G = \{A \rightrightarrows O\}$ be a small graph. There is a small category $C(G)$ with $O$ as its set of objects and a morphism $P: G \rightarrow UC$ of graphs from $G$ to
+the underlying graph $UC$ of $C$ with the following property. Given any category $B$ and any morphism $D:G \rightarrow UB$ of graphs, there is a unique functor $D':C \rightarrow B$
+with $(UD') \circ P = D$, as in the commutative diagram
+
+\noindent The corresponding \hyperref[universality]{universal property} is: for any functors $R$ and $T$, there is a unique functor $F$ making the digram commute\dots
+\begin{figure}[H]
+\centering
+\input{topics/category-theory/diagrams/freecategory}
+\end{figure}
+
+In particular, if $B$ had $O$ as set of objects and $D$ is a morphism of $O$-graphs, then $D'$ is the identity on objects.
+\end{theorem}
+
+\begin{corollary}
+To any set $X$ there is a monoid $M$ and a function $p: X \rightarrow UM$, where $UM$ is the underlying set of $M$, with the following universal property: for any monoid $L$ and any
+function $h: X \rightarrow UL$ there is a unique morphism $h': M \rightarrow L$ of monoids with $h: Uh' \circ p$.
+$$\textrm{Hom}_{Cat}(C(G),B) \cong \textrm{Grph}(G,UB), \; D' \mapsto D = UD' \circ P$$
+\end{corollary}
+
+\subsubsection{Comma Categories}\label{commacategories}

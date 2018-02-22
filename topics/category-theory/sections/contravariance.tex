@@ -1,0 +1,32 @@
+\subsection{Contravariance and Opposites}\label{contravariance}
+
+\subsubsection{Contravariant Functor}\label{contravariantfunctor}
+Given a functor $S: C^{op} \rightarrow B$ the \emph{contravariant functor} $\overline{S} : C \rightarrow B$ satisfies\dots
+\begin{itemize}
+  \item $\overline{S}f = Sf^{op}$,
+  \item $c \mapsto \overline{S}c$,
+  \item $f:a \rightarrow b \mapsto \overline{S}f:\overline{S}b \rightarrow \overline{S}a$,
+  \item $\overline{S}(1_c) = 1_{\overline{S}c}$,
+  \item $\overline{S}(fg) = (\overline{S}g)(\overline{S}f)$.
+\end{itemize}
+
+\subsubsubsection{Covariant Hom-Functor}\label{covarianthomfunctor}
+A \hyperref[homfunctors]{hom-functor} $C(a,-) = hom(a,-):C \rightarrow \textrm{Set}$ satisfying\dots
+\begin{itemize}
+  \item $b \mapsto hom(a,b)$
+  \item $k:b\rightarrow b' \mapsto hom(a,k):hom(a,b) \rightarrow hom(a,b')$; the right side maps $f \mapsto k \circ f$ and is denoted $k*$
+\end{itemize}
+
+\subsubsubsection{Contravariant Hom-Functor}\label{contravarianthomfunctor}
+A \hyperref[homfunctors]{hom-functor} $C(-,b) = hom(-,b):C^{op} \rightarrow \textrm{Set}$ satisfying\dots
+\begin{itemize}
+  \item $a \mapsto hom(a,b)$
+  \item $g:a\rightarrow a' \mapsto hom(g,a):hom(a',b) \rightarrow hom(a,b)$; the right side maps $f \mapsto f \circ g$ and is denoted $g*$
+\end{itemize}
+
+\noindent The functions $g^*, k^*$ defined above satify the following commutative diagram.
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-theory/diagrams/contravariance}
+\end{figure}

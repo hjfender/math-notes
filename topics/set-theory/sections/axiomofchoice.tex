@@ -1,1 +1,32 @@
 \subsection{Axiom of Choice}\label{axiomofchoice}
+
+(See: \hyperref[setaxioms]{set axioms})
+
+\begin{theorem}[Axiom of Choice]
+The following statements are equivalent.
+\begin{enumerate}
+  \item For any relation $R$, there is a function $F \subseteq R$ with dom $F =$ dom $R$.
+  \item The Cartesian product of nonempty sets is always nonempty. That is, if $H$ is a function with
+  domain $I$ and if $(\forall i \in I)H(i) \neq \emptyset$, then there is a function $f$ with domain $I$
+  such that $(\forall i \in I) f(i) \in H(i).$
+  \item For any set $A$ there is a function $F$ (a "choice function"\label{choicefunction} for $A$) such
+  that $F(B) \in B$ for every nonempty $B \subseteq A$.
+  \item Let $\mathcal{A}$ be a set such that (a) each member of $\mathcal{A}$ is a nonempty set, and (b) any 
+  two distinct members of $\mathcal{A}$ are disjoint. Then there exists a set $C$ containing exactly one element
+  from each member of $\mathcal{A}$ (i.e., for each $B \in \mathcal{A}$ the set $C \cap B$ is a singleton $\{ x \}$
+  for some $x$).
+\end{enumerate}
+\end{theorem}
+
+\noindent There are other theorems that are equivalent to the axiom of choice.
+
+\begin{theorem}[Cardinal Comparability]\label{cardinalcomparability}
+For any sets $C$ and $D$, either $C \preceq D$ or $D \preceq C$. For any two cardinal numbers $\kappa$ and $\lambda$,
+either $\kappa \leq \lambda$ or $\lambda \leq \kappa$.
+\end{theorem}
+
+\begin{theorem}[Zorn's Lemma]\label{zornslemma}
+Let $\mathcal{A}$ be a set such that for every chain $\mathcal{B} \subseteq \mathcal{A}$, we have $\bigcup \mathcal{B} \in \mathcal{A}$.
+($\mathcal{B}$ is called a \emph{chain}\label{chain} if and only if for any $C$ and $D$ in $\mathcal{B}$, either $C \subseteq D$ or $D \subseteq C$.)
+Then $\mathcal{A}$ contains an element $M$ (a "maximal" element) such that $M$ is not a subset of any other set in $\mathcal{A}$.
+\end{theorem}

@@ -37,3 +37,63 @@ Then $B$ coincides with $A$.
 If $B \subset A$, then $A \setminus B$ has a least element $m$. Bu the leastness, $y \in B$ for any $y < m$. But this is to say that $\textrm{seg } m \subseteq B$, so by assumption $m \in B$ after all.
 \end{proof}
 
+\begin{proposition}
+Assume that $<$ is a linear ordering on $A$. Further assume that the only subset of $A$ such that $\forall \, t \in A, \textrm{ seg } t \subseteq B \Rightarrow t \in B$ is $A$ itself. Then $<$ is a well ordering on $A$.
+\end{proposition}
+
+\subsubsection{Transfinite Recursion}\label{transfiniterecursion}
+
+\begin{theorem}[Transfinite Recursion Theorem Schema]
+For any formula $\gamma (x,y)$ the following is a theorem:
+
+Assume that $<$ is a well ordering on a set $A$. Assume that for any $f$ there is a unique $y$ such that $\gamma (f,y).$ Then there exists a unique 
+function $F$ with domain $A$ such that\dots
+$$\gamma (F \upharpoonright \textrm{ seg } t, \, F(t))$$
+for all $t \in A$.
+\end{theorem}
+
+\noindent The following \hyperref[setaxioms]{axiom} is used to prove the transfinite recursion theorem schema.\newline
+
+\noindent For any formula $\varphi (x,y)$ not containing the letter $B$, the following is an axiom:
+$$\forall [(\forall x \in A) \forall y_1 \forall y_2 (\varphi (x,y_1) \land \varphi (x, y_2) \Rightarrow y_1 = y_2)$$
+$$\Rightarrow \exists B \forall y (y \in B \Leftrightarrow (\exists x \in A) \varphi (x,y))].$$
+
+\subsubsection{Epsilon Images}\label{epsilonimages}
+
+Let $<$ be a well ordering on $A$ and let $\gamma (x,y)$ be the formulat $y = \textrm{ ran } x$. Then the transfinite recursion theorem gives an unique function $E$ with domain $A$ such that $\forall t \in A$:
+\begin{align*}
+E(t) &= \textrm{ ran }(E \upharpoonright \textrm{ seg } t)\\
+	 &= E[\textrm{seg } t]\\
+	 &= \{ E(x) | x < t \}.
+\end{align*}
+
+\noindent The $\epsilon$-image of $\langle A, < \rangle$ is the range of $E$.
+
+\begin{proposition}
+Let $<$ be a well ordering on $A$ and let $E$ be as above and $\alpha$ its epsilon image.
+\begin{enumerate}
+  \item $E(t) \not\in E(t)$ for any $t \in A.$
+  \item $E$ maps $A$ bijectively to $\alpha$.
+  \item For any $s$ and $t$ in $A$,
+  				$$s < t \textrm{  if and only if  } E(s) \in E(t)$$
+  \item $\alpha$ is a \hyperref[transitiveset]{transitive} set.
+\end{enumerate}
+\end{proposition}
+
+\subsubsection{Ordinal Numbers}\label{ordinalnumberdefinition}
+
+\begin{proposition}
+Two well-ordered structures are isomorphic if and only if they have the same $\epsilon$-image.
+That is, if $<_1$ and $<_2$ are well orderings on $A_1$ and $A_2$, respectively, then $\langle A_1, <_1 \rangle \cong \langle A_2, <_2 \rangle$
+if and only if the $\epsilon$-image of $\langle A_1, <_1 \rangle$ is the same as the $\epsilon$-image of $\langle A_2, <_2 \rangle$.
+\end{proposition}
+
+The \emph{ordinal number} of $\langle A, < \rangle$ is its $\epsilon$-image. An \emph{ordinal number} is a set that is the ordinal number of some well-ordered structure.
+
+\subsubsection{Cardinal Numbers}\label{cardinalnumberdefinition}
+
+\begin{theorem}[Numeration Theorem]
+Any set is equinumerous to some ordinal number.
+\end{theorem}
+
+\noindent For any set $A$, define the \hyperref[cardinalnumbers]{cardinal number} of $A$ (card $A$) to be the least ordinal equinumerous to $A$.

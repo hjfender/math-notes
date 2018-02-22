@@ -1,0 +1,71 @@
+\subsection{Higher Level Categories}\label{higherlevelcategories}
+
+\subsubsection{Functor Categories}\label{functorcategories}
+
+A \emph{functor category} is a category whose objects are \hyperref[functor]{functors} and whose arrows are \hyperref[naturaltransformations]{natural transformations}.
+Since compositions of natural transformations are natural transformations, composition can be defined as in the following diagram\dots
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-theory/diagrams/functorcategory}
+\end{figure}
+
+\subsubsection{2-Categories}
+
+\subsubsubsection{Vertical Composition}\label{verticalcomposition}
+For natural transformations $\tau$ and $\sigma$, we have "vertical" composition $\tau \dot \sigma$, as in the following diagram\dots
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-theory/diagrams/verticalcomposition}
+\end{figure}
+
+\subsubsubsection{Horizontal Composition}\label{horizontalcomposition}
+We can also define "horizontal" composition for natural transformations $\tau$ and $\tau'$, $\tau' \circ \tau$, as in the following commutative diagrams\dots
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-theory/diagrams/horizontalcomposition1}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-theory/diagrams/horizontalcomposition2}
+\end{figure}
+
+\noindent The next diagram shows $\tau' \circ \tau : S'S \xrightarrow[]{\cdot} T'T$ is natural.
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-theory/diagrams/horizontalcomposition3}
+\end{figure}
+
+\noindent So $\tau' \circ \tau = (T' \circ \tau) \cdot (\tau' \circ S) = (\tau' \circ T) \cdot (S' \circ \tau)$, which leads into our next concept.
+
+\subsubsubsection{Interchange Law}\label{interchangelaw}
+For natural transformations $\sigma,\sigma',\tau,\tau'$ satisfying\dots
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-theory/diagrams/interchangelaw1}
+\end{figure}
+
+\noindent the \emph{interchange law} is $(\tau' \cdot \sigma') \circ (\tau \cdot \sigma)=(\tau' \circ \tau)\cdot(\sigma' \circ \sigma).$ \newline
+
+\noindent The proof of the interchange law derives from the following diagram. Intuitively, the interchange law occurs along the dotted diagonal lines.
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-theory/diagrams/interchangelaw2}
+\end{figure}
+
+\begin{theorem}
+The collection of natural transformations in the set of arrows of two different categories under two different operations of composition, $\cdot$ and $\circ$, which satisfy the interchange
+law. Moreover, any arrow (transformation) which is an identity for the composition $\circ$ is also an identity for the composition $\cdot$.
+\end{theorem}
+
+\subsubsubsection{Double Category}\label{doublecategory}
+The set of arrows for two different compositions with two different compositions which together satisfy the interchange law.
+
+\subsubsubsection{2-Category}\label{twocategories}
+A double category in which every identiy arrow for the first composition is also an identity for the second composition.

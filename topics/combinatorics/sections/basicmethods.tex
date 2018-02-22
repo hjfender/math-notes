@@ -1,5 +1,7 @@
 \subsection{Basic Methods}\label{basiccombinatorics}
 
+Use \hyperref[cardinalnumbers]{Cardinality} to derive the most basic results.
+
 \subsubsection{Addition}\label{addition}
 
 \begin{theorem}[Addition principle]
@@ -43,14 +45,14 @@ $$|S| = \frac{|T|}{d}.$$
 
 See \hyperref[permutation]{permutations}.
 
-\begin{theorem}
+\begin{theorem}\label{countingsubsets}
 Let $n$ be a positive integer, and let $k \leq n$ be a nonnegative integer. Then the number of all $k$-element subsets of $[n]$ is
 $${n \choose k} = \frac{(n)_k}{k!} = \frac{n!}{k!(n-k)!}.$$
 \end{theorem}
 
 Note: ${n \choose k} = {n \choose n-k}$ exhibits \hyperref[duality]{duality}.
 
-\begin{theorem}[Binomial theorem]
+\begin{theorem}[Binomial theorem]\label{binomialtheorem}
 If $n$ is a positive integer, then\dots
 $$(x+y)^n = \sum_{k=0}^n {n \choose k} x^k y^{n-k}.$$ 
 \end{theorem}

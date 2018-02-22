@@ -1,0 +1,25 @@
+\subsection{Some Objects in Categories}\label{someobjects}
+
+\subsubsection{Initial Objects}\label{initial}
+
+We say that an object $i$ of a category $C$ is \emph{initial} in $C$ if for every object $a$ of $C$ there exists exactly one morphism $i \rightarrow a$ in $C$:
+
+$$\forall a \in Obj(C): \; \; Hom_C(i,a) \textrm{ is a singleton}.$$
+
+\subsubsection{Final Objects}\label{final}
+
+We say that an object $f$ of a category $C$ is \emph{final} in $C$ if for every object $a$ of $C$ there exists exactly one morphism $a \rightarrow f$ in $C$:
+
+$$\forall a \in Obj(C): \; \; Hom_C(a,f) \textrm{ is a singleton}.$$
+
+\begin{proposition}
+Let $C$ be a category.
+\begin{itemize}
+  \item If $i_1$, $i_2$ are both initial objects in $C$, then $i_1 \cong i_2$.
+  \item If $f_1$, $f_2$ are both initial objects in $C$, then $f_1 \cong f_2$.
+\end{itemize}
+\end{proposition}
+
+\subsubsection{Null Objects}\label{null}
+
+An object that is both initial and terminal.
