@@ -14,7 +14,7 @@ Given $f: a \rightarrow b$\dots
   \item \emph{Identity:} $\textbf{id}\textrm{: objects} \rightarrow \textrm{arrows}$, $a \mapsto \textrm{id}_a = 1_a$
   \item \emph{Composition:} $\textbf{comp}\textrm{: arrows} \times \textrm{: arrows} \rightarrow \textrm{arrows}$, $\langle g, f \rangle \mapsto g \circ f$, \newline $g \circ f: \textrm{dom} f \rightarrow \textrm{cod} g$
 \end{itemize}
-\begin{figure}[!h]
+\begin{figure}[H]
 \centering
 \input{topics/category-theory/diagrams/composition}
 \end{figure}
@@ -22,12 +22,12 @@ Given $f: a \rightarrow b$\dots
 \subsubsection{Axioms}
 \begin{itemize}
   \item \emph{Associativity:} $a \xrightarrow[]{f} b \xrightarrow[]{g} c \xrightarrow[]{k} d$, $k \circ (g \circ f) = (k \circ g) \circ f$
-  \begin{figure}[!h]
+  \begin{figure}[H]
   \centering
   \input{topics/category-theory/diagrams/associativity}
   \end{figure}
   \item \emph{Unit Law:} $1_a \circ f = f$ and $g \circ 1_b = g$
-  \begin{figure}[!h]
+  \begin{figure}[H]
   \centering
   \input{topics/category-theory/diagrams/unitlaw}
   \end{figure}

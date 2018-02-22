@@ -15,3 +15,10 @@ $\forall c, c' \in C \textrm{ and } g:Tc \rightarrow Tc' \in B, \exists f:c \rig
 
 \subsubsection{Faithful}\label{faithful}
 $\forall c, c' \in C \textrm { and } f_1,f_2:c \rightarrow c', Tf_1 = Tf_2 \Rightarrow f_1=f_2$
+
+\subsubsection{Forgetful}\label{forgetful}
+A functor that drops some of the structure of its input. For example, the forgetful functor $U: \textrm{Cat} \rightarrow \textrm{Graph}$\dots
+\begin{itemize}
+  \item $C \mapsto UC$ where $UC$ is comprised of the underlying objects and arrows of the category
+  \item $F:C \rightarrow C' \mapsto UF:UC \rightarrow UC'$ where $UF$ is a \hyperref[graphisomorphisms]{morphism} between corresponding graphs
+\end{itemize}

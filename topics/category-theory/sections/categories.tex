@@ -1,13 +1,14 @@
 \subsection{Categories}\label{category}
 
-\subsubsection{Directed Graph}\label{directedgraph}
+\subsubsection{Directed \hyperref[graph]{Graph}}\label{directedgraph}
 \begin{itemize}
   \item $A$ - a set of arrows
   \item $O$ - a set of objects
   \item $\textbf{dom}: A \rightarrow O$, $\textbf{cod}: A \rightarrow O$
-\end{itemize}
+\end{itemize} 
 
-Set of composable pairs of arrows: $$A \times_O A = \{ \langle g, f \rangle | g, f \in A \textrm{ and } \textbf{dom} (g) = \textbf{cod} (f) \}$$
+\subsubsubsection{Set of composable pairs of arrows}\label{composablepairsofarrows}
+$$A \times_O A = \{ \langle g, f \rangle | g, f \in A \textrm{ and } \textbf{dom} (g) = \textbf{cod} (f) \}$$
 
 \subsubsection{Categories}\label{categorydefinition}
 Add the following structure to a directed graph\dots
@@ -23,10 +24,37 @@ which satisfy $\forall a \in O \textrm{ and } \forall \langle g, f \rangle \in A
   \item metacategorical axioms
 \end{itemize}
 
-Small categories use \hyperref[smallsets]{small sets} for their objects. \label{smallcategories}
+\subsubsection{Small categories}\label{smallcategories}
+\emph{Small categories} use \hyperref[smallsets]{small sets} for their objects.
 
 \subsubsection{Hom Sets}\label{homset}
 $hom(b,c) = \{f | f \in C, \textbf{dom}(f) = b, \textbf{cod}(f) = c \}$
+
+\subsubsubsection{Alternate Definition of Categories}\label{homsetcategories}
+
+Small categories may be defined with hom-sets as follows\dots
+\begin{enumerate}
+  \item A set of objects $a,b,c$\dots
+  \item A function which assigns to each ordered pair $\langle a, b \rangle$ of objects a set hom$(a,b)$
+  \item For each ordered triple $\langle a,b,c \rangle$ of objects a function
+  			$$\textrm{hom}(b,c)\times\textrm{hom}(a,b) \rightarrow \textrm{hom}(a,c)$$
+  		\mbox{called composition, and written $\langle g,f \rangle \rightarrow g \circ f$ for $g \in \textrm{hom}(b,c)$, $f \in \textrm{hom}(a,b)$}
+  \item For each object $b$, an element $1_b \in \textrm{hom}(b,b)$, called the identity of $b$.
+  \item If $\langle a,b \rangle \neq \langle a',b' \rangle$, then $\textrm{hom}(a,b) \cap \textrm{hom}(a',b') = \emptyset$
+\end{enumerate}
+
+\noindent The above satisfy the meta-categorical axioms.\newline
+
+\hyperref[functors]{Functors} in terms of hom-sets are the object function with a collection of functions\label{homfunctors}
+$$T_{c,c'}:\textrm{hom}_C(c,c') \rightarrow \textrm{hom}_B(Tc,Tc')$$
+such that each $T_{c,c'}1_c = 1_{Tc}$ and every diagram\dots
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-theory/diagrams/homfunctors}
+\end{figure}
+
+\noindent is commutative.
 
 \subsubsection{Groupoids}\label{groupoid}
 A category in which every arrow is an isomorphism.
