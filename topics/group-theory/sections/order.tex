@@ -1,0 +1,51 @@
+\subsection{Order}
+
+\subsubsection{Order of an element}\label{elementorder}
+The \emph{order of an element} $g \in G$, denoted $|g|$, is the smallers positive integer $n$ such that $g^n = e$.
+
+\noindent $g$ has \emph{finite order} if any such integer exists.\newline
+
+\noindent $g$ has \emph{infinite order} if no such integer exists, denoted $|g| = \infty$.\newline
+
+\begin{lemma}
+If $g^n = e$ for some positive integer $n$, then $|g|$ is a divisor of $n$.
+\end{lemma}
+
+\begin{proof}
+As observed, $n \geq |g|$ for $n \in \mathbb{Z}$, that is $n - |g| \geq 0$. Since $\mathbb{Z}$ is a Euclidean domain, there must exist
+an integer $m > 0$ such that\dots
+$$r = n -|g|\cdot m \geq 0 \; \textrm{ and } \; n - |g| \cdot (m + 1) < 0,$$
+that is, $r < |g|$. Note that\dots
+$$g^r = g^{n - |g| \cdot m} = g^n \cdot (g^{|g|})^{-m} = e \cdot e^{-m} = e.$$
+By definition of order, $|g|$ is the smallest positive integer such that $g^{|g|}=e.$ Since $r$ is smaller than $|g|$ and $g^r = e,$ $r$ cannot
+be positive; hence $r = 0$ necessarily. So $n = |g| \cdot m$.
+\end{proof}
+
+\begin{corollary}
+Let $g$ be an element of finite order, and let $N \in \mathbb{Z}$. Then
+$$g^N = e \Leftrightarrow N \textrm{ is a multiple of } |g|$$
+\end{corollary}
+
+\subsubsection{Order of an group}\label{grouporder}
+If $G$ is finite as a set, its \emph{order} $|G|$ is the number of its elements; we write $|G| = \infty$ if $G$ is infinite.
+
+\begin{proposition}
+Let $g \in G$ be an element of finite order. Then $g^m$ has finite order $\forall m \geq 0$, and in fact
+$$|g^m| = \frac{\textrm{lcm}(m,|g|)}{m} = \frac{|g|}{\textrm{gcd}(m,|g|)}.$$
+\end{proposition}
+
+\begin{proof}
+The order of $g^m$ is the least positive $d$ for which\dots
+$$g^{md} = e.$$
+In other words, $m|g^m|$ is the smallest multiple of $m$ which is also a multiple of $|g|$:
+$$m|g^m| = \textrm{lcm}(m,|g|).$$
+\end{proof}
+
+\begin{proposition}
+If $gh$ = $hg$, then $|gh|$ divides lcm$(|g|,|h|)$.
+\end{proposition}
+
+\begin{proof}
+Observe\dots
+$$(gh)^{\textrm{lcm}(m,n)} = (gh)(gh)\cdots(gh) = gg\cdots g \LargerCdot hh\cdots h = g^{\textrm{lcm}(m,n)}h^{\textrm{lcm}(m,n)} = e.$$
+\end{proof}
