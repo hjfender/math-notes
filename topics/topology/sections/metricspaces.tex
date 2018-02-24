@@ -1,6 +1,6 @@
 \subsection{Metric Spaces}\label{metricspace}
 
-A \emph{metric space} is a set $X$ together with a \emph{metric}\label{metric} $d : X \times X \rightarrow \mathbb{R}$ satisfying\dots
+A \emph{metric space} $\langle X,d \rangle$ is a set $X$ together with a \emph{metric}\label{metric} $d : X \times X \rightarrow \mathbb{R}$ satisfying\dots
 \begin{enumerate}
   \item $d(x,y) \geq 0$ for all $x,y \in X$ and $d(x,y) = 0$ if and only if $x = y$.
   \item $d(x,y) = d(y,x)$ for all $x,y \in X$.
@@ -8,11 +8,11 @@ A \emph{metric space} is a set $X$ together with a \emph{metric}\label{metric} $
 \end{enumerate}
 
 \subsubsection{Open Ball}\label{metricopenball}
-The \emph{open ball} of radius $\varepsilon > 0$ centered at a point $x$ in a metric space $(X,d)$ is given by\dots
+The \emph{open ball} of radius $\varepsilon > 0$ centered at a point $x$ in a metric space $\langle X,d \rangle$ is given by\dots
 $$B_{\varepsilon}(x) = \{ y \in X | d(x,y) < \varepsilon\}.$$
 
 \subsubsection{Continuity}\label{metriccontinuity}
-Suppose $(X,d_X)$ and $(Y,d_Y)$ are two metric spaces and $f: X \rightarrow Y$ is a function. Then $f$ is \emph{continuous at} $x\in X$ if for any $\epsilon > 0$ , there is a $\delta > 0$
+Suppose $\langle X,d_X \rangle$ and $\langle Y,d_Y \rangle$ are two metric spaces and $f: X \rightarrow Y$ is a function. Then $f$ is \emph{continuous at} $x\in X$ if for any $\epsilon > 0$ , there is a $\delta > 0$
 so that $B_{\delta}(x) \subset f^{-1}(B_{\varepsilon}(f(x)))$.\newline
 
 \noindent The function $f$ is \emph{continuous} if it is continous at $x$ for all $x \in X$.
@@ -21,7 +21,38 @@ so that $B_{\delta}(x) \subset f^{-1}(B_{\varepsilon}(f(x)))$.\newline
 The \emph{open set} $U$ of a metric space $(X,d)$ is \emph{open} if for any $u \in U$, there is $\varepsilon > 0$ so that $B_{\varepsilon}(x) \subseteq U$.
 
 \begin{theorem}
-A function $f:X \rightarrow Y$ between metric spaces $(X,d)$ and $(Y,d)$ is continuous if and only if for any open subset $V$ of $Y$, the subset $f^{-1}(V)$ is open in $X$.
+A function $f:X \rightarrow Y$ between metric spaces $\langle X,d \rangle$ and $\langle Y,d \rangle$ is continuous if and only if for any open subset $V$ of $Y$, the subset $f^{-1}(V)$ is open in $X$.
 \end{theorem}
 
 \subsubsection{Examples}\label{metricexamples}
+
+\subsubsubsection{Euclidean Metric Space}\label{euclideanmetric}
+
+If for $x,y \in \mathbb{R}^n$\dots
+$$d(x,y) = ||x-y|| = \sqrt{(x_1 - y_1)^2 + \cdots + (x_n - y_n)^n},$$
+then $\langle \mathbb{R}^n,d \rangle$ is a metric space.
+
+\subsubsubsection{Box Metric Space}\label{euclideanmetric}
+
+If for $x,y \in \mathbb{R}^n$\dots
+$$d(x,y) = \max\{|x_1 - y_1|, \dots, |x_n - y_n|\},$$
+then $\langle \mathbb{R}^n,d \rangle$ is a metric space.\newline
+
+\noindent The set of \hyperref[metricopenball]{open balls} for the previous two metrics form \hyperref[basis]{bases} that generate the same topology.
+
+\subsubsubsection{Bounded Real Functions Metric Space}\label{bddmetric}
+
+Let $\textrm{Bdd}([0,1],\mathbb{R})$ denote the set of \emph{bounded functions} $f : [0,1] \rightarrow \mathbb{R}$. If for $f,g \in \textrm{Bdd}([0,1],\mathbb{R})$\dots
+$$d(f,g) = \textrm{lub}_{t \in [0,1]}\{f(t) - g(t)\},$$
+then $\langle \textrm{Bdd}([0,1],\mathbb{R}),d \rangle$ is a metric space.
+
+\subsubsubsection{Discrete Metric space}\label{discretemetric}
+
+Let $X$ be any set and define\dots
+\[
+	d(x,y) = \begin{cases}
+				0, & \textrm{if } x = y,\\
+				1, & \textrm{if } x \neq y.
+			 \end{cases}
+\]
+Then $\langle X,d \rangle$ is a metric space.

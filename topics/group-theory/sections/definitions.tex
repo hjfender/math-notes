@@ -1,0 +1,27 @@
+\subsection{Definition}\label{groupdefinition}
+
+A \emph{group} is a \hyperref[groupoid]{groupoid} with a single object.\newline
+
+\noindent A \emph{group} $\langle G, \LargerCdot \rangle$ is a set $G$ endowed with the binary operation $\LargerCdot$ such that\dots
+\begin{enumerate}
+  \item the operation $\cdot$ is \emph{associative}
+  \item there exists an \emph{identity element} $e_G$ for $\LargerCdot$
+  \item every element in $G$ has an \emph{inverse} with respect to $\LargerCdot$
+\end{enumerate}
+
+\begin{proposition}
+The identity $e_G \in G$ of a group is unique.
+\end{proposition}
+
+\begin{proof}
+If $h$ is another identity, then $h = e_Gh = e_G$.
+\end{proof}
+
+\begin{proposition}
+Inverses in a group $G$ are unique.
+\end{proposition}
+
+\begin{proposition}[Cancellation]\label{cancellation}
+Let $G$ be a group. Then $\forall a,g,h \in G$\dots
+$$ga = ha \Rightarrow g = h, \; \; ag = ah \Rightarrow g = h.$$
+\end{proposition}
