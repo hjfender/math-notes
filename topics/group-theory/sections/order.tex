@@ -8,6 +8,7 @@ The \emph{order of an element} $g \in G$, denoted $|g|$, is the smallers positiv
 \noindent $g$ has \emph{infinite order} if no such integer exists, denoted $|g| = \infty$.\newline
 
 \begin{lemma}
+\label{orderdividesothernums}
 If $g^n = e$ for some positive integer $n$, then $|g|$ is a divisor of $n$.
 \end{lemma}
 
@@ -26,10 +27,11 @@ Let $g$ be an element of finite order, and let $N \in \mathbb{Z}$. Then
 $$g^N = e \Leftrightarrow N \textrm{ is a multiple of } |g|$$
 \end{corollary}
 
-\subsubsection{Order of an group}\label{grouporder}
+\subsubsection{Order of a group}\label{grouporder}
 If $G$ is finite as a set, its \emph{order} $|G|$ is the number of its elements; we write $|G| = \infty$ if $G$ is infinite.
 
 \begin{proposition}
+\label{orderofmultipleofelement}
 Let $g \in G$ be an element of finite order. Then $g^m$ has finite order $\forall m \geq 0$, and in fact
 $$|g^m| = \frac{\textrm{lcm}(m,|g|)}{m} = \frac{|g|}{\textrm{gcd}(m,|g|)}.$$
 \end{proposition}

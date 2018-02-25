@@ -10,3 +10,57 @@ is a \hyperref[function]{set-function} preserving the binary operations of the g
 \end{figure}
 
 \noindent i.e. $\forall a,b \in G \textrm{ we have } \varphi(a \LargerCdot_G b) = \varphi(a) \LargerCdot_H \varphi(b)$.
+
+\begin{proposition}
+Let $\varphi : G \rightarrow H$ be a group homomorphism. Then\dots
+\begin{itemize}
+  \item $\varphi(e_G) = e_H$
+  \item $\forall g \in G, \varphi (g^{-1}) = \varphi(g)^{-1}$.
+\end{itemize}
+\end{proposition}
+
+\begin{proof}
+For the first item observe\dots
+$$e_H \dots \varphi(e_G) = \varphi(e_G) = \varphi(e_G \LargerCdot e_G) = \varphi(e_G) \LargerCdot \varphi(e_G) \Rightarrow e_H = \varphi(e_G).$$
+For the second item observe\dots
+$$\varphi (g^{-1}) \LargerCdot \varphi (g) = \varphi (g^{-1} \LargerCdot g) = \varphi (e_G) = e_H = \varphi (g)^{-1} \LargerCdot \varphi (g) \Rightarrow \varphi (g^{-1}) = \varphi (g)^{-1}$$
+\end{proof}
+
+\subsubsection{Some Important Morphisms}
+
+\subsubsubsection{Trivial Morphism}\label{trivialmorphism}
+Because $\{ * \}$ is a \hyperref[null]{null object} in Grp (and Ab) we are guaranteed unique morphisms\dots
+$$\varphi : G \rightarrow \{ * \}, \; \psi : \{ * \} \rightarrow H.$$
+We call the resulting composition $\psi \circ \varphi : G \rightarrow H$ the \emph{trivial morphism}.
+
+\subsubsubsection{Group Actions}\label{groupactionmorphism}
+The \emph{group action} of $G$ on an object $a$ of a category $C$, is a homomorphism $\phi : G \rightarrow \textrm{Aut}_C(a).$
+
+\subsubsubsection{Exponential Map}\label{exponentialmap}
+Given a group $G$, the \emph{exponential map} is the homomorphism $\epsilon : \mathbb{Z} \rightarrow G$ defined by $z \mapsto g^z$.
+
+\subsubsection{Interaction with order}\label{homomorphismsandorder}
+
+\begin{proposition}
+Let $\varphi : G \rightarrow H$ be a group homomorphism, and let $g \in G$ be am element of finite order. Then $|\varphi(g)|$ divides $|g|$.
+\end{proposition}
+
+\begin{proof}
+Observe, $\varphi(g)^{|g|} = e_H$ and apply \ref{orderdividesothernums}.
+\end{proof}
+
+\subsubsection{Isomophisms}\label{groupisomorphisms}
+\begin{proposition}
+Let $\varphi : G \rightarrow H$ be a group homomorphism. Then $\varphi$ is an \hyperref[isomorphism]{isomorphism of groups} if
+and only if it is a \hyperref[bijection]{bijection}.
+\end{proposition}
+
+\noindent Two groups $G,H$ are \emph{isomorphic}\label{isomorphicgroups} if there is an isomorphism between them.
+
+\begin{proposition}
+Let $\varphi : G \rightarrow H$ be an isomorphism.
+\begin{itemize}
+  \item $(\forall g \in G) : |\varphi(g)| = |g|$;
+  \item $G$ is commutative if and only if $H$ is commutative.
+\end{itemize}
+\end{proposition}

@@ -1,1 +1,47 @@
 \subsection{Cyclic Groups}\label{cyclicgroups}
+
+\subsubsection{Modular Arithmetic}\label{modular arithmetic}
+Let $n \in \mathbb{Z}^+$. Consider the \hyperref[equivalencerelation]{equivalence relation} on $\mathbb{Z}$ defined by\dots
+$$a \equiv b \textrm{ mod } n \Leftrightarrow n | (b-a).$$
+It is called \emph{congruence modulo} $n$.
+
+\begin{lemma}
+Addition $([a]_n + [b]_n := [a+b]_n)$ and multiplication $([a]_n \cdot [b]_n := [a \cdot b]_n)$ are well defined on $\mathbb{Z} / n \mathbb{Z}$.
+\end{lemma}
+
+\subsubsection{Definition}
+Let $\mathbb{Z} / n \mathbb{Z} = \{[z]_{\textrm{mod } n} | z \in \mathbb{Z} \}.$\newline
+
+\noindent Thus $C_n := \langle \mathbb{Z} / n \mathbb{Z}, + \rangle$ is a \emph{finite cyclic group}. We take $\langle \mathbb{Z},+ \rangle$ to be the \emph{infinite cyclic group}.
+
+\begin{proposition}
+The order of $[m]_n$ in $\mathbb{Z} / n \mathbb{Z}$ is $1$ if $n | m$, and more generally\dots
+$$|[m]_n| = \frac{n}{\textrm{gcd}(m,n)}.$$
+\end{proposition}
+
+\begin{proof}
+If $n | m$, then $[m]_n = [0]_n$. If $n \cancel{|} m$, $[m]_n = m[1]_n$ and apply \ref{orderofmultipleofelement}.
+\end{proof}
+
+\begin{corollary}
+The class $[m]_n$ generates $\mathbb{Z} / n \mathbb{Z}$ if and only if gcd$(m,n) = 1$.
+\end{corollary}
+
+\noindent The \emph{cyclic groups} are an isomorphism class. Explicitly\dots
+\begin{center}
+A group $G$ is \emph{cyclic} if it is isomorphic to $\mathbb{Z}$ or $C_n$
+
+for some positive interger $n$.
+\end{center}
+
+\subsubsection{Presentation}
+Finite: $\langle x | x^n = 1 \rangle$\newline
+
+\noindent Infinite: $\langle x \rangle$
+
+\subsubsection{Multiplicative group of integers modulo $n$}\label{multiplicativegroupofintegersmodn}
+\noindent Let $(\mathbb{Z} / n \mathbb{Z})^* := \{[m]_n \in \mathbb{Z} / n \mathbb{Z} | \textrm{gcd}(m,n)=1 \}.$
+
+\begin{proposition}
+Multiplication makes $(\mathbb{Z} / n \mathbb{Z})^*$ into a group.
+\end{proposition}

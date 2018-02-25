@@ -1,0 +1,25 @@
+\subsection{Abelian Group Constructions}\label{abeliangroupconstructions}
+
+\subsubsection{Free Abelian Groups}\label{freeabeliangroups}
+
+\begin{proposition}
+For every set $A$, $F^{ab}(A) \cong \mathbb{Z}^{\oplus A}$.
+\end{proposition}
+
+\begin{proof}
+Note that every element of $\mathbb{Z}^{\oplus A}$ may be written uniquely as a finite sum\dots
+$$\sum_{a \in A} m_a j(a), \; \; m_a \neq 0 \textrm{ for only finitely many } a.$$
+
+Now let $f : A \rightarrow G$ be any function from $A$ to the abelian group $G$. Define 
+$\varphi : \mathbb{Z}^{\oplus A} \rightarrow G$ by\dots
+$$\varphi(\sum_{a \in A}m_a j(a)) := \sum_{a \in A}m_a f(a).$$
+This definition is force by the homomorphism condition and the univeral property of free groups and is thus unique.
+
+It is also a homomorphism\dots
+$$\varphi(\sum_{a \in A}m_a' j(a)) + \varphi(\sum_{a \in A}m_a'' j(a)) = \sum_{a \in A}m_a' j(a) + \sum_{a \in A}m_a'' j(a) \overset{!}{=} \sum_{a \in A}(m_a' + m_a'')f(a)$$
+because $G$ is commutative,
+$$= \varphi(\sum_{a \in A}(m_a' + m_a'')j(a)) = \varphi(\sum_{a \in A}m_a' f(a) + \sum_{a \in A}m_a'' f(a))$$
+as needed.
+\end{proof}
+
+\noindent Note: $H^{\oplus A}$ is a subgroup of $H^A$.

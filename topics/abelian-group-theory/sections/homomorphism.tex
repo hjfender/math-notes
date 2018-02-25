@@ -1,0 +1,20 @@
+\subsection{Homomorphisms of Abelian Groups}\label{abeliangrouphomomorphism}
+
+\begin{proposition}
+For any two abelian groups $G,H$, Hom$_{Ab}(G,H)$ is an abelian group under addition inherited from $H$.
+\end{proposition}
+
+\begin{proof}
+Define the operation $\varphi + \psi$ for $\varphi, \psi \in$ Hom$_{Ab}(G,H)$, where\dots
+$$(\varphi + \psi)(g) = \varphi(g) +_H \psi(g).$$
+Observe that $\varphi + \psi$ is a homomorphism\dots
+\begin{align*}
+	(\varphi + \psi)(a +_G b) &= \varphi(a +_G b) + \psi(a +_G b) = (\varphi(a) +_H \varphi(b)) +_H (\psi(a) +_H \psi(b))\\
+							  &\overset{!}{=} (\varphi(a) +_H \psi(a)) +_H (\varphi(b) +_H \psi(b)) = (\varphi + \psi)(a) +_H (\varphi + \psi)(b)
+\end{align*}
+
+\noindent From here it is easy to show that Hom$_{Ab}(G,H)$ is an abelian group.
+\end{proof}
+
+\noindent Note: By the same logic, if $A$ is a set and $H$ an abelian group, then $H^A$ is an abelian group.
+ 

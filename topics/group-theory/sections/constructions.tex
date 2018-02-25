@@ -1,0 +1,52 @@
+\subsection{Group Constructions}\label{groupconstructions}
+
+\subsubsection{Product of Groups}\label{groupproduct}
+Let $G$ and $H$ be two groups. Define $G \times H := \{ (g,h) | g \in G, h \in H \}$ with the operation
+$(g_1,h_1) \LargerCdot_{G \times H} (g_2,h_2) = (g_1 \LargerCdot_G g_2,h_1 \LargerCdot_H h_2)$. Then $G \times H$
+is the product group of the groups $G$ and $H$.
+
+\subsubsection{Free Product of Groups}\label{freegroupproduct}
+
+\subsubsection{Free Groups}\label{freegroup}
+$F(A)$ is a free group on a set $A$ if there is a set-function $j : A \rightarrow F(A)$ such that, for all groups $G$
+and set-functions $f : A \rightarrow G$, there exists a unique group homomorphism $\varphi : F(A) \rightarrow G$ such that
+the following diagram commutes.
+
+\begin{figure}[H]
+\centering
+\input{topics/group-theory/diagrams/freegroup}
+\end{figure}
+
+\subsubsubsection{Concrete construction}
+
+Consider the set $A$ as an 'alphabet' and construct 'words' whose letters are elements of $A$ or 'inverses' of elements of $A$.
+That is, a \emph{word} on $A$ is an ordered list
+$$(a_1,a_2,\dots,a_n)$$,
+which we denote by the juxtaposition
+$$w = a_1a_2\dots a_n,$$
+where each letter is either an element of $A$ or an inverse of an element in $A$. Denote the set of words on $A$ as $W(A)$.
+
+Define an 'elementary' reduction $r : W(A) \rightarrow W(A)$: given $w \in W(A)$, search for the first occurrence (from left
+to right) of a pair $aa^{-1}$ or $a^{-1}a$, and let $r(w)$ be the word obtained by removing such a pair.
+
+Note that $r(w) = w$ precisely when 'no cancellation is possible'; We say that $w$ is a 'reduced word' in this case.
+
+\begin{lemma}
+If $w \in W(A)$ has length $n$, then $r^{\lfloor \frac{n}{2} \rfloor}(w)$ is a reduced word.
+\end{lemma}
+
+\begin{proof}
+Indeed, either $r(w) = w$ or the length of $r(w)$ is less than the length of $w$; but one cannot decrease the length of $w$ more
+than $n/2$ times, since each non-identity application of $r$ decreases the length by two.
+\end{proof}
+
+Now define the 'reduction' $R : W(A) \rightarrow W(A)$ by setting $R(w) = r^{\lfloor \frac{n}{2} \rfloor}(w)$, where $n$ is the length of $w$.
+By the lemma, $R(w)$ is always a reduced word.
+
+Let $F(A)$ be the set of reduced words on $A$, that is, the image of the reduction map $R$ we have just defined.
+
+Define a binary operation on $F(A)$ by juxtaposition and reduction: $w \LargerCdot w' = R(ww')$. $F(A)$ is a group under this operation.
+
+\begin{proposition}
+The pair $(j, F(A))$ satisfies the universal property for free groups on $A$.
+\end{proposition}
