@@ -50,3 +50,87 @@ Define a binary operation on $F(A)$ by juxtaposition and reduction: $w \LargerCd
 \begin{proposition}
 The pair $(j, F(A))$ satisfies the universal property for free groups on $A$.
 \end{proposition}
+
+\subsubsection{Quotient Group}\label{groupquotients}
+
+\subsubsubsection{Quotient Group by $\sim$}\label{quotientgroupbyrelation}
+\begin{proposition}
+The operation\dots
+$$[a] \LargerCdot [b] := [ab]$$
+defines a group structure on $G/\sim$ if and only if $\forall a, a', g \in G$
+$$ a \sim a' \Rightarrow ga \sim ga' \textrm{ and } ag \sim a'g.$$
+In this case the quotient function $\pi : G \rightarrow G/\sim$ is a homomorphism and is universal with respect to homomorphisms
+$\varphi : G \rightarrow G'$ such that $a \sim a' \Rightarrow \varphi(a) = \varphi(a').$
+\end{proposition}
+
+\subsubsubsection{Cosets}\label{cosets}
+
+\begin{proposition}
+Let $\sim$ be an equivalence relation on a group $G$, satisfying $(\forall g \in G) : \; a \sim b \Rightarrow ga \sim gb$. Then\dots
+\begin{itemize}
+  \item the equivalence class of $e_G$ is a subgroup of $H$ of $G$; and
+  \item $a \sim b \Leftrightarrow a^{-1}b \in H \Leftrightarrow aH = bH.$
+\end{itemize}
+\end{proposition}
+
+\begin{proof}
+Let $H \subseteq G$ be the equivalence class of the identity; $H \neq \emptyset$ as $e_G \in H$. For $a,b \in H$,
+we have $e_G \sim b$ and hence $b^{-1} \sim e_G$; hence $ab^{-1} \sim a$; and hence\dots
+$$ab^{-1} \sim a \sim e_G$$
+by the transitivity of $\sim$ and since $a \in H$. This shows $ab^{-1} \in H$ for all $a,b \in H$, proving that $H$ is a subgroup.
+
+Next, assume $a,b \in G$ and $a \sim b$. Multiplying on the left by $a^{-1}$, implies $e_G \sim a^{-1}b$, that is, $a^{-1}b \in H$. Since $H$ is closed
+under the operation, this implies $a^{-1}bH \subseteq H$, hence $bH \subseteq aH$; as $\sim$ is symmetric, the same reasoning gives $aH \subseteq bH$; and
+hence $aH = bH$. Thus, we have proved\dots
+$$a \sim b \Rightarrow a^{-1}b \in H \Rightarrow aH = bH.$$
+Finally, assume $aH = bH$. Then $a = ae_G \in bH$, and hence $a^{-1}b \in H$. By definition of $H$, this means $e_G \sim a^{-1}b$. Multiplying on the left by $a$
+shows that $a \sim b$.
+\end{proof}
+
+\noindent The \emph{left-cosets} of a subgroup $H$ in a group $G$ are the sets $aH$, for $a \in G$. The \emph{right-cosets}
+of $H$ are the sets $Ha$, $a \in G$.
+
+\begin{proposition}
+If $H$ is any subgroup of a group $G$, the relation $\sim_L$ defined by
+$$(\forall a,b \in G) : \; a \sim_L b \Leftrightarrow a^{-1}b \in H$$
+is an equivalence relation satisfying $(\forall g \in G) : \; a \sim b \Rightarrow ga \sim gb$.
+\end{proposition}
+
+\noindent Taking the previous two propositions together we get\dots
+
+\begin{proposition}
+There is a bijection between the set of subgroups of $G$ and equivalence relations on $G$ satisfying $(\forall g \in G) : \; a \sim b \Rightarrow ga \sim gb$;
+for the relation $\sim_L$ corresponding to a subgroup $H$, $G/\sim_L$ may be described as the set of left-cosets $aH$ of $H$.
+\end{proposition}
+
+\noindent Similar statements exist for right cosets and the property $(\forall g \in G) : \; a \sim b \Rightarrow ag \sim bg$ leading to\dots
+\begin{proposition}
+There is a bijection between the set of subgroups of $G$ and equivalence relations on $G$ satisfying $(\forall g \in G) : \; a \sim b \Rightarrow ag \sim bg$;
+for the relation $\sim_R$ corresponding to a subgroup $H$, $G/\sim_R$ may be described as the set of left-cosets $Ha$ of $H$.
+\end{proposition}
+
+\begin{proposition}
+The relations $\sim_L$, $\sim_R$ corresponding to subgroups of $H$ coincide if and only if $H$ is normal.
+\end{proposition}
+
+\subsubsubsection{Definition}\label{definitionofquotientgroup}
+
+Let $H$ be a normal subgroup of $G$. The \emph{quotient group of G modulo H}, denoted $G/H$, is the group $G/\sim$
+obtained from the relation $\sim$ as defined in the previous propositions. In terms of cosets, the product in $G/H$
+is defined by
+$$(aH)(bH) := (ab)H.$$
+The identity element is $H$.
+
+\subsubsubsection{Universal Property}\label{universalpropertyofquotientgroups}
+\begin{theorem}
+Let $H$ be a normal subgroup of a group $G$. Then for every group homomorphism $\varphi : G \rightarrow G'$ such that
+$H \subseteq \textrm{ker} \varphi$ there exists a unique group homomorphism $\tilde \varphi: G/H \rightarrow G'$ so that
+the diagram
+
+\begin{figure}[H]
+\centering
+\input{topics/group-theory/diagrams/quotientgroup}
+\end{figure}
+
+\noindent commutes.
+\end{theorem}

@@ -1,0 +1,52 @@
+\subsection{The category Set}
+\begin{itemize}
+  \item Objects: Sets
+  \item Arrows: Functions
+\end{itemize}
+
+\subsubsection{Morphisms}
+
+\begin{proposition}
+A function is injective if and only if it is a monomorphism.
+\end{proposition}
+
+\begin{proposition}
+A function is surjective if and only if it is a monomorphism.
+\end{proposition}
+
+\begin{theorem}[Canonical Decomposition]
+\label{setfunctioncanonicaldecomposition}
+Let $f:A \rightarrow B$ be any function, and define $\sim$ as above. Then $f$ decomposes as follows:
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-examples/diagrams/setcanonicaldecomposition}
+\end{figure}
+
+\noindent where the first function is the canonical projection $A \rightarrow A/\sim$, the third function is the inclusion $\textrm{im}f \subseteq B$, and
+the bijection $\tilde f$ in the middle is defined by
+$$\tilde f([a]_{\sim}) := f(a)$$
+for all $a \in A$.
+\end{theorem}
+
+\subsubsection{Universal Objects}
+
+\begin{proposition}
+$\emptyset$ is an initial object in Set.
+\end{proposition}
+
+\begin{proposition}
+Singletons are final objects in Set.
+\end{proposition}
+
+\begin{proposition}
+Cartesian products are products in Set.
+\end{proposition}
+
+\begin{proposition}
+Disjoint unions are coproducts in Set.
+\end{proposition}
+
+\begin{proposition}
+Given a set $A$ and an equivalence relation $\sim$ on $A$, $(A/\sim)$ is a quotient in Set.
+\end{proposition}

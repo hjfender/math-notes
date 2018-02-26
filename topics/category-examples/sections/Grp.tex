@@ -4,6 +4,36 @@
   \item Arrows: Homomorphisms
 \end{itemize}
 
+\subsubsection{Morphisms}
+
+\begin{proposition}
+The following are equivalent:
+\begin{enumerate}
+  \item $\varphi$ is a monomorphism
+  \item ker$\varphi = \{ e_G \}$
+  \item $\varphi : G \rightarrow G'$ is injective (as a set function)
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+$(1) \Rightarrow (2)$: Consider the two parallel compositions\dots
+
+$$\textrm{ker}\varphi \underset{e}{\overset{\iota}{\rightrightarrows}} G \xrightarrow[]{\varphi} G'$$
+
+where $\iota$ is the inclusion and $e$ is the trivial map. Both $\varphi \circ \iota$ and $\varphi \circ e$ are the trivial map;
+since $\varphi$ is a monomorphism, this implies $\iota = e$. But then ker$\varphi$ is trivial. 
+
+\noindent $(2) \Rightarrow (3)$: Observe\dots
+\begin{align*}
+\varphi(g_1) = \varphi(g_2) &\Rightarrow \varphi(g_1)\varphi(g_2)^{-1} = e_G \Rightarrow \varphi(g_1g_2^{-1}) = e_{G'}\\
+						    &\Rightarrow g_1g_2^{-1} \in \textrm{ker}\varphi \overset{!}{\Rightarrow} g_1g_2^{-1} = e_G \Rightarrow g_1 = g_2.
+\end{align*}
+
+\noindent $(3) \Rightarrow (1)$: If $\varphi$ is injective, then it satisfies the defining property for monomorphisms in Set.
+\end{proof}
+
+\subsubsection{Universal Objects}
+
 \begin{proposition}
 Trivial groups are \hyperref[null]{null} objects in Grp.
 \end{proposition}
