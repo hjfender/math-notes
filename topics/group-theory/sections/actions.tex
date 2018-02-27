@@ -4,3 +4,83 @@ An \hyperref[categoricalgroupaction]{action} of a group $G$ on a set $A$ is a se
 $$\rho : G \times A \rightarrow A$$
 such that $\rho (e_G, a) = a$ for all $a \in A$ and\dots
 $$(\forall g,h \in G), (\forall a \in A) : \rho(gh,a) = \rho(g, \rho(h,a)).$$
+
+\subsubsection{Natural Action}\label{naturalgroupaction}
+Every group $G$ acts in a natural way on the underlying set $G$. The action $\rho : G \times G \rightarrow G$ is simply
+the operation in the group\dots
+$$(\forall g,a \in G): \rho(g,a) = ga$$
+
+\begin{theorem}[Cayley's theorem]
+\label{cayleystheorem}
+Every group acts \hyperref[faithful]{faithfully} on some set. That is, every group may be realized as a subgroup of a permutation group.
+\end{theorem}
+
+\begin{proof}
+The natural action acts faithfully on $Aut_{Set}(G)$.
+\end{proof}
+
+\subsubsection{Transitive Actions}\label{transitiveactions}
+An action of a group $G$ on a (nonempty) set $A$ is \emph{transitive} if $\forall a,b \in A, \exists g \in G$ such that $b = ga$.
+
+\subsubsubsection{Orbit}\label{orbit}
+The \emph{orbit} of $a \in A$ under an action of a group $G$ is the set\dots
+$$O_G(a) := \{ ga | g \in G \}.$$
+
+\subsubsubsection{Stabilizer Subgroup}\label{stabilizer}
+Let $G$ act on a set $A$, and let $a \in A$. The \emph{stabilizer subgroup} of $a$ consists of the elements of $G$ which fix $a$:
+$$\textrm{Stab}_G(a) := \{ g \in G | ga = a \}.$$
+
+\subsubsection{Category G-Set}\label{gsetcategory}
+The \hyperref[functorcategories]{functor category} of group actions. Thus morphisms are commutative diagrams such as\dots
+
+\begin{figure}[H]
+\centering
+\input{topics/group-theory/diagrams/gset}
+\end{figure}
+
+\noindent Intuitively, we think of these objects as sets endowed with a group action, i.e. \emph{G-sets}. Arrows are morphisms (functions) such as $\varphi$
+above which preserve the group action. They are called \emph{G-equivariant}.
+
+\begin{proposition}
+Every transitive left-action of $G$ on a nonempty set $A$ is isomorphic to the left-multiplication of $G$ on $G/H$, for $H \, =$ the stabilizer
+of any $a \in A$.
+\end{proposition}
+
+\begin{proof}
+Let $G$ act transitively on a set $A$, let $a \in A$ be any element, and let $H = \textrm{Stab}_G(a)$. I claim that there is an equivariant bijection\dots
+$$\varphi : G/H \rightarrow A$$
+defined by\dots
+$$gH \mapsto ga$$
+for all $g \in G$.
+
+First of all $\varphi$ is well-defined: if $g_1H =g_2H$, then $g_1^{-1}g_2 \in H$, hence $(g_1^{-1}g_2)a = a$, and it follows that $g_1a = g_2a$ as needed.
+To verify that $\varphi$ is bijective, define a function $\psi : A \rightarrow G/H$ by sending an element $ga$ of $A$ to $gH$; $\psi$ is well-defined becasue if $g_1a = g_2a$,
+then $g^{-1}(g_2a) = a$, so $g_1^{-1}g_2 \in H$ and $g_1H = g_2H$. It is clear that $\varphi$ and $\psi$ are inverses of each other; hence $\varphi$ is a bijection.
+
+Equivariance is immediate: $\varphi(g'(gH)) = g'ga = g' \varphi(gH).$
+\end{proof}
+
+\begin{corollary}
+If $O$ is an orbit of the action of a finite group $G$ on a set $A$, then $O$ is a finite set and\dots
+$$|O| \textrm{ divides } |G|.$$
+\end{corollary}
+
+\begin{proof}
+Use Lagrange's theorem (\ref{lagrangesthm}) and the previous theorem.
+\end{proof}
+
+\begin{proposition}
+Suppose a group $G$ acts on a set $A$, and let $a \in A$, $g \in G$, $b = ga$. Then\dots
+$$\textrm{Stab}_G(b) = g\textrm{Stab}_G(a)g^{-1}.$$
+\end{proposition}
+
+\begin{proof}
+Observe if $h \in \textrm{Stab}_G(a)$, then\dots
+$$(ghg^{-1})(b) = gh(g^{-1}g)a = gha = ga = b,$$
+proving $\supseteq$. For $\subseteq$ note $a = g^{-1}b$ apply the same argument.
+\end{proof}
+
+\subsubsection{Conjugation Action}\label{conjugationgroupaction}
+Every group $G$ acts by conjugation on the underlying set $G$. The action $\rho : G \times G \rightarrow G$ is
+the operation in the group\dots
+$$(\forall g,a \in G): \rho(g,h) = ghg^{-1}$$

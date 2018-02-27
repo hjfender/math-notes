@@ -1,0 +1,27 @@
+\subsection{Definitions}\label{ringdefinition}
+A \emph{ring} $\langle R, +, \cdot \rangle$ is an \hyperref[abeliangroupdefinition]{abelian group} $\langle R,+ \rangle$ endowed with a \emph{second}
+binary operation $\cdot$, satisfying on its onw the requirements of being associative and having a two-sided identity, i.e.
+\begin{itemize}
+  \item $(\forall r,s,t \in R): \; \; (r \cdot t) \cdot t = r \cdot (s \cdot t)$
+  \item $(\exists 1_R \in R) (\forall r \in R): \; \; r \cdot 1_R = r = 1_R \cdot r$
+\end{itemize}
+which make $\langle R, \cdot \rangle$ a \emph{monoid}, and further interacting with $+$ via the following \emph{distributive properties}:
+$$(\forall r,s,t \in R): \; \; (r+s)\cdot t = r \cdot t + s \cdot t \textrm{ and } t \cdot (r + s) = t \cdot r + t \cdot s.$$
+
+\begin{lemma}
+In a ring $R$,
+$$0 \cdot r = r = r \cdot 0$$
+and
+$$r + (-1) \cdot r = 0$$
+for all $r \in R.$
+\end{lemma}
+
+\begin{proof}
+Observe\dots
+$$r \cdot 0 = r \cdot (0 + 0) = r \cdot 0 + r \cdot 0 \Rightarrow 0 = r \cdot 0$$
+and\dots
+$$r + (-1) \cdot r = (1) \cdot r + (-1) \cdot r = (1 - 1) \cdot r = 0 \cdot r = 0$$
+\end{proof}
+
+\subsubsection{Commutative Rings}\label{commutativeringdefinition}
+A ring $R$ is \emph{commutative} if $(\forall r,s \in R): \; r \cdot s = s \cdot r$.
