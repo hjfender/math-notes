@@ -51,3 +51,34 @@ If $gh$ = $hg$, then $|gh|$ divides lcm$(|g|,|h|)$.
 Observe\dots
 $$(gh)^{\textrm{lcm}(m,n)} = (gh)(gh)\cdots(gh) = gg\cdots g \LargerCdot hh\cdots h = g^{\textrm{lcm}(m,n)}h^{\textrm{lcm}(m,n)} = e.$$
 \end{proof}
+
+\subsubsection{Index of a subgroup}\label{subgroupindex}
+The \emph{index} of $H$ in $G$, denoted $[G:H]$, is the number of elements $|G/H|$ of $G/H$, when this is finite, and $\infty$ otherwise.
+
+\begin{lemma}
+\label{indexofcoset}
+Let $H$ be a subgroup of a group $G$. Then $\forall g \in G$ the functions
+$$H \rightarrow gH, \; h \mapsto gh,$$
+$$H \rightarrow Hg, \; h \mapsto hg$$
+are bijections.
+\end{lemma}
+
+\begin{proof}
+Surjectiveness is clear and cancellation implies that they are injective.
+\end{proof}
+
+\subsubsubsection{Lagrange's Theorem}
+
+\begin{corollary}
+\label{lagrangesthm}
+If $G$ is a finite group and $H \subseteq G$ is a subgroup, then $|G| = [G : H] \cdot |H|$. In particular, $|H|$ is a divisor of $|G|$.
+\end{corollary}
+
+\begin{proof}
+Indeed, $G$ is the disjoint union of $|G/H|$ distinct cosets $gH$, and $|gH| = |H|$ by \ref{indexofcoset}.
+\end{proof}
+
+\begin{corollary}
+\label{elementorderdividesgrouporder}
+If $g \in G$, then $a \cdot |g| = |G|$ for some positive integer $a$.
+\end{corollary}

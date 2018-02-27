@@ -1,3 +1,16 @@
 \subsection{Abelian Subgroups}\label{abeliansubgroups}
 
 Every subgroup of an abelian group is \hyperref[normalsubgroup]{normal}.
+
+\subsubsection{Cokernel of a Homomorphism}
+The \emph{cokernel} of $\varphi : G \rightarrow G'$, coker$\varphi$, is $\frac{G'}{\textrm{im} \varphi}$.
+
+\begin{proposition}
+Let $\varphi : G \rightarrow G'$ be a homomorphism. Then the projection $\pi : G' \twoheadrightarrow \textrm{coker}\varphi $
+is final in the category of group homomorphisms $\alpha : G' \rightarrow L$ such that $\alpha \circ \varphi$ is the
+\hyperref[trivialmorphism]{trivial morphism}. In other words the following diagram commutes.
+\begin{figure}[H]
+\centering
+\input{topics/group-theory/diagrams/cokernel}
+\end{figure}
+\end{proposition}

@@ -6,6 +6,29 @@
 
 \subsubsection{Morphisms}
 
+\begin{proposition}
+The following are equivalent:
+\begin{enumerate}
+  \item $\varphi$ is an epimorphism
+  \item coker$\varphi = \{ e_{G'} \}$
+  \item $\varphi : G \rightarrow G'$ is surjective (as a set function)
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+$(1) \Rightarrow (2)$: Assume $(1)$ holds, and consider the two parallel compositions\dots
+$$G \xrightarrow[]{\varphi} G' \underset{e}{\overset{\pi}{\rightrightarrows}} \textrm{coker} \varphi$$
+where $\pi$ is the canonical projection and $e$ is the trivial map. Both $\pi \circ \varphi$ and $e \circ \varphi$ are the trivial map; since $\varphi$ is an epimorphism,
+this implies $\pi = e$. But $\pi = e$ implies that coker$\varphi$ is trivial.
+
+\noindent $(2) \Rightarrow (3)$: If coker$\varphi = G' / \textrm{im}\varphi$ is trivial, then im$\varphi = G'$; hence $\varphi$ is surjective.
+
+\noindent $(3) \Rightarrow (1)$: If $\varphi$ is surjective, then it satisfies the universal property for epimorphisms in Set: for any set $Z$ and any two set-functions $\alpha'$ and
+$\alpha'' : G' \rightarrow Z$,
+$$\alpha' \circ \varphi = \alpha'' \circ \varphi \Leftrightarrow \alpha' = \alpha''.$$
+This must hold in particular if $Z$ is endowed with a group structure and $\alpha',\alpha''$ are group homomorphisms, so $\varphi$ is an epimorphism in Grp.
+\end{proof}
+
 \subsubsection{Universal Objects}
 
 \begin{proposition}

@@ -11,4 +11,15 @@ Multiplication $([a]_n \cdot [b]_n := [a \cdot b]_n)$ is well defined on $\mathb
 Multiplication makes $(\mathbb{Z} / n \mathbb{Z})^*$ into a group.
 \end{proposition}
 
-\subsubsection{Presentation}
+\subsubsection{Applications}
+
+\begin{theorem}[Fermat's Little Theorem]
+Let $p$ be a prime integer, and let $a$ be any integer. Then $a^p \equiv a \textrm{ mod } p$.
+\end{theorem}
+
+\begin{proof}
+This is immediate if $p | a$. If $p \cancel{|} a$, then $a \in (\mathbb{Z} / n \mathbb{Z})^*$, which has order $p-1$. Thus\dots
+$$[a]_p^{p-1} = [1]_p$$
+via Lagrange's theorem (\ref{elementorderdividesgrouporder}).
+\end{proof}
+

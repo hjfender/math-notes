@@ -23,3 +23,22 @@ Let $C$ be a category.
 \subsubsection{Null Objects}\label{null}
 
 An object that is both initial and terminal.
+
+\subsubsection{Group Objects}\label{groupobjects}
+
+A \emph{group object} in $C$ consists of an object $g$ of $C$ and of morphisms\dots
+$$m : g \times g \rightarrow g, \; e : 1 \rightarrow g, \; \iota : g \rightarrow g$$
+in $C$ such that the diagrams\dots
+
+\input{topics/category-theory/diagrams/groupassociativity}
+
+\input{topics/category-theory/diagrams/groupidentity}
+
+\input{topics/category-theory/diagrams/groupinverse}
+
+commute.
+
+\subsubsubsection{Group Action}\label{categoricalgroupactions}
+
+If $G$ is a group and $a$ an object of a category $C$, then a \emph{group action} is a functor\dots
+$$\sigma : G \rightarrow \textrm{Aut}_C(a)$$

@@ -32,6 +32,68 @@ since $\varphi$ is a monomorphism, this implies $\iota = e$. But then ker$\varph
 \noindent $(3) \Rightarrow (1)$: If $\varphi$ is injective, then it satisfies the defining property for monomorphisms in Set.
 \end{proof}
 
+\subsubsection{Isomorphism Theorems}\label{grpisomorphismtheorems}
+
+\begin{theorem}[Canonical Decomposition in Grp]
+\label{grpcanonicaldecomposition}
+Every group homomorphism $\varphi : G \rightarrow G'$ may be decomposed as follows:
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-examples/diagrams/grpcanonicaldecomposition}
+\end{figure}
+
+\noindent where the isomorphism $\tilde \varphi$ in the middle is the homomorphism induced by $\varphi$ as in \ref{universalpropertyofquotientgroups}.
+\end{theorem}
+
+\begin{corollary}[First Isomorphism Theorem in Grp]
+\label{firstisomorphismtheoremgrp}
+Suppose $\varphi : G \rightarrow G'$ is a surjective group homomorphism. Then
+$$G' \cong \frac{G}{\textrm{ker}\varphi}.$$
+\end{corollary}
+
+\begin{theorem}[Second Isomorphism Theorem in Grp]
+\label{secondisomorphismtheoremgrp}
+Let $H,K$ be subgroups of a group $G$, and assume that $H$ is normal in $G$. Then\dots
+\begin{itemize}
+  \item $HK$ is a subgroup of $G$, and $H$ is normal in $HK$
+  \item $H \cap K$ is normal in $K$, and
+  			$$\frac{HK}{H} \cong \frac{K}{H \cap K}.$$
+\end{itemize}
+\end{theorem}
+
+\begin{proof}
+To verify that $HK$ is a subgroup of $G$ when $H$ is noraml, note that $HK$ is the union of all cosets $Hk$, wiht $k \in K$; that is,
+$$HK = \pi^{-1}(\pi(K)),$$
+where $\pi : G \rightarrow G/H$ is the canonical projection. Since $\pi(K)$ is a subgroup of $G/H$, $HK$ is a subgroup by \ref{preimagesubgroup}. It is clear that $H$ is normal in $HK$.
+
+For the second part, consider the homomorphism\dots
+$$\varphi : K \rightarrow HK/H$$
+sending $k\in K$ to the coset $Hk$. This homomorphism is \emph{surjective}: indeed, every element of $HK/H$ may be written as a coset
+$$Hhk, \; \; h \in H, \, k\in K;$$
+but $Hhk = Hk$, so $Hhk = \varphi(k)$ is the image of $\varphi$. By \ref{firstisomorphismtheoremgrp},
+$$\frac{HK}{H} \cong \frac{K}{\textrm{ker}\varphi}.$$
+To complete the proof note\dots
+$$\textrm{ker}\varphi = \{ k \in K | \varphi(k) = e \} = \{ k \in K | Hk = H \} = \{ k \in K | k \in H \} = H \cap K.$$
+\end{proof}
+
+\begin{theorem}[Third Isomorphism Theorem in Grp]
+\label{thirdisomorphismtheoremgrp}
+Let $H$ be a normal subgroup of a group $G$, and let $N$ be a subgroup of $G$ containing $H$. Then $N/H$ is normal in $G/H$ if and only if $N$ is normal in $G$,
+and in this case
+$$\frac{G/H}{N/H} \cong \frac{G}{N}$$
+\end{theorem}
+
+\begin{proof}
+If $N$ is normal, then consider the projection $\pi_N: G \rightarrow \frac{G}{N}$. The subgroup $H$ is contained in $N = \textrm{ker}\varphi$, so by \ref{universalpropertyofquotientgroups}
+we get an induced homomorphism $\varphi' : \frac{G}{H} \rightarrow \frac{G}{N}.$ The subgroup $N/H$ of $G/H$ is a kernel of $\varphi'$; therefore it is normal.
+
+Conversely, if $N/H$ is normal in $G/H$, consider the composition\dots
+$$G \twoheadrightarrow \frac{G}{H} \twoheadrightarrow \frac{G/H}{N/H}.$$
+The kernel of this homomorphism is $N$, therefore $N$ is normal. Further, this homomorphism is surjective; hence the stated isomorphism $(G/H)/(N/H) \cong G/N$ follows immediately
+from \ref{firstisomorphismtheoremgrp}.
+\end{proof}
+
 \subsubsection{Universal Objects}
 
 \begin{proposition}
