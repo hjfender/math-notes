@@ -1,0 +1,36 @@
+\subsection{Integral Domains}
+
+\subsubsection{Zero-divisors}\label{zerodivisors}
+An element $a$ in a ring $R$ is a \emph{left-zero-divisor} if there exist elements $b \neq 0$
+in $R$ for which $ab = 0$.
+
+\begin{proposition}
+\label{zerodivisormultiplication}
+In a ring $R$, $a \in R$ is not a left- (resp., right-) zero-divisor if and only if left (resp., right)
+multiplication by $a$ is an injective function $R \rightarrow R$.
+\end{proposition}
+
+\begin{proof}
+($\Rightarrow$) Assume $a$ is not a left-zero-divisor and $ab = ac$ for $b,c \in R$. Then, by distributivity,
+$$a(b-c) = ab - ac = 0,$$
+and this implies $b-c = 0$ since $a$ is not a left-zero-divisor; that is, $b = c$.
+
+($\Leftarrow$) If $a$ is a left-zero-divisor, then $\exists b \neq 0$ such that $ab = 0 = a \cdot 0$; this shows that
+left-multiplication is not injective in this case.
+\end{proof}
+
+\subsubsection{Definition}\label{integraldomaindefinition}
+An \emph{integral domain} is a nonzero \hyperref[commutativeringdefinition]{commutative ring} $R$ (with $1$) such that\dots
+$$(\forall a,b \in R): \; \; ab =0 \Rightarrow a=0 \textrm{ or } b=0.$$
+
+\begin{proposition}
+Assume $R$ is a finite commutative ring; then $R$ is an integral domain if and only if it is a field.
+\end{proposition}
+
+\begin{proof}
+($\Rightarrow$) If $a \in R$ is a non-zero-divisor, then multiplication by $a$ in $R$ is injective by \ref{zerodivisormultiplication};
+hence it is surjective, as the ring is finite, by the \hyperref[pigeonholeprinciplecombinatorics]{pigeonhole principle}; hence $a$ is
+a unit via \ref{unitproperties}.
+
+($\Leftarrow$) This direction is obvious.
+\end{proof}

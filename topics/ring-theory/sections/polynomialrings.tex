@@ -1,0 +1,22 @@
+\subsection{Polynomial Rings}\label{polynomialrings}
+
+\subsubsection{Polynomials}\label{polynomials}
+Let $R$ be a ring. A \emph{polynomial} $f(x)$ in the \emph{indeterminate} $x$ and with \emph{coefficients} in $R$
+is a finite linear combination of nonnegative 'powers' of $x$ with coefficients in $R$:
+$$f(x) = \sum_{i \geq 0} a_i x^i = a_0 + a_qx+a_2x^2 + \cdots,$$
+where all $a_i$ are elements of $R$ and we require $a_i = 0$ for $i \gg 0.$\newline
+
+\noindent Two polynomials are taken to be equal if\dots
+$$\sum_{i \geq 0} a_i x^i = \sum_{i \geq 0} b_i x^i \Leftrightarrow (\forall i \geq 0): \; \; a_i = b_i.$$
+
+\noindent NOTE: a polynomial \emph{actually is} an element of the infinite direct sum of the group $\langle R,+ \rangle$.\newline
+
+Operations on polynomials are defined as follows: if\dots
+$$f(x) = \sum_{i \geq 0} a_i x^i \textrm{ and } g(x) = \sum_{i \geq 0} b_i x^i$$
+then\dots
+$$f(x) + f(x) := \sum_{i \geq 0} (a_i + b_i) x^i$$
+and\dots
+$$f(x) \cdot f(x) := \sum_{k \geq 0}\sum_{i+j = k} a_ib_ix^{i+j}.$$
+
+\subsubsection{Definition}\label{polynomialrings}
+
