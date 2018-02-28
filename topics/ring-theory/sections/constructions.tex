@@ -3,3 +3,18 @@
 \subsubsection{Products}\label{ringproducts}
 If $R_1$, $R_2$ are rings, then the product ring $R_1 \times R_2$ may be definted by endowing the
 \hyperref[groupproduct]{direct product of groups} $R_1 \times R_2$ with componentwise multiplication.
+
+\subsubsection{Quotients}\label{ringquotients}
+Let $R$ be a ring and $I \subseteq R$ be an ideal. The quotient group $R/I$ is compatible with ring structure (determined
+by the natural projection) and is called the \emph{quotient ring} of $R$ \emph{modulo} $I$.
+
+\begin{theorem}
+\label{quotientringthm}
+Let $I$ be a two-sided ideal of a ring $R$. Then for every ring homomorphism $\varphi: R \rightarrow S$ such that $I \subseteq \textrm{ker}\varphi$
+there exists a unique ring homomorphism $\tilde \varphi : R/I \rightarrow S$ so that the diagram\dots
+\begin{figure}[H]
+\centering
+\input{topics/ring-theory/diagrams/quotientring}
+\end{figure}
+\noindent commutes.
+\end{theorem}

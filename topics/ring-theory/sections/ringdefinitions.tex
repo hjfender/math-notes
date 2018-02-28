@@ -29,3 +29,15 @@ A ring $R$ is \emph{commutative} if $(\forall r,s \in R): \; r \cdot s = s \cdot
 \subsubsection{Subrings}\label{subrings}
 A \emph{subring} $S$ of a ring $R$ is a ring whose underlying set is a subset of $R$ and such that
 the inclusion function $S \hookrightarrow R$ is a ring homomorphism.
+
+\subsubsection{Ideals}\label{ideal}
+Let $R$ be a ring. A subgroup $I$ of $\langle R,+ \rangle$ is a \emph{left-ideal} of $R$ if $rI \subseteq I$
+for all $r \in R$; that is,
+$$(\forall r \in R)(\forall a \in I): \; ra \in I;$$
+it is a \emph{right-ideal} if $Ir \subseteq I$ for all $r \in R$; that is,
+$$(\forall r \in R)(\forall a \in I): \; ar \in I.$$
+A \emph{two-sided ideal} is a subgroup $I$ which is both a left- and a right-ideal.
+
+\subsubsection{Characteristic}\label{characteristic}
+Let $R$ be a ring and consider the unique ring homomorphism $\phi: \mathbb{Z} \rightarrow R$. Then ker$\phi = n\mathbb{Z}$
+for some $n$. The \emph{characteristic} of $R$ is this nonnegative integer $n$.

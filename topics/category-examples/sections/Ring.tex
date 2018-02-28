@@ -42,6 +42,33 @@ $$\alpha_i\left(\frac{p}{q}\right) = \alpha_i(p)\alpha_i(q^{-1})=\alpha(p)\alpha
 is the same for both.
 \end{proof}
 
+\subsubsection{Isomorphism Theorems}\label{ringisomorphismtheorems}
+
+\begin{theorem}[Canonical Decomposition in Ring]
+\label{ringcanonicaldecomposition}
+Every ring homomorphism $\varphi : R \rightarrow S$ may be decomposed as follows:
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-examples/diagrams/ringcanonicaldecomposition}
+\end{figure}
+
+\noindent where the isomorphism $\tilde \varphi$ in the middle is the homomorphism induced by $\varphi$ as in \ref{quotientringthm}.
+\end{theorem}
+
+\begin{corollary}
+Suppose $\varphi : R \rightarrow S$ is a surjective ring homomorphism. Then
+$$S \cong \frac{R}{\textrm{ker}\varphi}.$$
+\end{corollary}
+
+\noindent Note: The 'second isomorphism' theorem doesn't quite make sense in the context of Ring.
+
+\begin{theorem}
+Let $I$ is an ideal of a ring $R$, and let $J$ be an ideal of $R$ containing $I$. Then $J/I$ is an ideal of $R/I$,
+and\dots
+$$\frac{R/I}{J/I} \cong \frac{R}{J}$$
+\end{theorem}
+
 \subsubsection{Universal Objects}
 
 \begin{proposition}
