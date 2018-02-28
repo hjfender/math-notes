@@ -1,0 +1,60 @@
+\subsection{The category Ring}
+\begin{itemize}
+  \item Objects: Rings
+  \item Arrows: Ring homomorphisms
+\end{itemize}
+
+\subsubsection{Morphisms}
+
+\begin{proposition}
+For a ring homomorphism $\varphi : R \rightarrow S$, the following are equivalent:
+\begin{enumerate}
+  \item $\varphi$ is a monomorphism;
+  \item ker$\varphi = \{0\}$;
+  \item $\varphi$ is injective (as a set-function).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Only $(1) \Rightarrow (2)$ warrants serious attention. Assume $\varphi : R \rightarrow S$ ois a monomorphism and $r \in \textrm{ker}\varphi$.
+Applying the extension property given from the \hyperref[universalpropertyofpolynomialrings]{universal property of polynomial rings}, we obtain
+unique ring homomorphisms $ev_r : \mathbb{Z}[x] \rightarrow R$ such that $ev_r(x) = r$ and $ev_0 : \mathbb{Z}[x] \rightarrow R$ such that $ev(x) = 0$.
+Consider the parallel ring homomorphisms:
+$$\mathbb{Z}[x] \underset{ev_0}{\overset{ev_r}{\rightrightarrows}} R \xrightarrow[]{\varphi} S,$$
+since $\varphi(r) = 0 = \varphi(0),$ the two compositions $\varphi \circ ev_r$, $\varphi \circ ev_0$ agree (because they agree on $\mathbb{Z}$ and they agree on $x$);
+hence $ev_r = ev_0$ since $\varphi$ is a monomorphism. Therefore\dots
+$$r = ev_r(x) = ev_0(x) = 0,$$
+showing $r \in \textrm{ker}\varphi.$
+\end{proof}
+
+\noindent In Ring, epimorphisms need not be surjective.
+
+\begin{proposition}
+The function $\iota: \mathbb{Z} \hookrightarrow \mathbb{Q}$ is an epimorphism.
+\end{proposition}
+
+\begin{proof}
+Suppose $\alpha_1$ and $\alpha_2$ are parallel ring homomorphisms\dots
+$$\mathbb{Z} \hookrightarrow \mathbb{Q} \underset{\alpha_2}{\overset{\alpha_1}{\rightrightarrows}} R$$
+and $\alpha_1, \alpha_2$ agree on $\mathbb{Z}$. Then $\alpha_1, \alpha_2$ must agree on $\mathbb{Q}$: because
+for $p,q \in \mathbb{Z}, q \neq 0,$
+$$\alpha_i\left(\frac{p}{q}\right) = \alpha_i(p)\alpha_i(q^{-1})=\alpha(p)\alpha(q)^{-1}$$
+is the same for both.
+\end{proof}
+
+\subsubsection{Universal Objects}
+
+\begin{proposition}
+Zero rings are \hyperref[final]{final objects} in Ring.
+\end{proposition}
+
+\begin{proposition}
+The ring of integers $\mathbb{Z}$ is an \hyperref[final]{initial object} in Ring.
+\end{proposition}
+
+\begin{proof}
+Observe $\varphi : \mathbb{Z} \rightarrow R$ defined by $(\forall n \in \mathbb{Z}): \; \; \varphi(n) = n \cdot 1_R$ is a
+ring homomorphism by\dots
+$$\varphi(mn) = \sum^{mn}_{i=1} 1_R = \sum^{m}_{i=1}(\sum^{n}_{j=1} 1_R) \overset{!}{=} (\sum^{m}_{i=1} 1_R) \cdot (\sum^{n}_{j=1} 1_R) = \varphi(m) \cdot \varphi(n),$$
+(where $!$ occurs via the distributivity axiom) and is unique, since it is determined by the requirement that $\varphi(1) = 1_R$ and by the fact that $\varphi$ preserves addition. 
+\end{proof}

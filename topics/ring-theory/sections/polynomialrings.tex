@@ -18,5 +18,42 @@ $$f(x) + f(x) := \sum_{i \geq 0} (a_i + b_i) x^i$$
 and\dots
 $$f(x) \cdot f(x) := \sum_{k \geq 0}\sum_{i+j = k} a_ib_ix^{i+j}.$$
 
-\subsubsection{Definition}\label{polynomialrings}
+\subsubsection{Universal Property}\label{universalpropertyofpolynomialrings}
+Let $\mathcal{R}_A$ be the category of \hyperref[objectsunder]{commutative rings under a set $A$} so that\dots
+\begin{itemize}
+  \item Objects: $(j, R)$ such that $j : A \rightarrow R$ 
+  \item Arrows: $(j_1, R_1) \rightarrow (j_2, R_2)$ representing\dots
+  \begin{figure}[H]
+	  \centering
+	  \input{topics/ring-theory/diagrams/commutativeringsundera}
+  \end{figure}
+\end{itemize}
 
+\begin{proposition}
+$(i, \mathbb{Z}[x_1,\cdots,x_n])$ is initial in $\mathcal{R}_A$.
+\end{proposition}
+
+\begin{proof}
+Let $(j,R)$ be an arbitrary object of $\mathbb{R}_A$; we have to show that there is a unique morphism $(i, \mathbb{Z}[x_1, \cdots, x_n]) \rightarrow (j, R)$.
+
+The key point is that the requirements posed on $\varphi$ force its definition. The postulated commutativity of the diagram means that $\varphi(x_k) = j(a_k)$
+for $k = 1, \cdots, n$. Then, since $\varphi$ must be a ring homomorphism, necessarily\dots
+\begin{align*}
+\varphi(\sum m_{i_1\dots i_n}x_1^{i_1}\cdots x_n^{i_n}) &= \sum \varphi(m_{i_1\dots i_n})\varphi(x_1)^{i_1}\cdots \varphi(x_n)^{i_n} \\
+														&= \sum \iota(m_{i_1\dots i_n})j(x_1)^{i_1}\cdots j(x_n)^{i_n},
+\end{align*}
+where $\iota: \mathbb{Z} \rightarrow R$ is the unique ring homomorphism (as $\mathbb{Z}$ is initial in Ring).
+
+Thus, if $\varphi$ exists, then it is unique. On the other hand, the formula we just obtained clearly preserves the operations and sends $1$ to $1$,
+so it does define a ring homomorphism, concluding the proof.
+\end{proof}
+
+\subsubsubsection{Evaluation Map and Polynomial Functions}\label{polynomialevaluationmap}
+Let $\alpha: R \rightarrow S$ be a fixed ring homomorphism, and $s \in S$ be an element commuting with $\alpha(r)$ for all $r \in R$.
+Then there is a unique ring homomorphism $\overline{\alpha}: R[x] \rightarrow S$ extending $\alpha$ and sending $x$ to $s$.\newline
+
+\noindent This we get an '\emph{evaluation map}' over commutative rings\dots
+$$f(x) = \sum_{i \geq 0} a_i x^i \textrm{ and } r \in R \Rightarrow f(r) = \sum_{i \geq 0} a_i r^i \in R.$$
+This may be viewed as $\overline{\alpha}(f(x))$, where $\overline{\alpha}$ is obtained with $id_R : R \rightarrow R$ and $s = r$.\newline
+
+\noindent Thus, every polynomial $f(x)$ determines a \emph{polynomial function}\label{polynomialfunction} $f : R \rightarrow R$ defined by $r \mapsto f(r)$.
