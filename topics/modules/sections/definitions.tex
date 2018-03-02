@@ -1,0 +1,24 @@
+\subsection{Definitions}
+
+An \emph{left-action} of a ring $R$ on $M$ is a homomorphism of rings\dots
+$$\sigma : R \rightarrow \textrm{End}_{Ab}(M)$$
+We say $\sigma$ makes $M$ into a \emph{left-$R$-module}.\newline
+
+\noindent A left-$R$-module structure on an abelian group $M$ consists of a map $R \times M \rightarrow M$,
+$(r,m) \mapsto rm$, such that\dots
+\begin{itemize}
+  \item $r(m+n) = rm + rn$
+  \item $(r+s)m = rm + sm$
+  \item $(rs)m = r(sm)$
+  \item $1m = m$
+\end{itemize}
+
+\begin{proposition}
+Every abelian group is a $\mathbb{Z}$-module, in exactly one way.
+\end{proposition}
+
+\begin{proof}
+Let $G$ be an abelian group. A $\mathbb{Z}$-module structure on $G$ is a ring homomorphism\dots
+$$\mathbb{Z} \rightarrow \textrm{End}_{Ab}(G).$$
+Since $\mathbb{Z}$ is initial in Ring, there exists exactly one such homomorphism, proving the statement.
+\end{proof}

@@ -1,0 +1,68 @@
+\subsection{The category R-Mod}
+\begin{itemize}
+  \item Objects: $R$-modules (where $R$ is commutative)
+  \item Arrows: $R$-module homomorphisms
+\end{itemize}
+
+\subsubsection{Morphisms}
+
+\begin{proposition}
+The following hold in $R$-Mod:
+\begin{itemize}
+  \item kernels and cokernels exists
+  \item $\varphi$ is a monomorphism $\Leftrightarrow$ ker $\varphi$ is trivial $\Leftrightarrow$ $\varphi$ is injective as a set function
+  \item $\varphi$ is an epimorphism $\Leftrightarrow$ coker $\varphi$ is trivial $\Leftrightarrow$ $\varphi$ is surjective as a set function
+\end{itemize}
+\noindent Further, every monomorphism identifies its source with the kernel of some morphism, and every epimorphism identifies its target
+with the cokernel of some morphism.
+\end{proposition}
+
+\subsubsection{Isomorphism Theorems}\label{rmoduleisomorphismtheorems}
+
+\begin{theorem}[Canonical Decomposition in R-Mod]
+\label{rmodulecanonicaldecomposition}
+Every $R$-module homomorphism $\varphi : M \rightarrow M'$ may be decomposed as follows:
+
+\begin{figure}[H]
+  \centering
+  \input{topics/category-examples/diagrams/rmodulecanonicaldecomposition}
+\end{figure}
+
+\noindent where the isomorphism $\tilde \varphi$ in the middle is the homomorphism induced by $\varphi$ as in \ref{quotientrmodulethm}.
+\end{theorem}
+
+\begin{corollary}
+Suppose $\varphi : M \rightarrow M'$ is a surjective $R$-module homomorphism. Then\dots
+$$M' \cong \frac{M}{\textrm{ker}\varphi}.$$
+\end{corollary}
+
+\begin{theorem}
+Let $N,P$ be submodules of an $R$-module $M$. Then\dots
+\begin{itemize}
+  \item $N + P$ is a submodule of $M$;
+  \item $N \cap P$ is a submodule of $P$, and
+  			$$\frac{N + P}{N} \cong \frac{P}{N \cap P}.$$
+\end{itemize}
+\end{theorem}
+
+\begin{theorem}
+Let $N$ be a submodule of an $R$-module $M$, and let $P$ be a submodule of $M$ containing $N$. Then $P/N$ is an ideal of $M/N$,
+and\dots
+$$\frac{M/N}{P/N} \cong \frac{M}{P}.$$
+\end{theorem}
+
+\subsubsection{Universal Objects}
+
+\begin{proposition}
+Trivial groups have a unique module structure over any ring $R$ and is a \hyperref[null]{null} object in R-Mod.
+\end{proposition}
+
+\noindent $R$-Mod is a similar category to that of Ab, note\dots
+
+\begin{proposition}
+Hom$_{R-Mod}(M,N)$ is an object in $R$-Mod.
+\end{proposition}
+
+\begin{proposition}
+$R$-Mod has products and coproducts. See \hyperref[productmodules]{}.
+\end{proposition}

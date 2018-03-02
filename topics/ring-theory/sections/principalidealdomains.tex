@@ -1,4 +1,4 @@
-\subsection{Principla Ideal Domains}\label{principalidealdomains}
+\subsection{Principal Ideal Domains}\label{principalidealdomains}
 An \hyperref[integraldomain]{integral domain} $R$ is a \emph{PID} if every ideal of $R$ is principal.
 
 \begin{proposition}
@@ -8,4 +8,23 @@ $\mathbb{Z}$ is a PID.
 \begin{proof}
 Let $I \subseteq \mathbb{Z}$ be an ideal. Since $I$ is a subgroup, $I = n\mathbb{Z}$ for some $n \in \mathbb{Z}$, by
 \ref{infinitecyclicsubgroup}. Since $n\mathbb{Z} = (n)$, this shows that $I$ is principal.
+\end{proof}
+
+\begin{proposition}
+Let $R$ be a PID, and let $I$ be a nonzero ideal in $R$. Then $I$ is prime if and only if it is maximal.
+\end{proposition}
+
+\begin{proof}
+Maximal ideals are prime in every ring, so we only need to verify that nonzero prime ideals are maximal in a PID;
+we will use the characterization of prime and maximal ideals obtained in \ref{primeidealcharacterization} and
+\ref{maximalidealcharacterization}. Let $I = (a)$ be a prime ideal in $R$, with $a \neq 0$, and assume $I \subseteq J$
+for an ideal of $R$. As $R$ is a PID, $J = (b)$ for some $b \in R$. Since $I = (a) \subseteq (b) = J$, we have that $a=bc$
+for some $c \in R$. But then $b \in (a)$ or $c \in (a)$, since $I = (a)$ is prime.
+
+If $b \in (a)$, then $(b) \subseteq (a)$; and $I = J$ follows. If $c \in (a)$, then $c = da$ for some $d \in R$. But then\dots
+$$a=bc=bda,$$
+from which $bd = 1$ since cancellation by the nonzero $a$ holds in $R$ (since $R$ is an integral domain). This implies that $b$
+is a unit, and hence $J = (b) = R$.
+
+That is, we have shown that if $I \subseteq J$, then either $I = J$ or $J = R$; thus $I$ is maximal, by \ref{maximalidealcharacterization}.
 \end{proof}

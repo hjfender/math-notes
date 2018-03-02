@@ -1,0 +1,18 @@
+\subsection{Complexes}\label{complexes}
+A \emph{chain complex} of \hyperref[modules]{$R$-modules} is a sequence of $R$-modules and $R$-module homomorphisms\dots
+$$\cdots \xrightarrow[]{d_{i+2}}  M_{i+1}  \xrightarrow[]{d_{i+1}} M_{i}\xrightarrow[]{d_{i}} M_{i-1} \xrightarrow[]{d_{i-1}} \cdots$$
+such that $(\forall i) : d_i \circ d_{i+1} = 0.$
+
+\subsubsection{Exactness}\label{exact}
+\begin{itemize}
+  \item A complex\dots
+$$\cdots \rightarrow 0 \rightarrow L \xrightarrow[]{\alpha} M \rightarrow \cdots$$
+is \emph{exact} at $L$ if and only if $\alpha$ is a monomorphism.
+  \item A complex\dots
+$$\cdots \rightarrow M \xrightarrow[]{\beta} N \rightarrow 0 \rightarrow \cdots$$
+is \emph{exact} at $N$ if and only if $\beta$ is an epimorphism.
+  \item A \emph{short exact sequence}\label{shortexactsequence} is an exact complex of the form\dots
+$$0 \rightarrow L \xrightarrow[]{\alpha} M \xrightarrow[]{\beta} N \rightarrow 0.$$
+\end{itemize}
+ 
+\subsubsection{Split}\label{split}
