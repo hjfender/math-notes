@@ -22,11 +22,11 @@ The natural action acts faithfully on $Aut_{Set}(G)$.
 \subsubsection{Transitive Actions}\label{transitiveactions}
 An action of a group $G$ on a (nonempty) set $A$ is \emph{transitive} if $\forall a,b \in A, \exists g \in G$ such that $b = ga$.
 
-\subsubsubsection{Orbit}\label{orbit}
+\subsubsection{Orbit}\label{orbit}
 The \emph{orbit} of $a \in A$ under an action of a group $G$ is the set\dots
 $$O_G(a) := \{ ga | g \in G \}.$$
 
-\subsubsubsection{Stabilizer Subgroup}\label{stabilizer}
+\subsubsection{Stabilizer Subgroup}\label{stabilizer}
 Let $G$ act on a set $A$, and let $a \in A$. The \emph{stabilizer subgroup} of $a$ consists of the elements of $G$ which fix $a$:
 $$\textrm{Stab}_G(a) := \{ g \in G | ga = a \}.$$
 
@@ -42,6 +42,7 @@ The \hyperref[functorcategories]{functor category} of group actions. Thus morphi
 above which preserve the group action. They are called \emph{G-equivariant}.
 
 \begin{proposition}
+\label{characterizationofactions}
 Every transitive left-action of $G$ on a nonempty set $A$ is isomorphic to the left-multiplication of $G$ on $G/H$, for $H \, =$ the stabilizer
 of any $a \in A$.
 \end{proposition}
@@ -61,6 +62,7 @@ Equivariance is immediate: $\varphi(g'(gH)) = g'ga = g' \varphi(gH).$
 \end{proof}
 
 \begin{corollary}
+\label{lagrangeforactions}
 If $O$ is an orbit of the action of a finite group $G$ on a set $A$, then $O$ is a finite set and\dots
 $$|O| \textrm{ divides } |G|.$$
 \end{corollary}
@@ -80,7 +82,86 @@ $$(ghg^{-1})(b) = gh(g^{-1}g)a = gha = ga = b,$$
 proving $\supseteq$. For $\subseteq$ note $a = g^{-1}b$ apply the same argument.
 \end{proof}
 
+\subsubsection{Fixed Point Set}
+The set of \emph{fixed points} of a group action is\dots
+$$Z = \{ a \in S | (\forall g \in G) : ga = a \}$$
+
+\begin{proposition}
+Let $S$ be a finite set, and let $G$ be a group acting on $S$. Then\dots
+$$|S| = |Z| + \sum_{a \in A} [G : \textrm{Stab}_G(a)]$$
+where $A \subseteq S$ has exactly one element for each nontrivial orbit of the action.
+\end{proposition}
+
+\begin{proof}
+The orbits form a partition of $S$, and $Z$ collects the trivial orbits; hence\dots
+$$|S| = |Z| + \sum_{a \in A} |O_a|,$$
+where $O_a$ denotes the orbit of $a$. By \ref{lagrangeforactions}, the order $|O_a|$
+equals the index of the stabilizer of $a$, yielding the statement.
+\end{proof}
+
+\begin{corollary}
+\label{fixedpointrestriction}
+Let $G$ be a $p$-group acting on a finite set $S$, and let $Z$ be the fixed point set of the action. Then\dots
+$$|Z| \equiv |S| \textrm{ mod } p.$$
+\end{corollary}
+
+\subsubsection{Center}\label{center}
+For the action $\sigma : G \rightarrow S_G$, the \emph{center} of $G$, denoted $Z(G)$, is the subgroup ker $\sigma$ of $G$.\newline
+
+\noindent Concretely\dots
+$$Z(G) = \{ g \in G | (\forall a \in G) : ga = ag \}.$$
+
+\begin{lemma}
+Let $G$ be a finite group, and assume $G/Z(G)$ is cyclic. Then $G$ is commutative (and hence
+$G/Z(G)$ is in fact trivial).
+\end{lemma}
+
+\begin{proof}
+As $G/Z(G)$ is cyclic, there exists an element $g \in G$ such that the class $gZ(G)$ generates $G/Z(G)$. Then $\forall a \in G$\dots
+$$aZ(G) = (gZ(G))^r$$
+for some $r \in \mathbb{Z}$; that is, there is an element $z \in Z(G)$ of the center such that $a = g^rz.$
+
+If now $a,b$ are in $G$, use this fact to write\dots
+$$a = g^rz, \; b = g^sw$$
+for some $s \in \mathbb{Z}$ and $w \in Z(G)$; but then\dots
+$$ab = (g^rz)(g^sw) = g^{r+s}zw = (g^sw)(g^rz) = ba,$$
+where I have used the fact that $z$ and $w$ commute with every element of $G$. As $a$ and $b$ were arbitrary, this proves that $G$ is commutative.
+\end{proof}
+
 \subsubsection{Conjugation Action}\label{conjugationgroupaction}
 Every group $G$ acts by conjugation on the underlying set $G$. The action $\rho : G \times G \rightarrow G$ is
 the operation in the group\dots
 $$(\forall g,a \in G): \rho(g,h) = ghg^{-1}$$
+
+\subsubsubsection{Centralizer and Normalizer}\label{centralizer}\label{normalizer}
+The \emph{centralizer} (or \emph{normalizer}) $Z_G(a)$ for $a \in G$ is its stabilizer under conjugation. Concretely\dots
+$$Z_G(a) = \{ g \in G | gag^{-1} = a \}.$$
+
+\noindent The \emph{normalizer} $N_G(A)$ of $A$ is its stabilizer under conjugation.\newline
+
+\noindent The \emph{centralizer} $Z_G(A) \subseteq N_G(A)$ fixing each element of $A$.
+
+\subsubsubsection{Conjugacy Class}\label{conjugacyclass}
+The \emph{conjugacy class} of $a \in G$ is the orbit $[a]$ of $a$ under the conjugation action.\newline
+
+\noindent Two elements $a,b$ of $G$ are conjugate if they belong to the same conjugacy class.
+
+\begin{proposition}[Class Formula]
+\label{classformula}
+Let $G$ be a finite group. Then\dots
+$$|G| = |Z(G)| + \sum_{a \in A}[G : Z(a)],$$
+where $A \subseteq G$ is a set containing one representative for each nontrivial conjugacy class in $G$.
+\end{proposition}
+
+\begin{lemma}
+Let $H \subseteq G$ be a subgroup. Then (if finite) the number of subgroups conjugate to $H$ equals the index
+$[G : N_G(H)]$ of the normalizer of $H$ in $G$.
+\end{lemma}
+
+\begin{corollary}
+If $[G:H]$ is finite, then the number of subgroups conjugate to $H$ is finite and divides $[G:H]$.
+\end{corollary}
+
+\begin{proof}
+$$[G : H] = [G : N_G(H)] \cdot [N_G(H) : H]$$
+\end{proof}

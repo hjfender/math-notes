@@ -1,0 +1,52 @@
+\subsection{Geometric Notions}\label{geometricnotions}
+
+\subsubsection{Closed Subset}\label{closed}
+A subset $K$ of $X$ is \emph{closed} if its complement in $X$ is \hyperref[open]{open}.
+
+\subsubsection{Limit Point}\label{limitpoint}
+If $A \subseteq X$, where $X$ is a topological space and $x \in X$, then $x$ is a \emph{limit point}
+of $A$, if, whenever $U \subset X$ is open and $x \in U$, there is some $y \in U \cap A$, with $y \neq x$.
+
+\begin{proposition}
+A subset $K$ of a topological space $\langle X, \mathcal{T} \rangle$ is closed if and only if it contains all of its limit points.
+\end{proposition}
+
+\subsubsection{Interior}\label{interior}
+The \emph{interior} of $A$ is the largest open set contained in $A$, that is,
+$$\textrm{int } A = \bigcup_{U \subseteq A, \textrm{open}}U.$$
+
+\subsubsection{Closure}\label{closure}
+The \emph{closure} of $A$ is the smalles closed set in $X$ containing $A$, that is,
+$$\textrm{cls } A = \bigcap_{K \supseteq A, \textrm{closed}}K.$$
+
+\begin{proposition}
+If $A \subset X$, where $X$ is a topological space, then cls$A = A \cup A'$, where\dots
+$$A' = \{ \textrm{limit points of } A \}.$$
+$A'$ is called the \emph{derived set} of $A$.
+\end{proposition}
+
+\subsubsection{Boundary}\label{boundary}
+Let $A$ be a subset of $X$, a topological space. A point $x \in X$ is in the \emph{boundary} of $A$, if for any open set $U \subset X$ with $x \in U$,
+we have $U \cap A \neq \emptyset$ and $U \cap (X \setminus A) \neq \emptyset$. Thus\dots
+$$\textrm{bdy }A = \{ \textrm{boundary points of } A \}.$$
+
+\begin{proposition}
+$\emph{cls } A = \emph{int } A \cup \emph{ bdy } A.$
+\end{proposition}
+
+\subsubsection{Convergence}\label{convergence}
+A sequence $\{ x_n \}$ of points in a topological space $X$ is said to \emph{converge to a point} $x \in X$,
+if for any open set $U$ containing $x$, there is a positive integer $N$ so that $x_n \in U$ whenever $n \geq N$.
+
+\begin{proposition}
+If $A \subseteq X$, where $X$ is a first countable space, then $x$ is in \emph{cls} $A$ if and only if some sequence of points in $A$ converges to $x$.
+\end{proposition}
+
+\begin{proof}
+If $\{ x_n \}$ is a sequence of points in $A$ converging to $x$, then any open set $V$ containing $x$ meets the sequence and we see either $x \in \emph{int} \, A$ or $x \in \emph{bdy} \, A$, so
+$x \in \emph{cls} \, A$.
+
+Converserly, if $x \in \emph{cls} \, A$, consider the collection $\{ U^x_i | i = 1,2,\dots \}$ given by the condition of first countability. Then $A \cap U^x_1 \cap \cdots \cap U^x_n.$ The sequence $\{ x_n \}$
+converges to $x$: If $V$ is open in $X$ and $x \in V$, then there is $U^x_j$ with $x \in U^x_j \subset V$. But then $A \cap U^x_1 \cap \cdots \cap U^x_m \subseteq U^x_j \subseteq V$ for all $m \geq j$, and so $x_m \in V$
+for $m \geq j$.
+\end{proof}

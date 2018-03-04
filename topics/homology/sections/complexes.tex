@@ -16,3 +16,22 @@ $$0 \rightarrow L \xrightarrow[]{\alpha} M \xrightarrow[]{\beta} N \rightarrow 0
 \end{itemize}
  
 \subsubsection{Split}\label{split}
+A short exact sequence\dots
+$$0 \rightarrow M_1 \rightarrow N \rightarrow M_2 \rightarrow 0,$$
+\emph{splits} if the following diagram commutes.
+\begin{figure}[H]
+\centering
+\input{topics/homology/diagrams/split}
+\end{figure}
+
+\begin{proposition}
+Let $\varphi : M \rightarrow N$ be an $R$-module homomorphism. Then\dots
+\begin{itemize}
+  \item $\varphi$ has a left inverse if and only if the sequence\dots
+  $$0 \rightarrow M \xrightarrow[]{\varphi} N \rightarrow \textrm{coker}\varphi \rightarrow 0$$
+  splits.
+  \item $\varphi$ has a right inverse if and only if the sequence\dots
+  $$0 \rightarrow \textrm{ker}\varphi \rightarrow M \xrightarrow[]{\varphi} N \rightarrow 0$$
+  splits.
+\end{itemize}
+\end{proposition}

@@ -1,0 +1,38 @@
+\subsection{Separation}\label{separation}
+
+\subsubsection{T1}\label{t1}
+A topological space $X$ satisfies the $T_1$ axiom if given two points $x,y \in X$, there are open sets
+$U,V$ with $x \in U, y \not\in U$ and $y \in V, x \not\in V$.
+
+\begin{proposition}
+A space $X$ satisfies the $T_1$ axiom if and only if any finite subset of points in $X$ is closed.
+\end{proposition}
+
+\subsubsection{Hausdorff (T2)}\label{t2}
+A topological space is said to satisfy the \emph{Hausdorff condition} if given two points $x,y \in X$ there
+are open set $U,V$ with $x \in U, y \in V$, and $U \cap V = \emptyset$.
+
+\begin{theorem}
+In a Hausdorff space, the limit of a sequence is unique.
+\end{theorem}
+
+\subsubsection{Separable}\label{separable}
+\subsubsubsection{Dense}\label{dense}
+A subset $A$ of a topological space $X$ is \emph{dense} if cls $A = X$.
+
+\subsubsection{Definition}\label{definition}
+A topological space is \emph{separable (or Fr\'echet)} if it has a countable dense subset.
+
+\begin{theorem}
+A seperable metric space is second countable.
+\end{theorem}
+
+\begin{proof}
+Suppose $A$ is a countable dense subset of $\langle X, d \rangle$. Consider the collection of open balls\dots
+$$\{B(a,p/q) | a \in A, p/q > 0, p/q \in \mathbb{Q} \}.$$
+If $U$ is an open set in $X$ and $x \in U$, then there is an $\varepsilon > 0$ with\ $B(x, \varepsilon) \subseteq U$.
+Since cls $A = X$, there is a point $a \in A \cap B(x, \varepsilon / 2).$ Consider $B(a, p/q)$ where $p/q$ is rational
+and $d(a,x) < p/q < \varepsilon / 2.$ Then $x \in B(a, p/q)$ where $p/q$ is rational and $d(a,x) < p/q < \varepsilon/2$.
+Then $x \in B(a,p/q) \subset B(x,\varepsilon) \subseteq U$. Repeat this procedure for each $x \in U$ to show $U \subseteq \bigcup_{a}B(a,p/q) \subseteq U$
+and this collection of open balls is a basis for the topology on $X$. The collection is countable since a countable union of countable sets is countable.
+\end{proof}

@@ -1,7 +1,7 @@
 \subsection{Topological Spaces}
 
 \subsubsection{Topological Space}\label{topologicalspace}
-Let $X$ be a set and $\mathcal{T}$ a collection of subsets of $X$ called \emph{open sets}. The collection $\mathcal{T}$ is called a \emph{topology} on $X$ if
+Let $X$ be a set and $\mathcal{T}$ a collection of subsets of $X$ called \emph{open sets}\label{open}. The collection $\mathcal{T}$ is called a \emph{topology} on $X$ if\dots
 \begin{enumerate}
   \item we have that $\emptyset \in \mathcal{T}$ and $X \in \mathcal{T}$,
   \item the union of an arbitrary collection of memebers of $\mathcal{T}$ is in $\mathcal{T}$,
@@ -48,6 +48,20 @@ continuous if and only if $\mathcal{T}$ is finer that $\mathcal{T}'$.
 \begin{theorem}
 Given two continuous functions $f : X \rightarrow Y$ and $g : Y \rightarrow Z$, the composite function $g \circ f : X \rightarrow Z$ is continuous.
 \end{theorem}
+
+\begin{theorem}
+Let $X, Y$ be topological space and $f : X \rightarrow Y$ a function. Then the following are equivalent:
+\begin{enumerate}
+  \item $f$ is continuous.
+  \item If $K$ is closed in $Y$, then $f^{-1}(K)$ is closed in $X$.
+  \item If $A \subseteq X$, then $f(emph{cls }A) \subseteq \emph{cls }f(A)$.
+\end{enumerate}
+\end{theorem}
+
+\begin{corollary}
+If $f:X \rightarrow Y$ is a continuous function and $\{ x_n \}$ is a sequence in $X$ converging to $x$, then the sequence $\{ f(x_n) \}$ converges
+to $f(x)$. Furthermore, if $X$ is first countable, then the converse holds.
+\end{corollary}
 
 \subsubsection{Homeomorphism}\label{homeomorphism}
 A function $f : \langle X,\mathcal{T}_X \rangle \rightarrow \langle Y,\mathcal{T}_Y \rangle$ is a \emph{homeomorphism} if $f$ is continuous, bijective, and has a continuous inverse. In other words, a homeomorphism is

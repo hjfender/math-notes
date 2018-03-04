@@ -1,0 +1,21 @@
+\subsection{Definitions}\label{homologydefinitions}
+
+The \emph{$i$-th homology} of a complex\dots
+$$M_{\LargerCdot}: \cdots \xrightarrow[]{d_{i+2}} M_{i+1} \xrightarrow[]{d_{i+1}}  M_i \xrightarrow[]{d_i} M_{i-1} \xrightarrow[]{d_{i-1}} \cdots$$
+of $R$-modules is the $R$-module\dots
+$$H_i(M_{\LargerCdot}) := \frac{\textrm{ker }d_i}{\textrm{im }d_{i+1}}.$$
+
+\begin{lemma}[Snake Lemma]
+\label{snakelemma}
+Given two short exact sequences linked together by homomorphisms as in the following commutative diagram\dots
+\begin{figure}[H]
+\centering
+\input{topics/homology/diagrams/snake}
+\end{figure}
+\noindent We are guaranteed an exact sequence\dots
+$$0 \rightarrow \textrm{ker } \lambda \rightarrow \textrm{ker } \mu \rightarrow \textrm{ker } \nu \xrightarrow[]{\delta} \textrm{coker } \lambda \rightarrow \textrm{coker } \mu \rightarrow \textrm{coker } \nu \rightarrow 0.$$
+\end{lemma}
+
+\begin{corollary}
+In the same as the snake lemma, assume $\mu$ is surjective and $\nu$ is injective. Then $\lambda$ is surjective and $\nu$ is an isomorphism.
+\end{corollary}

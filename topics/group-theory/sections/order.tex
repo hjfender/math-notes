@@ -67,7 +67,7 @@ are bijections.
 Surjectiveness is clear and cancellation implies that they are injective.
 \end{proof}
 
-\subsubsubsection{Lagrange's Theorem}
+\subsubsection{Lagrange's Theorem}
 
 \begin{corollary}
 \label{lagrangesthm}
@@ -81,4 +81,44 @@ Indeed, $G$ is the disjoint union of $|G/H|$ distinct cosets $gH$, and $|gH| = |
 \begin{corollary}
 \label{elementorderdividesgrouporder}
 If $g \in G$, then $a \cdot |g| = |G|$ for some positive integer $a$.
+\end{corollary}
+
+\subsubsection{Cauchy's Theorem}
+
+\begin{theorem}[Cauchy's Theorem]
+\label{cauchysthm}
+Let $G$ be a finite group, and let $p$ be a prime divisor of $|G|$. Then $G$ contains an element of order $p$.
+\end{theorem}
+
+\begin{proof}[Proof (James McKay)]
+Consider the set $S$ of ordered $p$-tuples of elements of $G$:
+$$(a_1, \dots, a_p)$$
+such that $a_1\cdots a_p = e$. I claim that $|S| = |G|^{p-1}$: indeed, once $a_1, \dots, a_{p-1}$ are chosen (arbitrarily), then
+$a_p$ is determined as it is the inverse of $a_1 \cdots a_{p-1}.$
+
+Therefore, $p$ divides the order of $S$ as it divides the order of $G$.
+
+Also note that if $a_1\cdots a_p = e$, then\dots
+$$a_2\cdots a_pa_1 = e$$
+(even if $G$ is not commutative): because if $a_1$ is a let-inverse to $a_2\cdots a_p$, then it is also a right-inverse to it.
+
+Therefore, we may act with the group $\mathbb{Z} / p \mathbb{Z}$ on $S$: given $[m] \in \mathbb{Z} / p \mathbb{Z}$, with
+$0 \leq m < p$, act by $[m]$ on\dots
+$$(a_1,\dots,a_p)$$
+by sending it to\dots
+$$(a_{m+1}, \dots, a_p, a_1, \dots, a_m):$$
+as we just observed, this is still an element of $S$.
+
+Now via \ref{fixedpointrestriction} we have\dots
+$$|Z| \equiv |S| \equiv 0 \textrm{ mod } p,$$
+where $Z$ is the set of fixed points of this action. Fixed points are $p$-tuples of the form\dots
+$$(a, \dots, a);$$
+and note that $Z \neq \emptyset$, since $\{ e, \dots, e\} \in Z$. Since $p \geq 2$ and $p$ divides $|Z|$, we conclude that $|Z| > 1$;
+therefore there exists some element in $Z$ of the form, with $a \neq e$.
+
+This says that there exists an $a \in G$, $a \neq e$, such that $a^p = e$, proving the statement.
+\end{proof}
+
+\begin{corollary}
+Let $G$ be a finite group, let $p$ be a prime divisor of $|G|$, and let $N$ be the number of cyclic subgroups of $G$ of order $p$. Then $N \equiv 1 \textrm{ mod } p$.
 \end{corollary}

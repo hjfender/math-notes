@@ -1,0 +1,64 @@
+\subsection{Space Filling Curves}\label{spacefillingcurves}
+
+\subsubsection{Peano Curve}\label{peanocurve}
+
+\subsubsubsection{Ternary Expansion}\label{ternaryexpansion}
+$$r = 0.t_1t_2t_3\cdots = \sum^{\infty}_{i=1}t_i/3^i, \textrm{ where } t_i \in \{ 0, 1, 2 \}$$
+Such a representation is unique except in the special cases:
+$$r = 0.t_1t_2\dots t_n222\cdots = 0.t_1t_2\cdots t_{n-1}(t_n + 1)000\cdots, \textrm{ where } t_n \neq 2.$$
+
+\subsubsection{Definition}
+Let $\sigma \in S_3$ such that $\sigma(0) = 2$, $\sigma(1) = 1$, $\sigma(2) = 0$. We let $\sigma$ act on $r = 0.t_1t_2t_3\cdots$ as\dots
+$$1 - r = 0.222\cdots - 0.t_1t_2t_3\cdots = 0.(\sigma t_1)(\sigma t_2)(\sigma t_3)\cdots$$
+
+\noindent Then the peano curve $PE : [0,1] \rightarrow [0,1] \times [0,1]$ is defined as\dots
+$$PE(0.t_1t_2\cdots t_n\cdots) = (0.a_1a_2\cdots a_n\cdots, 0.b_1b_2\cdots b_n\cdots)$$
+where\dots
+$$a_n = \sigma^{t_2 + t_4 + \cdots + t_{2(n-1)}} (t_{2n-1})$$
+$$b_n = \sigma^{t_1 + t_3 + \cdots + t_{2n-1}} (t_{2n})$$
+
+\noindent Observe that the Peano Curve definition can be written recursively as\dots
+
+$$PE(0.t_1t_2t_3\cdots) = (0.t_1,\sigma^{t_1}t_2) + (\sigma^{t_2},\sigma^{t_1}) \circ \frac{PE(0.t_3t_4t_5\dots)}{3}$$
+
+\begin{theorem}
+The function $PE : [0,1] \rightarrow [0,1] \times [0,1]$ is well defined, continuous, and surjective.
+\end{theorem}
+
+\begin{proof}
+We show the $PE$ is well defined. Using the recursive definition, we reduce the question of well-definedness to comparing the values $PE(0.0222\cdots)$ and $PE(0.1000\cdots)$ and
+the values $PE(0.1222\cdots)$ and $PE(0.2000\cdots)$. Applying the definition we find\dots
+$$PE(0.0222\cdots) = (0.0222\cdots, 0.222\cdots)$$
+and\dots
+$$PE(0.1000\cdots) = (0.1000\cdots, 0.222\cdots).$$
+The ambiguity in ternary expansions implies $PE(0.0222\cdots) = PE(0.1000\cdots).$
+
+Similarly we have\dots
+$$PE(0.1222\cdots) = (0.1222\cdots, 0.000\cdots)$$
+and\dots
+$$PE(0.2000\cdots) = (0.2000\cdots, 0.000\cdots),$$
+and so $PE(0.1222\cdots) = PE(0.2000\cdots).$
+
+We next show that $PE$ is surjective. Suppose $(u,v) \in [0,1] \times [0,1].$ We write\dots
+$$(u,v) = (0.a_1a_2a_3\cdots, 0.b_1b_2b_3\cdots).$$
+Let $t_1 = a_1$. Then $t_2 = \sigma^{t_1}b_1$. Since $\sigma \circ \sigma = id$, we have $\sigma^{t_1}t_2 = \sigma^{t_1}\circ \sigma^{t_1}b_1 = b_1$. Next let $t_3 = \sigma^{t_2}a_2$. Continue
+in this manner to define\dots
+$$t_{2n-1} = \sigma^{t_2 + t_4 + \cdots + t_{2(n-1)}}a_n, \; \; t_{2n} = \sigma^{t_1 + t_3 + \cdots + t_{2n-1}}b_n.$$
+Then $PE(0.t_1t_2t_3\cdots) = (0.a_1a_2a_3\cdots, 0.b_1b_2b_3\cdots) = (u,v)$ and $PE$ is surjective.
+
+Finally, we show $PE$ is continuous. We use the fact that $[0,1]$ is a first countable space and show that for all $r \in [0,1]$,
+whenever $\{ r_n \}$ is sequence of points in $[0,1]$ with lim$_{n \rightarrow \infty}r_n = r$, then lim$_{n \rightarrow \infty}PE(r_n) = PE(r).$
+
+Suppose $r = 0.t_1t_2t_3\cdots$ has a unique ternary representation. For any $\varepsilon > 0$, we can choose $N > 0$ with $\varepsilon > 1/3^N > 0.$ Then the value of $PE(r)$ is determined up to
+the first $N$ ternary digits in each coordinate by the first $2N$ digits of the ternary expansion of $r$. For any sequence $\{ r_n \}$ converging to $r$, there is an index $M = M(2N)$ with the property
+that for $m > M$, the first $2N$ ternary digits of $r_m$ agree with those of $r$. It follows that the first $N$ ternary digits of each coordinate of $PE(r_m)$ agree with those of $PE(r)$ and so
+lim$_{n \rightarrow \infty}PE(r_n) = PE(r).$
+
+In the case that $r$ has two ternary representations,
+$$r = 0.t_1t_2t_3\cdots t_N000\cdots = 0.t_1t_2t_3\cdots (t_N - 1)222\cdots,$$
+with $t_N \neq 0$, we can apply the familiar trick of the calculus of considering convergence from above or below the valur $r$. Suppose $\{ r_n \}$ is a sequence in $[0,1]$ with lim$_{n \rightarrow \infty}r_n = r$
+and $r \leq r_n$ for all $n$. Then for some index $M$, when $m > M$ we have $r_m = 0.t_1t_2t_3\cdots t_Nt_{N+1}'t_{N+2}'\cdots$. We can now argue as above that lim$_{n \rightarrow \infty}PE(r_n) = PE(r).$
+On the other side, for a sequence $\{ s_n \}$ with lim$_{n \rightarrow \infty}s_n = r$ and $s_n \leq r$ for all $n$, we compare $s_n$ with $r = 0.t_1t_2t_3\cdots(t_N-1)222\cdots$. Once again, we eventually have
+that $s_m = 0.t_1t_2t_3\cdots(t_N-1)t_{N+1}''t_{N+2}''\cdots$. Convergence of the series $\{ s_n \}$ implies that more of the ternary expansion agrees with $r$ as $n$ grows larger, and so lim$_{n \rightarrow \infty}PE(r_n) = PE(r).$
+Since convergence from each side implies general convergence, we have proved that $PE$ is continuous.
+\end{proof}
