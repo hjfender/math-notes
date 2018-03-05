@@ -19,7 +19,21 @@ If $p^k$ divides the order of $G$, then $G$ has a subgroup of order $p^k$.
 \end{proposition}
 
 \begin{proof}
+If $k = 0$, there is nothing to prove, so we may assume $k \geq 1$ and in particular that $|G|$ is a multiple of $p$.
 
+Argue by induction on $|G|$: if $|G| = p$, again there is nothing to prove; if $|G| > p$ and $G$ contains a proper subgroup $H$
+such that $[G : H]$ is relatively prime to $p$, then $p^k$ divides the order of $H$, and hence $H$ contains a subgroup of order $p^k$
+by induction hypothesis, and thus so does $G$.
+
+Therefore, we may assume that all proper subgroups of $G$ have index divisible by $p$. By the class formula, $p$ divides the order 
+of the center $Z(G)$. By Cauchy's theorem, $\exists a \in Z(G)$ such that $a$ has order $p$. The cyclic subgroup $N = \langle a \rangle$
+is contained in $Z(G)$, and hence it is normal in $G$. Now consider the quotient $G/N$.
+
+Since $|G/N| = |G|/p$ and $p^k$ divides $|G|$ by hypothesis, we have that $p^{k-1}$ divides the order of $G/N$. By the induction hypothesis,
+we may conclude that $G/N$ contains a subgroup of order $p^{k-1}$. By the structure of the subgroups of a quotient, this subgroup must
+be of the form $P/N$, for $P$ a subgroup of $G$.
+
+But then $|P| = |P/N| \cdot |N| = p^{k-1} \cdot p = p^k$, as needed.
 \end{proof}
 
 \subsubsection{Sylow II}\label{sylow2}
@@ -31,7 +45,10 @@ in a conjugate of $P$: there exists $g \in G$ such that $H \subseteq gPg^{-1}$.
 \end{theorem}
 
 \begin{proof}
-
+Act with $H$ on the set of left-cosets of $P$, by left-multiplication. Since there are $[G : P]$ cosets and $p$ does not divide
+$[G : P]$, we know this action must have fixed points: let $gP$ be one of them. This means that $\forall h \in H$:
+$$hgP = gP;$$
+that is, $g^{-1}hgP = P$ for all $h$ in $H$; that is, $g^{-1}Hg \subseteq P$; that is, $H \subseteq gPg^{-1}$, as needed.
 \end{proof}
 
 \begin{lemma}
@@ -40,7 +57,15 @@ $$[N_g(H) : H] \equiv [G : H] \textrm{ mod } p.$$
 \end{lemma}
 
 \begin{proof}
+I $H$ is trivial, then $N_G(H) = G$ and the two numbers are equal.
 
+Assume then that $H$ is nontrivial, and act with $H$ on the set of left-cosets of $H$ in $G$, by left-multiplication. The fixed points
+of this action are the cosets $gH$ such that $\forall h \in H$\dots
+$$hgH = gH,$$
+that is, such that $g^{-1}hg \in H$ for all $h \in H$; in other words, $H \subseteq gHg^{-1}$, and hence $gHg^{-1} = H$. This means precisely that
+$g \in N_G(H)$. Therefore, the set of fixed points of the action consists of the set of cosets of $H$ in $N_G(H)$.
+
+The statement then follows immediately from \ref{fixedpointrestriction}.
 \end{proof}
 
 \begin{proposition}
