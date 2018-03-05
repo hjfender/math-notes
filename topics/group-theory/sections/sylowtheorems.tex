@@ -52,6 +52,7 @@ that is, $g^{-1}hgP = P$ for all $h$ in $H$; that is, $g^{-1}Hg \subseteq P$; th
 \end{proof}
 
 \begin{lemma}
+\label{indexinnormalizer}
 Let $H$ be a $p$-group contained in a finite group $G$. Then\dots
 $$[N_g(H) : H] \equiv [G : H] \textrm{ mod } p.$$
 \end{lemma}
@@ -74,7 +75,11 @@ $H'$ of $G$ containing $H$, such that $[H' : H] = p$ and $H$ is normal in $H'$.
 \end{proposition}
 
 \begin{proof}
+Since $H$ is not a $p$-Sylow subgroup of $G$, $p$ divides $[N_G(H) : H]$, by the previous lemma. Since $H$ is normal in $N_G(H)$, we may consider
+the quotient group $N_G(H)/H$, and $p$ divides the order of this group. By \ref{cauchysthm}, $N_G(H)/H$ has an element of order $p$; this generates
+a subgroup of order $p$ of $N_G(H)/H$, which must be of the form $H' / H$ for a subgroup $H'$ of $N_G(H)$.
 
+It is straightforward to verify that $H'$ satisfies the stated requirements.
 \end{proof}
 
 \subsubsection{Sylow III}\label{sylow3}
@@ -89,5 +94,17 @@ Let $p$ be a prime integer, and let $G$ be a finite group of order $|G| = p^rm$.
 \end{theorem}
 
 \begin{proof}
+Let $N_p$ denote the number of $p$-Sylow subgroups of $G$.
 
+By \ref{sylowthm2}, the $p$-Sylow subgroups of $G$ are the conjugates of any given $p$-Sylow subgroup $P$. By \ref{numofconjugatesubgroups}, $N_p$ is the index of the normalizer $N_G(P)$
+of $P$; thus by \ref{cornumofconjugatesubgroups} it divides the index $m$ of $P$. In fact,
+$$m = [G:P] = [G:N_G(P)] \cdot [N_G(P) : P] = N_p \cdot [N_G(P) : P].$$
+
+Now, by \ref{indexinnormalizer} we have\dots
+$$m = [G : P] \equiv [N_G(P) : P] \textrm{ mod } p;$$
+multiplying by $N_p$, we get\dots
+$$mN_p \equiv m \textrm{ mod } p.$$
+Since $m \not \equiv 0 \textrm{ mod } p$ and $p$ is prime, this implies\dots
+$$N_p \equiv 1 \textrm{ mod } p,$$
+as needed.
 \end{proof}

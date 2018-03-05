@@ -1,2 +1,11 @@
 \subsection{Simple Groups}\label{simplegroups}
 A group $G$ is \emph{simple} if it is nontrivial and its only normal subgroups are $\{ e \}$ and $G$ itself.
+
+\begin{proposition}
+Let $G$ be a group of order $mp^r$, where $p$ is a prime integer and $1 < m < p$. Then $G$ is not simple.
+\end{proposition}
+
+\begin{proof}
+By the third Sylow theorem, the number $N_p$ of $p$-Sylow subgroups divides $m$ and is of the form $1 + kp$. Since $m < p$, this forces
+$k = 0$, $N_p = 1$. Therefore $G$ has a normal subgroup of order $p^r$; hence it is not simple.
+\end{proof}
