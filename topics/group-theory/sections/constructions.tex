@@ -5,6 +5,81 @@ Let $G$ and $H$ be two groups. Define $G \times H := \{ (g,h) | g \in G, h \in H
 $(g_1,h_1) \LargerCdot_{G \times H} (g_2,h_2) = (g_1 \LargerCdot_G g_2,h_1 \LargerCdot_H h_2)$. Then $G \times H$
 is the product group of the groups $G$ and $H$.
 
+\subsubsection{Semidirect Product}\label{semidirectproduct}
+
+\subsubsubsection{Motivating Theorems}
+
+\begin{lemma}
+Let $N$, $H$ be normal subgroups of a group $G$. Then\dots
+$$[N,H] \subseteq N \cap H.$$
+\end{lemma}
+
+\begin{proof}
+It suffices to verify this on generatros, that is, it suffices to check that
+$$[n,h] = n(hnh^{-1}h^{-1}) = (nhn^{-1})h^{-1} \in N \cap H$$
+for all $n \in N$, $h \in H$. But the first expression and the normality of $N$ show that $[n,h] \in N$; the second expression and the
+normality of $H$ show that $[n,h] \in H$.
+\end{proof}
+
+\begin{corollary}
+Let $N, H$ be normal subgroups of a group $G$. Assume $N \cap H = \{ e \}$. Then $N, H$ commute with each other:
+$$(\forall n \in N) (\forall h \in H) \; nh = hn.$$
+\end{corollary}
+
+\begin{proposition}
+\label{whensubgroupsmultiply}
+Let $N, H$ be normal subgroups of a group $G$, such that $N \cap H = \{ e \}$. Then $NH \cong N \times H$.
+\end{proposition}
+
+\begin{proof}
+Consider the function\dots
+$$\varphi : N \times H \rightarrow NH$$
+defined by $\varphi(n,h) = nh$. Under the stated hypothesis, $\varphi$ is a group homomorphism: indeed\dots
+\begin{align*}
+	\varphi((n_1,h_1) \cdot (n_2, h_2)) &= \varphi((n_1n_2,h_1h_2)) \\
+										&= n_1n_2h_1h_2 \\
+										&= n_1h_1n_2h_2
+\end{align*}
+since $N$, $H$ commute by the previous corrolary\dots
+$$=\varphi((n_1,h_1)) \cdot \varphi((n_2,h_2)).$$
+The homomorphism $\varphi$ is surjective by definition of $NH$. To verify it is injective, consider its kernel:
+$$\textrm{ker } \varphi = \{(n,h) \in N \times H | nh = e \}.$$
+If $nh = e$, then $n \in N$ and $n = h^{-1} \in H$; thus $n = e$ since $N \cap H = \{ e \}$. Usint the same token
+for $h$, we conclude $h = e$; hence $(n,h) =$ the identity in $N \times H$, proving that $\varphi$ is injective.
+
+Thus $\varphi$ is an isomorphism, as needed.
+\end{proof}
+
+\subsubsubsection{Definition}
+Let $N, H$ be any two groups and let\dots
+$$\Theta : H \rightarrow \textrm{Aut}_{Grp}(N), \; h \mapsto \theta_h$$
+be an arbitrary homomorphism. Define an operation $\LargerCdot_{\theta}$ on the set $N \times H$ as follows: for $n_1, n_2 \in N$ and $h_1,h_2 \in H$, let\dots
+$$(n_1,h_1)\LargerCdot_{\theta}(n_2,h_2) := (n_1\theta_{h_1}(n_1),h_1h_2).$$\newline
+
+\noindent This structure is a group and is called the \label{semidirect product} of $N$ and $H$, denoted $N \rtimes_{\Theta} H$.
+
+\begin{proposition}
+Let $N$, $H$ be groups, and let $\Theta : H \rightarrow \textrm{Aut}_{Grp}(N)$ be a homomorphism; let $G = N \rtimes_{\Theta} H$ be the corresponding semidirect product. Then\dots
+\begin{itemize}
+  \item $G$ contains isomorphic copies of $N$ and $H$
+  \item the natural projection $G \rightarrow H$ is a surjective homomorphism, with kernel $N$; thus $N$ is normal in $G$, and the sequence
+  $$1 \rightarrow N \rightarrow N \rtimes_{\Theta} H \rightarrow H \rightarrow 1$$
+  is (split) exact;
+  \item $N \cap H = \{ e_G \}$
+  \item $G = NH$
+  \item the homomorphism $\theta$ is realized by conjugation in $G$: that is, for $h \in H$ and $n \in N$ we have\dots
+  $$\theta_h(n) = hnh^{-1}$$
+  in $G$.
+\end{itemize}
+\end{proposition}
+
+\begin{proposition}
+Let $N$, $H$ be subgroups of a group $G$, with $N$ normal in $G$. Assume that $N \cap H = \{ e \}$, and $G = NH$. Let $\gamma : H \rightarrow \textrm{Aut}_{Grp}(N)$ be defined by conjugation:
+for $h \in H$, $n \in N$,
+$$\gamma_h(n) = hnh^{-1}.$$
+Then $G \cong N \rtimes_{\gamma} H.$
+\end{proposition}
+
 \subsubsection{Free Product of Groups}\label{freegroupproduct}
 
 \subsubsection{Free Groups}\label{freegroup}

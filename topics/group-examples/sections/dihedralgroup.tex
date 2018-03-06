@@ -5,14 +5,36 @@
 Intuitively, this group captures the rigid motions (flips and rotations) of regular polygons in the $2$D plane. It is denoted
 $D_{2n}$, where $n$ is the number of sides/angles of the polygon, and contains $2n$ elements, $n$ rotations and $n$ flips.
 
+\subsubsection{Presentation}
+
+$\langle x,y | x^2, y^n, xyxy \rangle$
+
 \begin{proposition}
 Let $q$ be an odd prime, and let $G$ be a noncommutative group of order $2q$. Then $G \cong D_{2q}.$
 \end{proposition}
 
 \begin{proof}
-By Cauchy's theorem, $\exists y \in G$ such that $y$ has order $q$.
+By Cauchy's theorem, $\exists y \in G$ such that $y$ has order $q$. By the third Sylow theorem, $\langle y \rangle$ is the unique subgroup of order $q$ in $G$ (and is therefore normal).
+Since $G$ is not commutative and in particular it is not cyclic, it has no elements of order $2q$; therefore, every element in the complement of $\langle y \rangle$ has order $2$; let $x$
+be any such element.
+
+The conjugate $xyx^{-1}$ of $y$ by $x$ is an element of order $q$, so $xyx^{-1} \in \langle y \rangle$. Thus, $xyx^{-1} = y^r$ for some $r$ between $0$ and $q - 1$.
+
+Now observe that\dots
+$$(y^r)^r = (xyx^{-1})^r = xy^rx^{-1} = x^2 y (x^{-1})^2 = y$$
+since $|x| = 2$. Therefore, $y^{r^2 - 1} = e$, which implies\dots
+$$q | (r^2 - 1) = (r-1)(r+1)$$
+by \ref{orderasfirstidentityproducer}. Since $q$ is prime, this says that $q | (r-1)$ or $q | (r+1)$; since $0 \leq r \leq q - 1$, it follows that $r = 1$ or $r = q - 1$.
+
+If $r = 1$, then $xyx^{-1} = y$; that is, $xy = yx$. But then the order of $xy$ is $2q$, and $G$ is cyclic, a contradiction.
+
+Therefore $r = q - 1$, and we have established the relations\dots
+\[
+	\begin{cases}
+	x^2 = e, \\
+	y^q = e, \\
+	yx = xy^{q-1}.
+	\end{cases}
+\]
 \end{proof}
-
-\subsubsection{Presentation}
-
-$\langle x,y | x^2, y^n, xyxy \rangle$
+These are the relations satisfied by generators $x,y$ of $D_{2q}$; the statement follows.

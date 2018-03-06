@@ -4,4 +4,66 @@
 Let $A$ be a set. The \emph{symmetric group}, or \emph{group of permutations} of $A$, denoted $S_A$, is the group
 $Aut_{Set}(A)$. The group of permutations of the set $[n]$ is denoted by $S_n$.
 
-\subsubsection{Presentation}
+\subsubsection{Cycle}\label{cycle}
+A (nontrivial) \emph{cycle} is an element of $S_n$ with exactly one nontrivial orbit. For distinct $a_1, \dots, a_r$ in $\{1, \dots, n \}$, the notation\dots
+$$(a_1a_2\dots a_r)$$
+denotes the cycle in $S_n$ with nontrivial orbit $\{ a_1, \dots, a_r \}$, acting as\dots
+$$a_1 \mapsto a_2 \mapsto \cdots \mapsto a_r \mapsto a_1.$$
+In this case, $r$ is the \emph{length} of the cycle. A cycle of length $r$ is called an $r$-cycle.
+
+\subsubsubsection{Disjoint Cycles}\label{disjointcycles}
+Two cycles are \emph{disjoint} if their nontrivial orbits are. The following lemma depends on this definition.
+
+\begin{lemma}
+Disjoint cycles commute.
+\end{lemma}
+
+\begin{lemma}
+\label{writingpermutations}
+Every $\sigma \in S_n$, $\sigma \neq e$, can be written as a product of disjoint nontrivial cycles, in a unique way up to permutations of the factors.
+\end{lemma}
+
+\begin{proof}
+As we have seen, every $\sigma \in S_n$ determines a partition of $\{ 1, \dots, n \}$ into orbits under the action of $\langle \sigma \rangle$. If $\sigma \neq e$, then
+$\langle \sigma \rangle$ has nontrivial orbits. As $\sigma$ acts as a cycle on each orbit, it follows that $\sigma$ may be written as a product of cycles.
+
+Uniqueness is an exercise.
+\end{proof}
+
+\subsubsection{Type}\label{permutationtype}
+The \emph{type} of $\sigma \in S_n$ is the partition of $n$ given by the sizes of the orbits of the action of $\langle \sigma \rangle$ on $\{ 1, \dots, n \}$.\newline
+
+See \hyperref[integerpartitions]{integer partitions} and \hyperref[ferrers]{Ferrer's diagrams}.
+
+\begin{lemma}
+Let $\tau \in S_n$, and let $(a_1, \dots, a_r)$ be a cycle. Then\dots
+$$\tau(a_1 \dots a_r) \tau^{-1} = (a_1 \tau^{-1} \dots a_r \tau^{-1})$$
+where $a_i\tau^{-1} = \tau^{-1}(a_i)$.
+\end{lemma}
+
+\begin{proof}
+This is verified by checking that both sides act in the same way on $\{ 1, \dots, n \}$. For example, for $1 \leq i \leq r$\dots
+$$(a_i\tau^{-1})(\tau(a_1 \dots a_r)\tau^{-1}) = a_i(a_1 \dots a_r) \tau^{-1} = a_{i+1} \tau^{-1}$$
+as it should; the other cases are similar.
+\end{proof}
+
+\begin{proposition}
+Two elements of $S_n$ are conjugate in $S_n$ if and only if they have the same type.
+\end{proposition}
+
+\begin{proof}
+The 'only if' part of this statement follows immediately from\dots
+$$\tau (a_1 \dots a_r) \cdots (b_1 \cdots b_s) \tau^{-1} = (a_1\tau^{-1} \cdots a_r \tau^{-1}) \dots (b_1 \tau^{-1} \dots b_s\tau^{-1}).$$
+Conjugating a permutation yields a permutation of the same type.
+
+As for the 'if' part, suppose\dots
+$$\sigma_1 = (a_1 \dots a_r)(b_1 \dots b_s)\cdot (c_1 \dots c_t)$$
+and
+$$\sigma_2 = (a_1'\dots a_r')(b_1' \dots b_s')\cdot (c_1'\dots c_t')$$
+are two permutations with the same type, written in cycle notation, with $r \geq s \geq \cdots \geq t$. Let $\tau$ be any permutation such that $a_i = a_i'\tau$, $b_j = b_j'\tau, \dots, c_k = c_k' \tau$
+for all $i, j, \dots, k$. Then the previous lemma implies $\sigma_2 = \tau \sigma_1 \tau^{-1}$, so $\sigma_1$ and $\sigma_2$ are conjugate, as needed.
+\end{proof}
+
+\begin{corollary}
+The number of conjugacy classes in $S_n$ equals the number of partitions of $n$.
+\end{corollary}

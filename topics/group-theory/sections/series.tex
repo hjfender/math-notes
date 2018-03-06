@@ -1,0 +1,146 @@
+\subsection{Series of Gropus}
+
+\subsubsection{Series of Subgroups}\label{seriesofsubgroups}
+A \emph{series} of subgroups $G_i$ of a group $G$ is a decreasing sequence of subgroups starting from $G$:
+$$G = G_0 \supset G_1 \supset G_2 \cdots$$
+The \emph{length} of a series is the number of strict inclusions.
+
+\subsubsection{Normal Series}\label{normalseries}
+A series of subgroups for which $G_{i+1}$ is normal in $G_i$ for all $i$.
+
+\subsubsubsection{Maximal Length}\label{maximallengthofnormalseries}
+The \emph{maximal length} of a normal series $G$ can be denoted $l(G)$ (if finite). Then number $l(G)$ is a measure of how far $G$ is from being simple; $l(G) = 1$ if and only if $G$ is simple.
+
+\subsubsection{Composition Series}\label{compositionseries}
+A \emph{composition series} for $G$ is a normal series\dots
+$$G = G_0 \supset G_1 \supset G_2 \supset \cdots \supset G_n = \{ e \}$$
+such that the successive quotients $G_i/G_{i+1}$ are simple.
+
+\begin{theorem}[Jordan-H\"older Theorem]
+\label{jordanholder}
+Let $G$ be a group, and let\dots
+$$G = G_0 \supset G_1 \supset G_2 \supset \cdots \supset G_n = \{ e \},$$
+$$G = G_0' \supset G_1' \supset G_2' \supset \cdots \supset G_m' = \{ e \}$$
+be two composition series for $G$. Then $m = n$, and the lists of quotient groups $H_i = G_i/G_{i + 1}$, $H_i' = G_i'/G_{i+1}$ agree (up to isomorphism) after a permutation of the indices.
+\end{theorem}
+
+\begin{proof}
+Let\dots
+$$G = G_0 \supset G_1 \supset G_2 \supset \cdots \supset G_n = \{ e \}$$
+be a composition series. Argue by induction on $n$: if $n = 0$, then $G$ is trivial, and there is nothing to prove. Assume $n > 0$, and let\dots
+$$G = G_0' \supset G_1' \supset G_2' \supset \cdots \supset G_m' = \{ e \}$$
+be another composition series for $G$. If $G_1 = G_1'$, then the result follows from the induction hypothesis, since $G_1$ has a composition series of length $n-1 < n$.
+
+We may then assume $G_1 \neq G_1'$. Note that $G_1G_1' = G$: indeed, $G_1G_1'$ is normal in $G$, and $G_1 \supset G_1G_1'$; but there are no proper normal subgroups between $G_1$ and $G$
+since $G/G_1$ is simple.
+
+Let $K = G_1 \cap G_1'$. The distinct subgroups $G_i \cap K$ determine a composition series\dots
+$$K \supset K_1 \supset K_@ \supset \cdots \supset K_r = \{ e \}$$
+of $K$ (verified in the next proof). By the second isomorphism theorem,
+$$\frac{G_1}{K} = \frac{G_1}{G_1 \cap G_1'} \cong \frac{G_1G_1'}{G_1} = \frac{G}{G_1'} \textrm{  and  } \frac{G_1'}{K} \cong \frac{G}{G_1}$$
+are simple. Therefore, we hve two new composition series for $G$:
+which only differ at the first step. These two series trivially have the same length and the same quotients.
+
+Now I claim that the first of these two seires has the same length and quotients as the first series. Indeed,
+$$G_1 \supset K \supset K_1 \supset K_2 \supset \cdots \supset K_r = \{ e \}$$
+is a composition series for $G_1$: by the induction hypothesis, it must have the same length and quotients as the composition series\dots
+$$G_1 \supset G_2 \supset \cdots \supset G_n = \{ e \};$$
+verifying the claim.
+
+By the same token, applying the induction hypothesis to the series\dots
+$$G_1' \supset K \supset K-1 \supset K_2 \cdots \supset K_{n-2} = \{ e \},$$
+shows that the second series has the same length and quotients as the second series, and the statement follows.
+\end{proof}
+
+\begin{proposition}
+\label{subcompositionseries}
+Let $G$ be a group, and let $N$ be a normal subgroup of $G$. Then $G$ has a composition series if and only if both $N$ and $G/N$ have composition series. Further, if this is the case, then\dots
+$$l(G) = l(N) + l(G/N),$$
+and the composition factors of $G$ consist of the collection of composition factors of $N$ and of $G/N$.
+\end{proposition}
+
+\begin{proof}
+If $G/N$ has a composition series, the subgroups appearing in it correspond to subgroups of $G$ containing $N$, with isomorphic quotients, by the third isomorphism theorem. Thus, if both
+$G/N$ and $N$ have composition series, juxstaposing them produces a composition series for $G$, with the stated consequence on composition factors.
+
+The converse is a little trickier. Assume that $G$ has a composition series\dots
+$$G = G_0 \supset G_1 \supset G_2 \supset \cdots \supset G_n = \{ e \}$$
+and that $N$ is a normal subgroup of $G$. Intesecting the series with $N$ give a sequence of subgroups of $G$. Intersecting the series with $N$ gives a sequence of subgroups of the latter:
+$$N = G \cap N \supseteq G_1 \cap N \supseteq \cdots \supseteq \{ e \} \cap N = \{ e \}$$
+such that $G_{i+1} \cap N$ is normal in $G_i \cap N$, for all $i$. I claim that this becomes a composition series for $N$ once repetitions are eliminated. Indeed, this follows once we establish that\dots
+$$\frac{G_i \cap N}{G_{i+1} \cap N}$$
+is either trivial (so that $G_{i+1} \cap N = G_i \cap N$, and the corresponding inclusion may be ommitted) or isomorphic to $\frac{G_i}{G_{i+1}}$ (hence simple, and one of the composition factors of $G$). To
+see this, consider the homomorphism\dots
+$$G_i \cap N \hookrightarrow G_i \twoheadrightarrow \frac{G_i}{G_{i+1}}:$$
+the kernel is clearly $G_{i+1} \cap N$; therefore (by the first isomorphism theorem) we have an injective homomorphism\dots
+$$\frac{G_i \cap N}{G_{i+1} \cap N} \hookrightarrow \frac{G_i}{G_{i+1}}$$
+identifying $(G_i \cap N) / (G_{i+1} \cap N)$ with a subgroup of $G_i / G_{i+1}$. Now, this subgroup is \emph{normal} (because $N$ is normal in $G$) and $G_i / G_{i+1}$ is simple, our claim follows.
+
+As for $G/N$, obtain a sequence of subgroups from a composition series for $G$:
+$$\frac{G}{N} \supseteq \frac{G_1 N}{N} \supseteq \frac{G_2 N}{N} \supseteq \cdots \frac{\{e_G\}N}{N} = \{ e_{G/N} \},$$
+such that $(G_{i+1}N)/N$ is normal in $(G_iN)/N$. As above, we have to check that\dots
+$$\frac{(G_iN) / N}{(G_{i+1}N) / N}$$
+is either trivial or isomorphic to $G_i / G_{i+1}$. By the third isomorphism theorem, this quotient is isomorphic to $(G_iN)/(G_{i+1}N)$. This time, consider the homomorphism\dots
+$$G_i \hookrightarrow G_iN \twoheadrightarrow \frac{G_iN}{G_{i+1}N}:$$
+this is \emph{surjective}, and the subgroup $G_{i+1}$ of the source is sent to the identity element in the target; hence there is an onto homomorphism
+$$\frac{G_i}{G_{i+1}} \twoheadrightarrow \frac{G_iN}{G_{i+1}N}$$
+Since $G_i/G_{i+1}$ is simple, it follows that $(G_iN)/(G_{i+1}N)$ is either trivial or isomorphic to it, as needed.
+
+Summarizing, we have shown that if $G$ has a composition series and $N$ is normal in $G$, then both $N$ and $G/N$ have composition series. The first part of the argument yields the statement on lengths
+and composition factors, concluding the proof.
+\end{proof}
+
+\subsubsection{Refinement of a Series}\label{refinement}
+\begin{proposition}
+Any two normal series of a finite group ending with $\{ e \}$ admit equivalent refinements.
+\end{proposition}
+
+\begin{proof}
+Refine the series to a composition series; then apply the Jordan-H\"older theorem.
+\end{proof}
+
+\subsubsection{Derived Series}\label{derivedseries}
+Let $G$ be a group. The \emph{derived} series of $G$ is the sequence of subgroups\dots
+$$G \supseteq [G,G] = H \supseteq [H,H] = J \supseteq [J,J] \supseteq \cdots$$
+
+\subsubsection{Solvable}\label{solvable}
+A group is \emph{solvable} if its derived series terminate with the identity.
+
+\begin{proposition}
+\label{solvablecharacterization}
+For a finite group $G$, the following are equivalent\dots
+\begin{enumerate}
+  \item All composition factors of $G$ are cyclic.
+  \item $G$ admits a cyclic series ending in $\{ e \}$.
+  \item $G$ admits an abelian series ending in $\{ e \}$.
+  \item $G$ is solvable.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+$(1) \Rightarrow (2) \Rightarrow (3)$ are trivial.
+
+$(3) \Rightarrow (1)$ Refine the abelian series to a composition series (simple abelian groups are cyclic $p$-groups).
+
+$(4) \Rightarrow (3)$ The derived series is abelian, by \ref{commutatorprop}.
+
+$(3) \Rightarrow (4)$ Let\dots
+
+$$G = G_0 \supset G_1 \supset G_2 \supset \cdots \supset G_n = \{ e \}$$
+be an abelian series. Then $G^{(i)} \subseteq G_i$ for all $i$, where $G^{(i)}$ denotes the $i$-th 'iterated' commutator subgroup.
+
+This can be verified by induction. For $i = 1$, $G / G_1$ is commutative; thus $[G,G] \subseteq G_1$, by the \ref{commutatorprop}.
+Assuming we know $G^{(i)} \subseteq G_i$, the fact that $G_i / G_{i+1}$ is abelian implies $[G_i,G_i] \subseteq G_{i+1}$, and hence\dots
+$$G^{(i+1)} = [G^{(i)}, G^{(i)}] \subseteq [G_i, G_i] \subseteq G_{i+1},$$
+as claimed.
+
+In particular we obtained that $G^{(n)} \subseteq G_n = \{ e \}$: that is, the derived series terminates at $\{ e \}$, as needed.
+\end{proof}
+
+\begin{corollary}
+Let $N$ be a normal subgroup of a group $G$. Then $G$ is solvable if and only if both $N$ and $G/N$ are solvable.
+\end{corollary}
+
+\begin{proof}
+This follows immediately from \ref{subcompositionseries} and the formulation of solvability in terms of composition factors given in the previous proposition.
+\end{proof}

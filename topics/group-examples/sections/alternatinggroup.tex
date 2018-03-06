@@ -1,0 +1,172 @@
+\subsection{Alternating Group}\label{alternatinggroup}
+
+Let\dots
+$$\Delta_n = \prod_{i \leq i < j \leq n}(x_i - x_j) \in \mathbb{Z}[x_1, \dots, x_n].$$
+
+\subsubsection{Sign of a permutation}\label{signpermutation}
+The \emph{sign} of a permutation $\sigma \in S_n$, denoted $(-1)^{\sigma}$, is determined
+by the action of $\sigma$ on $\Delta_n$:
+$$\Delta_n \sigma = (-1)^{\sigma} \Delta_n.$$
+We say that a permutation is \emph{even} if if its sign is $+1$ and \emph{odd} if its sign is $-1$.
+
+\subsubsection{Transposition}\label{transposition}
+A \emph{transposition} is a cycle of length $2$.
+
+\begin{lemma}
+Transpositions generate $S_n$.
+\end{lemma}
+
+\begin{proof}
+Indeed, by \ref{writingpermutations} it suffices to show that every \emph{cycle} is a product of transpositions, and indeed\dots
+$$(a_1 \dots a_r) = (a_1a_2)(a_1a_3)\cdots(a_1a_r),$$
+as may be checked by applying both sides to every element of $\{ 1, \dots, n \}$.
+\end{proof}
+
+\begin{lemma}
+Let $\sigma = \tau_1 \cdots \tau_r$ be a product of transpositions. Then $\sigma$ is even, resp. odd, according to whether $r$ is even, resp., odd.
+\end{lemma}
+
+\begin{proof}
+This follows immediately from the facts that $\varepsilon$ is a homomorphism and the sign of a transposition is $-1$: indeed, $(ij)$ acts on $\Delta_n$ by
+permuting its factors and changing the sign of an odd number of factors (for $i < j$, the factor $(x_i - x_j)$ and the pairs of factors $(x_i - x_k)$, $(x_k - x_j)$
+for all $i < k < j$).
+\end{proof}
+
+\subsubsection{Definition}
+The \emph{alternating group} on $\{1, \dots, n \}$, denoted $A_n$, consists of all even permutations $\sigma \in S_n$. \newline
+
+\noindent The alternating group is a \emph{normal} subgroup of $S_n$, and\dots
+$$[S_n : A_n] = 2$$
+for $n \geq 2$.
+
+\subsubsection{Conjugacy}\label{conjugacyalternatinggroup}
+
+\begin{lemma}
+Let $n \geq 2$, and let $\sigma \in A_n$. Then $[\sigma]_{A_n} = [\sigma]_{S_n}$ or size of $[\sigma]_{A_n}$ is half the size of $[\sigma]_{S_n}$, according to whether
+the centralizer $Z_{S_n}(\sigma)$ is not or is contained in $A_n$.
+\end{lemma}
+
+\begin{proof}
+Not that\dots
+$$Z_{A_n}(\sigma) = A_n \cap Z_{S_n}(\sigma):$$
+this follows immediately from the definition of centralizer. Now recall that the centralizer of $\sigma$ is its stabilizer under conjugation, and therefore the size of the conjugacy
+class of $\sigma$ equals the index of its centralizer.
+
+If $Z_{S_n}(\sigma) \subseteq A_n$, then $Z_{A_n}(\sigma) = Z_{S_n}(\sigma)$, so that\dots
+$$[S_n : Z_{S_n}(\sigma)] = [S_n : Z_{A_n}(\sigma)] = [S_n :A_n][A_n : Z_{A_n}(\sigma)] = 2 \cdot [A_n : Z_{A_n}(\sigma)];$$
+therfore, $[\sigma]_{A_n}$ is half the size of $[\sigma]_{S_n}$ in this case.
+
+If $Z_{S_n} \not \subseteq A_n$, then note that $A_nZ_{S_n}(\sigma) = S_n$: indeed, $A_nZ_{S_n}(\sigma)$ is a subgroup of $S_n$, and it properly contains $A_n$, so
+it must equal $S_n$ as $A_n$ has index $2$ in $S_n$. By index considerations\dots
+$$[A_n : Z_{A_n}(\sigma)] = [A_n : A_n \cap Z_{S_n}(\sigma)] = [A_nZ_{S_n}(\sigma) : Z_{S_n}(\sigma)] = [S_n : Z_{S_n}(\sigma)],$$
+so the classes have the same size. Since $[\sigma]_{A_n} \subseteq [\sigma]_{S_n}$ in any case, it follows that $[\sigma]_{A_n} = [\sigma]_{S_n}$, completing the proof.
+\end{proof}
+
+\begin{proposition}
+\label{conjugacyclassofalternatinggroup}
+Let $\sigma \in A_n$, $n \geq 2$. Then the conjugacy class $\sigma$ in $S_n$ splits into two conjugacy classes in $A_n$ precisely if the type of $\sigma$
+consists of distinct odd numbers.
+\end{proposition}
+
+\begin{proof}
+By the previous lemma, we have to verify that $Z_{S_n}(\sigma)$ is contained in $A_n$ precisely when the stated condition is satisfied; that is, we have to show that\dots
+$$\sigma = \tau \sigma \tau^{-1} \Rightarrow \tau \textrm{ is even}$$
+precisely when the type of $\sigma$ consists of distinct odd numbers.
+
+Write $\sigma$ in cycle notation (including cycles of length $1$):
+$$\sigma = (a_1 \dots a_{\lambda})(b_1 \dots b_{\mu})\cdots(c_1\dots c_{\nu}),$$
+and recall that\dots
+$$\tau \sigma \tau^{-1} = (a_1\tau^{-1}\dots a_{\lambda}\tau^{-1})(b_1\tau^{-1}\dots b_{\mu}\tau^{-1})\cdots(c_1\tau^{-1}\dots c_{\nu}\tau^{-1}).$$
+
+Assume that $\lambda, \mu, \dots , \nu$ are odd and distinct. If $\tau \sigma \tau^{-1} = \sigma$, then conjugation by $\tau$ must preserve each cycle in $\sigma$, as all cycle lengths are distinct:
+$$\tau (a_1 \dots a_{\lambda})\tau^{-1} = (a_1 \dots a_{\lambda}), \textrm{ etc.}$$
+that is,
+$$(a_1 \tau^{-1} \dots a_{\lambda} \tau^{-1}) = (a_1 \dots a_{\lambda}), \textrm{ etc.}$$
+
+This means that $\tau$ acts as a cyclic permutation on (e.g.) $a_1, \dots, a_{\lambda}$ and therefore in
+the same way as a power of $(a_1 \dots a_{\lambda})$. It follows that\dots
+$$\tau = (a_1 \dots a_{\lambda})^r(b_1 \dots b_{\mu})^s \dots (c_1 \dots c_{\nu})^t$$
+for suitable $r,s, \dots, t$. Since all cycles have odd lengths, each cycle is an even permutation; and $\tau$ must then be even as it is a product of evne permutations. This proves that $Z_{S_n}(\sigma) \subseteq A_n$
+if the stated condition holds.
+
+Conversely, assume that the stated condition does not hold: that is, either some of the cycles in the cycle decomposition have even length or all have odd length but two of the cycles have the same length.
+
+In the first case, let $\tau$ be an even-length cycle in the cycle decomposition of $\sigma$. Note that $\tau \sigma \tau^{-1} = \sigma$: indeed, $\tau$ commutes with itself and with all cycles in $\sigma$ other than $\tau$.
+Since $\tau$ has even length, then it is odd as permutation: this shows that $Z_{S_n}(\sigma) \not subseteq A_n$, as needed.
+
+In the second case, without loss of generality assume $\lambda = \mu$, and consider the odd permutation\dots
+$$\tau = (a_1b_1)(a_2b_2)\cdots(a_{\lambda}b_{\lambda}):$$
+conjugating by $\tau$ simply interchanges the first two cycles in $\sigma$; hence $\tau \sigma \tau^{-1} = \sigma$. As $\tau$ is odd, this again shows that $Z_{S_n}(\sigma) \not \subseteq A_n$, and we are done.
+\end{proof}
+
+\subsubsection{Simplicity}\label{simplictyalternatinggroup}
+
+\begin{corollary}
+The alternating group $A_5$ is a simple noncommutative group of order $60$.
+\end{corollary}
+
+\begin{proof}
+A normal subgroup of $A_5$ is necessarily the union of conjugacy classes, contains the identity, and has order equal to a divisor of $60$. The divisors of $60$ other than $1$ and $60$ are\dots
+$$2,3,4,5,6,10,12,15,20,30;$$
+counting the elements other than the identity would give one of\dots
+$$1,2,3,4,5,9,11,14,19,29$$
+as a sum of numbers $\neq 1$ from the class formula for $A_5$. But the simply does not happen.
+
+\end{proof}
+
+\begin{lemma}
+\label{alternatinggroupthreecycles1}
+The alternating group $A_n$ is generated by $3$-cycles.
+\end{lemma}
+
+\begin{proof}
+Since every even permutation is a product of an even number $2$-cycles, it suffices to show that every product of two $2$-cycles may be written as product of $3$-cycles. Therefore, consider a product\dots
+$$(ab)(cd)$$
+with $a \neq b$, $c \neq d$. If $(ab) = (cd)$, then this product is the identity, and their is nothing to prove. If $\{ a,b \}, \{ c,d \}$ have exactly one element in common, then we may assume $c = a$ and observe\dots
+$$(ab)(ab) = (abd).$$
+It $\{ a,b \}, \{ c,b \}$ are disjoint, then\dots
+$$(ab)(cd) = (abc)(adc),$$
+and we are done.
+\end{proof}
+
+\begin{proposition}
+\label{alternatinggroupthreecycles2}
+Let $n \geq 5$. If a normal subgroup of $A_n$ contains a $3$-cycle, then it contains all $3$-cycles.
+\end{proposition}
+
+\begin{proof}
+Normal subgroups are unions of conjugacy classes, so we just need to verify that $3$-cycles form a conjugacy class in $A_n$, for $N \geq 5$. But they do in $S_n$, and the type of a
+$3$-cycle is $[3,1,1,\dots]$ for $n \geq 5$; hence the conjugacy class does not split in $A_n$, by \ref{conjugacyclassofalternatinggroup}.
+\end{proof}
+
+\begin{theorem}
+The alternating group $A_n$ is simple for $n \geq 5$.
+\end{theorem}
+
+\begin{proof}
+We have already checked this for $n = 5$ and $n = 6$. For $n > 6$, let $N$ be a nontrivial normal subgroup of $A_n$; we will show that necessarily $N = A_n$, by proving that $N$ contains $3$-cycles.
+
+Let $\tau \in N$, $\tau \neq (1)$, and let $\sigma \in A_n$ be a $3$-cycle. Since the center of $A_n$ is trivial and $3$-cycles generate $A_n$, we may assume that $\tau$ and $\sigma$ do not commute,
+that is, the commutator\dots
+$$[\tau, \sigma] = \tau(\sigma \tau^{-1} \sigma^{-1}) = (\tau \sigma^{-1})\sigma^{-1}$$
+is not the identity. This element is in $N$ and is a product of two $3$-cycles.
+
+Therefore, replaceing $\tau$ by $[ \tau, \sigma ]$ if necessary, we may assume that $\tau \in N$ is a nonindentity permutation acting on $\leq 6$ elements: that is, on a subset of a set
+$T \subseteq \{ 1, \dots, n \}$ with $|T| = 6$. Now we may view $A_6$ as a subgroup of $A_n$, by letting it act on $T$. The subgroup $N \cap A_6$ of $A_g$ is then normal (because $N$ is normal) and
+nontrivial (because $\tau \in N \cap A_6$ and $\tau \neq (1)$). Since $A_6$ is simple, this implies $N \cap A_6 = A_6$. In particular, $N$ contains $3$-cycles.
+
+By \ref{alternatinggroupthreecycles2}, this implies that $N$ contains \emph{all} $3$-cycles. By \label{alternatinggroupthreecycles1}, it follows that $N = A_n$, as needed.
+\end{proof}
+
+\subsubsection{Solvability}\label{solvabilityalternatinggroup}
+
+\begin{corollary}
+For $n \geq 5$, the group $S_n$ is not solvable.
+\end{corollary}
+
+\begin{proof}
+Since $A_n$ is simple, the sequence\dots
+$$S_n \supset A_n \supset \{ (1) \}$$
+is a composition series for $S_n$. It follows that the composition factors of $S_n$ are $\mathbb{Z} / 2 \mathbb{Z}$
+and $A_n$. By \ref{solvablecharacterization}, $S_n$ is not solvable.
+\end{proof}
