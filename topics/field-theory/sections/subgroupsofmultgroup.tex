@@ -1,0 +1,20 @@
+\subsection{Finite Subgroups of Multiplicative Groups of Fields}\label{subgroupsofmultgrpinfld}
+
+\begin{lemma}
+Let $G$ be a finite abelian group, and assume that for every integer $n > 0$ the number of elements $g \in G$ such that $ng = 0$ is an most $n$. Then $G$ is cyclic.
+\end{lemma}
+
+\begin{proof}
+By \ref{finiteabelianclassificationtheorem}\dots
+$$G \cong \frac{\mathbb{Z}}{d_1\mathbb{Z}}\oplus \cdots \oplus \frac{\mathbb{Z}}{d_s\mathbb{Z}}$$
+for some positive integers $1 < d_1 | \cdots | d_s$. But if $s > 1$, Then $|G| > d_s$ and $d_sg = 0$ for all $g \in G$ (so that the order of $g$ divides $d_s$), contradicting the hypotheses. Therefore $s = 1$; that is, $G$ is cyclic.
+\end{proof}
+
+\begin{proposition}
+Let $F$ be a field, and let $G$ be a finite subgroup of the multiplicative group $(F^*, \cdot)$. Then $G$ is cyclic.
+\end{proposition}
+
+\begin{proof}
+By the considerations preceding the statement, for every $n$ there are at most $n$ elements $a \in F$ such that $a^n - 1 = 0$, that is, at most $n$ elements $a \in G$ such that $a^n = 1$.
+The preceding lemma implies then that $G$ is cyclic.
+\end{proof}
