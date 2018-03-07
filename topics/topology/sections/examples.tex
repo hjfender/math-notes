@@ -1,0 +1,85 @@
+\subsection{Examples}
+
+\subsubsection{Topology Examples}\label{exampletopologies}
+
+\subsubsubsection{Indiscrete Topology}\label{indiscretetopology}
+
+For any set $X$, $\mathcal{T} = \{\emptyset, X\}$.
+
+\subsubsubsection{Discrete Topology}\label{discretetopology}
+
+For any set $X$, $\mathcal{T} = \mathcal{P}(X)$.
+
+\subsubsubsection{Finite Complement Topology}\label{finitecomplementtopology}
+
+Given an infinte set $X$, define $\mathcal{T}_{FC} = \{U \subseteq X | U = \emptyset \textrm{ or } X \setminus U \textrm{ is finite}\}$.
+
+\subsubsubsection{Included Point Topology}\label{includedpointtopology}
+Let $X$ be a pointed set with $x_0 \in X$ the chosen point. Then we can define a topology\dots
+$$\mathcal{T}_{IP} = \{ \emptyset \textrm{ or } U \subset X \textrm{ with } x_0 \in U \}.$$
+
+\noindent In this space, a constant sequence converses to every point except $x_0$.
+
+\subsubsection{Space Examples}\label{examplespaces}
+
+\subsubsubsection{Torus}\label{torus}
+Define $A = \{ 0 \} \times [0,1] \cup [0,1] \times \{ 0 \}$ and $B = \{ 1 \} \times [0,1] \cup [0,1] \times \{ 1 \}$; then take the mapping
+$h : A \rightarrow B$ by $h((0,t)) = (1,t)$ and $h((t,0)) = (t,1)$. Define $\forall (u,v),(u',v') \in I^2$ the equivalence relation
+$(u,v) \sim_h (u',v') \Leftrightarrow f(u,v) = (u',v') \textrm { or } f(u',v') = (u,v).$ Then the torus is $I^2 / \sim_h$. \newline
+
+\noindent Alternatively, if we consider the torus as $T^2 = S^1 \times S^1$, we can define a function $f : I^2 \rightarrow T^2$ as
+$(u,v) \mapsto (e^{2 \pi i u}, e^{2 \pi i v}) \in S^1 \times S^1$. Since $e^{2 \pi i 0} = e^{2 \pi i 1}$ we get $f(u,v) = f(u',v')$ if and only
+if $(u,v) \sim_h (u',v')$. This leads to a homeomorphismj $\hat{f} : [I^2]_h \rightarrow T^2$ via universal properties.
+
+\subsubsubsection{M\"obius Strip}\label{mobiusstrip}
+Let $A = \{ 0 \} \times [0,1]$, $B = \{ 1 \} \times [0,1]$ and $h : A \rightarrow B$, $(0,t) \mapsto (1,1-t)$. Then $[I^2]_h$ represents the M\"obius band.
+
+\subsubsubsection{Projective Space}\label{projectivespace}
+The space $[S^n]$ where $x \sim \pm x$. Denoted $\mathbb{R}P^n$.
+
+\subsubsubsection{Cone}\label{cone}
+The \emph{cone} on a topological space $X$ is given by $[X \times [0,1]]$ where $(x,t) \sim (x',t')$ if $(x,t) = (x',t')$ or
+$x,x' \in X$ and $t = t' = 0$. We write $CX = [X \times [0,1]]$ for the cone on $X$.
+
+\subsubsubsection{Suspension}\label{suspension}
+The \emph{suspension} of $X$, denoted $\sum X$, is the quotient of $X \times [0,1]$, where we identify the subsets $X \times \{ 0 \}$ and $X \times \{ 1 \}$
+each to a point.
+
+\begin{proposition}
+The $(n+1)$-sphere $S^{n+1}$ is homeomorphic to $\sum S^n$.
+\end{proposition}
+
+\begin{proof}
+Consider the function $\sigma : S^n \times [0,1] \rightarrow S^{n+1}$ given by\dots
+$$\sigma(x_0, \dots, x_n,t) = (\sqrt{1 - (1-2t)^2}x_0, \dots. \sqrt{1 - (1 -2t)^2}x_n, 1 -2t).$$
+This function is continuous as the calculus tells us. Notice that\dots
+$\sigma(x_0, \dots, x_n, 0) = (0,0,\dots,0,1), \; \sigma(x_0, \dots, x_n, 1) = (0,0,\dots, -1).$
+Thus $\sigma$ factors through $[S^n \times [0,1]] = \sum S^n$.
+\begin{figure}[H]
+\centering
+\input{topics/topology/diagrams/suspensionmap}
+\end{figure}
+The function $\hat{\sigma}$ is a bijection away from the 'poles' $(0,\dots,0,\pm 1)$. The classes remaining, $[S^n \times \{ 0 \}]$ and
+$[S^n \times \{ 1 \}]$, each go to the respecitve poles. To finish the proof we only need to show that $\sigma$ is a quotient map. Let
+$S^n \times [0,1]$ get its topology as a subspace of $\mathbb{R}^{n+2}$. A basic open set in $S^n \times [0,1]$ takes the form
+$W = (S^n \times [0,1]) \cap [(a_1, b_1) \times \cdots \times (a_{n+2}, b_{n+2})]$. Restricting (or extending) $\sigma$ to $W$ takes it
+to an open set and the image is easily determined to be the intersection of $\sigma(W)$ with $S^{n+1}$. Thus $\sigma$ is open.
+\end{proof}
+
+\subsubsubsection{Pointed Suspension}\label{pointedsuspension}
+The \emph{pointed suspension} $(SX, sx_0)$ has $[sx_0] = X \times \{ 0 \} \cup X \times \{ 1 \} \cup x_0 \times [0,1]$,
+and the rest of the equivalence classes are the same as $\sum X$.
+
+\begin{proposition}
+There is a bijection between set\dots
+$$\textrm{Hom}((SX,sx_0),(Y,y_0)) \cong \textrm{Hom}((X,x_0),\textrm{Hom}((S^1,1),(Y,y_0))).$$
+\end{proposition}
+
+\begin{proof}
+Let $f : (SX, sx_0) \rightarrow (Y,y_0)$. Untangling the suspension coordinate we can write $f$ in the composite\dots
+$$X \times [0,1] \xrightarrow[]{\pi} SX \xrightarrow[]{f} Y$$
+and for each $x \in X$ associate the mapping $x \mapsto \tilde f (t) = f \circ \pi (x,t).$ It follows that $\tilde f (0) = \tilde f (1) = f(sx_0) = y_0$
+by the definition of the canoncial projection for the equivalence relation. The inverse is as follows: given $F : (X,x_0) \rightarrow \textrm{Hom}((S^1,1),(Y,y_0))$,
+then define $\hat{F} : (SX, sx_0) \rightarrow (Y, y_0)$ by $\hat{F}(x,t) = F(x)(e^{2 \pi i t})$. An explicit calculation shows these processes to be inverses and the
+proposition is proved.
+\end{proof}
