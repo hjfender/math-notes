@@ -1,1 +1,58 @@
 \subsection{Compactness}\label{compactness}
+Given a topological space $X$ and a subset $K \subseteq X$, a collection of subsets $\{ C_i \subseteq X | i \in J \}$ is a
+\emph{cover} of $K$ if $K \subseteq \bigcup_{i \in J} C_i$. A cover is an \emph{open cover} if every $C_i$ is open in $X$.
+The cover $\{ C_i | i \in J \}$ of $K$ has a \emph{finite subcover} if ther are members of the collection $C_{i_1},\dots,C_{i_n}$
+with $K \subseteq C_{i_1} \cup \cdots \cup C_{i_n}$. A subset $K \subseteq X$ is compact if any open cover of $K$ has a finite subcover.
+
+\begin{theorem}[THe Heine-Borel Theorem]
+\label{heineboreltheorem}
+The closed interval $[0,1]$ is a compace subspace of $(\mathbb{R}, \textrm{ usual})$.
+\end{theorem}
+
+\begin{proof}
+Suppose $\{ U_i | i \in J \}$ is an open cover of $[0,1]$. Define\dots
+$$T = \{ x \in [0,1] | [0,x] \textrm{ has a finite subcover from } \{U_i\}\}.$$
+Certainly $0 \in T$ since $0 \in \bigcup U_i$ and so in some $U_j$. We show $1 \in T$. Since every element of $T$ is less than or equal to $1$, $T$
+has a least upper bound $s$. Since $\{ U_i \}$ is a cover of $[0,1]$, $s \in U_j$ for some $j \in J$. Since $U_j$ is open, $(s - \varepsilon, s + \varepsilon) \subseteq U_j$
+for some $\varepsilon > 0$. Because $s$ is a least upper bound, $s - \delta \in T$ for some $0 < \delta < \varepsilon$ and so $[0, s - \delta]$ has a finite subcover. It
+follows that $[0,s]$ has a finite subcover by simply adding $U_j$ to the finite subcover of $[0,s-\delta].$ If $s < 1$, then there is an $\eta > 0$ with $s + \eta \in (s -\varepsilon, s + \varepsilon) \cap [0,1]$,
+and so $s + \eta \in T$, which contradicts the fact that $s$ is a least upper bound. Hence $s = 1$.
+\end{proof}
+
+\begin{theorem}
+\label{imageofcompactspace}
+If $f : X \rightarrow Y$ is a continuous function and $X$ is compact, then $f(X) \subseteq Y$ is compact.
+\end{theorem}
+
+\begin{proposition}
+If $X$ is a compact space and $K \subseteq X$ is a closed subset, then $K$ is compact.
+\end{proposition}
+
+\begin{proposition}
+If $X$ is Hausdorff and $K \subseteq X$ is compact, then $K$ is closed in $X$.
+\end{proposition}
+
+\begin{corollary}
+If $K \subseteq \mathbb{R}^n$ is compact, $K$ is closed and bounded.
+\end{corollary}
+
+\begin{theorem}[The Extreme Value Theorem]
+\label{extremevaluetheorem}
+If $f: X \rightarrow \mathbb{R}$ is a continuous function and $X$ is compact, then there are points $x_m, x_M \in X$ with $f(x_m) \leq f(x) \leq f(x_M)$ for all $x \in X$.
+\end{theorem}
+
+\begin{proof}
+By \ref{imageofcompactspace}, $f(X)$ is a compact subset of $\mathbb{R}$ and so $f(X)$ is closed and bounded. The boundedness implies that the greatest lower bound of $f(X)$ and the least upper bound of $f(X)$ exist.
+Since $f(X)$ is closed, the values glb$f(X)$ and lub$f(X)$ are in $f(X)$ and so glb$f(X) = f(x_m)$ for some $x_m \in X$; also lub$f(X) = f(x_M)$ for some $x_M \in X$. It follows that $f(x_m) \leq f(x) \leq f(x_M)$ for all
+$x \in X$.
+\end{proof}
+
+\begin{proposition}
+if $R = \{ x_{\alpha} | \alpha \in J \}$ is an infinite subset of a compact space $X$, then $R$ has a limit point.
+\end{proposition}
+
+\begin{proposition}[Greatest Theorem of Elementary Topology]
+\label{gtet}
+If $f: X \rightarrow Y$ is a continuous bijection, $X$ is compact, and $Y$ is Hausdorff, the $f$ is a homeomorphism. 
+\end{proposition}
+

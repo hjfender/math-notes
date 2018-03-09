@@ -1,0 +1,22 @@
+\subsection{Connectedness}
+
+\begin{lemma}
+If $f : X \rightarrow Y$ is a homeomorphism and $x \in X$, then $f$ induces a homeomorphism between $X \setminus \{ x \}$
+and $Y \setminus \{ f(x) \}$.
+\end{lemma}
+
+\begin{theorem}[Invariance of Dimension for $(1,n)$]
+$\mathbb{R}$ is not homeomorphic to $\mathbb{R}^n$, for $n > 1$.
+\end{theorem}
+
+\begin{proof}
+Suppose we had a homeomorphism $h : \mathbb{R} \rightarrow \mathbb{R}^n$. By composing with a translation we arrange that
+$h(0) = \mathbf{0} = (0,0,\dots,0) \in \mathbb{R}^n$. By the previous lemma, we consider the homeomorphism $h \mathord{\upharpoonright} : \mathbb{R} \setminus \{ 0 \} \rightarrow \mathbb{R}^n \setminus \{ \mathbf{0} \}.$
+But $\mathbb{R} \setminus \{ 0 \}$ has two connected components. To demonstrate invariance of dimension in this case we show for $n > 1$ that $\mathbb{R}^n \setminus \{ \mathbf{0} \}$ has only one component. Fix the
+connected subset of $\mathbb{R}^n \setminus \{ \mathbf{0} \}$ has only one component. Fix the connected subset of $\mathbb{R}^n \setminus \{ \mathbf{0} \}$, given by\dots
+$$Y = \{(x_1,0, \dots, 0) | x_1 > 0 \}.$$
+This is an open ray, which we know to be connected. We can express $R^n \setminus \{ \mathbf{0} \}$ as a union:
+$$\mathbb{R}^n \setminus \{ \mathbf{0} \} = \bigcup_{r > 0}rS^{n-1} \cup Y,$$
+where $rS^{n-1} = \{ (a_1, \dots, a_n) \in \mathbb{R}^n | a^2_1 + \cdots + a^2_n = r^2 \}.$ Each subset in the union is connected since it is the union of a homeomorphic copy of $S^{n-1}$ and $Y$ with nonempty intersection.
+The intersetion of all the sets in the union is $Y$ and so, by \ref{connectedunion}, $\mathbb{R}^n \setminus \{ \mathbf{0} \}$ is connected and thus has only one component.
+\end{proof}

@@ -1,1 +1,93 @@
 \subsection{Connectedness}\label{connectedness}
+
+\subsubsection{Disconnected}\label{disconnected}
+A space $X$ is \emph{disconnected} by a separation $\{ U,V \}$ if $U$ and $V$ are open, nonempty, and disjoint $(U \cap V = \emptyset)$ subsets
+of $X$ with $X=U \cup V$.
+
+\subsubsection{Connected}\label{connected}
+A space $X$ exists is it has no separations.
+
+\begin{theorem}
+A space $X$ is connected if and only if whenever $X = A \cup B$ with $A, B$ nonempty, then $A \cap (\emph{cls } B) \neq \emptyset$ or
+$(\emph{cls }A) \cap B \neq \emptyset$.
+\end{theorem}
+
+\begin{theorem}
+If $f:X \rightarrow Y$ is continuous and $X$ is connected, then $f(X)$, the image of $X$ in $Y$, is connected.
+\end{theorem}
+
+\begin{lemma}
+\label{connectedunion}
+If $\{ A_i | i \in J \}$ is a collection of connected subspaces of a space $X$ with $\bigcap_{i \in J} A_i \neq \emptyset$, then $\bigcup_{i \in J} A_i$ is connected.
+\end{lemma}
+
+\begin{proposition}
+If $W \subseteq (\mathbb{R}, \emph{ usual})$ is connected, then $W = (a,b),[a,b),(a,b],[a,b]$ for $-\infty \leq a \leq b \leq \infty$.
+\end{proposition}
+
+\begin{theorem}[Intermediate Value Theorem]
+If $f:[a,b] \rightarrow \mathbb{R}$ is continuous function and $f(a) < c < f(b)$ or $f(a) > c > f(b)$, then there is a value $x_0 \in [a,b]$ with $f(x_0) = c$.
+\end{theorem}
+
+\begin{corollary}
+Suppose $g : S^1 \rightarrow \mathbb{R}$ is continuous. Then there is a point $x_0 \in S^1$ with $g(x_0) = g(-x_0)$.
+\end{corollary}
+
+\begin{proof}
+Define $\hat{g} : S^1 \rightarrow \mathbb{R}$ by $\hat{g} = g(x) - g(-x)$. Wrap $[0,1]$ onto $S^1$ by $w(t) = (\cos (2 \pi t), \sin (2 \pi t)).$ Then
+$w(0) = -w(1/2).$
+
+Let $F = \tilde g \circ w$. It follows that\dots
+\begin{align*}
+F(0) = \tilde g(w(0)) &= g(w(0)) - g(-w(0))\\
+					  &= -[g(-w(0)) - g(w(0))]\\
+					  &= -[g(w(1/2)) - g(-w(1/2))]\\
+					  &=-F(1/2).
+\end{align*}
+If $F(0) > 0$, then $F(1/2) < 0$ and since $F$ is continuous, it must take the value $0$ for some $t$ between $0$ and $1/2$. Similarly for $F(0) < 0$.
+If $F(t) = 0$, then let $x_0 = w(t)$ and $g(x_0) = g(-x_0)$.
+\end{proof}
+
+\begin{proposition}
+If $A$ is a connected subspace of a space $X$ and $A \subseteq B \subseteq \emph{cls } A$, then $B$ is connected.
+\end{proposition}
+
+\subsubsection{Connected Component}\label{connectedcomponent}
+Define an equivalence relation on a space $X$ as $x \sim y \Leftrightarrow x \in A \textrm{ and } y \in A$ where $A$ is a connected subset of $X$.
+An equivalence class $[x]$ under this relation is called a \emph{connected componenet} of $X$.
+
+\subsubsection{Path Connected}\label{pathconnected}
+A space $X$ is \emph{path-connected} if, for any $x,y \in X$, there is a continuous function $\lambda: [0,1] \rightarrow X$ with $\lambda(0) = x$, $\lambda(1) = y$.
+Such a function $\lambda$ is called a \emph{path}\label{path} joining $x$ to $y$ in $X$.
+
+\begin{proposition}
+If $X$ is path-connected, then it is connected.
+\end{proposition}
+
+\begin{theorem}
+If $X$ is path-connected and $f : x \rightarrow Y$ is continuous, then $f(X) \subseteq Y$ is path-connected.
+\end{theorem}
+
+\begin{lemma}
+If $\{ A_i | i \in J \}$ is a collection of path-connected subsets of a space $X$ and $\bigcap_{i \in J}A_i \neq \emptyset$, then
+$\bigcup_{i \in J}A_i$ is path-connected.
+\end{lemma}
+
+\subsubsubsection{Path Component}\label{pathcomponent}
+Define an equivalence relation on a space $X$ as $x \approx y$ if and only if there is a path $\lambda:[0,1] \rightarrow X$ with $\lambda(0) = x$ and $\lambda(1) = y$.
+An equivalence class under this relation is called a \emph{path component}.\newline
+
+\noindent The \emph{set of path components}\label{setofpathcomponents} $\pi_0 (X)$ is the set of equivalence classes under the relation $\approx$. If $f : X \rightarrow Y$ is a continuous function,
+then $f$ induces a well-defined mapping $\pi_0(f) : \pi_0(X) \rightarrow \pi_0(Y)$, given by $\pi_0(f)([x]) = [f(x)]$.
+
+\subsubsection{Locally Path-Connected}\label{locallypathconnected}
+A space $X$ is \emph{locally path-connected} if, for every $x \in X$ and $x \in U$ an open set in $X$, there is an open set $V \subseteq X$ with $x \in V \subseteq U$
+and $V$ path-connected.
+
+\begin{proposition}
+If $X$ is locally path-connected, then path components of $X$ are open.
+\end{proposition}
+
+\begin{corollary}
+If $X$ is connected and locally path-connected, then it is path-connected.
+\end{corollary}

@@ -24,6 +24,28 @@ The \emph{open set} $U$ of a metric space $(X,d)$ is \emph{open} if for any $u \
 A function $f:X \rightarrow Y$ between metric spaces $\langle X,d \rangle$ and $\langle Y,d \rangle$ is continuous if and only if for any open subset $V$ of $Y$, the subset $f^{-1}(V)$ is open in $X$.
 \end{theorem}
 
+\subsubsection{Lebesgue's Lemma}
+
+\subsubsubsection{Diameter}\label{diameter}
+The \emph{diameter} of a subset $A$ of a metric space $X$ is defined by diam $A = \sup\{d(x,y) | x,y \in A \}.$
+
+\begin{lemma}[Lebesgue's Lemma]
+\label{lebesguelemma}
+Let $X$ be a compact metric space and $\{ U_i | i \in J \}$ an open cover. Then there is a real number
+$\delta > 0$ (\emph{the Lebesgue number}\label{lebesguenumber}) such that any subset of $X$ of diameter less than $\delta$
+is contained in some $U_i$.
+\end{lemma}
+
+\begin{proof}
+Define the continuous function $d(-,A): X \rightarrow \mathbb{R}$ by $d(x, A) = \inf\{d(x,a) | x \in A \}$. In addition,
+if $A$ is closed, then $d(x,A) > 0$ for $x \not \in A$. Fiven an open cover $\{ U_i | i \in J \}$ of the compact space $X$,
+there is a finite subcover $\{U_{i_1},\dots, U_{i_n} \}$. Define $\varphi_j(x) = d(x,X \setminus U_{i_j})$ for $j = 1,2,\dots, n$
+and let $\varphi(x) = \max\{\varphi_1(x), \dots, \varphi_n(x) \}$. Since each $x \in X$ lies in some $U_{i_j}$, $\varphi(x) \geq \varphi_j(x) > 0$.
+Furthermore, $\varphi$ is continuous so $\varphi(X) \subseteq \mathbb{R}$ is compact, and $0 \not \in \varphi(X)$. Let $\delta = \min \{ \varphi(x) | x \in X \} > 0$.
+FOr any $x \in X$, consider $B(x, \delta) \subseteq X$. We know $\varphi(x) = \varphi_j(x)$ for some $j$. For that $j$, $d(x,X \setminus U_{i_j}) \geq \delta$, which implies
+$B(x, \delta) \subseteq U_{i_j}$.
+\end{proof}
+
 \subsubsection{Examples}\label{metricexamples}
 
 \subsubsubsection{Euclidean Metric Space}\label{euclideanmetric}

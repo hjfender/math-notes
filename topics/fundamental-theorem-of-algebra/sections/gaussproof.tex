@@ -1,0 +1,53 @@
+\subsection{Gauss's Incomplete Proof}\label{gaussproofofFOA}
+
+Let $p(z) = z^n + a_{n-1}a^{n-1} + \cdots + a_1z + a_0$ be a complex monic polynomial of degree $n$. We begin with some
+estimates. We can write the complex numbers in polar form, $z = re^{i \theta}$ and $a_j = s_je^{i \psi_j}$, and make the substitution\dots
+$$p(z) = r^ne^{ni \theta} + r^{n-1}s_{n-1}e^{(n-1)i \theta + i \psi_{n-1}} + \cdots + rs_1e^{i \theta + i \psi_1} + s_0e^{i \psi_0}.$$
+Writing $e^{i \beta} = \cos(\beta) + i \sin(\beta)$ and $p(z) = T(z) + i U(z)$, we have\dots
+\begin{align*}
+T(z) &= r^n \cos(n \theta) + r^{n-1}s_{n-1} \cos((n-1)\theta + \psi_{n-1})\\
+	 &+ \cdots + rs_1 \cos(\theta + \psi_1) + s_0 \cos (\psi_0),\\
+U(z) &= r^n \sin(n \theta) + r^{n-1}s_{n-1} \sin((n-1)\theta + \psi_{n-1})\\
+	 &+ \cdots + rs_1\sin(\theta + \psi_1) + s_0 \sin(\psi_0).
+\end{align*}
+Thus a root of $p(z)$ is a complex number $z_0 = re^{i\theta_0}$ with $T(z_0) = 0 = U(z_0)$.
+
+Suppose $S = \max \{ s_{n-1}, s_{n-2}, \dots, s_0\}$ and $R = 1 + \sqrt{2}S$. Then if $r > R$, we can write\dots
+$$0 < 1 - \frac{\sqrt{2}S}{r-1} = 1 -\sqrt{2}S\left(\frac{1}{r} + \frac{1}{r^2} + \frac{1}{r^3} + \cdots\right)$$
+$$< 1 - \sqrt{2}S\left(\frac{1}{r} + \frac{1}{r^2} + \cdots + \frac{1}{r^n}\right)$$
+Multiplying through by $r^n$, we deduce\dots
+\begin{align*}
+0 &< r^n - \sqrt{2}S(r^{n-1} + r^{n-2} + \cdots + r + 1)\\
+  &\leq r^n - \sqrt{2}(s_{n-1}r^{n-1} + s_{n-2}r^{n-2} + \cdots + s_1r + s_0).
+\end{align*}
+The $\sqrt{2}$ factor is related to the trigonometric form of $T(z)$ and $U(z)$.
+
+Fix a circle in the complex plane given by $z = re^{i \theta}$ for $r > R$. Denote points $P_k$ on this circle with special values:
+$$P_k = r \left( \cos\left( \frac{(2k + 1) \pi}{4n}\right) + i \sin \left( \frac{(2k + 1) \pi}{4n} \right) \right).$$
+When we evaluate $T(P_{2k})$, the leading term is $r^n \cos(n((4k+1)\pi/4n)) = (-1)^kr^n(\sqrt{2}/2)$. Thus we can write $(-1)^k T(P_{2k})$ as\dots
+$$\frac{r^2}{\sqrt{2}} + (-1)^k s_{n-1} r^{n-1} \cos \left( (n-1) \left( \frac{(4k + 1)\pi}{4n} + \psi_{n-1} \right) \right) + \cdots + (-1)^ks_0\cos(\psi_0).$$
+Since $(-1)^k \cos \alpha \geq -1$ for all $\alpha$ and $r > R$, we find that\dots
+$$(-1)^kT(P_{2k}) \geq \frac{r^n}{\sqrt{2}} - (s_{n-1}r^{n-1} + \cdots + s_1 r + s_0) > 0.$$
+Similarly, in $T(P_{2k+1})$, the leading term is $(-1)^{k+1}r^n \sqrt{2}/2$ and the same estimate give $(-1)^{k+1}T(P_{2k+1}) > 0$.
+
+The estimates imply that the value of $T(z)$ alternates in sign at $P_0, P_1, \dots, P_{4n-1}$. Since $T(re^{i \theta})$ varies continuously in $\theta$,
+$T(z)$ has a zero between $P_{2k}$ and $P_{2k+1}$ for $k = 0, 1, 2, \dots 2n-1$. We note that these are all of the zeros of $T(z)$ on this circle. To see this,
+write\dots
+$$\cos \theta + i \sin \theta = \frac{1 - \zeta^2}{1 + \zeta^2} + i \frac{2\zeta}{1 + \zeta^2}, \textrm{ where } \zeta = \tan(\theta/2).$$
+Thus $T(z)$ can be written in the form\dots
+$$r^n\left( \frac{1-\zeta^2}{1 + \zeta^2} \right)^n + s_{n-1}\cos(\psi_{n-1})r^{n-1}\left( \frac{1-\zeta^2}{1 + \zeta^2} \right)^{n-1} + \cdots + s_{1}\cos(\psi_{1})r\left( \frac{1-\zeta^2}{1 + \zeta^2} \right) + s_0 \cos(\psi_0),$$
+that is, $T(z) = f(\zeta)/(1 + \zeta^2)^n$, where $f(\zeta)$ is a polynomial of degree less than or equal to $2n$. Since $T(z)$ has $2n$ zeros, $f(\zeta)$ has degree $2n$ and has exactly $2n$ roots. Since $T(z)$ has $2n$ zeros, $f(\zeta)$
+has degree $2n$ and has exactly $2n$ roots. Thus we can name the zeros of $T(z)$ on the circle of radius $r$ by $Q_0, Q_1, \dots, Q_{2n - 1}$ with $Q_k$ between $P_{2k}$ and $P_{2k+1}$.
+
+Let $Q_k = re^{i \phi_k}$. Then $n \phi_k$ lies between $\frac{\pi}{4} + k \pi$ and $\frac{3\pi}{4} + k\pi$.
+It follows from properties of the sine function that $(-1)^k \sin(n \phi_k) \geq \sqrt{2}/2$. From this estimate we find that\dots
+\begin{align*}
+(-1)^kU(Q_k) &\geq (-1)^kr^n\sin(n \phi_k) - s_{n-1} r^{n-1} - \cdots s_0\\
+			 &\geq \frac{r^n}{\sqrt{2}} - s_{n-1}r^{n-1} - \cdots - s_0 > 0.
+\end{align*}
+Then $U(z)$ is positive at $Q_{2k}$ and negative at $Q_{2k+1}$ for $0 \leq k \leq n-1$, and by continuity $U(z)$ is zero between consecutive pairs of $Q_j$. This gives us points $q_i$, for $i = 0,1,\dots,2n-1$ with $q_i$, between $Q_i$
+and $Q_{i+1}$ and $U(q_i) = 0$.
+
+The game is clear now - a zero of $p(z)$ is a value $z_0$ with $T(z_0) = U(z_0)$. Gauss argued that, as the radius of the circle varied, the distinguished points $Q_j$ and $q_k$ would form curves. As the radius grew smaller, the points $Q_k$
+determine regions whose boundary is where $T(z) = 0$. The curve of $q_j$, where $U(z) = 0$, must cross some curve of $Q_j$'s, and so give us a root of $p(z)$. The geometric properties of curves of the type given by $T(z) = 0$ and $U(z) = 0$
+are need to complete this part of the argument and require real analysis. The identification of the curves and reducing the existence of a root to the necessary intersection of curves are served up by \hyperref[connectedness]{connectedness}.
