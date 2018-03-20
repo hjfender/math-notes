@@ -15,6 +15,8 @@ Let $F$ be a field, and let $G$ be a finite subgroup of the multiplicative group
 \end{proposition}
 
 \begin{proof}
-By the considerations preceding the statement, for every $n$ there are at most $n$ elements $a \in F$ such that $a^n - 1 = 0$, that is, at most $n$ elements $a \in G$ such that $a^n = 1$.
+A polynomial $f(x) \in F[x]$ is divisible by $(x-a)$ if and only if $f(a) = 0$; since a nonzero polynomial of degree $n$ over a field can have as most
+$n$ linear factors, this shows that if $f(x) \in F[x]$ has degree $n$, then $f(a) = 0$ for at most $n$ distinct elements $a \in F$.
+Thus, for every $n$ there are at most $n$ elements $a \in F$ such that $a^n - 1 = 0$, that is, at most $n$ elements $a \in G$ such that $a^n = 1$.
 The preceding lemma implies then that $G$ is cyclic.
 \end{proof}

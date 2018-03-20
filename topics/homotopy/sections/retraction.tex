@@ -1,0 +1,60 @@
+\subsection{Retractions}
+
+\subsubsection{Retract}\label{retract}
+A subspace $A \subseteq X$ is a retract of $X$ if there is a continuous function, the retraction,
+$r : X \rightarrow A$ for which $r(a) = a$ for all $a \in A$.
+
+\subsubsubsection{Deformation Retract}\label{deformationretract}
+The subset $A \subseteq X$ is a \emph{deformation retraction} if $A$ is a retract of $X$ and the composition
+$\iota \circ r : X \rightarrow A \hookrightarrow X$ is homotopic to the identity on $X$ via a homotopy that fixes $A$,
+that is, there is a homotopy $H : X \times [0,1] \rightarrow X$ with\dots
+$$H(x,0) = x, \, H(x,1) = r(x), \, \textrm{and} \, H(a,t) = a$$
+for all $a \in A$ and all $t \in [0,1]$.
+
+\begin{proposition}
+If $A \subseteq X$ is a retract with retraction $r : X \rightarrow A$, then the inclusion $\iota : A \rightarrow X$ induces
+an injective homomorphism $\iota_* : \pi_1(A,a) \rightarrow \pi_1(X,a)$ and the retraction induces a surjective homomorphism
+$r_* : \pi_1(X,a) \rightarrow \pi_1(A,a)$.
+\end{proposition}
+
+\subsubsubsection{Contractible}\label{contractible}
+A space is \emph{contractible} if it is a deformation retract of one of its points.
+
+\begin{theorem}
+If $A$ is a deformation retract of $X$, then the inclusion $\iota : A \rightarrow X$ induces an isomorphism
+$\iota_{*} : \pi_1(A, a) \rightarrow \pi_1(X, a)$.
+\end{theorem}
+
+\begin{lemma}
+If $f,g:(X,x_0) \rightarrow (Y,y_0)$ are continuous functions, homotopic through basepoint preserving maps, then $f_* = g_* : \pi_1(X,x_0) \rightarrow \pi_1(Y,y_0)$.
+\end{lemma}
+
+\subsubsubsection{Simply-Connected}\label{simplyconnected}
+A space $X$ is said to be \emph{simply-connected} if it is path-connected and $\pi_1(X) = \{ e \}$.
+
+\begin{theorem}
+Suppose $X = U \cup V$, where $U$ and $V$ are open, simply-connected subspaces and $U \cap V$ is path-connected.
+Then $X$ is simply-connected.
+\end{theorem}
+
+\begin{proof}
+Choose a point $x_0 \in U \cap V$ as basepoint. Let $\lambda : [0,1] \rightarrow X$ be a loop based at $x_0$. Since $\lambda$
+is continuous, $\{ \lambda^{-1}(U), \lambda^{-1}(V) \}$ is an open cover of the compact space $[0,1]$. The Lebesgue Lemma gives points
+$0 = t_0 < t_1 < t_2 < \cdots < t_n = 1$ with $\lambda([t_{i-1},t_i]) \subseteq U$ or $V$. We can join $x_0$ to $\lambda(t_i)$ by a path $\gamma_i$.
+Define for $i \geq 1$,
+$$\lambda_i(s) = \lambda((t_i - t_{i-1})s + t_{i-1}), \; 0 \leq s \leq 1,$$
+for the path along $\lambda$ joining $\lambda(t_{i-1})$ to $\lambda(t_i)$.
+
+Then $\lambda \simeq \lambda_1 * \lambda_2 * \cdots * \lambda_n$ and, furthermore,
+$$\lambda \simeq (\lambda_1 * \gamma_1^{-1}) * (\gamma_1 * \lambda_2 * \gamma_2^{-1}) * (\gamma_2 * \lambda_3 * \gamma_3^{-1}) * \dots * (\gamma_{n-1} * \lambda_n).$$
+Each $\gamma_i * \lambda_{i+1} * \gamma_{i+1}^{-1}$ lies in $U$ or $V$. Since $U$ and $V$ are simply-connected, each of these loops is homotoplic to the constant map.
+Thus $\lambda \simeq c_{x_0}$. It follows that $\pi_1(X,x_0) \cong \{ e \}$.
+\end{proof}
+
+\begin{corollary}
+$\pi_1(S^n) \cong \{ e \}$ for $n \geq 2$.
+\end{corollary}
+
+\begin{corollary}
+$\pi_1(\mathbb{R}^n \setminus \{ 0 \}) \cong \{ e \}$ for $n \geq 3$.
+\end{corollary}

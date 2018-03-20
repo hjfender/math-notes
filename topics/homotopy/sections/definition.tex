@@ -1,0 +1,44 @@
+\subsection{Definition}\label{homotopydefinition}
+
+\subsubsection{Homotopy of functions}\label{functionhomotopy}
+A \emph{homotopy} between functions $f,g: X \rightarrow Y$ is a continuous function $H : X \times [0,1] \rightarrow Y$ with $H(x,0) = f(x)$,
+$H(x,1) = g(x)$. We say that $f$ is \emph{homotopic} to $g$ if there is a homotopy between them, denoted $f \simeq g$.
+(See: \hyperref[compactopentopology]{Compact Open Topology})
+
+\begin{proposition}
+Suppose that $X$ is a locally compact and Hausdorff space.
+\begin{enumerate}
+  \item If $(\textrm{Hom}(X,Y),\mathcal{T})$ is another topology on Hom$(X,Y)$ and the evaluation map\dots
+  $$e: X \times (\textrm{Hom}(X,Y),\mathcal{T}) \rightarrow Y$$
+  is continuous, then $\mathcal{T}$ contains the compact-open topology.
+  \item If $Y$ is locally compact and Hausdorff, then the composition of functions\dots
+  $$\circ : \textrm{map}(X,Y) \times \textrm{map}(Y,Z) \rightarrow \textrm{map}(X,Z)$$
+  is continuous.
+  \item If $Y$ is Hausdorff, then the space map$(X,Y)$ is Hausdorff.
+\end{enumerate}
+\end{proposition}
+
+\begin{theorem}
+Homotopy is an equivalence relation on Hom$_{\emph{Top}}(X,Y)$.
+\end{theorem}
+
+\begin{proposition}
+Continuous mappings $F:W \rightarrow X$ and $G: Y \rightarrow Z$ induce well-defined functions $F^* : [X,Y] \rightarrow [W,Y]$ and $G_* : [X,Y] \rightarrow [X,Z]$
+by $F^*([h]) = [h \circ F]$ and $G_*([h]) = [G \circ h]$ for $[h] \in [X,Y]$.
+\end{proposition}
+
+\subsubsection{Space of Based Loops}\label{spaceofbasedloops}
+Suppose $X$ is a space and $x_0 \in X$ is a choice of base point in $X$. The \emph{space of based loops}
+in $X$ is the subspace of map$([0,1],X)$\dots
+$$\Omega(X,x_0) = \{ \lambda \in \textrm{map}([0,1], X) | \lambda(0) = \lambda(1) = x_0 \}.$$
+Composition of loops determines a binary operation $*: \Omega(X,x_0) \times \Omega(X,x_0) \rightarrow \Omega(X,x_0)$.
+
+\subsubsubsection{Loop Homotopy}\label{loophomotopy}
+Given two based loops $\lambda$ and $\mu$, a \emph{loop homotopy} between them is a homotopy of paths $H : [0,1] \times [0,1] \rightarrow X$ with
+$H(t,0) = \lambda(t), \, H(t,1) = \mu(t),$ and $H(0,s) = H(1,s) = x_0$. That is, for each $s \in [0,1]$, the path $t \mapsto H(t,s)$ is a loop at $x_0$.
+
+\begin{theorem}
+Loop homotopy is an equivalence relation on $\Omega(X,x_0)$.
+\end{theorem}
+
+\noindent $\pi_1(X, x_0) = [\Omega(X,x_0)]$ denotes the set of equivalence classes under loop homotopy.

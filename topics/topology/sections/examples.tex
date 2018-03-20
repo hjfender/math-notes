@@ -20,6 +20,22 @@ $$\mathcal{T}_{IP} = \{ \emptyset \textrm{ or } U \subset X \textrm{ with } x_0 
 
 \noindent In this space, a constant sequence converses to every point except $x_0$.
 
+\subsubsubsection{Compact-open Topology}\label{compactopentopology}
+Suppose $K \subseteq X$ and $U \subseteq Y$. Let $S(K,U) = \{f : X \rightarrow Y, \textrm{ continuous with } f(K) \subseteq U \}$. The collection
+$\mathcal{S} = \{ S(K,U) | K \subseteq X \textrm{ compact, } U \subseteq Y \textrm{ open} \}$ is a subbasis for the topology $\mathcal{T}_{\mathcal{S}}$
+on Hom$(X,Y)$ called the \emph{compact-open topology}. We denoted the space $(\textrm{Hom}(X,Y),\mathcal{T}_{\mathcal{S}})$ as map$(X,Y)$.
+
+\begin{theorem}
+The following apply to map$(X,Y)$\dots
+\begin{enumerate}
+  \item If $X$ is locally compact and Hausdorff, then the evaluation mapping\dots
+  $$e: X \times \textrm{map}(X,Y), \; e(x,f) = f(x),$$
+  is continuous.
+  \item If $X$ is locally compact and Hausdorff and $Z$ is another space, then a function $F : X \times Z \rightarrow Y$ is continuous if and only if its
+  adjoint map $\hat{F} : Z \rightarrow \textrm{map}(X,Y)$, defined by $\hat{F}(z)(x) = F(x,z)$, is continuous.
+\end{enumerate}
+\end{theorem}
+
 \subsubsection{Space Examples}\label{examplespaces}
 
 \subsubsubsection{Torus}\label{torus}
@@ -83,3 +99,17 @@ by the definition of the canoncial projection for the equivalence relation. The 
 then define $\hat{F} : (SX, sx_0) \rightarrow (Y, y_0)$ by $\hat{F}(x,t) = F(x)(e^{2 \pi i t})$. An explicit calculation shows these processes to be inverses and the
 proposition is proved.
 \end{proof}
+
+\subsubsubsection{One-point Compactification}\label{oneptcompactification}
+Let $X$ be a locally compact, Hausdorff space. Adjoin a point not in $X$, denoted by $\infty$, to form $Y = X \cup \{ \infty \}$.
+Topologize $Y$ by two kinds of open sets:
+\begin{enumerate}
+  \item $U \subseteq X \subseteq Y$ and $U$ is open in $X$.
+  \item $Y \setminus K$, where $K$ is compact in $X$.
+\end{enumerate}
+The space $Y$ with this topology is called the \emph{one-point compactification} of $X$.
+
+\begin{theorem}
+If $X$ is locally compact and Hausdorff, $X$ is not compact, and $Y = X \cup \{ \infty \}$ is the one-point compactification, then $Y$ is a compact Hausdorff space, $X$
+is a subspace of $Y$, and \emph{cls}$X = Y$.
+\end{theorem}
