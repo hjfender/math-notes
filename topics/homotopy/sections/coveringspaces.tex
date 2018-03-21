@@ -1,0 +1,104 @@
+\subsection{Covering Spaces}\label{coveringspaces}
+Let $X$ be a space. A \emph{covering space} of $X$ is a path-connected space $\tilde X$ and a mapping $p: \tilde X \rightarrow X$
+such that, for every $x \in X$, there is an open, path-connected subset $U$ with $x \in U$ for which each path component of $p^{-1}(U)$
+is homeomorphic to $U$ by restriction of the mapping $p$. Such open sets are called \emph{elementary neighborhoods}\label{elementaryneighborhoods}.
+
+\subsubsection{Path Lifting}\label{pathlifting}
+\begin{lemma}
+Let $p : \tilde X \rightarrow X$ be covering space and let $\tilde x_0 \in \tilde X$ with $p(\tilde x_0) = x_0 \in X$. If
+$\lambda : [0,1] \rightarrow X$ is any path with $\lambda(0) = x_0$, then there exists a unique path $\tilde \lambda : [0,1] \rightarrow \tilde X$
+with $\tilde \lambda (0) = \tilde x_0$ and $p \circ \tilde \lambda = \lambda$.
+\end{lemma}
+
+\begin{proof}
+Cover $X$ by elementary neighborhoods. If $\lambda([0,1]) \subseteq U$ for some elementary neighborhood, then $x_0 \in U$ and $\tilde x_0 \in p^{-1}(U)$.
+It follows that $\tilde x_0$ lies in some component $C_0$ of $p^{-1}(U)$ that is homeomorphis to $U$ via $(p \upharpoonright _{C_0})^{-1}(x_0) = \tilde x_0$,
+since $\tilde x_0$ is the only point in $\tilde X$ corresponding to $x_0$ in this component. Finally, $p \circ \tilde \lambda = p \circ (p \upharpoonright _{C_0})^{-1} \circ \lambda = \lambda$.
+
+If $\lambda([0,1]) \not \subseteq U$, consider the collection\dots
+$$\{\lambda^{-1}(U') \subseteq [0,1] | U', \textrm{ an elementary neighborhood} \}.$$
+This is a cover of $[0,1]$, which is a compact
+metric space, and so by Lebesgue's Lemma we can choose $0 = t_0 < t_1 < \cdots < t_{n-1} < t_n = 1$ with each $\lambda([t_{i-1}, t_i])$ a subset of some elementary neighborhood (take $t_i - t_{i-1} < \delta$,
+the Lebesgue number). Using the argument above, lift $\lambda$ on $[0,t_1]$. Then take $\lambda(t_1)$ as $x_0$ and $\tilde \lambda(t_1)$ as $\tilde x_0$ and lift $\lambda$ to $[t_1, t_2]$. Continuing in this
+manner, we construct $\tilde \lambda$ on $[0,1]$ with $\tilde \lambda (0) = \tilde x_0$ and $p \circ \tilde \lambda = \lambda$.
+
+Uniqueness is guaranteed by the following lemma.
+\end{proof}
+
+\begin{lemma}
+Let $p : \tilde X \rightarrow X$ be a covering space and $Y$ a connected, locally connected space. Given two mappings $f_1 , f_2 : Y \rightarrow \tilde X$ with $p \circ f_1 = p \circ f_2$, then the set\dots
+$$\{ y \in Y | f_1(y) = f_2(y) \}$$
+is either empty or all of $Y$.
+\end{lemma}
+
+\begin{proof}
+Consider the subset of $Y$ given by $B = \{ y \in Y | f_1(y) = f_2(y) \}.$ We show that $B$ is both open and closed. If $y \in \textrm{cls } B$, consider $x= p \circ f_1(y) = p \circ f_2(y)$ and
+$U$ an elementary neighborhood containing $x$. The subset $(p \circ f_1)^{-1}(U) \cap (p \circ f_2)^{-1}(U)$ contains $y$. Because $Y$ is locally connected, there is an open set $W$ for which $y \in W \subseteq (p \circ f_1)^{-1} (U) \cap (p \circ f_2)^{-1}(U)$
+with $W$ connected. Then $f_1(W)$ and $f_2(W)$ are connected subsets of $p^{-1}(U) \subseteq \tilde X$. Since $W$ is open and $y \in \textrm{cls } B$, there is a point $z \in W$ with $z \in B$. Thus
+$f_1(z) = f_2(z)$ and $f_1(W) \cap f_2(W) \neq \emptyset$; therefore, $f_1(W)$ and $f_2(W)$ must lie in the same component of $p^{-1}(U)$. Since $p \circ f_1(y) = p \circ f_2(y)$ and the component in which
+we find both $f_1(y)$ and $f_2(y)$ is homeomorphic to $U$ by the restriction of $p$, we have $f_1(y) = f_2(y)$. Thus $y \in B$ and $B$ is closed.
+
+If we let $y \in B$, the argument above shows that the sets $f_1(W)$ and $f_2(W)$ lie in the same component $C_0$ of $p^{-1}(U)$. It follows that, for all $w \in W$,
+$$f_1(w) = (p \upharpoonright _{C_0})^{-1} \circ p \circ f_1(w) = (p \upharpoonright _{C_0})^{-1} \circ p \circ f_2(w) = f_2(w)$$
+and so $W$ is contained in $B$. Thus $B$ is open.
+
+The only subsets of $Y$ that are both open and closed are $Y$ itself and $\emptyset$ and so we have proved the lemma.
+\end{proof}
+
+\subsubsection{Homotopy Lifting}\label{homotopylifting}
+
+\begin{theorem}
+Let $p : \tilde X \rightarrow X$ be a covering space and let $\eta_0, \eta_1 : [0,1] \rightarrow \tilde X$ be two paths in $\tilde X$ with $\eta_0(0) = \eta_1(0) = \tilde x_0$. If
+$p \circ \eta_0(1) = x_1 = p \circ \eta_1(1)$ and $p \circ \eta_0 \simeq p \circ \eta_1$ via a homotopy that fixes the endpoints of the paths in $X$, then $\eta_1 \simeq \eta_2$ in
+$\tilde X$ and, in particular, $\eta_0(1) = \eta_1(1)$.
+\end{theorem}
+
+\begin{proof}
+Let $H : [0,1] \times [0,1] \times X$ be a homotopy between $p \circ \eta_0$ and $p \circ \eta_1$. In this case, we have, for all $s,t \in [0,1]$,
+\begin{align*}
+H(s,0) = p \circ \eta_0(s), && H(0,t) = p(\tilde x_0),\\
+H(s,1) = p \circ \eta_1(s), && H(1,t) = p \circ \eta_0(1) = p \circ \eta_1(1).
+\end{align*}
+Since $[0,1] \times [0,1]$ is a compact metric space, when we cover it by the collection $\{ H^{-1}(U) | U, \textrm{ an elementary neighborhood of } X \}$, we can apply Lebesgue's Lemma to get
+$\delta > 0$ for which any subset of $[0,1] \times [0,1]$ of diameter $< \delta$ lies in some $H^{-1}(U)$. If we subdivide the interval $[0,1]$,
+$$0 = s_0 < s_1 < \cdots < s_{m-1} < s_m = 1$$
+and
+$$0 = t_0 < t_1 < \cdots < t_{n-1} < t_n = 1,$$
+so that $s_i - s_{i-1} < \delta / 2$ and $t_j - t_{j-1} < \delta / 2$, then $H$ maps each subrectangle $[s_{i-1},s_i] \times [t_{j-1},t_j]$ into an elementary neighborhood for all $i$ and $j$.
+
+To construct the lifting $\hat{H} : [0,1] \times [0,1] \rightarrow \tilde X$ and show it is a homotopy between $\eta_0$ and $\eta_1$, begin by lifting $H$ on $[0,s_1] \times [0,t_1]$ to $\tilde X$
+by using $\hat{H} = (p \upharpoonright_{C_{11}})^{-1} \circ H$, where $C_{11}$ is the component of $p^{-1}(U_{11})$ containing $\eta_0(0)$ and $H([0,s_1] \times [0,t_1]) \subseteq U_{11}$, an elementary
+neighborhood. Having done this, extend $\hat{H}$ next to $[s_1,s_2] \times [0,t_1]$. Notice that $\hat{H}$ has been defined on the line segment $\{s_1\} \times [0,t_1]$ which is connected and this determines the component of
+$p^{-1}(U_{21})$ for the elementary neighborhood $U_{21}$ which contains $H([s_1,s_2]\times[0,t_1])$. Once the component, say $C_{21}$, is determined, extend $\hat{H}$ by $\hat{H} = (p \upharpoonright C_{21})^{-1} \circ H$.
+Continue in this manner until $\hat{H}$ is defined on $[0,1] \times [0,t_1]$. Next, extend to $[0,1] \times [t_1, t_2]$ using the fact that the value of $\hat{H}$ has been determined on each successive subrectangle along the left
+until $\hat{H}$ is defined on $[0,1] \times [0,1]$. By the preceding lemma, $\hat{H}$ is unique fulfilling the condition $\hat{H}(0,0) = \eta(0)$. Since $\eta_0(s)$ is also a lift of $H(s,0)$, we have that $\hat{H}(s,0) = \eta_0(s)$.
+The condition $H(0,t) = p \circ \eta_0(0)$ implies that $\hat{H}(0,t) = \eta_0(0)$, that is, the homotopy $\hat{H}$ is constant on the subset $\{0\} \times [0,1]$. Thus, the lift $\hat{H}(s,1)$ of the path $p \circ \eta_1(s)$ in $X$
+begins at $\eta_0(0) = \eta_1(0)$, and $\eta_1(s)$ is also such a lift. By uniqueness, $\hat{H}(s,1) = \eta_1(s)$. Finally, $H(1,t) = p \circ \eta_0(1) = p \circ \eta_1(1)$ for all $t \in [0,1]$,
+$\hat{H}(1,t) = \eta_0(1)$, and we conclude that $\eta_0(1) = \eta_1(1)$ since $\hat{H}(1,t)$ is constant.
+\end{proof}
+
+\subsubsection{Fundamental Group Computations}\label{fundamentalgroupcomputations}
+
+\begin{corollary}
+Suppose $p : \tilde X \rightarrow X$ is a covering space:
+\begin{enumerate}
+  \item If $\eta : [0,1] \rightarrow \tilde X$ is a loop at $\tilde x_0$ and $p \circ \eta$ is homotopic to the constant loop $c_{x_0}$ for $x_0 = p(\tilde x_0)$, then $\eta \simeq c_{\tilde x_0}$.
+  \item The induced homomorphism $p_{*} : \pi_1(\tilde X, \tilde x_0) \rightarrow \pi_1(\tilde X, \tilde x_0)$ is injective.
+  \item For all $x \in X$, the subsets $p^{-1}(\{x\})$ of $\tilde X$ have the same cardinality.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+(1) One life of $c_{x_0}$ is simply the constant path $c_{\tilde x_0}$. By the homotopy lifting theorem,
+$p \circ \eta \simeq p \circ c_{\tilde x_0} = c_{x_0}$ implies $\eta \simeq c_{\tilde x_0}.$
+
+(2) If $p_*([\lambda]) = p_*([\mu])$, then, because $p_*$ is a homomorphism, $p_*([\lambda] * [\mu^{-1}]) = [c_{x_0}]$, that is,
+$p \circ (\lambda * \mu^{-^1}) \simeq c_{x_0}$. By (1), $\lambda * \mu^{-1} \simeq c_{\tilde x_0}$ or $\lambda \simeq \mu$, that is,
+$[\lambda] = [\mu]$.
+
+(3) Suppose $x_0$ and $x_1$ are in $X$ and $\lambda : [0,1] \rightarrow X$ is a path joining $x_0$ to $x_1$. Suppose $y \in p^{-1}(\{x_0\}).$ We define
+a mapping $A : p^{-1}(\{ x_0 \}) \rightarrow p^{-1}(\{ x_1 \})$ by lifting $\lambda$ to $\lambda_y : [0,1] \rightarrow \tilde X$ with $\lambda_y(0) = y$.
+Define $A(y) = \lambda_y(1)$. SInce $\lambda_y$ is uniquely determined by being a lift of $p \circ \lambda_y = \lambda$ with $\lambda_y(0) = y$, the function $A$ is well defined.
+By the path lifting 'uniqueness' lemma, lifts of $\lambda$ beginning at different elements in $p^{-1}(\{ x_0 \})$ must end at different points in $p^{-1}(\{ x_1 \})$ and so $A$ is injective.
+Using lifts of $\lambda^{-1}$ we deduce that $A$ is surjective. (Notice that a different choice of $\lambda$ might give a different one-one correspondence $A$.)
+\end{proof}
