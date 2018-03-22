@@ -1,0 +1,75 @@
+\subsection{Applications}\label{homotopyapplications}
+
+\begin{theorem}[Brouwer's Theorem in dimension 2]
+The two-disk $e^2 = \{ \textbf{x} \in \mathbb{R}^2 | ||\textbf{x}|| \leq 1 \} \subseteq \mathbb{R}^2$
+has the fixed point property.
+\end{theorem}
+
+\begin{proof}
+Suppose $f : e^2 \rightarrow e^2$ is a continuous function without a fixed point. Then for each $\textbf{x} \in e^2$, $f(\textbf{x}) \neq \textbf{x}$.
+Define $g : e^2 \rightarrow S^1$ by\dots
+$$g(\textbf{x}) = \textrm{ intersection of the ray from } f(\textbf{x}) \textrm{ to } \textbf{x} \textrm{ with } S^1.$$
+
+To see that $g(\textbf{x})$ is continuous on $e^2$, we apply some vector geometry: write $Q = f(\textbf{x})$, $Z = g(\textbf{x})$. Let $O = (0,0)$ and define
+$X = (\textbf{x} - Q)/||\textbf{x} - Q||.$ Then, $g(\textbf{x}) = Z = Q + tX$ for some $t \geq 0$ for which $Q + tX \in S^1$, that is, $(Q + tX) \cdot (Q + tX) = 1.$
+This condition can be rewritten to solve for $t$, namely,
+$$(Q + tX) \cdot (Q + tX) = t^2(X \cdot X) + 2t(Q \cdot X) + Q \cdot Q = 1.$$
+The quadratic formula gives\dots
+\begin{align*}
+t_{\textbf{x}} &= - Q \cdot X + \sqrt{(Q \cdot X)^2 + 1 - Q \cdot Q}\\
+			   &= -f(\textbf{x}) \cdot \frac{\textbf{x} - f(\textbf{x})}{||\textbf{x} - f(\textbf{x})||} + \sqrt{\left(f(\textbf{x}) \cdot \frac{\textbf{x} - f(\textbf{x})}{||\textbf{x} - f(\textbf{x})||}\right)^2 + 1 - f(\textbf{x}) \cdot f(\textbf{x})}.
+\end{align*}
+Note that this choice of signs gives $t_{\textbf{x}} \geq 0$, and $t_{\textbf{x}} = 0$ implies $f(\textbf{x}) = \textbf{x}$. Since we have
+assumer that this doesn't happen, $t_{\textbf{x}} > 0$. Furthermore, $t_{\textbf{x}}$ is a continuous function of $\textbf{x}$. We can write
+$g(\textbf{x})$ explicitly as\dots
+$$g(\textbf{x}) = f(\textbf{x}) = t_{\textbf{x}}\frac{\textbf{x} - f(\textbf{x})}{||\textbf{x} - f(\textbf{x})||}$$
+and so $g(\textbf{x})$ is continuous.
+
+By the definition of the mapping $g$, if $\textbf{x} \in S^1 \subseteq e^2$, then $g(\textbf{x}) = \textbf{x}.$
+We have constructed a continuous mapping $g : e^2 \rightarrow S^1$ for which $g \circ i = \textrm{id}_{S^1}$, that is,
+the identity mapping on $S^1$ can be factored:
+$$\textrm{id}_{S^1} : S^1 \xrightarrow[]{i} e^2 \xrightarrow[]{g} S^1.$$
+The composite leads to a composite of group homomorphisms and fundamental groups:
+$$\textrm{id} : \pi_1(S^1) \xrightarrow[]{i_*} \pi_1(e^2) \xrightarrow[]{g_*} \pi_1(S^1).$$
+However, $\pi_1(e^2) = \{ [c_1] \}$ and so $g_* \circ i_*([\alpha]) = [c_1] \neq [\alpha]$ and $g_* \circ i_* \neq \textrm{id}$,
+a contradiction. Therefore, a continuous function $f : e^2 \rightarrow e^2$ without fixed points is not possible.
+\end{proof}
+
+\begin{corollary}
+$S^1$ is not a retract of $e^2$.
+\end{corollary}
+
+\begin{proposition}[The Borsuk-Ulam Theorem for $n=2$]
+There does not exist a continuous function $f : S^2 \rightarrow S^1$ that satisfies
+$f(-\textbf{x}) = -f(\textbf{x})$ for all $\textbf{x} \in S^2$.
+\end{proposition}
+
+\begin{proof}
+Assume such a function exists. The condition satisfied by $f$ can be written $f(\pm \textbf{x}) = \pm f(\textbf{x})$.
+It follows that $f$ induces $\hat{f} : \mathbb{R}P^2 \rightarrow \mathbb{R}P^1$ and $\hat{f}$ fits into a diagram:
+\begin{figure}[H]
+  \centering
+  \input{topics/homotopy/diagrams/borsuk-ulam}
+\end{figure}
+for which $\overline{p} \circ f = \hat{f} \circ p$. Consider the induced homomorphism $\hat{f}_* : \pi_1(\mathbb{R}P^2) \rightarrow \pi_1(\mathbb{R}P^1)$.
+Via considerations of fundamental groups, $\hat{f}_*$ is a homomorphism $\mathbb{Z}/2\mathbb{Z} \rightarrow \mathbb{Z}$. However, any such homomorphism must be
+the trivial homomorphism. Let $\lambda: [0,1] \rightarrow S^2$ denote a path from the North Pole to the South Pole along a meridian of constant longitude.
+It follows that $[p \circ \lambda] = [\alpha]$, a generator for $\mathbb{Z}/2\mathbb{Z} \cong \pi_1(\mathbb{R}P^2)$. Since the North and South Poles are antipodal,
+these points are identified in $\mathbb{R}P^1$ after passage through $f$ and $\overline{p}$. Hence $[\overline{p} \circ f \circ \lambda]$ is nontrivial in $\pi_1(\mathbb{R}P^1)$.
+But $[\overline{p} \circ f \circ \lambda] = [\hat{f} \circ p \circ \lambda] = \hat{f}_*([p \circ \lambda]) = 0$, a contradiction.
+\end{proof}
+
+\begin{corollary}
+If $f: S^2 \rightarrow \mathbb{R}^2$ is a continuous function such that $f(-\textbf{x}) = -f(\textbf{x})$ for all $\textbf{x} \in S^2$,
+then $f(\textbf{x}) = (0,0)$ for some $\textbf{x} \in S^2$.
+\end{corollary}
+
+\noindent The following theorem follows from the above development of the Borsuk-Ulam theorem.
+
+\begin{theorem}
+If $f: S^2 \rightarrow \mathbb{R}^2$ is a continuous function, then there exists a point $\textbf{x} \in S^2$ with $f(\textbf{x}) = f(-\textbf{x})$.
+\end{theorem}
+
+\begin{corollary}
+No subset of $\mathbb{R}^2$ is homeomorphic to $S^2$.
+\end{corollary}

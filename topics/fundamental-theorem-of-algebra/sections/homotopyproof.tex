@@ -1,1 +1,38 @@
 \subsection{Homotopy Proof}\label{homotopyproofofFOA}
+
+\begin{proof}
+Recall that $\mathbb{C} \cong \mathbb{R}^2$ and the $n$th power mapping $h : z \mapsto z^n$ induces a mapping $h : S^1 \rightarrow S^1$
+which can be written as $e^{i \theta} \mapsto e^{in\theta}$. Lifting this mapping to the covering space $w : \mathbb{R} \rightarrow S^1$, it represents
+$n \in \mathbb{Z} \cong \pi_1(S^1)$ via the identification of $\pi_1(S^1)$ with $\mathbb{Z}$ given by $[\beta] \mapsto \hat{\beta}(1)$.
+
+Viewed as a mapping, $h : S^1 \rightarrow S^1$, $h$ induces the homomorphism $h_* : \pi_1(S^1) \rightarrow \pi_1(S^1)$. The law of exponents implies that\dots
+$$h_*(\theta \mapsto e^{\pi i m \theta}) = (\theta \mapsto (e^{\pi i m \theta})^n = e^{\pi i n m \theta}),$$
+that is, $h_*$ is multiplication by $n$.
+
+We first consider a special case of the theorem - suppose\dots
+$$|a_{n-1}| + |a_{n-2}| + \cdots + |a_0| < 1.$$
+Suppose $p(z)$ has no root in $e^2 = \{ z \in \mathbb{C} | \, |z| \leq 1 \}$. Define the mapping $\hat{p} : e^2 \rightarrow \mathbb{R}^2 \setminus \{ 0 \}$ by $\hat{p}(z) = p(z)$.
+Restricting to $S^1 = \partial e^2$ we get $\hat{p} \upharpoonright : S^1 \rightarrow \mathbb{R}^2 \setminus \{ \textbf{0} \}$. Since $\hat{p} \upharpoonright$ can be extended to $e^2$,
+it follows that $\hat{p} \upharpoonright$ is homotopic to a constant map. However, consider the mapping\dots
+$$F(z,t) = z^n + t(a_{n-1}z^{n-1} + \cdots + a_0),$$
+which gives a homotopy between $F(z,0) = z^n$ and $F(z,1) = p(z)$. If $F(z,t)$ never vanishes on $S^1$, the homotopy implies $\hat{p} \upharpoonright \simeq z^n$. To establish this condition,
+for $|z| = 1$ we estimate\dots
+\begin{align*}
+|F(z,t)| &\geq |z^n| - |t(a_{n-1}z^{n-1} + \cdots + a_0)|\\
+		 &\geq 1 - t(|a_{n-1}z^{n-1}| + \cdots + |a_0|)\\
+		 &= 1 - t(|a_{n-1} + \cdots + |a_0|) > 0.
+\end{align*}
+As a class in $\pi_1(S^1)$, $[(z \mapsto z^n)]$ is not homotopic to the constant map while $\hat{p}\upharpoonright$ is, so we get a contradiction.
+
+To reduce the general case to this special case, let $t \in \mathbb{R}$, $t \neq 0$, and let $u = tz$. So\dots
+\begin{align*}
+p(u) &= u^n + a_{n-1}u^{n-1} + \cdots + a_1u + a_0\\
+	 &= (tz)^n + a_{n-1}(tz)^{n-1} + \cdots + a_1tz + a_0.
+\end{align*}
+If $p(u) = 0$, then\dots
+$$z^n + \frac{a_{n-1}}{t}z^{n-1} + \cdots + \frac{a_{1}}{t^{n-1}}z + \frac{a_0}{t^n} =0.$$
+So given a zero for $p(u)$ we get a zero for $\tilde p_t(z)$ with $\tilde p_t(z) = z^n + \frac{a_{n-1}}{t}z^{n-1} + \cdots + \frac{a_0}{t^n}$ and vice versa.
+Taking $t$ large enough we can guarantee\dots
+$$|\frac{a_{n-1}}{t}| + \cdots + |\frac{a_1}{t^{n-1}}| + |\frac{a_0}{t^n}| < 1$$
+and we can apply the special case.
+\end{proof}

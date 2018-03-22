@@ -1,5 +1,6 @@
 \subsection{Gauss's Incomplete Proof}\label{gaussproofofFOA}
 
+\begin{proof}
 Let $p(z) = z^n + a_{n-1}a^{n-1} + \cdots + a_1z + a_0$ be a complex monic polynomial of degree $n$. We begin with some
 estimates. We can write the complex numbers in polar form, $z = re^{i \theta}$ and $a_j = s_je^{i \psi_j}$, and make the substitution\dots
 $$p(z) = r^ne^{ni \theta} + r^{n-1}s_{n-1}e^{(n-1)i \theta + i \psi_{n-1}} + \cdots + rs_1e^{i \theta + i \psi_1} + s_0e^{i \psi_0}.$$
@@ -51,3 +52,4 @@ and $Q_{i+1}$ and $U(q_i) = 0$.
 The game is clear now - a zero of $p(z)$ is a value $z_0$ with $T(z_0) = U(z_0)$. Gauss argued that, as the radius of the circle varied, the distinguished points $Q_j$ and $q_k$ would form curves. As the radius grew smaller, the points $Q_k$
 determine regions whose boundary is where $T(z) = 0$. The curve of $q_j$, where $U(z) = 0$, must cross some curve of $Q_j$'s, and so give us a root of $p(z)$. The geometric properties of curves of the type given by $T(z) = 0$ and $U(z) = 0$
 are need to complete this part of the argument and require real analysis. The identification of the curves and reducing the existence of a root to the necessary intersection of curves are served up by \hyperref[connectedness]{connectedness}.
+\end{proof}
