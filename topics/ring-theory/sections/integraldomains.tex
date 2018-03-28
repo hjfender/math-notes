@@ -39,3 +39,35 @@ a unit via \ref{unitproperties}.
 Let $I$ be an ideal of a commutative ring $R$. If $R/I$ is finite, then $I$ is prime if and only if it is maximal.
 \end{corollary}
 
+\subsubsection{Associates in Integral Domains}
+
+\begin{lemma}
+Let $a,b$ be nonzero elements of an integral domain $R$. Then $a$ and $b$ are associates if and only if $a = ub$, for
+$u$ a unit in $R$.
+\end{lemma}
+
+\subsubsection{Prime Element}\label{primeelement}
+An element $a \in R$ of an integral domain is \emph{prime} if $(a)$ is prime; that is, $a$ is not a unit and\dots
+$$a | bc \Rightarrow (a|b \textrm{ or } a|c).$$
+
+\subsubsection{Irreducible Element}\label{irreducibleelement}
+An element $a \in R$ of an integral domain is \emph{irreducible} if $a$ is not a unit and\dots
+$$a = bc \Rightarrow (b \textrm{ is a unit or } c \textrm{ is a unit}).$$
+
+\begin{lemma}
+Let $R$ be an integral domain, and let $a \in R$ be a nonzero prime element. Then $a$ is irreducible.
+\end{lemma}
+
+\subsubsection{Factorization}\label{factorization}
+An element $r \in R$ of an integral domain has a \emph{factorization into irreducibles} if there exist irreducible elements $q_1, \dots, q_n$
+such that $r = q_1 \cdots q_n$.
+
+\subsubsection{Domain with factorization}\label{domainfactorization}
+An integral domain $R$ is a \emph{domain with factorization} if every nonzero, nonunit element $r \in R$ has a factorization into irreducibles.
+
+\begin{proposition}[Ascending Chain Condition]
+\label{acc}
+Let $R$ be an integral domain, and let $r$ be a nonzero, nonunit element of $R$. Assume that every ascending chain of principal ideals\dots
+$$(r) \subseteq (r_1) \subseteq (r_2) \subseteq (r_1) \subseteq \cdots$$
+stabilizes. Then $r$ has a factorization into irreducibles.
+\end{proposition}

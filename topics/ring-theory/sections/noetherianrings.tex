@@ -1,2 +1,62 @@
 \subsection{Noetherian Rings}\label{noetherian rings}
 A commutative ring $R$ is \emph{Noetherian} if every ideal of $R$ is \hyperref[finitelygenerated]{finitely generated}.
+
+\begin{proposition}
+Let $R$ be a commutative ring, and let $M$ be an $R$-module. Then the following are equivalent:
+\begin{enumerate}
+  \item $M$ is Noetherian, that is, every submodule of $M$ is finitely generated
+  \item Every ascending chain of submodules of $M$ stabilizes
+  \item Every nonempty family of submodules of $M$ has a maximal elemnt with respect to inclusion.
+\end{enumerate}
+\end{proposition}
+
+\begin{lemma}[Hilbert's Basis Theorem]
+\label{hilbertsbasisthm}
+$R$ Noetherian $\Rightarrow$ $R[x]$ Noetherian.
+\end{lemma}
+
+\begin{proof}
+Assume $R$ is Noetherian, and let $I$ be and ideal of $R[x]$. We have to prove that $I$ is finitely generated.
+
+Consider the following subset of $R$:
+$$A = \{ 0 \} \cup \{ a \in R | a \textrm{ is a leading coefficient of an element of } I \}.$$
+It is clear that $A$ is an \emph{ideal} of $R$; since $R$ is Noetherian, $A$ is finitely generated. Thus there exist
+elements $f_1(x), \dots, f_r(x) \in I$ whose leading coefficients $a_1, \dots, a_r$ generate $A$ as an ideal of $R$.
+
+Now let $d_0$ be the degree of $f_d(x)$, and let $d$ be the maximum among these degrees. Consider the sub-$R$ module\dots
+$$M = \langle 1, x, x^2, \dots, x^{d-1} \rangle \subseteq R[x],$$
+that is, the $R$-module consisting of polynomials of degree $<d$. Since $M$ is finitely generated as a module over $R$, it is
+Noetherian as an $R$-module (\ref{finitegenmoduleisnoethermodule}). Therefore, this submodule\dots
+$$M \cap I$$
+of $M$ is finitely generated over $R$, say by $g_1(x), \dots, g_s(x) \in I$.
+
+Observe that\dots
+$$I = \{ f_1(x), \dots, f_r(x), g_1(x), \dots, g_s(x) \}$$
+by the following: let $\alpha(x) \in I$ be an arbitrary polynomial. If deg$\alpha(x) \geq d$, let $a$ be the leading coefficient
+of $\alpha(x)$. Then $a \in A$, so $\exists b_1, \dots, b_r \in R$ such that\dots
+$$a = b_1a_1 + \cdots + b_ra_r.$$
+Letting $e = \textrm{deg}\alpha(x)$, so that $e \geq d_i$ for all $i$, this says that\dots
+$$\alpha(x) - b_1x^{e-d_1}f_1(x) - \cdots - b_rx^{e-d_r}f_r(x)$$
+has degree $<e$. Iterating this procedure, we obtain a finite list of polynomials $\beta_1(x),\dots,\beta_r(x) \in R[x]$ such that\dots
+$$\alpha(x) - \beta_1(x)f_1(x) - \cdots - \beta_r(x)f_r(x)$$
+has degree $<d$. But this places this element in $M \cap I$; therefore $\exists c_1, \dots, c_s \in R$ such that\dots
+$$\alpha(x) - \beta_1(x)f_1(x) - \cdots - \beta_r(x)f_r(x) = c_1g_1(x) + \cdots + c_sg_s(x),$$
+and we are done, since this verifies that\dots
+$\alpha(x) = \beta_1(x)f_1(x) + \cdots + \beta_r(x)f_r(x) + c_1g_1(x) + \cdots + c_sg_s(x) \in (f_1(x), \cdots, f_r(x), g_1(x), \cdots, g_s(x)),$
+completing the proof.
+\end{proof}
+
+\noindent The following theorem is a consequence with little effort.
+
+\begin{theorem}
+Let $R$ be a Noetherian ring, and let $J$ be an ideal of the polynomial ring $R[x_1, \dots, x_n]$. Then the ring $R[x_1,\dots,x_n]/J$ is Noetherian.
+\end{theorem}
+
+\subsubsection{Factorization in Noetherian domains}
+
+The following is corrolary of the ascending chaing condition (\ref{acc})\dots
+
+\begin{proposition}
+Let $R$ a Noetherian domain. Then factorizations exist in $R$.
+\end{proposition}
+
