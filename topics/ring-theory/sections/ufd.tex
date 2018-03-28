@@ -3,3 +3,28 @@
 \subsubsection{Definition}
 An integral domain $R$ is a \emph{unique factorization domain} if every nonzero, nonunit element $r \in R$ has a unique factorization
 into irreducibles.
+
+\begin{lemma}
+Let $R$ be a UFD, and let $a,b,c$ be nonzero elements of $R$. Then\dots
+\begin{itemize}
+  \item $(a) \subseteq (b) \Leftrightarrow$ the multiset of irreducible factors of $b$ is contained in the multiset of irreducible factors of $a$;
+  \item $a$ and $b$ are associates (that is, $(a) = (b)$) $\Leftrightarrow$ the two multisets coincide;
+  \item the irreducible factors of a product $bc$ are the collection of all irreducible factors of $b$ and of $c$.
+\end{itemize}
+\end{lemma}
+
+\begin{lemma}
+Let $R$ be a UFD, and let $a,b$ be nonzero elements of $R$. Then $a,b$ have a greatest common divisor.
+\end{lemma}
+
+\begin{lemma}
+Let $R$ be a UFD, and let $a$ be an irreducible element of $R$. Then $a$ is prime.
+\end{lemma}
+
+\begin{theorem}
+An integral domain $R$ is a UFD if and only if\dots
+\begin{itemize}
+  \item the a.c.c for principal ideals holds in $R$ and
+  \item every irreducible element of $R$ is prime.
+\end{itemize}
+\end{theorem}
