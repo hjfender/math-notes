@@ -13,3 +13,31 @@ Let $k$ be an algebraically closed field. Then $k$ is infinite.
 \begin{proof}
 Adapt Euclid's proof of the infinitude of primes.
 \end{proof}
+
+\subsubsection{Polynomials Over Fields}
+
+\begin{proposition}
+Every polynomial $f \in \mathbb{R}[x]$ of degree $\geq 3$ is reducible.
+
+The nonconstant irreducible polynomials in $\mathbb{R}[x]$ are precisely the polynomials
+of degree $1$ and the quadratic polynomials\dots
+$$f = ax^2 + bx + c$$
+with $b^2 - 4ac < 0$.
+\end{proposition}
+
+\begin{proof}
+Use the fundamental theorem of algebra and apply complex conjugation to any complex root to find a linear factor.
+\end{proof}
+
+\begin{corollary}
+Every polynomial $f \in \mathbb{R}[x]$ of odd degree has a real root.
+\end{corollary}
+
+\begin{proposition}
+Let $f \in \mathbb{Z}[x]$ be a primitive polynomial, and let $p$ be a prime integer. Assume $f$ mod $p$
+has the same degree as $f$ and is irreducible in $\mathbb{Z}/p\mathbb{Z}[x]$. Then $f$ is irreducible in $\mathbb{Z}[x]$.
+\end{proposition}
+
+\begin{corollary}
+There are irreducible polynomials in $\mathbb{Z}[x]$ and $\mathbb{Q}[x]$ of arbitrarily large degree.
+\end{corollary}

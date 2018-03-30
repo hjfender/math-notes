@@ -64,3 +64,35 @@ and the observation that a commutative ring is a field if and only if its ideals
 \begin{proposition}
 Let $I \neq (1)$ be a proper ideal of a commutative ring $R$. Then there exists a maximal ideal $m$ of $R$ containing $I$.
 \end{proposition}
+
+\subsubsection{Chinese Remainder Theorem}\label{chineseremaindertheorem}
+
+\begin{lemma}
+Let $I_1,\dots,I_k$ be ideals of $R$ such that $I_i + I_k = (1)$ for all $i = 1,\dots,k-1$. Then $(I_1\dots I_k-1) + I_k = (1)$.
+\end{lemma}
+
+\begin{lemma}
+Let $I_1,\dots,I_k$ be ideals of $R$ such that $I_i + I_j = (1)$ for all $i \neq j$. Then $I_1 \cdots I_k = I_1 \cap \cdots \cap I_k$.
+\end{lemma}
+
+\begin{theorem}
+\label{crt}
+Let $I_1, \dots, I_k$ be ideals of $R$ such that $I_i + I_j = (1)$ for all $i \neq j$. Then the natural homomorphism\dots
+$$\varphi : R \rightarrow \frac{R}{I_1} \times \cdots \times \frac{R}{I_k}$$
+is surjective and induces an isomorphism\dots
+$$\tilde \varphi : \frac{R}{I_1 \cdots I_k} \xrightarrow[]{\sim} \frac{R}{I_1} \times \cdots \times \frac{R}{I_k}.$$
+\end{theorem}
+
+\begin{proof}
+Argue by induction on $k$. By the former two lemmas we only need to show that the natural homomorphism\dots
+$$R \rightarrow \frac{R}{I_1\cdots I_{k-1}}\times\frac{R}{I_k}$$
+is surjective. By Lemma 6.2, $(I_1 \dots I_{k-1}) + I_k = (1)$; thus we are reduced to the case of two ideals.
+
+Let then $I$, $J$ be ideals of a commutative ring $R$, such that $I + J = (1)$, and let $r_I, r_J \in R$; we have to verify that
+$\exists r \in R$ such that $r \equiv r_I$ mod $I$ and $r \equiv r_J$ mod $J$. Since $I + J = (1)$, there are $a \in I$, $b \in J$
+such that $a + b = 1$. Let $r = ar_J + br_I$: then\dots
+$$r = ar_J + (1-a)r_I = r_I + a(r_J - r_I) \equiv r_I \textrm{ mod } I$$
+as $a \in I$, and\dots
+$$r = (1-b)r_J + br_I = r_J + b(r_I - r_J) \equiv r_J \textrm{ mod } J$$
+as $b \in J$, as needed, and completing the proof.
+\end{proof}

@@ -218,3 +218,33 @@ Let $R$ be a UFD, and let $K$ be its field of fractions. Let\dots
 $$f(x) = a_0 + a_1 x + \cdots + a_n x^n \in R[x],$$
 and let $c = \frac{p}{q} \in K$ be a root of $f$, with $p,q \in R$, gcd$(p,q) = 1$. Then $p | a_0$ and $q | a_n$ in $R$.
 \end{proposition}
+
+\subsubsection{Eisenstein's Criterion}
+
+\begin{proposition}
+\label{eisenstein}
+Let $R$ be a commutative ring, and let $\textbf{p}$ be a prime ideal of $R$. Let\dots
+$$f = a_0 + a_1 x + \cdots + a_n x^n \in R[x]$$
+be a polynomial, and assume that\dots
+\begin{itemize}
+  \item $a_n \not \in \textbf{p}$;
+  \item $a_i \in \textbf{p}$ for $i = 0,\dots,n-1$;
+  \item $a_0 \not \in \textbf{p}^2$
+\end{itemize}
+Then $f$ is not the product of polynomials of degree $<n$ in $R[x]$.
+\end{proposition}
+
+\subsubsection{Cyclotomic Polynomials}\label{cyclotomic}
+\emph{Cyclotomic polynomials} are polynomials\dots
+$$f(x) = 1 + x + x^2 + \cdots + x^{p-1} \in \mathbb{Z}[x].$$
+for a prime integer $p$.
+
+\begin{proposition}
+The cyclotomic polynomial $f$ above is irreducible.
+\end{proposition}
+
+\begin{proof}
+Observe $f(x)$ is irreducible $\Leftrightarrow$ $f(x+1)$ is irreducible. Also observe $f(x) = \frac{(x^p-1)}{(x-1)}$. Then\dots
+$$f(x+1) = \frac{(x+1)^p - 1}{(x+1)-1} = x^{p-1} + {p \choose p-1}x^{p-2} + \cdots + {p \choose 3}x^{2} + {p \choose 2}x + {p \choose 1};$$
+Eisenstein's criterion proves that this is irreducible, since ${p \choose 1} = p$ and $p | {p \choose k}$ for $k = 1. \dots, p-1$.
+\end{proof}
