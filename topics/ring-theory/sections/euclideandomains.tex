@@ -5,3 +5,35 @@ A \emph{Euclidean valuation} of an integral domain $R$ is a function $v : R \set
 for all $a \in R$ and all nonzero $b \in R$ there exist $q,r \in R$ such that\dots
 $$a = qb + r,$$
 with either $r=0$ or $v(r) < v(b)$.
+
+\subsubsection{Definition}\label{definition}
+An integral domain $R$ is a \emph{Euclidean domain} if it admits a Euclidean valuation.
+
+\begin{proposition}
+Let $R$ be a Euclidean domain. Then $R$ is a PID.
+\end{proposition}
+
+\subsubsection{Euclidean Algorithm}\label{euclideanalgorithm}
+
+\begin{lemma}
+Let $a = bq + r$ in a ring $R$. Then $(a,b) = (b,r)$.
+\end{lemma}
+
+\begin{corollary}
+Assume $a = bq +r$. Then $a,b$ have a gcd if and only if $b,r$ have a gcd, and in this case gcd$(a,b)$ $=$ gcd$(b,r)$.
+\end{corollary}
+
+\begin{proposition}
+Given two elements $a,b \in R$, with $b \neq 0$, we can apply division with remainder repeatedly:
+$$a = bq_1 + r_1,$$
+$$b = r_1q_2 + r_2,$$
+$$r_1 = r_2q_3 + r_3,$$
+$$\dots$$
+as long as the remainder $r_i$ is nonzero.
+
+In a Euclidean domain this process terminates.
+\end{proposition}
+
+\begin{proposition}
+The final remainder in the process above, $r_{N-1}$, is a gcd of $a,b$.
+\end{proposition}

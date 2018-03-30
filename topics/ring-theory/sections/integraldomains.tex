@@ -75,3 +75,13 @@ stabilizes. Then $r$ has a factorization into irreducibles.
 \subsubsection{Greatest Common Divisor}\label{gcd}
 Let $R$ be an integral domain, and let $a,b \in R$. An element $d \in R$ is a \emph{greatest common divisor} (often abbreviated 'gcd') of
 $a$ and $b$ if $(a,b) \subseteq (d)$ and $(d)$ is the smallest principal ideal in $R$ with this property.
+
+\subsubsection{Field of Fractions}\label{fieldoffractions}
+See the \hyperref[rationals]{construction of rational numbers}. The contruction is entirely analogous, but with a general ring instead of $\mathbb{Z}$.\newline
+
+\noindent We can also define the \emph{field of fractions} with category theory. Consider a category such that\dots
+\begin{itemize}
+  \item objects are pairs $(i, K)$, where $K$ is a field and $i : R \hookrightarrow K$ is an injective ring homomorphism.
+  \item morphisms $(i,K) \rightarrow (j,L)$ are determined by a homomorphism of fields $\alpha : K \rightarrow L$
+\end{itemize}
+Then the \emph{field of fractions} $K(R)$ of $R$ is an initial object of this category.

@@ -1,1 +1,5 @@
 \subsection{Sketch of Proof in Complex Analysis}\label{complexproofofFOA}
+Let $f \in \mathbb{C}[x]$ be a nonconstant polynomial; the task consists of proving that $f$ has a root in $\mathbb{C}$. Whatever $f(0)$ is,
+we can find an $r \in \mathbb{R}$ large enough that $|f(z)| > |f(0)|$ for all $z$ on the circle $|z| = r$ (since $f$ is nonconstant, lim$_{z \rightarrow \infty}|f(z)| = + \infty$).
+The disk $|z| \leq r$ is compact, so the continuous function $|f(z)|$ has a minimum on it; by the choice of $r$, it must be somewhere in the interior of the disk, say at $z = a$.
+The \emph{minimum modulus principle} then implies that $f(z) = 0$.

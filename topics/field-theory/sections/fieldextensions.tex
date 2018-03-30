@@ -1,0 +1,17 @@
+\subsection{Field Extensions}\label{fieldextensions}
+
+\begin{proposition}
+Let $k$ be a field, and let $f(t) \in k[t]$ be a nonzero irreducible polynomial. Then\dots
+$$F := \frac{k[t]}{(f(t))}$$
+is a field, endowed with a natural homomorphism $i : k \hookrightarrow F$ (obtained as the composition $k \rightarrow k[x] \rightarrow F$)
+realizing it as an extension of $k$. Further,
+\begin{itemize}
+  \item $f(x) \in k[x] \subseteq F[x]$ has a root in $F$, namely the coset of $t$;
+  \item if $k \subseteq K$ is any extension in which $f$ has a root, then there exists a homomorphism $j : F \rightarrow K$ such that the diagram
+  \begin{figure}[H]
+  \centering
+  \input{topics/field-theory/diagrams/fieldextension}
+  \end{figure}
+  commutes.
+\end{itemize}
+\end{proposition}
