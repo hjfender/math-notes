@@ -1,2 +1,110 @@
 \subsection{Homomorphisms of free modules}
 
+If $F$ is a free module, then there is a set $A$ determined up to bijection/choice-of-basis (see \ref{basisisfree}) such that $F \cong R^{\oplus A}$.
+
+So we can understand Hom$_R(F_1, F_2)$ in terms of Hom$_R(R^{\oplus A_1}, R^{\oplus A_2})$ up to the choice of isomorphisms $F_1 \cong R^{\oplus A_1}$
+and $F_2 \cong R^{\oplus A_2}$ (i.e. choice of basis.) In the case that $A_1$ and $A_2$ are finite we can simply describe Hom$_R(R^n, R^m)$ as an $R$-module,
+for every choice of $m,n \in \mathbb{Z}$ in order to understand thes morphisms. This can be done with matrices with entries in $R$.
+
+\subsubsection{Matrices}\label{matrices}
+An $m \times n$ \emph{matrix} with entries in $R$ is a choice of $mn$ elements in $R$. It is commonly denoted as\dots
+\[
+(r_{ij})_{i=1,\dots,m;\,j=1,\dots,n} =
+\begin{bmatrix}
+	r_{11} & r_{12} & \cdots & r_{1n} \\
+	r_{21} & r_{22} & \cdots & r_{2n} \\
+	\vdots & \vdots & \ddots & \vdots \\
+	r_{m1} & r_{m2} & \cdots & r_{mn}
+\end{bmatrix}
+\]
+
+The set $\mathcal{M}_{m,n}(R)$ of $m \times n$ matrices with entries in $R$ is an $R$-module under entrywise addition\dots
+$$(a_{ij}) + (b_{ij}) := (a_{ij} + b_{ij})$$
+and the action\dots
+$$r(a_{ij}) := (ra_{ij})$$
+for $r \in R$.
+
+We can also define multiplication between $m \times p$ matrices and $p \times n$ matrices\dots
+$$A_{m \times p} \cdot B_{p \times n} = (a_{ik}) \cdot (b_{kj}) := \left( \sum_{k=1}^{p} a_{ik} b_{kj} \right).$$
+This multiplication is associative.
+
+Thus the set $\mathcal{M}_n(R)$ of $n \times n$ matrices with entries in $R$ is an $R$-algebra with the identity element\dots
+\[
+\begin{bmatrix}
+	1 & 0 & \cdots & 0 \\
+	0 & 1 & \cdots & 0 \\
+	\vdots & \vdots & \ddots & \vdots \\
+	0 & 0 & \cdots & 1
+\end{bmatrix}
+\]
+
+A \label{vector} \emph{column $n$-vector} is a $n \times 1$ matrix and a \emph{row $m$-vector} is a $1 \times m$ matrix. These structures
+can stand in for elements of $\textbf{v} \in R^n$ (or $R^m$ as the case may be). Thus we can act on $R^n$ with an $m \times n$ matrix, by
+left-multiplication\dots
+\[
+A \cdots \textbf{v} =
+\begin{bmatrix}
+	a_{11} & a_{12} & \cdots & a_{1n} \\
+	a_{21} & a_{22} & \cdots & a_{2n} \\
+	\vdots & \vdots & \ddots & \vdots \\
+	a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+	v_{1}\\
+	v_{2}\\
+	\vdots\\
+	v_{n}
+\end{bmatrix}
+=
+\begin{bmatrix}
+	a_{11}v_1 + a_{12}v_2 + \cdots + a_{1n}v_n\\
+	a_{21}v_1 + a_{22}v_2 + \cdots + a_{2n}v_n\\
+	\vdots\\
+	a_{m1}v_1 + a_{m2}v_2 + \cdots + a_{mn}v_n
+\end{bmatrix}
+\in R^m.
+\]
+\begin{lemma}
+For all $m \times n$ matrices $A$ with entries in $R$:
+\begin{itemize}
+  \item The function $\varphi : R^n \rightarrow R^m$ defined by $\varphi(\textbf{v}) = A \cdot \textbf{v}$ is a
+  homomorphism of $R$-modules.
+  \item Every $R$-module homomorphism $R^n \rightarrow R^m$ is determined in this way by a unique $m \times n$ matrix.
+\end{itemize}
+\end{lemma}
+
+\begin{corollary}
+The correspondence introduced in the previous lemma gives an isomorphism of $R$-modules\dots
+$$\mathcal{M}_{m,n}(R) \cong \emph{Hom}_R(R^n,R^m).$$
+\end{corollary}
+
+\begin{lemma}
+The following diagram commutes\dots
+\begin{figure}[H]
+\centering
+\input{topics/modules/diagrams/matrixcomposition}
+\end{figure}
+\end{lemma}
+
+\subsubsection{Change of Basis}\label{changeofbasis}
+Let $F$ be a finitely generated free module and choose two (finite) bases $A$, $B$ for $F$. Then the two bases correspond
+to two isomorphisms\dots
+$$R^{\oplus A} \xrightarrow[]{\varphi} F, \; R^{\oplus B} \xrightarrow[]{\psi} F.$$
+Then\dots
+$$R^{\oplus A} \xrightarrow[]{\psi^{-1} \circ \varphi} R^{\oplus B}$$
+is an isomorphism, which corresponds to a matrix $N^B_A$, the \emph{matrix of the change of basis}.
+
+\begin{proposition}
+Let $\alpha : F \rightarrow G$ be a homomorphism of finitely generated free modules, and let $P$ be a matrix reperesenting
+it with respect to any choice of bases for $F$ and $G$. Then the matrices representing $\alpha$ with respect to any other
+choice of bases are all and only the matrices of the form\dots
+$$M \dots P \dots N$$
+where $M$ and $N$ are invertible matrices.
+
+\subsubsection{Equivalent Matrices}\label{equivalentmatrices}
+Two matrices $P, Q \in \mathcal{M}_{m,n}(R)$ are \emph{equivalent} if they represent the same homomorphism of free modules
+$R^n \rightarrow R^m$ up to a choice of basis.
+\end{proposition}
+
+\subsubsection{Elementary Operations}
