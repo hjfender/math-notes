@@ -10,12 +10,12 @@ for every choice of $m,n \in \mathbb{Z}$ in order to understand thes morphisms. 
 An $m \times n$ \emph{matrix} with entries in $R$ is a choice of $mn$ elements in $R$. It is commonly denoted as\dots
 \[
 (r_{ij})_{i=1,\dots,m;\,j=1,\dots,n} =
-\begin{bmatrix}
+\begin{pmatrix}
 	r_{11} & r_{12} & \cdots & r_{1n} \\
 	r_{21} & r_{22} & \cdots & r_{2n} \\
 	\vdots & \vdots & \ddots & \vdots \\
 	r_{m1} & r_{m2} & \cdots & r_{mn}
-\end{bmatrix}
+\end{pmatrix}
 \]
 
 The set $\mathcal{M}_{m,n}(R)$ of $m \times n$ matrices with entries in $R$ is an $R$-module under entrywise addition\dots
@@ -30,12 +30,12 @@ This multiplication is associative.
 
 Thus the set $\mathcal{M}_n(R)$ of $n \times n$ matrices with entries in $R$ is an $R$-algebra with the identity element\dots
 \[
-\begin{bmatrix}
+\begin{pmatrix}
 	1 & 0 & \cdots & 0 \\
 	0 & 1 & \cdots & 0 \\
 	\vdots & \vdots & \ddots & \vdots \\
 	0 & 0 & \cdots & 1
-\end{bmatrix}
+\end{pmatrix}
 \]
 
 A \label{vector} \emph{column $n$-vector} is a $n \times 1$ matrix and a \emph{row $m$-vector} is a $1 \times m$ matrix. These structures
@@ -43,26 +43,26 @@ can stand in for elements of $\textbf{v} \in R^n$ (or $R^m$ as the case may be).
 left-multiplication\dots
 \[
 A \cdots \textbf{v} =
-\begin{bmatrix}
+\begin{pmatrix}
 	a_{11} & a_{12} & \cdots & a_{1n} \\
 	a_{21} & a_{22} & \cdots & a_{2n} \\
 	\vdots & \vdots & \ddots & \vdots \\
 	a_{m1} & a_{m2} & \cdots & a_{mn}
-\end{bmatrix}
+\end{pmatrix}
 \cdot
-\begin{bmatrix}
+\begin{pmatrix}
 	v_{1}\\
 	v_{2}\\
 	\vdots\\
 	v_{n}
-\end{bmatrix}
+\end{pmatrix}
 =
-\begin{bmatrix}
+\begin{pmatrix}
 	a_{11}v_1 + a_{12}v_2 + \cdots + a_{1n}v_n\\
 	a_{21}v_1 + a_{22}v_2 + \cdots + a_{2n}v_n\\
 	\vdots\\
 	a_{m1}v_1 + a_{m2}v_2 + \cdots + a_{mn}v_n
-\end{bmatrix}
+\end{pmatrix}
 \in R^m.
 \]
 \begin{lemma}
@@ -108,3 +108,95 @@ $R^n \rightarrow R^m$ up to a choice of basis.
 \end{proposition}
 
 \subsubsection{Elementary Operations}
+In this section we detail the elementary operations that can be performed on an $m \times n$ matrix $P$. The examples given are
+to $4 \times 4$ invertible matrices that operate on the rows of an $4 \times n$ matrix. They should suggest an easy generalization to
+larger invertible matrices and operations on columns.\newline
+
+\noindent The Elementary operations on a matrix are\dots
+\begin{itemize}
+  \item switching two rows (or columns) of $P$;
+  \textbf{Example.} \[
+  	\begin{pmatrix}
+		1 & 0 & 0 & 0 \\
+		0 & 0 & 0 & 1 \\
+		0 & 0 & 1 & 0 \\
+		0 & 1 & 0 & 0
+	\end{pmatrix}
+  \] switches the second and fouth row
+  \item add to one row (resp., column) a multiple of another row (resp., column);
+  \textbf{Example:} \[
+  	\begin{pmatrix}
+		1 & 0 & c & 0 \\
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 1 & 0 \\
+		0 & 0 & 0 & 1
+	\end{pmatrix}
+  \] adds to the first row the $c$-multiple of the third column
+  \item multiply all entries in one row (or column) of $P$ by a unit of $R$.
+  \textbf{Example:} \[
+  	\begin{pmatrix}
+		1 & 0 & 0 & 0 \\
+		0 & u & 0 & 0 \\
+		0 & 0 & 1 & 0 \\
+		0 & 0 & 0 & 1
+	\end{pmatrix}
+  \] multiplies the second row by the unit $u$
+\end{itemize}
+
+\begin{proposition}
+Two matrices $P,Q \in \mathcal{M}_{m,n}(R)$ are equivalent if $Q$ may be obtained from $P$ by a sequence of elementary operations.
+\end{proposition}
+
+\subsubsection{Gaussian Elimination over Euclidean domains}\label{gaussianelimination}
+We give a $2 \times 2$ example, which generalizes easily. Let\dots
+\[
+\begin{pmatrix}
+	a & b\\
+	c & d
+\end{pmatrix}
+\in \mathcal{M}_2(R),
+\]
+for a Euclidean domain $R$, with Euclidean valuation $N$. After switching rows and/or columns if necessary, we may assume that $N(a)$ is
+the minimum of the valuations of all entries in the matrices. Division with remainder gives\dots
+$b = aq + r$
+with $r = 0$ or $N(r) < N(a)$. Adding to the second column the $(-q)$-multiple of the first produces the matrix\dots
+\[
+\begin{pmatrix}
+	a & r\\
+	c & d - qc
+\end{pmatrix}.
+\]
+If $r \neq 0$, so that $N(r) < N(a)$, we begin again and shuffle rows and columns so that the ($1$,$1$) entry has minimum valuation. This
+process may be repeated, but after a finite number of steps the ($1$,$2$) entry will have to vanish.
+
+Trivial variations of the same procedure will clear the ($2$,$1$) entry as well, producing a matrix\dots
+\[
+\begin{pmatrix}
+	e & 0\\
+	0 & f
+\end{pmatrix}.
+\]
+Now we may assume that $e$ divides $f$ in $R$, with no remainder. Indeed, otherwise we can add the second row to the first,
+\[
+\begin{pmatrix}
+	e & f\\
+	0 & f
+\end{pmatrix},
+\]
+and start all over with this new matrix. Again, the effect of all the operations will be to decrease the valuation of the
+($1,1$) entry, so after a final number of steps we must reach the condition $e | f$.
+
+\begin{proposition}
+Let $R$ be a Euclidean domain, and let $P \in \mathcal{M}_{m,n}(R)$. Then $P$ is equivalent to a matrix of the form\dots
+\[
+\begin{pmatrix}
+	d_1 & \cdots & 0 & \rvline & 0 \\
+	\vdots & \ddots & \vdots & \rvline & 0 \\
+	0 & \cdots & d_r & \rvline & 0 \\ \hline
+	0 & \cdots & 0 & \rvline & 0
+\end{pmatrix},
+\]
+with $d_1 | \cdots | d_r$.
+
+This is called the \emph{Smith normal form}\label{smithnormalform} of the matrix.
+\end{proposition}
