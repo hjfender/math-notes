@@ -200,3 +200,78 @@ with $d_1 | \cdots | d_r$.
 
 This is called the \emph{Smith normal form}\label{smithnormalform} of the matrix.
 \end{proposition}
+
+\subsubsection{The Determinant}\label{determinant}
+Let $A = (a_{ij}) \in \mathcal{M}_n(R)$ be a square matrix. Then the \emph{determinant} of $A$ is the element\dots
+$$\textrm{det}(A) = \sum_{\sigma \in S_n} (-1)^{\sigma} \prod^n_{i=1} a_{i \sigma(i)} \in R.$$
+
+\noindent Some properties of the determinant are\dots
+\begin{itemize}
+  \item det$(A)=$ det$(A^t)$
+  \item If two rows or columns of a matrix $A$ agree, then det$(A)=0$
+  \item Suppose $A = (a_{ij})$ and $B = (b_{ij})$ agree on all but at most one row. Then det$(C)=$ det$(A)+$det$(B)$.
+\end{itemize}
+
+\begin{lemma}
+Let $A$ be a square matrix with entries in an integral domain $R$.
+\begin{itemize}
+  \item Let $A'$ be obtained from A by switching two rows to two columns. Then \emph{det}$(A^t)=$ \emph{-det}$(A)$.
+  \item Let $A'$ be obtained from A by adding to a row (resp. column) a multiple of another row (resp. column). Then \emph{det}$(A^t)=$ \emph{det}$(A)$.
+  \item Let $A'$ be obtained from A by multiplying a row (resp. column) by an element $c \in R$. Then \emph{det}$(A')=c$\emph{det}$(A)$.
+\end{itemize}
+In other words, the effect of an elementary operation on \emph{det}$(A)$ is the same as multiplying \emph{det}$(A)$ by the determinant of the corresponding elementary matrix.
+\end{lemma}
+
+\subsubsection{Cofactors of a square matrix}\label{square}
+If $A \in \mathcal{M}_n(R)$, the \emph{cofactors} of $A$ are the $(n-1) \times (m-1)$ minores of $A$, corrected by sign. More precisely, for $A = (a)_{ij}$, I will let\dots
+\[
+A^{ij} := (-1)^{i+j}\textrm{det}\begin{pmatrix}
+									a_{11} & \cdots & a_{1j-1} & a_{1j+1} & \cdots & a_{1n}\\
+									\vdots & \ddots & \vdots   & \vdots   & \ddots & \vdots\\
+									a_{i-11} & \cdots & a_{i-1j-1} & a_{i-1j+1} & \cdots & a_{i-1n}\\
+									a_{i+11} & \cdots & a_{i+1j-1} & a_{i+1j+1} & \cdots & a_{i+1n}\\
+									\vdots & \ddots & \vdots   & \vdots   & \ddots & \vdots\\
+									a_{n1} & \cdots & a_{nj-1} & a_{nj+1} & \cdots & a_{nn}
+								\end{pmatrix}
+\]
+
+\begin{lemma}
+With notation as above,
+\begin{itemize}
+  \item for all $i = 1, \dots, n$, det$(A) = \sum_{j=1}^n a_{ij}A^{(ij)}$,
+  \item for all $j = 1, \dots, n$, det$(A) = \sum_{i=1}^n a_{ij}A^{(ij)}$.
+\end{itemize}
+\end{lemma}
+
+\begin{corollary}
+Let $R$ be a commutative ring and $A \in \mathcal{M}_n(R)$. Then\dots
+\[
+A \cdot \begin{pmatrix}
+	a^{(11)} & \cdots & a^{(n1)}\\
+	\vdots & \ddots & \vdots\\
+	a^{(1n)} & \cdots & a^{(nn)}
+\end{pmatrix} =
+\begin{pmatrix}
+	a^{(11)} & \cdots & a^{(n1)}\\
+	\vdots & \ddots & \vdots\\
+	a^{(1n)} & \cdots & a^{(nn)}
+\end{pmatrix} \cdot A =
+\emph{det}(A)\cdot I_n.
+\]
+\end{corollary}
+\noindent The matrix of cofactors above is called the \emph{adjoint matrix} of $A$. Note\dots
+\[
+A^{-1} = \textrm{det}(A)^{-1}
+\begin{pmatrix}
+	a^{(11)} & \cdots & a^{(n1)}\\
+	\vdots & \ddots & \vdots\\
+	a^{(1n)} & \cdots & a^{(nn)}
+\end{pmatrix}.
+\]
+
+\begin{proposition}[Cramer's rule]
+\label{cramersrule}
+Assume $\emph{det}(A)$ is a unite, and let $A^{(j)}$ be the matrix obtained by replacing the $j$-th column of $A$ by the
+column vector $b$. Then\dots
+$$x_j = \emph{det}(A)^{-1}\emph{det}(A^{(j)}).$$
+\end{proposition}

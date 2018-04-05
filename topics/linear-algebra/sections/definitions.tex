@@ -49,3 +49,24 @@ Over a field, every $m \times n$ matrix is equivalent to a matrix of the form\do
 \]
 (where $r \leq \min(m,n)$ and $0$ stands for null matrices of appropriate sizes.)
 \end{proposition}
+
+\subsubsection{Column/Row Space of a Matrix}\label{spaceofmatrix}
+The \emph{column} (resp. \emph{row}) \emph{space} of a matrix $P$ over a field $k$ is the span of the columns (resp. rows) of $P$.
+
+\subsubsection{Column/Row Rank of a Matrix}\label{rankofmatrix}
+The \emph{column} (resp. \emph{row}) \emph{rank} of a matrix $P$ is the dimension of the column (resp. row) space of $P$.
+
+\begin{proposition}
+The row rank of a matrix over a field $k$ equals its column rank.
+\end{proposition}
+
+\noindent Thus the \emph{rank} of $M \in \mathcal{M}_{m,n}(k)$ ($k$ is a field) is the dimension of its column (or, equivalently, row) space.
+
+\subsubsection{Rank and Nullity of a linear map}
+Let $\alpha: V \rightarrow W$ be a linear map between finite-dimensional vector spaces over a field $k$. Then the \emph{rank} of $\alpha$,
+denoted rk $\alpha$, is the dimension of im $\alpha$. The \emph{nullity} of $\alpha$ is dim$(\textrm{ker }\alpha)$.
+
+\begin{proposition}
+Let $\alpha : V \rightarrow W$ be a linear map of finite-dimensional vector spaces. Then\dots
+$$(\textrm{rank of }\alpha) + (\textrm{nullity of }\alpha) = \textrm{dim }V.$$
+\end{proposition}
