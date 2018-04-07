@@ -54,12 +54,12 @@ there is an exact sequence\dots
 $$0 \longrightarrow R^m \longrightarrow M \longrightarrow 0.$$
 \end{proposition}
 
-\begin{proposition}[Half Characteriztion of a PID]
-Let $R$ be an integral domain. Suppose that for every finitely generated $R$-module $M$ and every begining
-of a free resolution $R^{m_0} \xrightarrow[]{\pi} M \rightarrow 0$ there is an integer $m_1$ and an $R$-module homomorphism
-$R^{m_1} \rightarrow R^{m_0}$ such that the sequence\dots
-$$0 \longrightarrow R^{m_1} \longrightarrow R^{m_0} \xrightarrow[]{\pi} M \longrightarrow 0$$
-is exact. Then $R$ is a PID.
+\begin{proposition}[Characteriztion of a PID]
+Let $R$ be an integral domain. Then $R$ is a PID if and only if for every finitely generated $R$-module $M$ and every epimorphism\dots
+$$R^{m_0} \xrightarrow[]{\pi_0} M \longrightarrow 0,$$
+there exist a free $R$-module $R^{m_1}$ and an $R$-module homomorphism $\pi_1 : R^{m_1} \rightarrow R^{m_0}$ such that the sequence\dots
+$$0 \longrightarrow R^{m_1} \xrightarrow[]{\pi_1} R^{m_0} \xrightarrow[]{\pi_0} M \longrightarrow 0$$
+is exact.
 \end{proposition}
 
 \begin{proposition}

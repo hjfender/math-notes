@@ -1,0 +1,84 @@
+\subsection{Classification of Finitely Generated Modules over PIDs}\label{moduleclassification}
+
+\begin{lemma}
+Let $R$ be a PID, let $F$ be a finitely generated free module over $R$, and let $M \subseteq F$ be a nonzero submodule. Then
+there exist $a \in R$, $x \in F$, $y \in M$, and submodules $F' \subseteq F$ and $M' \subseteq M$, such that $y = ax \neq 0$,
+$M' = F' \cap M$, and\dots
+$$F = \langle x \rangle \oplus F', \; M = \langle y \rangle \oplus M'.$$
+\end{lemma}
+
+\begin{proof}
+For all $\varphi \in \textrm{Hom}_R(F,R)$, $\varphi(M)$ is a submodule of $R$, that is, an ideal. The family of all these ideals
+is nonempty, and PIDs are Noetherian; therefore there exists a maximal element in the family, say $\alpha(M)$, for a homomorphism
+$\alpha : M \rightarrow R$. The fact that $M \neq 0$ implies immediately that some $\varphi(M) \neq 0$; hence $\alpha(M) \neq 0$.
+
+Since $R$ is a PID, $\alpha(M)$ is principal: $\alpha(M) = (a)$ for some $a \in R$, $a \neq 0$. Since $a \in \alpha(M)$, there exists
+an element $y \in M$, $y \neq 0$, such that $\alpha(y) = a$. These are the elements $a$, $y$ mentioned in the statement.
+
+I claime that $a$ divides $\varphi(y)$ for all $\varphi \in$ Hom$_R(F,R)$. Indeed, let $b$ be a generator of $(a, \varphi(y))$, and let
+$r,s \in R$ such that $b = ra + s \varphi(y)$; consider the homomorphism $\psi := r\alpha + s\varphi$. Since $a \in (b)$, we have $\alpha(M) \subseteq (b)$.
+On the other hand\dots
+$$b = ra + s \varphi(y) = (r\alpha + s\varphi)(y) = \psi(y) \in \psi(M);$$
+therefore $(b) \subseteq \psi(M)$. It follows that $\alpha(M) \subseteq \psi(M)$, and by maximality $\alpha(M) = \psi(M)$; hence $(a) = (b)$, and in particular
+$a | \varphi(y)$, as claimed.
+
+Let $y = (s_1, \dots, s_n)$ as an element of $F = R^n$. Each $s_i$ is the iamge of $y$ by a homomorphism $F \rightarrow R$, so $a$ divides all of them by what we
+just proved. Therefore $\exists r_1, \dots, r_n \in R$ such that $s_i = a r_i$; let\dots
+$$x = (r_1, \dots, r_n) \in F.$$
+This is the element $x$ mentioned in the statement. By construction, $y = ax$. Further, $a = \alpha(y) = \alpha(ax) = a\alpha(x)$; since $R$ is an integral domain and
+$a \neq 0$, this implies $\alpha(x) = 1$.
+
+Finally, we let $F' = \textrm{ker} \alpha$ and $M' = F' \cap M$, and we can proceed to verify the direct sums.
+
+First, every $z \in F$ may be written as\dots
+$$z = \alpha(z)x + (z - \alpha(z)x);$$
+by linearity\dots
+$$\alpha(z - \alpha(z)x) = \alpha(z) - \alpha(z)\alpha(x) = \alpha(z) - \alpha(z) = 0,$$
+that is, $z - \alpha(z)x \in \textrm{ker}\alpha$. This implies that $F \in \langle x \rangle + F'$. On the other hand, $rx \in F' \Rightarrow \alpha(rx) = 0 \Rightarrow r\alpha(x) = 0 \Rightarrow r = 0$:
+that is, $\langle x \rangle \cap F' = 0.$ Therefore\dots
+$$F = \langle x \rangle \oplus F',$$
+as claimed.
+
+Second, if $z \in M$, then $a$ divides $\alpha(z)$: indeed, $\alpha(z) \in \alpha(M) = (a)$. Writing $\alpha(z) = ca$, we have $\alpha(z)x = cax = cy$; splitting
+$z$ as above, we note\dots
+$$z - \alpha(z)x = z - cy \in M \cap F' = M',$$
+and this leads as before to\dots
+$$M = \langle y \rangle \oplus M',$$
+concluding the proof.
+\end{proof}
+
+\begin{proposition}
+Let $R$ be a PID, let $F$ be a finitely generated free module over $R$, and let $M \subseteq F$ be a submodule.
+Then $M$ is free.
+\end{proposition}
+
+\begin{proof}
+Use the previous lemma iteratively until all the generators are exhausted.
+\end{proof}
+
+\begin{corollary}
+Let $R$ be a PID, let $F$ be a finitely generated free module over $R$, and let $M \subseteq F$ be a submodule. Then there exist a basis $(x_1, \dots, x_n)$ of $F$ and
+nonzero elements $a_1, \dots, a_m$ of $R$ $(m \leq n)$ such that $(a_1x_1, \dots, a_mx_m)$ is a basis of $M$. Further, we may assume $a_1 | a_2 | \cdots | a_m$.
+\end{corollary}
+
+\subsubsection{Rank of a finitely generated module}
+Let $R$ be an integral domain. The \emph{rank} rk$M$ of a finitely generated $R$-module $M$ is the maximum number of linearly independent elements in $M$.
+
+\begin{theorem}[Classification of finitely generated modules over PIDs]
+\label{classificationoffinitelygeneratedmodulesoverPIDs}
+Let $R$ be a PID, and let $M$ be a finitely generated $R$-module. Then the following hold:
+\begin{itemize}
+  \item There exist distinct prime ideals $(q_1), \dots, (q_n) \subseteq R$, positive integers $r_{ij}$, and an isomorphism\dots
+  $$M \cong R^{\textrm{rk} M} \oplus \left( \bigoplus_{i,j} \frac{R}{(q_i^{r_{ij}})} \right).$$
+  \item Ther exist nonzero, nonunit ideals $(a_1), \dots (a_m)$ of $R$, such that $(a_1) \supseteq (a_2) \supseteq \cdots \supseteq (a_m)$, and an isomorphism\dots
+  $$M \cong R^{\textrm{rk}M} \oplus \frac{R}{(a_1)} \oplus \cdots \oplus \frac{R}{(a_m)}.$$
+  These decompositions are unique.
+\end{itemize}
+\end{theorem}
+The proof of this theorem follows from the previous lemmas in a manner similar to \ref{finiteabelianclassificationtheorem} with the role of \ref{freeabeliangroupdecomposition}
+taken over by the Chinese remainder theorem.
+
+\begin{lemma}
+Let $M$ be a torsion module, expressed as above (with $\emph{rk }M = 0$). Then $\emph{Ann}(M) = (a_m)$. Further, the prime ideals $(q_i)$ are precisely the prime ideals of $R$
+containing $\emph{Ann}(M)$.
+\end{lemma}
