@@ -1,0 +1,114 @@
+\subsection{Linear Transformations}\label{lineartransformations}
+A linear transformation is an $R$-module homomorphism $\varphi \in \textrm{End}_R(F)$ of a free module $F$ acting on $F$.
+
+\subsubsection{Similar Matrices}\label{similar}
+Two square matrices $A,B \in \mathcal{M}_n(R)$ are \emph{similar} if they represent the same homomorphism $\varphi \in \textrm{End}_R(F)$
+of a free rank-$n$ module $F$ to itself, up to the choice of a basis for $F$.
+
+\begin{proposition}
+Two matrices $A,B \in \mathcal{M}_n(R)$ are similar if and only if there exists an invertible matrix $P$ such that\dots
+$$B = P A P^{-1}.$$
+\end{proposition}
+
+\subsubsection{Similar Homomorphisms}
+Two $R$-module homomorphisms of a free module $F$ to itself\dots
+$$\alpha, \beta : F \rightarrow F,$$
+are \emph{similar} if there exists an automorphism $\pi: F \rightarrow F$ such that\dots
+$$\beta = \pi \circ \alpha \circ \pi^{-1}.$$
+
+\subsubsection{Determinant of a Homomorphism}
+Let $\alpha \in \textrm{End}_R(F)$. The \emph{determinant} of $\alpha$ is det$(\alpha) :=$ det$(A)$, where $A$ is the matrix
+representing $\alpha$ with respect to any choice of basis of $F$.
+
+\begin{proposition}
+Let $\alpha$ be a linear transformation of a free $R$-module $F \cong R^n$. Then det$(\alpha) \neq 0$ if and only if $\alpha$ is injective.
+\end{proposition}
+
+\begin{proof}
+Use the field of fractions of $R$.
+\end{proof}
+
+\subsubsection{Trace}\label{trace}
+The \emph{trace} of a square matrix $A = (a_{ij}) \in \mathcal{M}_n(R)$ is\dots
+$$\textrm{tr}(A) := \sum_{i=1}^na_{ii}.$$
+
+\noindent Let $\alpha \in$ End$_R(F)$. The \emph{trace} of $\alpha$ is defined to be tr$(\alpha) :=$ tr$(A)$, where
+$A$ is the matrix representing $\alpha$ with respect to any choice of basis of $F$.
+
+\begin{lemma}
+Let $A,B \in \mathcal{M}_n(R)$. Then tr$(AB) =$ tr$(BA)$.
+\end{lemma}
+
+\subsubsection{Characteristic Polynomial}\label{characteristicpolynomial}
+Let $F$ be a free $R$-module, and let $\alpha \in$ End$_R(F)$. Denote by $I$ the identity map $F \rightarrow F$. The
+\emph{characteristic polynomial} of $\alpha$ is the polynomial\dots
+$$P_{\alpha}(t) := \textrm{det}(tI - \alpha) \in R[t].$$
+
+\begin{proposition}
+Let $F$ be a free $R$-module of rank $n$, and let $\alpha \in \textrm{End}_R(F)$.
+\begin{itemize}
+  \item The characteristic polynomial $P_{\alpha}(t)$ is a monic polynomial of degree $n$.
+  \item The coefficient of $t^{n-1}$ in $P_{\alpha}(t)$ equals $-\textrm{tr}(\alpha)$.
+  \item The constant term of $P_{\alpha}$ equals $(-1)^{\alpha}\textrm{det}(\alpha)$.
+  \item If $\alpha$ and $\beta$ are similar, then $P_{\alpha}(t) = P_{\beta}(t)$.
+\end{itemize}
+\end{proposition}
+
+\subsubsection{Annihilator Ideal}\label{annihilatorideal}
+Given $\alpha \in \textrm{End}_R(F)$, where $F$ is a free $R$-module, the \emph{annihilator ideal of $\alpha$} is\dots
+$$\mathcal{I}_{\alpha} := \{f \in R[t] | f(\alpha) = 0 \}.$$
+
+\begin{lemma}
+If $\alpha$ and $\beta$ are similar, then $\mathcal{I}_{\alpha} = \mathcal{I}_{\beta}$.
+\end{lemma}
+
+\begin{theorem}[Cayley-Hamilton Theorem]
+Let $P_{\alpha}(t)$ be the characteristic polynomial of the linear transformation $\alpha \in \textrm{End}_{R}(F)$. Then\dots
+$$P_{\alpha}(\alpha) = 0.$$
+\end{theorem}
+
+\subsubsection{Minimal Polynomial}\label{minimalpoynomial}
+Let $F$ be a free $R$-module, and let $\alpha \in$ End$_R(F)$. Let $K$ be the field of fractions of $R$. The
+\emph{minimal polynomial} of $\alpha$ is the monic generator $m_{\alpha}(t) \in K[t]$ of $\mathcal{I}_{\alpha}^{(K)}$.
+
+\subsubsection{Eigenvalues}\label{eigenvalue}
+Let $F$ be a free $R$-module, and let $\alpha \in$ End$_R(F)$. A scalar $\lambda \in R$ is an \emph{eigenvalue} for $\alpha$
+if there exists $\textbf{v} \in F$, $\textbf[v] \neq 0$, such that\dots
+$$\alpha(\textbf{v}) = \lambda \textbf{v}.$$
+
+\begin{lemma}
+Let $F$ be a finitely generated $R$-module, and let $\alpha \in \textrm{End}_R(F)$. Then the set of eigenvalues of $\alpha$
+is precisely the set of roots in $R$ of the characteristic polynomial $P_{\alpha}(t)$.
+\end{lemma}
+
+\subsubsubsection{Algebraic Multiplicity}
+The \emph{algebraic multiplicity} of an eigenvalue of a linear transformation $\alpha$ of a finitely generated
+free module is its multiplicity as a root of the characteristic polynomial of $\alpha$.
+
+\begin{corollary}
+The number of eigenvalues of a linear transformation of $R^n$ is at most $n$. If the base ring $R$ is an algebraically closed
+field, then every linear transformation has exactly $n$ eigenvalues (counted with algebraic multiplicity)
+\end{corollary}
+
+\subsubsection{Eigenvector}\label{eigenvector}
+Let $\lambda$ be an eigenvalue of a linear transformation $\alpha$ of a free $R$-module $F$. Then a nonzero $\textbf{v} \in F$
+is an \emph{eigenvector} for $\alpha$, corresponding to the eigenvalue $\lambda$, if $\alpha(\textbf{v}) = \lambda \textbf{v}$,
+that is, if $\textbf{v} \in \textrm{ker}(\lambda I - \alpha)$.
+
+\subsubsection{Eigenspace}\label{eigenspace}
+The \emph{eigenspace} corresponding to the eigenvalue $\lambda$ is the submodule ker$(\lambda I - \alpha)$.
+
+\subsubsubsection{Geometric Multiplicity}
+The \emph{geometric multiplicity} of an eigenvalue is the rank of its eigenspace.
+
+\subsubsection{Diagonalizable}
+A matrix $A$ is diagonalizable if it admits a spectral decomposition. That is it is similar to a diagonal matrix\dots
+\[
+\begin{pmatrix}
+\lambda_1 & 0 & \cdots & 0\\
+0 & \lambda_2 & \cdots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+0 & 0 & \cdots & \lambda_n
+\end{pmatrix}
+\]
+where $\lambda_1, \dots, \lambda_n$ are the eigenvalues of $\alpha$.
