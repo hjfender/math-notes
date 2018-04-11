@@ -1,0 +1,154 @@
+\subsection{Canonical Forms}
+
+Giving a linear transformation $\alpha$ on a free $R$-module $F$ is the same as giving an $R[t]$-module
+sructure on $F$, compatible with its $R$-module structure. The action of a polynomial\dots
+$$f(t) = r_mt^m + r_{m-1}t^{m-1} + \cdots + r_0$$
+on $F$ is: for every $\textbf{v} \in F$, set\dots
+$$f(t)(\textbf{v}) := r_m\alpha^m(\textbf{v}) + r_{m-1}\alpha^{m-1}(\textbf{v}) + \cdots + r_0 \textbf{v}.$$
+We can recover the linear transformation $\alpha$ by multiplication by $t$:
+$$\textbf{v} \mapsto t\textbf{v}.$$
+
+\begin{lemma}
+Let $\alpha$, $\beta$ be linear transformations of a free $R$-module $F$. Then the corresponding $R[t]$-module
+structures on $F$ are isomorphic if and only if $\alpha$ and $\beta$ are similar.
+\end{lemma}
+
+\begin{corollary}
+There is a one-to-one correspondence between the similarity classes of $R$-linear transformations of a free $R$-module
+$F$ and the isomorphism classes of $R[t]$-module structures on $F$.
+\end{corollary}
+
+\subsubsection{Companion Matrix of a polynomial}\label{companionmatrix}
+Suppose $V$ is a cyclic $k[t]$-module\dots
+$$V \cong \frac{k[t]}{(f(t))},$$
+where $f(t)$ is a nonconstant monic polynomial. Choosing the basis\dots
+$$1, \, t, \, \cdots, \, t^{n-1}$$
+of $V$. Multiplication by $t$ on $V$ acts as\dots
+\[
+\begin{pmatrix}
+0 & 0 & 0 & \dots & 0 & -r_0\\
+1 & 0 & 0 & \dots & 0 & -r_1\\
+0 & 1 & 0 & \dots & 0 & -r_2\\
+\vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\
+0 & 0 & 0 & \dots & 0 & -r_{n-2}\\
+0 & 0 & 0 & \dots & 1 & -r_{n-1}
+\end{pmatrix}.
+\]
+This matrix is the \emph{companion matrix} of the polynomial $f(t)$, denoted $C_{f(t)}$.\newline
+
+\noindent We can now restate \ref{classificationoffinitelygeneratedmodulesoverPIDs} in a very useful way\dots
+
+\begin{theorem}
+\label{classificationoflineartransformationsoveravectorspace}
+Let $k$ be a field, and let $V$ be a finite-dimensional vector space. Let
+$\alpha$ be a linear transformation on $V$, and endow $V$ with the corresponding $k[t]$-module structure.
+Then the following hold:
+\begin{itemize}
+  \item There exist distinct monic irreducible polynomials $p_1(t), \dots, p_s(t) \in k[t]$ and positive integers
+  $r_{ij}$ such that\dots
+  $$V \cong \bigoplus_{i,j}\frac{k[t]}{(p_i(t)^{r_{ij}})}$$
+  as $k[t]$-modules.
+  \item There exist monic nonconstant polynomials $f_1(t), \dots, f_m(t) \in k[t]$ such that $f_1(t) | \cdots | f_m(t)$
+  and\dots
+  $$V \cong \frac{k[t]}{(f_1(t))} \oplus \cdots \oplus \frac{k[t]}{(f_m(t))}$$
+  as $k[t]$-modules.
+\end{itemize}
+Via these isomorphisms, the action of $\alpha$ on $V$ corresponds to multiplication by $t$.
+
+Further, two linear transformations $\alpha$, $\beta$ are similar if and only if they have the same collections of
+invariants $p_i(t)^{r_{ij}}$ ('elementary divisors'), $f_i(t)$ ('invariant factors').
+\end{theorem}
+
+\subsubsection{Rational Canonical Forms}\label{rationalcanoncialforms}
+The \emph{rational canoncial form} of a linear transformation $\alpha$ of a vector space $V$ is the block matrix\dots
+\[
+\begin{pmatrix}
+C_{f_1(t)} & \rvline &        & \rvline & \\ \hline
+		   & \rvline & \ddots & \rvline & \\ \hline
+	       & \rvline & & \rvline & C_{f_m(t)}
+\end{pmatrix}
+\]
+where $f_1(t),\dots, f_m(t)$ are the invariant factors of $\alpha$.
+
+\begin{corollary}
+Every linear transformation admits a rational canonical form. Two linear transformations have the same rational
+canonical form if and only if they are similar.
+\end{corollary}
+
+\begin{proposition}
+Let $f_1(t) | \cdots | f_m(t)$ be the invariant factors of a linear transformation $\alpha$ on a vector
+space $V$. Then the minimal polynomial $m_{\alpha}(t)$ equals $f_m(t)$, and the characteristic polynomial
+$P_{\alpha}(t)$ equals the product $f_1(t)\cdots f_m(t)$.
+\end{proposition}
+
+\begin{proposition}
+Let $A \in \mathcal{M}_n(k)$ be a square matrix. Then $A$ is similar to its transpose.
+\end{proposition}
+
+\begin{proof}
+If $B$ is similar to $A$ and we can prove that $B$ is similar to its transpose $B^t$, then $A$ is similar to its transpose
+$A^t$: because $B = PAP^{-1}$, $B^t = QBQ^{-1}$ give\dots
+$$A^t = (P^tQP)A(P^rQP)^{-1}.$$
+Therefore, it suffices to prove the statement for matrices in rational canonical form.
+
+Further, to prove the statement for a block matrix, it clearly suffices to prove it for each block;
+so we may assume that $A$ is the companion matrix $C$ of a polynomial $f(t)$. Since the characteristic and
+minimal polynomials of the transpose $C^t$ coincide with those of $C$, they are both equal to $f(t)$. It follows
+that the rational canonical form of $C^t$ is again the companion matrix to $f(t)$; therefore $C^t$ and $C$
+are similar, as needed.
+\end{proof}
+
+\begin{lemma}
+Assume that the characteristic polynomial $P_{\alpha}(t)$ factors completely; that is,
+$$P_{\alpha}(t) = \prod_{i=1}^s(t-\lambda_i)^{m_i}$$
+where $\lambda_i$, $i = 1, \dots, s$, are the distinct eigenvalues of $\alpha$ (and $m_i$
+are their algedbraic multiplicities). Then $p_i(t) = (t - \lambda_i)$, and $m_i = \sum_j r_{ij}$.
+
+In this situation, the minimal polynomial of $\alpha$ equals\dots
+$$m_{\alpha}(t) = \prod^s_{i=1}(t - \lambda_i)^{\textrm{max}_j\{r_{ij}\}}.$$
+\end{lemma}
+
+\subsubsection{Jordan Block corresponding to an eigenvalue}\label{jordanblock}
+Assuming that the characteristic polynomial factors completely over $k$, the basic cyclic blocks
+of a linear transformation $\alpha$ are in fact of the form\dots
+$$\frac{k[t]}{((t-\lambda)^r)}$$
+for some $\lambda \in k$ and $r > 0$. This time we choose the basis\dots
+$$(t-\lambda)^{r-1}, \, (t-\lambda)^{r-2}, \, \cdots, \, (t-\lambda)^0 = 1.$$
+Multiplication by $t$ on $V$ acts as\dots
+\[
+\begin{pmatrix}
+\lambda & 1 & 0 & \cdots & 0 & 0\\
+0 & \lambda & 1 & \cdots & 0 & 0\\
+0 & 0 & \lambda & \cdots & 0 & 0\\
+\vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\
+0 & 0 & 0 & \cdots & \lambda & 1 \\
+0 & 0 & 0 & \cdots & 0 & \lambda 
+\end{pmatrix}
+\]
+This matrix is the \emph{Jordan block} of size $r$ corresponding to $\lambda$, denoted $J_{\lambda, r}$.
+
+\subsubsection{Jordan Canonical Form}\label{jordancanonicalform}
+The \emph{Jordan canonical form} of a linear transformation $\alpha$ of a vector space $V$ is the block matrix\dots
+\[
+\begin{pmatrix}
+J_{\lambda_1,(r_{1j})} & \rvline & & \rvline & \\ \hline
+& \rvline & \ddots & \rvline & \\ \hline
+& \rvline & & \rvline & J_{\lambda_s,(r_{sj})}
+\end{pmatrix}
+\]
+where $(t - \lambda_i)^{r_{ij}}$ are the elementary divisors of $\alpha$.
+
+\begin{proposition}
+The geometric multiplicity of $\lambda$ as an eigenvalue of $\alpha$ equals the number of Jordan blocks corresponding
+to $\lambda$ in the Jordan canonical form of $\alpha$.
+\end{proposition}
+
+\begin{corollary}
+Assume the characteristic polynomial of $\alpha \in \textrm{End}_k(V)$ factors completely over $k$. Then
+$\alpha$ is diagonalizable if and only if the geometric and algebraic multiplicities of all its eigenvalues coincide.
+\end{corollary}
+
+\begin{proposition}
+Assume the characteristic polynomial of $\alpha \in \textrm{End}_k(V)$ factors completely over $k$. Then $\alpha$ is
+diagonalizable if and only if the minimal polynomial of $\alpha$ has no multiple roots.
+\end{proposition}
