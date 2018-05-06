@@ -24,6 +24,10 @@ The points $p \in \Delta^n[S]$ with barycentric coordinates that satisfy $t_i > 
 $p$ is in the boundary of $\Delta^n[S]$ if and only if $t_i = 0$ for some $i$.
 \end{proposition}
 
+\subsubsubsection{Barycenter of a simplex}\label{barycenter}
+The \emph{barycenter} of an $n$-simplex $\Delta^n$ is\dots
+$$\beta_n = \sum^n_{i=0}\frac{1}{n+1}e_i = \left(\frac{1}{n+1},\frac{1}{n+1},\dots,\frac{1}{n+1}\right).$$
+
 \subsubsection{Geometric Simplicial Complex}\label{geometricsimplicialcomplex}
 A \emph{geometric simplicial complex} is a finite collection $K$ of simplices in $\mathbb{R}^N$ satisfying\dots
 \begin{enumerate}
@@ -43,3 +47,167 @@ is an \emph{abstract simplicial complex} if whenever $T = \{ v_{j0}, \dots, v_{j
 
 \subsubsection{Triangulable}\label{triangulable}
 A topological space $X$ is said to be \emph{triangulable} if there is an abstract simplicial complex $K$ and a homeomorphism $f : X \rightarrow |K|$.
+
+\subsubsection{Subcomplex}\label{subcomplex}
+If $K$ is an abstract simplicial complex and $L$ is a subset of simplices in $K$, then $L$ is a \emph{subcomplex} of $K$
+if whenever $S \prec T$ and $T \in L$, then $S \in L$.
+
+\subsubsection{Simplicial Mappings}\label{simplicialmappings}
+Let $K$ and $L$ be two simplicial complexes. A \emph{simplicial mapping} is a function $\phi: K \rightarrow L$ satisfying, for all $n \geq 0$,
+if $S = \{ v_0, \dots, v_n \}$ is an $n$-simplex in $K$, then $\{ \phi(v_0),\dots,\phi(v_n) \}$ is a (possibly degenerate) simplex in $L$.
+
+\subsubsection{Barycentric Subdivision}\label{barycentricsubdivision}
+Let $K$ be a simplicial complex. The \emph{barycentric subdivision} of $K$, denoted sd $K$, is the simplicial complex whose simplices are given by\dots
+$$\{ \beta(S_0), \beta(S_1), \dots, \beta(S_r) \}, \textrm{ where } S_i \in K \textrm{ and } S_0 \succ S_1 \succ \cdots \succ S_r.$$
+Here $\beta(S)$ is the barycenter of $\Delta^n[S]$ for $S$ in $K$. If $\phi : K \rightarrow L$ is a simplicial mapping, then the barycentric subdivision of $\phi$
+is the simplicial mapping sd $\phi:$ sd $K \rightarrow$ sd $L$ given on vertices by sd $\phi(\beta(S)) = \beta(\phi(S)).$
+
+\subsubsection{Diameter of a Simplex}\label{diametersimplex}
+Let $K$ be a simplicial complex, realized in $\mathbb{R}^N$. Then\dots
+$$\textrm{diam }S = \max\{||v_i - v_j|| \, | \, i\neq j, \, S = \{v_0, \dots, v_q \} \}.$$
+
+\begin{proposition}
+If $S$ is a $q$-simplex in $K$, a geometric simplicial complex, then for any simplex $T \in \textrm{sd } K$ with $\Delta^p[T] \subseteq \Delta^q[S]$,
+we have diam $T \leq \frac{q}{q+1}$ diam $S$.
+\end{proposition}
+
+\begin{proof}
+We proceed by induction on $q$. If $q = 1$, then $\Delta^1[S]$ is a line segment and the simplices of the barycentric subdivision are halves of the segment
+with diameter equal to $\frac{1}{2}$ the length of the segment. Assume the result for simplices of dimension less than $q \geq 2$.
+
+A $p$-simplex $T \in $ sd $K$ can be written as\dots
+$$T = \left\{ v_{\sigma(0)}, \frac{v_{\sigma(0)} + v_{\sigma(1)}}{2}, \cdots, \frac{v_{\sigma(0)} + v_{\sigma(1)} + \cdots + v_{\sigma(p)}}{p+1} \right\},$$
+where $\sigma$ is some permutation of $(0,1,\dots,q)$. If $p < q$, then we are done because $T$ is simplex in the barycentric subdivision of a face of $S$. When
+$P = q$, write the vertices of $T$ as $T = \{ w_0, w_1, \dots, w_q \}$. The diameter of $T$ is given by $|| w_{i_0} - q_{j_0}|| = \max \{ ||w_i - w_j || \, | \, w_i,w_j \in T \}.$
+If $i_0$ and $j_0$ are less than $q$, then the diameter of $T$ is achieved on the face $\partial_q T$ and we deduce\dots
+$$|| w_{i_0} - q_{j_0}|| \leq \frac{q-1}{q}\textrm{diam }\partial_q S \leq \frac{q}{q+1} \textrm{diam } S.$$
+If one of $i_0$ or $j_0$ is $q$, then we first observe the following estimate\dots
+\begin{align*}
+||v_i - \frac{v_{\sigma(0)} + v_{\sigma(1)} + \cdots + v_{\sigma(q)}}{q+1}|| &= ||\sum^q_{j=0}\frac{1}{q+1}(v_i - v_j)||\\
+																			 &\leq \sum^q_{j=0}\frac{1}{q+1}||v_i - v_j||\\
+																			 &\leq \frac{q}{q+1}\max\{ ||v_i - v_j || \}\\
+																			 &= \frac{q}{q+1} \textrm{diam } S.
+\end{align*}
+This proes the proposition.
+\end{proof}
+
+\subsubsection{Mesh}\label{mesh}
+The \emph{mesh} of a simplex $K$ is\dots
+$$\textrm{mesh}(K) = \max\{ \textrm{diam } S \, | \, S \in K \}.$$
+
+\begin{corollary}
+If $K$ has dimension $q$, then\dots
+$$\textrm{mesh}(\textrm{sd }K) \leq \frac{q}{q+1}\textrm{mesh}(K).$$
+\end{corollary}
+
+\begin{theorem}
+If $K$ is a geometric simplicial complex, then $|\textrm{sd } K| = |K|.$
+\end{theorem}
+
+\begin{proof}
+Suppose $p \in |K|$. Then we can write $p = \sum_{i=0}^q t_i v_i \in \Delta^q [S]$
+with $S = \{ v_0, \dots, v_q \}.$ Permute the values $\{ t_i \}$ to bring them into descending order:
+$$t_{\sigma(0)} \geq t_{\sigma(1)} \geq \cdots \geq t_{\sigma(q)} \geq 0.$$
+Next solve the matrix equation\dots
+\[
+\begin{pmatrix}
+1 & \frac{1}{2} & \frac{1}{3} & \cdots & \frac{1}{q+1}\\
+0 & \frac{1}{2} & \frac{1}{3} & \cdots & \frac{1}{q+1}\\
+0 & 0		    & \frac{1}{3} & \cdots & \frac{1}{q+1}\\
+\vdots & \vdots	    & \vdots      & \cdots & \vdots	  \\
+0 & 0		    & 0			  & \cdots & \frac{1}{q+1}
+\end{pmatrix}
+\begin{pmatrix}
+s_0\\
+s_1\\
+s_2\\
+\vdots\\
+s_q
+\end{pmatrix}
+=
+\begin{pmatrix}
+t_{\sigma(0)}\\
+t_{\sigma(1)}\\
+t_{\sigma(2)}\\
+\vdots\\
+t_{\sigma(q)}
+\end{pmatrix}.
+\]
+The solution exists and is unique. Furthermore, by solving from the bottom up, the solution satisfies
+$s_q = (q+1)t_{\sigma(q)}$ and $s_{j-1} = j(t_{\sigma(j-1)}-t_{\sigma(j)}) \geq 0$. Summing the values of $s_j$
+we get\dots
+\begin{align*}
+\sum_{j=0}^q s_j &= s_0 + 2\left(\frac{1}{2}s_1\right) + 3\left(\frac{1}{3}s_2\right) + \cdots + (q+1)\left(\frac{1}{q+1}s_q\right)\\
+				 &= \left(s_0 + \frac{1}{2}s_1 + \frac{1}{3}s_2 + \cdots + \left(\frac{1}{q+1}\right)s_q\right)\\
+				 &+ \left(\frac{1}{2}s_1 + \frac{1}{3}s_2 + \cdots + \left(\frac{1}{q+1}\right)s_q\right)\\
+				 &+ \cdots + \left(\frac{1}{q+1}\right)s_q\\
+				 &= t_{\sigma(0)} + t_{\sigma(1)} + \cdots + t_{\sigma(q)}\\
+				 &= t_0 + \cdots + t_q = 1
+\end{align*}
+\end{proof}
+Thus $(s_0, \dots, s_q)$ are the barycentric coordinates of $p$ in the simplex with\dots
+\begin{align*}
+p &= s_0 v_{\sigma(0)} + s_1\left(\frac{v_{\sigma(0)} + v_{\sigma(1)}}{2}\right) + s_2\left(\frac{v_{\sigma(0)} + v_{\sigma(1)} + v_{\sigma(2)}}{3}\right)\\
+  &+ \cdots + s_q\left(\frac{v_{\sigma(0)} + v_{\sigma(1)} + \cdots + v_{\sigma(q)}}{q+1}\right).
+\end{align*}
+Thus $p$ lies in the $q$-simplex $\Delta^q[T]$, where $T \in$ sd $K$ is given by\dots
+$$T = \{\beta(\{v_{\sigma(0)}\}), \dots, \beta(\{v_{\sigma(0)}, \dots, v_{\sigma(q)} \}) \}.$$
+This proves that $|K| \subseteq |\textrm{sd } K|$. The inclusion $|\textrm{sd } K| \subseteq |K|$ follows by rewriting the
+expression for a point in the barycentric coordinates of $\textrm{sd }K$ in terms of the contributing vertices of $K$ by rearranging terms.
+
+\subsubsection{Star of a vertex}\label{star}
+The \emph{star} of $v$ is\dots
+$$\textrm{star}_K(v) = \bigcup_{\{v\} \prec S} \Delta^n[S].$$
+
+\subsubsection{Open star of a vertex}\label{openstar}
+The \emph{open star} of $v$ is\dots
+$$\textrm{O}_K(v) = \bigcup_{\{v\} \prec S} \textrm{int} \Delta^n[S].$$
+
+\begin{lemma}
+Suppose $v_0, v_1, \dots, v_n$ are vertices in a simplicial complex $K$. Then $\{ v_0, \dots, v_q \}$ is a simplex in $K$
+if and only if $\bigcap^q_{i=0}O_K(v_i) \neq \emptyset$. If $p \in |K|$, then $p \in O_K(v)$ if and only if $p = \sum_{i=0}^q t_i v_i$
+with $v = v_j$ for some $0 \leq j \leq q$ and $t_j \neq 0$.
+\end{lemma}
+
+\subsubsection{Simplicial Approximation}\label{simplicialapproximation}
+If $K$ and $L$ are simplicial complexes and $f : |K| \rightarrow |L|$ is continuous function, then a simplicial
+mapping $\phi : K \rightarrow L$ is a \emph{simplicial approximation} to $f$ if whenever $p \in |K|$, then $f(p) \in \Delta^q[T]$ for $T \in L$
+implies $|\phi|(p) \in \Delta^q[T]$.
+
+\begin{proposition}
+A simplicial mapping $\phi : K \rightarrow L$ is a simplicial approximation to a continuous mapping
+$f: |K| \rightarrow |L|$ if and only if, for any vertex $v$ of $K$, we have\dots
+$$f(O_K(v)) \subseteq O_L(\phi(v)),$$
+that is, the image of the open star of $v$ under $f$ is contained in the open star of $\phi(v)$, a vertex of $L$.
+\end{proposition}
+
+\begin{theorem}[Simplicial Approximation Theorem]
+Given two simplicial complexes $K$ and $L$ and a continuous mapping $f : |K| \rightarrow |L|$,
+then there is a nonnegative integer $r$ and a simplicial mapping $\phi: \textrm{sd}^r\, K \rightarrow L$
+with $\phi$ a simplicial approximation to $f$.
+\end{theorem}
+
+\begin{proposition}
+If a simplicial mapping $\phi : K \rightarrow L$ is a simplicial approximation to a continuous
+mapping $f: |K| \rightarrow |L|$, then $|\phi|$ is homotopic to $f$.
+\end{proposition}
+
+\subsubsection{Contiguous Mappings}\label{contiguous}
+Two simplicial mappings $\phi, \psi: K \rightarrow L$ are said to be \emph{contiguous} if, for all simplices $S \in K$,
+the set $\phi(S) \cup \psi(S)$ is a simplex in $L$.
+
+\begin{lemma}
+Suppose $f : |K| \rightarrow |L|$ is a continuous function for which $\phi, \psi: K \rightarrow L$
+are simplicial approximations to $f$. Then $\phi$ and $\psi$ are contiguous.
+\end{lemma}
+
+\begin{proposition}
+Contiguous simplicial mappings have homotopic realizations.
+\end{proposition}
+
+\begin{theorem}
+Suppose that $f$ and $g$ are continuous mappings $|K| \rightarrow |L|$ and $f$ is homotopic to $g$. Then
+there exist simplicial mappings $\phi, \psi: \textrm{sd}^N \, K \rightarrow L$ with $\phi$ a simplicial approximation
+to $f$, $\psi$ a simplicial approximation to $g$, and there is a sequence of simplicial mappings $\phi = \phi_0, \phi_1, \dots, \phi_{n-1}, \phi_n = \psi$
+with $\phi_i$ contiguous to $\phi_{i+1}$ for $0 \leq i \leq n-1$.
+\end{theorem}
