@@ -1,1 +1,34 @@
-\subsection{Applications}\label{homologyapplications}
+\subsection{Applications to Simplicial Complexes}\label{simplicialhomology}
+
+\subsubsection{Space of p-chains}\label{pchains}
+Suppose $K$ is a simplicial complex. Then\dots
+$$K_p = \{ S \in K | \textrm{dim} S = p \textrm{ and } S \textrm{ is nondegenerate} \}$$
+forms a basis for the space of $p$-chains of $K$. The field we use for the rest of these notes is $\mathbb{F}_2$.
+Thus the space is\dots
+$$C_p(K; \mathbb{F}_2) = \mathbb{F}_2[K_p].$$
+
+\noindent A simplicial mapping $\phi : K \rightarrow L$ induces a linear mapping $\phi_* : C_p(K; \mathbb{F}_2) \rightarrow C_p(L; \mathbb{F}_2)$
+defined on a $p$-simplex as\dots
+\[
+\phi_*(\{v_0,\dots,v_p\}) = \begin{cases}
+                                \phi(v_0),\dots,\phi(v_p) & \textrm{if } \{ \phi(v_0), \dots, \phi(v_p) \} \textrm{ is nondegenerate in } L,\\
+                                \textbf{0} & \textrm{if } \{ \phi(v_0), \dots, \phi(v_p) \} \textrm{ is degenerate in } L.
+                            \end{cases}.
+\]
+
+\subsubsection{Boundary Homomorphisms}\label{boundaryhomomorphism}
+Given the simplex $S = \{ v_0, \dots, v_p \}$ the face opposing vertex $v_i$ is given by\dots
+$$\partial_i(S) = \{ v_0, \dots, \hat{v_i}, \dots, v_p \} \subset S.$$
+We can define a mapping $\partial : K_p \rightarrow C_{p-1}(K; \mathbb{F}_2)$ by summing all the $(p-1)$
+faces of a $p$-simplex. The extension of this map to\dots
+$$\partial : C_{p}(K; \mathbb{F}_2) \rightarrow C_{p-1}(K; \mathbb{F}_2)$$
+given by\dots
+$$\partial(S) = \sum_{i=0}^p \partial_i(S), \textrm{ for } S \in K_p.$$
+is called the \emph{boundary homomorphism}.
+
+\begin{proposition}
+If $\phi : K \rightarrow L$ is a simplicial mapping, then\dots
+$$\partial \circ \phi_* = \phi_* \circ \partial : C_{p}(K; \mathbb{F}_2) \rightarrow C_{p-1}(K; \mathbb{F}_2).$$
+Furthermore, the composite $\delta \circ \delta : C_p(K; \mathbb{F}_2) \rightarrow C_{p-1}(K; \mathbb{F}_2)$ is
+the zero mapping.
+\end{proposition}

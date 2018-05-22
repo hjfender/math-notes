@@ -413,120 +413,140 @@
 \contentsline {subsubsection}{\numberline {11.2.2}Rational Canonical Forms}{145}{subsubsection.11.2.2}
 \contentsline {subsubsection}{\numberline {11.2.3}Jordan Block corresponding to an eigenvalue}{146}{subsubsection.11.2.3}
 \contentsline {subsubsection}{\numberline {11.2.4}Jordan Canonical Form}{146}{subsubsection.11.2.4}
-\contentsline {section}{\numberline {12}Algebras}{147}{section.12}
-\contentsline {subsection}{\numberline {12.1}Definitions}{147}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Homomorphisms of $R$-algebras}{147}{subsection.12.2}
-\contentsline {subsection}{\numberline {12.3}Free Algebras}{147}{subsection.12.3}
-\contentsline {subsubsection}{\numberline {12.3.1}Finite Type}{147}{subsubsection.12.3.1}
-\contentsline {section}{\numberline {13}Topology}{148}{section.13}
-\contentsline {subsection}{\numberline {13.1}Metric Spaces}{148}{subsection.13.1}
-\contentsline {subsubsection}{\numberline {13.1.1}Open Ball}{148}{subsubsection.13.1.1}
-\contentsline {subsubsection}{\numberline {13.1.2}Continuity}{148}{subsubsection.13.1.2}
-\contentsline {subsubsection}{\numberline {13.1.3}Open Set}{148}{subsubsection.13.1.3}
-\contentsline {subsubsection}{\numberline {13.1.4}Lebesgue's Lemma}{148}{subsubsection.13.1.4}
-\contentsline {subsubsubsection}{\numberline {13.1.4.1}Diameter}{148}{subsubsubsection.13.1.4.1}
-\contentsline {subsubsection}{\numberline {13.1.5}Examples}{149}{subsubsection.13.1.5}
-\contentsline {subsubsubsection}{\numberline {13.1.5.1}Euclidean Metric Space}{149}{subsubsubsection.13.1.5.1}
-\contentsline {subsubsubsection}{\numberline {13.1.5.2}Box Metric Space}{149}{subsubsubsection.13.1.5.2}
-\contentsline {subsubsubsection}{\numberline {13.1.5.3}Bounded Real Functions Metric Space}{149}{subsubsubsection.13.1.5.3}
-\contentsline {subsubsubsection}{\numberline {13.1.5.4}Discrete Metric space}{149}{subsubsubsection.13.1.5.4}
-\contentsline {subsection}{\numberline {13.2}Topological Spaces}{150}{subsection.13.2}
-\contentsline {subsubsection}{\numberline {13.2.1}Topological Space}{150}{subsubsection.13.2.1}
-\contentsline {subsubsubsection}{\numberline {13.2.1.1}Finer}{150}{subsubsubsection.13.2.1.1}
-\contentsline {subsubsubsection}{\numberline {13.2.1.2}Coarser}{150}{subsubsubsection.13.2.1.2}
-\contentsline {subsubsection}{\numberline {13.2.2}Basis}{150}{subsubsection.13.2.2}
-\contentsline {subsubsection}{\numberline {13.2.3}Continuity}{150}{subsubsection.13.2.3}
-\contentsline {subsubsubsection}{\numberline {13.2.3.1}Open Mappings}{151}{subsubsubsection.13.2.3.1}
-\contentsline {subsubsection}{\numberline {13.2.4}Homeomorphism}{151}{subsubsection.13.2.4}
-\contentsline {subsubsubsection}{\numberline {13.2.4.1}Homeomorphic Spaces}{151}{subsubsubsection.13.2.4.1}
-\contentsline {subsection}{\numberline {13.3}Geometric Notions}{151}{subsection.13.3}
-\contentsline {subsubsection}{\numberline {13.3.1}Closed Subset}{151}{subsubsection.13.3.1}
-\contentsline {subsubsection}{\numberline {13.3.2}Limit Point}{151}{subsubsection.13.3.2}
-\contentsline {subsubsection}{\numberline {13.3.3}Interior}{151}{subsubsection.13.3.3}
-\contentsline {subsubsection}{\numberline {13.3.4}Closure}{152}{subsubsection.13.3.4}
-\contentsline {subsubsection}{\numberline {13.3.5}Boundary}{152}{subsubsection.13.3.5}
-\contentsline {subsubsection}{\numberline {13.3.6}Convergence}{152}{subsubsection.13.3.6}
-\contentsline {subsection}{\numberline {13.4}Separation}{152}{subsection.13.4}
-\contentsline {subsubsection}{\numberline {13.4.1}T1}{152}{subsubsection.13.4.1}
-\contentsline {subsubsection}{\numberline {13.4.2}Hausdorff (T2)}{153}{subsubsection.13.4.2}
-\contentsline {subsubsection}{\numberline {13.4.3}Separable}{153}{subsubsection.13.4.3}
-\contentsline {subsubsubsection}{\numberline {13.4.3.1}Dense}{153}{subsubsubsection.13.4.3.1}
-\contentsline {subsubsubsection}{\numberline {13.4.3.2}Definition}{153}{subsubsubsection.13.4.3.2}
-\contentsline {subsection}{\numberline {13.5}Connectedness}{153}{subsection.13.5}
-\contentsline {subsubsection}{\numberline {13.5.1}Disconnected}{153}{subsubsection.13.5.1}
-\contentsline {subsubsection}{\numberline {13.5.2}Connected}{153}{subsubsection.13.5.2}
-\contentsline {subsubsection}{\numberline {13.5.3}Connected Component}{154}{subsubsection.13.5.3}
-\contentsline {subsubsection}{\numberline {13.5.4}Path Connected}{154}{subsubsection.13.5.4}
-\contentsline {subsubsubsection}{\numberline {13.5.4.1}Path Component}{155}{subsubsubsection.13.5.4.1}
-\contentsline {subsubsection}{\numberline {13.5.5}Locally Path-Connected}{155}{subsubsection.13.5.5}
-\contentsline {subsection}{\numberline {13.6}Compactness}{155}{subsection.13.6}
-\contentsline {subsubsection}{\numberline {13.6.1}Locally Compact}{156}{subsubsection.13.6.1}
-\contentsline {subsection}{\numberline {13.7}Constructions}{156}{subsection.13.7}
-\contentsline {subsubsection}{\numberline {13.7.1}Subspace Topology}{156}{subsubsection.13.7.1}
-\contentsline {subsubsection}{\numberline {13.7.2}Product Topology}{157}{subsubsection.13.7.2}
-\contentsline {subsubsubsection}{\numberline {13.7.2.1}Infinite Product Topology}{157}{subsubsubsection.13.7.2.1}
-\contentsline {subsubsection}{\numberline {13.7.3}Quotient Topology}{158}{subsubsection.13.7.3}
-\contentsline {subsubsubsection}{\numberline {13.7.3.1}Quotient Map}{158}{subsubsubsection.13.7.3.1}
-\contentsline {subsection}{\numberline {13.8}Examples}{158}{subsection.13.8}
-\contentsline {subsubsection}{\numberline {13.8.1}Topology Examples}{158}{subsubsection.13.8.1}
-\contentsline {subsubsubsection}{\numberline {13.8.1.1}Indiscrete Topology}{158}{subsubsubsection.13.8.1.1}
-\contentsline {subsubsubsection}{\numberline {13.8.1.2}Discrete Topology}{158}{subsubsubsection.13.8.1.2}
-\contentsline {subsubsubsection}{\numberline {13.8.1.3}Finite Complement Topology}{158}{subsubsubsection.13.8.1.3}
-\contentsline {subsubsubsection}{\numberline {13.8.1.4}Included Point Topology}{158}{subsubsubsection.13.8.1.4}
-\contentsline {subsubsubsection}{\numberline {13.8.1.5}Compact-open Topology}{158}{subsubsubsection.13.8.1.5}
-\contentsline {subsubsection}{\numberline {13.8.2}Space Examples}{159}{subsubsection.13.8.2}
-\contentsline {subsubsubsection}{\numberline {13.8.2.1}Torus}{159}{subsubsubsection.13.8.2.1}
-\contentsline {subsubsubsection}{\numberline {13.8.2.2}M\"obius Strip}{159}{subsubsubsection.13.8.2.2}
-\contentsline {subsubsubsection}{\numberline {13.8.2.3}Projective Space}{159}{subsubsubsection.13.8.2.3}
-\contentsline {subsubsubsection}{\numberline {13.8.2.4}Cone}{159}{subsubsubsection.13.8.2.4}
-\contentsline {subsubsubsection}{\numberline {13.8.2.5}Suspension}{159}{subsubsubsection.13.8.2.5}
-\contentsline {subsubsubsection}{\numberline {13.8.2.6}Pointed Suspension}{160}{subsubsubsection.13.8.2.6}
-\contentsline {subsubsubsection}{\numberline {13.8.2.7}One-point Compactification}{160}{subsubsubsection.13.8.2.7}
-\contentsline {subsection}{\numberline {13.9}Topological Properties}{161}{subsection.13.9}
-\contentsline {subsubsection}{\numberline {13.9.1}First Countable}{161}{subsubsection.13.9.1}
-\contentsline {subsubsection}{\numberline {13.9.2}Second Countable}{161}{subsubsection.13.9.2}
-\contentsline {subsubsection}{\numberline {13.9.3}Connectedness}{161}{subsubsection.13.9.3}
-\contentsline {subsubsection}{\numberline {13.9.4}Connected Componenents}{161}{subsubsection.13.9.4}
-\contentsline {subsubsection}{\numberline {13.9.5}Path-connectedness}{161}{subsubsection.13.9.5}
-\contentsline {subsubsection}{\numberline {13.9.6}Fundamental Group}{161}{subsubsection.13.9.6}
-\contentsline {subsection}{\numberline {13.10}Hereditary}{161}{subsection.13.10}
-\contentsline {section}{\numberline {14}Homotopy}{162}{section.14}
-\contentsline {subsection}{\numberline {14.1}Definition}{162}{subsection.14.1}
-\contentsline {subsubsection}{\numberline {14.1.1}Homotopy of functions}{162}{subsubsection.14.1.1}
-\contentsline {subsubsection}{\numberline {14.1.2}Space of Based Loops}{162}{subsubsection.14.1.2}
-\contentsline {subsubsubsection}{\numberline {14.1.2.1}Loop Homotopy}{162}{subsubsubsection.14.1.2.1}
-\contentsline {subsection}{\numberline {14.2}Fundamental Group}{163}{subsection.14.2}
-\contentsline {subsection}{\numberline {14.3}Retractions}{163}{subsection.14.3}
-\contentsline {subsubsection}{\numberline {14.3.1}Retract}{163}{subsubsection.14.3.1}
-\contentsline {subsubsubsection}{\numberline {14.3.1.1}Deformation Retract}{163}{subsubsubsection.14.3.1.1}
-\contentsline {subsubsubsection}{\numberline {14.3.1.2}Contractible}{163}{subsubsubsection.14.3.1.2}
-\contentsline {subsubsubsection}{\numberline {14.3.1.3}Simply-Connected}{164}{subsubsubsection.14.3.1.3}
-\contentsline {subsection}{\numberline {14.4}Covering Spaces}{164}{subsection.14.4}
-\contentsline {subsubsection}{\numberline {14.4.1}Path Lifting}{164}{subsubsection.14.4.1}
-\contentsline {subsubsection}{\numberline {14.4.2}Homotopy Lifting}{165}{subsubsection.14.4.2}
-\contentsline {subsubsection}{\numberline {14.4.3}Fundamental Group Computations}{166}{subsubsection.14.4.3}
-\contentsline {subsection}{\numberline {14.5}Applications}{169}{subsection.14.5}
-\contentsline {subsection}{\numberline {14.6}Homotopy Type}{170}{subsection.14.6}
-\contentsline {subsubsection}{\numberline {14.6.1}Homotopy Equivalent}{170}{subsubsection.14.6.1}
-\contentsline {subsubsection}{\numberline {14.6.2}Definition}{170}{subsubsection.14.6.2}
-\contentsline {subsubsection}{\numberline {14.6.3}Homotopy Invariance}{171}{subsubsection.14.6.3}
-\contentsline {section}{\numberline {15}Homology}{172}{section.15}
-\contentsline {subsection}{\numberline {15.1}Complexes}{172}{subsection.15.1}
-\contentsline {subsubsection}{\numberline {15.1.1}Exactness}{172}{subsubsection.15.1.1}
-\contentsline {subsubsection}{\numberline {15.1.2}Split}{172}{subsubsection.15.1.2}
-\contentsline {subsection}{\numberline {15.2}Definitions}{173}{subsection.15.2}
-\contentsline {subsection}{\numberline {15.3}Euler Characteristic}{173}{subsection.15.3}
-\contentsline {subsubsection}{\numberline {15.3.1}Grothendieck Group}{174}{subsubsection.15.3.1}
-\contentsline {subsection}{\numberline {15.4}Applications}{175}{subsection.15.4}
-\contentsline {section}{\numberline {16}Fundamental Theorem of Algebra}{176}{section.16}
-\contentsline {subsection}{\numberline {16.1}Gauss's Incomplete Proof}{176}{subsection.16.1}
-\contentsline {subsection}{\numberline {16.2}Homotopy Proof}{178}{subsection.16.2}
-\contentsline {subsection}{\numberline {16.3}Sketch of Proof in Complex Analysis}{179}{subsection.16.3}
-\contentsline {section}{\numberline {17}Dimension}{180}{section.17}
-\contentsline {subsection}{\numberline {17.1}Dimensions are Equinumerous}{180}{subsection.17.1}
-\contentsline {subsection}{\numberline {17.2}Space Filling Curves}{180}{subsection.17.2}
-\contentsline {subsubsection}{\numberline {17.2.1}Peano Curve}{180}{subsubsection.17.2.1}
-\contentsline {subsubsubsection}{\numberline {17.2.1.1}Ternary Expansion}{180}{subsubsubsection.17.2.1.1}
-\contentsline {subsubsection}{\numberline {17.2.2}Definition}{180}{subsubsection.17.2.2}
-\contentsline {subsection}{\numberline {17.3}Connectedness}{182}{subsection.17.3}
-\contentsline {subsection}{\numberline {17.4}Homotopy}{182}{subsection.17.4}
+\contentsline {subsection}{\numberline {11.3}Simplicial Complexes}{146}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}General Position}{146}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Simplex}{147}{subsubsection.11.3.2}
+\contentsline {subsubsection}{\numberline {11.3.3}Barycentric Coordinantes}{147}{subsubsection.11.3.3}
+\contentsline {subsubsubsection}{\numberline {11.3.3.1}Barycenter of a simplex}{147}{subsubsubsection.11.3.3.1}
+\contentsline {subsubsection}{\numberline {11.3.4}Geometric Simplicial Complex}{147}{subsubsection.11.3.4}
+\contentsline {subsubsection}{\numberline {11.3.5}Realization of a Geometric Simplicial Complex}{147}{subsubsection.11.3.5}
+\contentsline {subsubsection}{\numberline {11.3.6}Abstract Simplicial Complex}{148}{subsubsection.11.3.6}
+\contentsline {subsubsection}{\numberline {11.3.7}Triangulable}{148}{subsubsection.11.3.7}
+\contentsline {subsubsection}{\numberline {11.3.8}Subcomplex}{148}{subsubsection.11.3.8}
+\contentsline {subsubsection}{\numberline {11.3.9}Simplicial Mappings}{148}{subsubsection.11.3.9}
+\contentsline {subsubsection}{\numberline {11.3.10}Barycentric Subdivision}{148}{subsubsection.11.3.10}
+\contentsline {subsubsection}{\numberline {11.3.11}Diameter of a Simplex}{148}{subsubsection.11.3.11}
+\contentsline {subsubsection}{\numberline {11.3.12}Mesh}{149}{subsubsection.11.3.12}
+\contentsline {subsubsection}{\numberline {11.3.13}Star of a vertex}{150}{subsubsection.11.3.13}
+\contentsline {subsubsection}{\numberline {11.3.14}Open star of a vertex}{150}{subsubsection.11.3.14}
+\contentsline {subsubsection}{\numberline {11.3.15}Simplicial Approximation}{151}{subsubsection.11.3.15}
+\contentsline {subsubsection}{\numberline {11.3.16}Contiguous Mappings}{151}{subsubsection.11.3.16}
+\contentsline {section}{\numberline {12}Algebras}{152}{section.12}
+\contentsline {subsection}{\numberline {12.1}Definitions}{152}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Homomorphisms of $R$-algebras}{152}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}Free Algebras}{152}{subsection.12.3}
+\contentsline {subsubsection}{\numberline {12.3.1}Finite Type}{152}{subsubsection.12.3.1}
+\contentsline {section}{\numberline {13}Topology}{153}{section.13}
+\contentsline {subsection}{\numberline {13.1}Metric Spaces}{153}{subsection.13.1}
+\contentsline {subsubsection}{\numberline {13.1.1}Open Ball}{153}{subsubsection.13.1.1}
+\contentsline {subsubsection}{\numberline {13.1.2}Continuity}{153}{subsubsection.13.1.2}
+\contentsline {subsubsection}{\numberline {13.1.3}Open Set}{153}{subsubsection.13.1.3}
+\contentsline {subsubsection}{\numberline {13.1.4}Lebesgue's Lemma}{153}{subsubsection.13.1.4}
+\contentsline {subsubsubsection}{\numberline {13.1.4.1}Diameter}{153}{subsubsubsection.13.1.4.1}
+\contentsline {subsubsection}{\numberline {13.1.5}Examples}{154}{subsubsection.13.1.5}
+\contentsline {subsubsubsection}{\numberline {13.1.5.1}Euclidean Metric Space}{154}{subsubsubsection.13.1.5.1}
+\contentsline {subsubsubsection}{\numberline {13.1.5.2}Box Metric Space}{154}{subsubsubsection.13.1.5.2}
+\contentsline {subsubsubsection}{\numberline {13.1.5.3}Bounded Real Functions Metric Space}{154}{subsubsubsection.13.1.5.3}
+\contentsline {subsubsubsection}{\numberline {13.1.5.4}Discrete Metric space}{154}{subsubsubsection.13.1.5.4}
+\contentsline {subsection}{\numberline {13.2}Topological Spaces}{155}{subsection.13.2}
+\contentsline {subsubsection}{\numberline {13.2.1}Topological Space}{155}{subsubsection.13.2.1}
+\contentsline {subsubsubsection}{\numberline {13.2.1.1}Finer}{155}{subsubsubsection.13.2.1.1}
+\contentsline {subsubsubsection}{\numberline {13.2.1.2}Coarser}{155}{subsubsubsection.13.2.1.2}
+\contentsline {subsubsection}{\numberline {13.2.2}Basis}{155}{subsubsection.13.2.2}
+\contentsline {subsubsection}{\numberline {13.2.3}Continuity}{155}{subsubsection.13.2.3}
+\contentsline {subsubsubsection}{\numberline {13.2.3.1}Open Mappings}{156}{subsubsubsection.13.2.3.1}
+\contentsline {subsubsection}{\numberline {13.2.4}Homeomorphism}{156}{subsubsection.13.2.4}
+\contentsline {subsubsubsection}{\numberline {13.2.4.1}Homeomorphic Spaces}{156}{subsubsubsection.13.2.4.1}
+\contentsline {subsection}{\numberline {13.3}Geometric Notions}{156}{subsection.13.3}
+\contentsline {subsubsection}{\numberline {13.3.1}Closed Subset}{156}{subsubsection.13.3.1}
+\contentsline {subsubsection}{\numberline {13.3.2}Limit Point}{156}{subsubsection.13.3.2}
+\contentsline {subsubsection}{\numberline {13.3.3}Interior}{156}{subsubsection.13.3.3}
+\contentsline {subsubsection}{\numberline {13.3.4}Closure}{157}{subsubsection.13.3.4}
+\contentsline {subsubsection}{\numberline {13.3.5}Boundary}{157}{subsubsection.13.3.5}
+\contentsline {subsubsection}{\numberline {13.3.6}Convergence}{157}{subsubsection.13.3.6}
+\contentsline {subsection}{\numberline {13.4}Separation}{157}{subsection.13.4}
+\contentsline {subsubsection}{\numberline {13.4.1}T1}{157}{subsubsection.13.4.1}
+\contentsline {subsubsection}{\numberline {13.4.2}Hausdorff (T2)}{158}{subsubsection.13.4.2}
+\contentsline {subsubsection}{\numberline {13.4.3}Separable}{158}{subsubsection.13.4.3}
+\contentsline {subsubsubsection}{\numberline {13.4.3.1}Dense}{158}{subsubsubsection.13.4.3.1}
+\contentsline {subsubsubsection}{\numberline {13.4.3.2}Definition}{158}{subsubsubsection.13.4.3.2}
+\contentsline {subsection}{\numberline {13.5}Connectedness}{158}{subsection.13.5}
+\contentsline {subsubsection}{\numberline {13.5.1}Disconnected}{158}{subsubsection.13.5.1}
+\contentsline {subsubsection}{\numberline {13.5.2}Connected}{158}{subsubsection.13.5.2}
+\contentsline {subsubsection}{\numberline {13.5.3}Connected Component}{159}{subsubsection.13.5.3}
+\contentsline {subsubsection}{\numberline {13.5.4}Path Connected}{159}{subsubsection.13.5.4}
+\contentsline {subsubsubsection}{\numberline {13.5.4.1}Path Component}{160}{subsubsubsection.13.5.4.1}
+\contentsline {subsubsection}{\numberline {13.5.5}Locally Path-Connected}{160}{subsubsection.13.5.5}
+\contentsline {subsection}{\numberline {13.6}Compactness}{160}{subsection.13.6}
+\contentsline {subsubsection}{\numberline {13.6.1}Locally Compact}{161}{subsubsection.13.6.1}
+\contentsline {subsection}{\numberline {13.7}Constructions}{161}{subsection.13.7}
+\contentsline {subsubsection}{\numberline {13.7.1}Subspace Topology}{161}{subsubsection.13.7.1}
+\contentsline {subsubsection}{\numberline {13.7.2}Product Topology}{162}{subsubsection.13.7.2}
+\contentsline {subsubsubsection}{\numberline {13.7.2.1}Infinite Product Topology}{162}{subsubsubsection.13.7.2.1}
+\contentsline {subsubsection}{\numberline {13.7.3}Quotient Topology}{163}{subsubsection.13.7.3}
+\contentsline {subsubsubsection}{\numberline {13.7.3.1}Quotient Map}{163}{subsubsubsection.13.7.3.1}
+\contentsline {subsection}{\numberline {13.8}Examples}{163}{subsection.13.8}
+\contentsline {subsubsection}{\numberline {13.8.1}Topology Examples}{163}{subsubsection.13.8.1}
+\contentsline {subsubsubsection}{\numberline {13.8.1.1}Indiscrete Topology}{163}{subsubsubsection.13.8.1.1}
+\contentsline {subsubsubsection}{\numberline {13.8.1.2}Discrete Topology}{163}{subsubsubsection.13.8.1.2}
+\contentsline {subsubsubsection}{\numberline {13.8.1.3}Finite Complement Topology}{163}{subsubsubsection.13.8.1.3}
+\contentsline {subsubsubsection}{\numberline {13.8.1.4}Included Point Topology}{163}{subsubsubsection.13.8.1.4}
+\contentsline {subsubsubsection}{\numberline {13.8.1.5}Compact-open Topology}{163}{subsubsubsection.13.8.1.5}
+\contentsline {subsubsection}{\numberline {13.8.2}Space Examples}{164}{subsubsection.13.8.2}
+\contentsline {subsubsubsection}{\numberline {13.8.2.1}Torus}{164}{subsubsubsection.13.8.2.1}
+\contentsline {subsubsubsection}{\numberline {13.8.2.2}M\"obius Strip}{164}{subsubsubsection.13.8.2.2}
+\contentsline {subsubsubsection}{\numberline {13.8.2.3}Projective Space}{164}{subsubsubsection.13.8.2.3}
+\contentsline {subsubsubsection}{\numberline {13.8.2.4}Cone}{164}{subsubsubsection.13.8.2.4}
+\contentsline {subsubsubsection}{\numberline {13.8.2.5}Suspension}{164}{subsubsubsection.13.8.2.5}
+\contentsline {subsubsubsection}{\numberline {13.8.2.6}Pointed Suspension}{165}{subsubsubsection.13.8.2.6}
+\contentsline {subsubsubsection}{\numberline {13.8.2.7}One-point Compactification}{165}{subsubsubsection.13.8.2.7}
+\contentsline {subsection}{\numberline {13.9}Topological Properties}{166}{subsection.13.9}
+\contentsline {subsubsection}{\numberline {13.9.1}First Countable}{166}{subsubsection.13.9.1}
+\contentsline {subsubsection}{\numberline {13.9.2}Second Countable}{166}{subsubsection.13.9.2}
+\contentsline {subsubsection}{\numberline {13.9.3}Connectedness}{166}{subsubsection.13.9.3}
+\contentsline {subsubsection}{\numberline {13.9.4}Connected Componenents}{166}{subsubsection.13.9.4}
+\contentsline {subsubsection}{\numberline {13.9.5}Path-connectedness}{166}{subsubsection.13.9.5}
+\contentsline {subsubsection}{\numberline {13.9.6}Fundamental Group}{166}{subsubsection.13.9.6}
+\contentsline {subsection}{\numberline {13.10}Hereditary}{166}{subsection.13.10}
+\contentsline {section}{\numberline {14}Homotopy}{167}{section.14}
+\contentsline {subsection}{\numberline {14.1}Definition}{167}{subsection.14.1}
+\contentsline {subsubsection}{\numberline {14.1.1}Homotopy of functions}{167}{subsubsection.14.1.1}
+\contentsline {subsubsection}{\numberline {14.1.2}Space of Based Loops}{167}{subsubsection.14.1.2}
+\contentsline {subsubsubsection}{\numberline {14.1.2.1}Loop Homotopy}{167}{subsubsubsection.14.1.2.1}
+\contentsline {subsection}{\numberline {14.2}Fundamental Group}{168}{subsection.14.2}
+\contentsline {subsection}{\numberline {14.3}Retractions}{168}{subsection.14.3}
+\contentsline {subsubsection}{\numberline {14.3.1}Retract}{168}{subsubsection.14.3.1}
+\contentsline {subsubsubsection}{\numberline {14.3.1.1}Deformation Retract}{168}{subsubsubsection.14.3.1.1}
+\contentsline {subsubsubsection}{\numberline {14.3.1.2}Contractible}{168}{subsubsubsection.14.3.1.2}
+\contentsline {subsubsubsection}{\numberline {14.3.1.3}Simply-Connected}{169}{subsubsubsection.14.3.1.3}
+\contentsline {subsection}{\numberline {14.4}Covering Spaces}{169}{subsection.14.4}
+\contentsline {subsubsection}{\numberline {14.4.1}Path Lifting}{169}{subsubsection.14.4.1}
+\contentsline {subsubsection}{\numberline {14.4.2}Homotopy Lifting}{170}{subsubsection.14.4.2}
+\contentsline {subsubsection}{\numberline {14.4.3}Fundamental Group Computations}{171}{subsubsection.14.4.3}
+\contentsline {subsection}{\numberline {14.5}Applications}{174}{subsection.14.5}
+\contentsline {subsection}{\numberline {14.6}Homotopy Type}{175}{subsection.14.6}
+\contentsline {subsubsection}{\numberline {14.6.1}Homotopy Equivalent}{175}{subsubsection.14.6.1}
+\contentsline {subsubsection}{\numberline {14.6.2}Definition}{175}{subsubsection.14.6.2}
+\contentsline {subsubsection}{\numberline {14.6.3}Homotopy Invariance}{176}{subsubsection.14.6.3}
+\contentsline {section}{\numberline {15}Homology}{177}{section.15}
+\contentsline {subsection}{\numberline {15.1}Complexes}{177}{subsection.15.1}
+\contentsline {subsubsection}{\numberline {15.1.1}Exactness}{177}{subsubsection.15.1.1}
+\contentsline {subsubsection}{\numberline {15.1.2}Split}{177}{subsubsection.15.1.2}
+\contentsline {subsection}{\numberline {15.2}Definitions}{178}{subsection.15.2}
+\contentsline {subsection}{\numberline {15.3}Euler Characteristic}{178}{subsection.15.3}
+\contentsline {subsubsection}{\numberline {15.3.1}Grothendieck Group}{179}{subsubsection.15.3.1}
+\contentsline {subsection}{\numberline {15.4}Applications to Simplicial Complexes}{180}{subsection.15.4}
+\contentsline {subsubsection}{\numberline {15.4.1}Space of p-chains}{180}{subsubsection.15.4.1}
+\contentsline {subsubsection}{\numberline {15.4.2}Boundary Homomorphisms}{180}{subsubsection.15.4.2}
+\contentsline {section}{\numberline {16}Fundamental Theorem of Algebra}{181}{section.16}
+\contentsline {subsection}{\numberline {16.1}Gauss's Incomplete Proof}{181}{subsection.16.1}
+\contentsline {subsection}{\numberline {16.2}Homotopy Proof}{183}{subsection.16.2}
+\contentsline {subsection}{\numberline {16.3}Sketch of Proof in Complex Analysis}{184}{subsection.16.3}
+\contentsline {section}{\numberline {17}Dimension}{185}{section.17}
+\contentsline {subsection}{\numberline {17.1}Dimensions are Equinumerous}{185}{subsection.17.1}
+\contentsline {subsection}{\numberline {17.2}Space Filling Curves}{185}{subsection.17.2}
+\contentsline {subsubsection}{\numberline {17.2.1}Peano Curve}{185}{subsubsection.17.2.1}
+\contentsline {subsubsubsection}{\numberline {17.2.1.1}Ternary Expansion}{185}{subsubsubsection.17.2.1.1}
+\contentsline {subsubsection}{\numberline {17.2.2}Definition}{185}{subsubsection.17.2.2}
+\contentsline {subsection}{\numberline {17.3}Connectedness}{187}{subsection.17.3}
+\contentsline {subsection}{\numberline {17.4}Homotopy}{187}{subsection.17.4}

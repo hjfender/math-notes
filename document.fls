@@ -592,6 +592,8 @@ INPUT topics/linear-algebra/sections/definitions.tex
 INPUT topics/linear-algebra/sections/definitions.tex
 INPUT topics/linear-algebra/sections/canonical-forms.tex
 INPUT topics/linear-algebra/sections/canonical-forms.tex
+INPUT topics/linear-algebra/sections/simplicial-complexes.tex
+INPUT topics/linear-algebra/sections/simplicial-complexes.tex
 INPUT topics/algebras/main.tex
 INPUT topics/algebras/main.tex
 INPUT topics/algebras/sections/definitions.tex
