@@ -21,7 +21,7 @@ such that the successive quotients $G_i/G_{i+1}$ are simple.
 Let $G$ be a group, and let\dots
 $$G = G_0 \supset G_1 \supset G_2 \supset \cdots \supset G_n = \{ e \},$$
 $$G = G_0' \supset G_1' \supset G_2' \supset \cdots \supset G_m' = \{ e \}$$
-be two composition series for $G$. Then $m = n$, and the lists of quotient groups $H_i = G_i/G_{i + 1}$, $H_i' = G_i'/G_{i+1}$ agree (up to isomorphism) after a permutation of the indices.
+be two composition series for $G$. Then $m = n$, and the lists of quotient groups $H_i = G_i/G_{i + 1}$, $H_i' = G_i'/G_{i+1}'$ agree (up to isomorphism) after a permutation of the indices.
 \end{theorem}
 
 \begin{proof}
@@ -31,11 +31,11 @@ be a composition series. Argue by induction on $n$: if $n = 0$, then $G$ is triv
 $$G = G_0' \supset G_1' \supset G_2' \supset \cdots \supset G_m' = \{ e \}$$
 be another composition series for $G$. If $G_1 = G_1'$, then the result follows from the induction hypothesis, since $G_1$ has a composition series of length $n-1 < n$.
 
-We may then assume $G_1 \neq G_1'$. Note that $G_1G_1' = G$: indeed, $G_1G_1'$ is normal in $G$, and $G_1 \supset G_1G_1'$; but there are no proper normal subgroups between $G_1$ and $G$
+We may then assume $G_1 \neq G_1'$. Note that $G_1G_1' = G$: indeed, $G_1G_1'$ is normal in $G$, and $G_1 \subset G_1G_1'$; but there are no proper normal subgroups between $G_1$ and $G$
 since $G/G_1$ is simple.
 
 Let $K = G_1 \cap G_1'$. The distinct subgroups $G_i \cap K$ determine a composition series\dots
-$$K \supset K_1 \supset K_@ \supset \cdots \supset K_r = \{ e \}$$
+$$K \supset K_1 \supset K_2 \supset \cdots \supset K_r = \{ e \}$$
 of $K$ (verified in the next proof). By the second isomorphism theorem,
 $$\frac{G_1}{K} = \frac{G_1}{G_1 \cap G_1'} \cong \frac{G_1G_1'}{G_1} = \frac{G}{G_1'} \textrm{  and  } \frac{G_1'}{K} \cong \frac{G}{G_1}$$
 are simple. Therefore, we hve two new composition series for $G$:
@@ -48,7 +48,7 @@ $$G_1 \supset G_2 \supset \cdots \supset G_n = \{ e \};$$
 verifying the claim.
 
 By the same token, applying the induction hypothesis to the series\dots
-$$G_1' \supset K \supset K-1 \supset K_2 \cdots \supset K_{n-2} = \{ e \},$$
+$$G_1' \supset K \supset K_1 \supset K_2 \cdots \supset K_{n-2} = \{ e \},$$
 shows that the second series has the same length and quotients as the second series, and the statement follows.
 \end{proof}
 

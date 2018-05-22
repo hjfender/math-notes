@@ -654,6 +654,8 @@ INPUT topics/homology/diagrams/snake.tex
 INPUT topics/homology/diagrams/snake.tex
 INPUT topics/homology/sections/eulercharacteristic.tex
 INPUT topics/homology/sections/eulercharacteristic.tex
+INPUT topics/homology/sections/applications.tex
+INPUT topics/homology/sections/applications.tex
 INPUT topics/fundamental-theorem-of-algebra/main.tex
 INPUT topics/fundamental-theorem-of-algebra/main.tex
 INPUT topics/fundamental-theorem-of-algebra/sections/gaussproof.tex

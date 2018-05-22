@@ -15,3 +15,52 @@ realizing it as an extension of $k$. Further,
   commutes.
 \end{itemize}
 \end{proposition}
+
+\noindent A field extension $k \subseteq F$ is \emph{finite}, of \emph{degree} $n$, if $F$ has
+(finite) dimension dim $F = n$ as a vector space over $k$. The extension is \emph{infinite} otherwise.
+The degree is denoted $[F:k]$.
+
+\subsubsection{Simple Extensions}\label{simpleextensions}
+
+A field extension $k \subseteq F$ is \emph{simple} is there exists an element $\alpha \in F$ such that
+$F = k(\alpha)$, the smallest subfield of $F$ containing both $k$ and $\alpha$.
+
+\begin{proposition}
+Let $k \subseteq k(\alpha)$ be a simple extension. Consider the evaluation map $\epsilon : k[t] \rightarrow k(\alpha)$,
+defined by $f(t) \rightarrow f(\alpha)$. Then we have the following:
+\begin{itemize}
+  \item $\epsilon$ is injective if and only if $k \subseteq k(\alpha)$ is an infinite extension. In this case,
+  $k(\alpha)$ is isomorphic to the field of rational functions $k(t)$
+  \item $\epsilon$ is not injective if and only if $k \subseteq k(\alpha)$ is finite. In this case, there exists
+  a unique monic irreducible nonconstant polynomial $p(t) \in k[t]$ of degree $n = [k(\alpha) : k]$ such that\dots
+  $$k(\alpha) \cong \frac{k[t]}{(p(t))}.$$
+  Via this isomorphism, $\alpha$ corresponds to the coset of $t$. The polynomial $p(t)$ is the monic polynomial
+  of smallest degree in $k[t]$ such that $p(\alpha) = 0$ in $k(\alpha)$.
+\end{itemize}
+\end{proposition}
+
+\begin{proof}
+Apply the first isomorphism theorem and examine the kernel in each case. The bit about the field of fractions
+is to account for the fact that $k[t]$ is an integral domain and not (quite) a field.
+\end{proof}
+
+\begin{proposition}
+Let $k_1 \subseteq F_1 = k_1(\alpha_1)$, $k_2 \subseteq F_2 = k_2(\alpha_2)$ be two finite simple
+extensions. Let $p_1(t) \in k_1[t]$, resp., $p_2(t) \in k_2[t]$, be the minimal polynomials of $\alpha_1$,
+resp., $\alpha_2$. Let $i : k_1 \rightarrow k_2$ be an isomorphism, such that\dots
+$$i(p_1(t)) = p_2(t).$$
+Then there exists a unique isomorphism $j : F_1 \rightarrow F_2$ agreeing with $i$ on $k_1$ and such that
+$j(\alpha_1) = \alpha_2$.
+\end{proposition}
+
+\subsubsection{Group of Automorphisms of an Extension}\label{grpautomorphismext}
+
+Let $k \subseteq F$ be a field extension. The \emph{group of automorphisms} of the extension,
+denoted Aut$_k(F)$, is the group of field automorphisms $j : F \rightarrow F$ such that $j \upharpoonright k = \textrm{id}_k$.
+
+\begin{corollary}
+Let $k \subseteq F = k(\alpha)$ be a simple finite extension, and let $p(x)$ be the minimal polynomial of $\alpha$
+over $k$. Then $|\textrm{Aut}_k(F)|$ equals the number of distinct roots of $p(x)$ in $F$, in particular,
+$$|\textrm{Aut}_k(F)| \leq [F : k],$$
+wiht equality if and only if $p(x)$ factors over $F$ as a product of distinct linear polynomials.
+\end{corollary}
