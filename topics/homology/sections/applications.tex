@@ -29,7 +29,40 @@ is called the \emph{boundary homomorphism}.
 \begin{proposition}
 If $\phi : K \rightarrow L$ is a simplicial mapping, then\dots
 $$\partial \circ \phi_* = \phi_* \circ \partial : C_{p}(K; \mathbb{F}_2) \rightarrow C_{p-1}(K; \mathbb{F}_2).$$
-Furthermore, the composite $\delta \circ \delta : C_p(K; \mathbb{F}_2) \rightarrow C_{p-1}(K; \mathbb{F}_2)$ is
+Furthermore, the composite $\partial \circ \partial : C_p(K; \mathbb{F}_2) \rightarrow C_{p-1}(K; \mathbb{F}_2)$ is
 the zero mapping.
 \end{proposition}
 
+\subsubsection{Space of p-cycles}\label{pcycles}
+The \emph{space of $p$-cycles} is the kernel of the boundary homomorphism\dots
+$$Z_p(K) = \textrm{ker }\partial : C_p \rightarrow C_{p-1} = \{ c \in C_p(K; \mathbb{F}_2) | \partial(c) = \textbf{0} \}.$$
+
+\subsubsection{Space of p-boundaries}\label{pboundaries}
+The \emph{space of $p$-boundaries} is the image of the boundary homomorphism\dots
+$$B_p(K) = \partial(C_{p+1}(K; \mathbb{F}_2)) = \{ b \in C_p(K; \mathbb{F}_2) | b = \partial(c), \textrm{ for some } c \in C_{p+1}(K; \mathbb{F}_2) \}.$$\newline
+
+\noindent Since $\partial \circ \partial = 0$ we have $B_p(K) \subseteq Z_p(K)$ and can thus define the homology on a \hyperref[complexes]{chain
+complex} of boundary homomorphisms.
+
+\subsubsection{Chain Homotopies}\label{chainhomotopy}
+Homology is a functor on chain complexes, that is, if $\phi : K \rightarrow L$ is a simplicial mapping, then\dots
+$$H(\phi) : H_p(K; \mathbb{F}_2) \rightarrow H_p(L; \mathbb{F}_2) \textrm{ given by } H(\phi)(c + B_p(K)) = \phi_*(c) + B_p(L)$$
+is a linear map and $H$ satisfies the functor properties.\newline
+
+\noindent Given two simplicial mappings $\phi$ and $\psi : K \rightarrow L$, there is a \emph{chain homotopy} between them if
+there is a linear mapping $h : C_p(K; \mathbb{F}_2) \rightarrow C_{p+1}(L; \mathbb{F}_2)$ for each $p$ which satisfies\dots
+$$\partial \circ h + h \circ \partial = \phi_* + \psi_*.$$
+
+\begin{theorem}
+If there is a chain homomtopy between $\phi$ and $\psi$, then $H(\phi) = H(\psi)$.
+\end{theorem}
+
+\begin{corollary}
+If $\phi$ and $\psi : K \rightarrow L$ are simplicial mappings, and $\phi$ is contiguous to $\psi$, then
+$H(\phi) = H(\psi) : H_p(K; \mathbb{F}_2) \rightarrow H_p(L;\mathbb{F}_2)$ for all $p$.
+\end{corollary}
+
+\begin{corollary}
+If $\phi$ and $\psi : K \rightarrow L$ are simplicial approximations of a continuous mapping $f : |K| \rightarrow |L|$,
+then $H(\phi) = H(\psi) : H_p(K; \mathbb{F}_2) \rightarrow H_p(L; \mathbb{F}_2)$, for all $p$.
+\end{corollary}

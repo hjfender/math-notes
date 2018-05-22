@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1527015890 "/Users/henry/git/math-notes/document.tex" "document.pdf" "document" 1527015897
+["pdflatex"] 1527016031 "/Users/henry/git/math-notes/document.tex" "document.pdf" "document" 1527016039
   "/Users/henry/git/math-notes/document.tex" 1522804990 1015 67776ddd0067135586e118a6a0158b66 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
@@ -190,10 +190,10 @@
   "definitions/package-definitions.tex" 1519508212 384 af2faf83001ac6f30d95006f2864d6e9 ""
   "definitions/subsubsubsection-definition.tex" 1518886526 1153 f9d1e81deeb12ca16aa5261ecbc54f3c ""
   "definitions/theorem-definitions.tex" 1522219852 244 a1004e5721b956544e397d118e323451 ""
-  "document.aux" 1527015896 106894 c1bd0b4b5ba3ec12577b14fe4e3a70a6 ""
-  "document.out" 1527015896 42833 90048830eae3435e7c9cc9cbe6222679 ""
+  "document.aux" 1527016038 107483 bcf5549cdb1fd9132892652beb36bb36 ""
+  "document.out" 1527016039 43076 0f2fc10d989c56da68e9f0f256380677 ""
   "document.tex" 1522804990 1015 67776ddd0067135586e118a6a0158b66 ""
-  "document.toc" 1527015896 51765 2e437331c406b4d3fe26dfc086e80066 ""
+  "document.toc" 1527016039 52056 a43470103db31cdc627a2c3b57895669 ""
   "topics/abelian-group-theory/main.tex" 1521954119 345 9264e31a8c565336528eb36632399b7d ""
   "topics/abelian-group-theory/sections/classification.tex" 1523138050 5628 41d998136b0c639ee36f85f017ecc88b ""
   "topics/abelian-group-theory/sections/constructions.tex" 1519604752 1202 80597292736a8c3cd33215281215c046 ""
@@ -315,7 +315,7 @@
   "topics/homology/diagrams/snake.tex" 1520210565 261 ae10f30ef412e4b131471d558d63f0e4 ""
   "topics/homology/diagrams/split.tex" 1520210565 227 82cffaf37742a9078321ae009c115b2c ""
   "topics/homology/main.tex" 1526966098 247 14c8299857c71c730567bd93b86b4299 ""
-  "topics/homology/sections/applications.tex" 1527015890 1927 f3c4e3125d5fd56b8f469e0ff51b5114 ""
+  "topics/homology/sections/applications.tex" 1527016024 3932 286e7bb9e445bcb7f26f749cf6be9a59 ""
   "topics/homology/sections/complexes.tex" 1520210565 1732 d0b6ba257ac221c0d4d3521669a586a1 ""
   "topics/homology/sections/definitions.tex" 1520210565 1080 251b880d9417f755f2d4e19b979aaf2e ""
   "topics/homology/sections/eulercharacteristic.tex" 1523138050 3314 345db011c50c75840f35937d2e4a6d6b ""
@@ -382,8 +382,8 @@
   "topics/topology/sections/topologicalproperties.tex" 1521954119 1197 03b03d14ae100e9ce7b44e7085a0963e ""
   "topics/topology/sections/topologicalspaces.tex" 1521954119 4387 72be5c8f5e3fb3bc7da2feee5c50e603 ""
   (generated)
-  "document.toc"
-  "document.out"
-  "document.aux"
   "document.pdf"
   "document.log"
+  "document.out"
+  "document.toc"
+  "document.aux"
