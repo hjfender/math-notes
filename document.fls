@@ -676,6 +676,8 @@ INPUT topics/dimension/sections/connectedness.tex
 INPUT topics/dimension/sections/connectedness.tex
 INPUT topics/dimension/sections/homotopy.tex
 INPUT topics/dimension/sections/homotopy.tex
+INPUT topics/dimension/sections/homology.tex
+INPUT topics/dimension/sections/homology.tex
 INPUT bibliography/bibliography.tex
 INPUT bibliography/bibliography.tex
 INPUT document.aux

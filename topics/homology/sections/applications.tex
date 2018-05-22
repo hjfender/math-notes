@@ -66,3 +66,95 @@ $H(\phi) = H(\psi) : H_p(K; \mathbb{F}_2) \rightarrow H_p(L;\mathbb{F}_2)$ for a
 If $\phi$ and $\psi : K \rightarrow L$ are simplicial approximations of a continuous mapping $f : |K| \rightarrow |L|$,
 then $H(\phi) = H(\psi) : H_p(K; \mathbb{F}_2) \rightarrow H_p(L; \mathbb{F}_2)$, for all $p$.
 \end{corollary}
+
+\subsubsection{Topological Invariance}
+\begin{theorem}
+There is an isomorphism of vector spaces for all $p \geq 0$\dots
+$$H_p(\textrm{sd }K; \mathbb{F}_2) \cong H_p(K; \mathbb{F}_2).$$
+\end{theorem}
+
+\begin{proof}
+This proof is lengthy and used the \emph{method of acyclic models}. Look up elsewhere.
+\end{proof}
+
+\begin{theorem}[Topological Invariance of Homology]
+Suppose $K$ and $L$ are simplicial complexes with $|K|$ and $|L|$ homeomorphic. Then,
+for all $p$, the vector spaces $H_p(K; \mathbb{F}_2)$ and $H_p(K; \mathbb{F}_2)$ are isomorphic.
+\end{theorem}
+
+\begin{proof}
+This proof is also lengthy and involves the previous theorem. Also look it up.
+\end{proof}
+
+\begin{corollary}
+The Euler Poincar\'e characteristic is a topological invariant of a triangulable space.
+\end{corollary}
+
+\begin{theorem}
+There are only five Platonic solids.
+\end{theorem}
+
+\begin{proof}
+A polyhedron $P$ need not be a simplicial complex, since the faces can be polygons not necessarily triangles. However,
+if we subdivide each constituent polygon into triangles, we get a simplicial complex. This means Eulers formula for $P$
+computes the same result as the Euler-Poincar\'e characteristic $\chi(P)$. Thus since $P$ has a realization homeomorphic
+to $S^2$, we know that $\chi(P) = 2$.
+
+Suppose each face has $M$ edges and, at each vertex, $N$ faces meet. This gives us\dots
+$$M n_2 / 2 = n_1$$
+where $n_2$ is the number of faces and $n_1$ is the number of edges. Also we get\dots
+$$N n_0 / 2 = n_1$$
+where $n_0$ is the number of vertices. Putting these relations into Euler's formula we get\dots
+\begin{align*}
+    2 &= n_0 - n_1 + n_2\\
+      &= (2n_1/N) - n_1 + (2n_1/M)\\
+      &= n_1((2/N) + (2/M) - 1).
+\end{align*}
+It follows that\dots
+$$\frac{n_1}{2} = \frac{MN}{2M + 2N - MN}.$$
+
+If $N=1$ or $N=2$, there would be a boundary and so the polyhedron would fail to be a sphere. Since a Platonic solid
+encloses space, $N > 2$. Also $M \geq 3$ since each face is a polygon. Finally, $n_1$ must be an integer which is at least
+$M$.
+
+These facts forces $M < 6$. To see this, suppose $M \geq 6$ and $N > 2$. Then $2 - N < 0$ and we have\dots
+$$0 < 2M + 2N - MN = 2N + M(2 - M) \leq 2N + 6(2-N) = 12 - 4N.$$
+This implies that $4N < 12$, or that $N<3$, which is impossible because $N$ is an integer and $N>2$.
+
+Setting $M=3$ we get $n_1 = 6N/(6-N)$, which is an integer when $N = 3,4,5$. The case $N = 3$, $M = 3$ is realized by
+the tetrehedron, $N = 4$ and $M = 3$ is realized by the octahedron, and for $N=5$, $M=3$ by the icosahedron.
+
+For $M=4$ we have $n_1 = 8N/(8-2N) = 4N/(4-N)$, and so $N=3$ is the only case of interest which is realized by the cube.
+Finally, for $M=5$ we have $n_1 = 10N/(10 - 3N)$ and so $N=3$ is the only possible case, which gives the dodecahedron.
+\end{proof}
+
+\begin{theorem}
+If $K$ is a simplicial complex, then dim$_{\mathbb{F}_2} H_0(K; \mathbb{F}_2) = \#\pi_0(|K|)$, the number of path components of $|K|$.
+\end{theorem}
+
+\begin{proof}
+This is lengthy and should be looked up.
+\end{proof}
+
+\begin{theorem}[Brouwer Fixed Point Theorem]
+If $e^n = \{ x \in \mathbb{R}^n \, | \, ||x|| \leq 1 \}$ denotes the $n$-disk and $f :e^n \rightarrow e^n$ is a
+continuous mapping, then there is a point $x_0 \in e^n$ with $f(x_0) = x_0$, that is, $e^n$ has the fixed point
+property.
+\end{theorem}
+
+\begin{proof}
+Suppose that $f : e^n \rightarrow e^n$ is a continuous mapping without fixed points. If $y \in e^n$, then
+$y \neq f(y)$. Join $f(y)$ to $y$ and continue this ray until it meets $S^{n-1} = \textrm{bdy}e^n$ and denote
+this point by $g(y)$. We can characterize $g(y)$ by $g(y) = (1-t)f(y) + ty$, where $t>0$ and $||g(y)|| = 1$. Because
+we are in a nicely behaved inner porduct space, the argument for hte case of $n=2$ carries over exactly to prove that
+$g: e^n \rightarrow S^{n-1}$ is continuous. Furthermore, by the definition of $g$, $g \circ i : S^{n-1} \rightarrow S^{n-1}$
+is the identity when $i : S^{n-1} \rightarrow e^n$ is the inclusion of the boundary.
+
+Apply homology to this composite $\textrm{id}_{S^{n-1}} = g \circ i$ to obtain $H(\textrm{id}_{S^{n-1}})$, an isomorphism,
+written as $H(g) \circ H(i)$. However, $H_{n-1}(S^{n-1}; \mathbb{F}_2) \neq \{ 0 \}$ while $H_{n-1}(e^n; \mathbb{F}_2) = \{ 0 \}$,
+because $e^n$ is homeomorphic to $\Delta^n$. Thus, $H(i) : H_{n-1}(e^n; \mathbb{F}_2) \rightarrow H_{n-1}(e^n; \mathbb{F}_2)$
+is the zero homomorphism $[c] \mapsto 0$. An isomorphism\dots
+$$H(\textrm{id}_{S^{n-1}}: H_{n-1}(S^{n-1}; \mathbb{F}_2) \rightarrow H_{n-1}(S^{n-1}; \mathbb{F}_2)$$
+cannot be factored as $H(g) \circ ([c] \mapsto 0)$; and so a continuous mapping $f: e^n \rightarrow e^n$ without
+fixed points cannot exist.
+\end{proof}

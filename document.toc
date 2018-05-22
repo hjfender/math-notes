@@ -541,15 +541,17 @@
 \contentsline {subsubsection}{\numberline {15.4.3}Space of p-cycles}{181}{subsubsection.15.4.3}
 \contentsline {subsubsection}{\numberline {15.4.4}Space of p-boundaries}{181}{subsubsection.15.4.4}
 \contentsline {subsubsection}{\numberline {15.4.5}Chain Homotopies}{181}{subsubsection.15.4.5}
-\contentsline {section}{\numberline {16}Fundamental Theorem of Algebra}{182}{section.16}
-\contentsline {subsection}{\numberline {16.1}Gauss's Incomplete Proof}{182}{subsection.16.1}
-\contentsline {subsection}{\numberline {16.2}Homotopy Proof}{184}{subsection.16.2}
-\contentsline {subsection}{\numberline {16.3}Sketch of Proof in Complex Analysis}{185}{subsection.16.3}
-\contentsline {section}{\numberline {17}Dimension}{186}{section.17}
-\contentsline {subsection}{\numberline {17.1}Dimensions are Equinumerous}{186}{subsection.17.1}
-\contentsline {subsection}{\numberline {17.2}Space Filling Curves}{186}{subsection.17.2}
-\contentsline {subsubsection}{\numberline {17.2.1}Peano Curve}{186}{subsubsection.17.2.1}
-\contentsline {subsubsubsection}{\numberline {17.2.1.1}Ternary Expansion}{186}{subsubsubsection.17.2.1.1}
-\contentsline {subsubsection}{\numberline {17.2.2}Definition}{186}{subsubsection.17.2.2}
-\contentsline {subsection}{\numberline {17.3}Connectedness}{188}{subsection.17.3}
-\contentsline {subsection}{\numberline {17.4}Homotopy}{188}{subsection.17.4}
+\contentsline {subsubsection}{\numberline {15.4.6}Topological Invariance}{181}{subsubsection.15.4.6}
+\contentsline {section}{\numberline {16}Fundamental Theorem of Algebra}{184}{section.16}
+\contentsline {subsection}{\numberline {16.1}Gauss's Incomplete Proof}{184}{subsection.16.1}
+\contentsline {subsection}{\numberline {16.2}Homotopy Proof}{186}{subsection.16.2}
+\contentsline {subsection}{\numberline {16.3}Sketch of Proof in Complex Analysis}{187}{subsection.16.3}
+\contentsline {section}{\numberline {17}Dimension}{188}{section.17}
+\contentsline {subsection}{\numberline {17.1}Dimensions are Equinumerous}{188}{subsection.17.1}
+\contentsline {subsection}{\numberline {17.2}Space Filling Curves}{188}{subsection.17.2}
+\contentsline {subsubsection}{\numberline {17.2.1}Peano Curve}{188}{subsubsection.17.2.1}
+\contentsline {subsubsubsection}{\numberline {17.2.1.1}Ternary Expansion}{188}{subsubsubsection.17.2.1.1}
+\contentsline {subsubsection}{\numberline {17.2.2}Definition}{188}{subsubsection.17.2.2}
+\contentsline {subsection}{\numberline {17.3}Connectedness}{190}{subsection.17.3}
+\contentsline {subsection}{\numberline {17.4}Homotopy}{190}{subsection.17.4}
+\contentsline {subsection}{\numberline {17.5}Homology}{191}{subsection.17.5}

@@ -1,0 +1,16 @@
+\subsection{Homology}
+
+\begin{theorem}[Invariance of Dimension for $(m,n)$]
+If $\mathbb{R}^m$ is homeomorphic to $\mathbb{R}^n$, then $m = n$.
+\end{theorem}
+
+\begin{proof}
+We make this a question about simplicial complexes by using the one-point compactification. If $\mathbb{R}^n$
+is homeomorphic to $\mathbb{R}^m$, then their one-point compactifications are homeomorphic. Since $\mathbb{R}^l \cup \{ \infty \}$
+is homeomorphic to $S^l$, it follows that $\mathbb{R}^n \cong \mathbb{R}^m$ implies $S^n \cong S^m$.
+
+By the topological invariance of homology, and the homeomorphism $S^n \cong |\textrm{bdy } \Delta^{n+1}|$, we have\dots
+$$H_p(S^n; \mathbb{F}_2) \cong H_p(\textrm{bdy } \Delta^{n+1}; \mathbb{F}_2) \cong \begin{cases}\mathbb{F}_2, & p = 0,n,\\ \{ 0 \}, & \textrm{else.} \end{cases}$$
+If $S^n \cong S^m$, then $H_p(S^n; \mathbb{F}_2) \cong H_p(S^m; \mathbb{F}_2)$ for all $p$ and, by out computation of the
+homology of spheres, this is only possible if $n = m$.
+\end{proof}
