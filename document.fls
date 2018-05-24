@@ -628,6 +628,8 @@ INPUT topics/topology/sections/topologicalproperties.tex
 INPUT topics/topology/sections/topologicalproperties.tex
 INPUT topics/topology/sections/hereditary.tex
 INPUT topics/topology/sections/hereditary.tex
+INPUT topics/real-analysis/main.tex
+INPUT topics/real-analysis/main.tex
 INPUT topics/homotopy/main.tex
 INPUT topics/homotopy/main.tex
 INPUT topics/homotopy/sections/definition.tex
@@ -678,6 +680,8 @@ INPUT topics/dimension/sections/homotopy.tex
 INPUT topics/dimension/sections/homotopy.tex
 INPUT topics/dimension/sections/homology.tex
 INPUT topics/dimension/sections/homology.tex
+INPUT topics/algebraic-geometry/main.tex
+INPUT topics/algebraic-geometry/main.tex
 INPUT bibliography/bibliography.tex
 INPUT bibliography/bibliography.tex
 INPUT document.aux
