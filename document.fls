@@ -606,8 +606,6 @@ INPUT topics/algebras/diagrams/freealgebra.tex
 INPUT topics/algebras/diagrams/freealgebra.tex
 INPUT topics/topology/main.tex
 INPUT topics/topology/main.tex
-INPUT topics/topology/sections/metricspaces.tex
-INPUT topics/topology/sections/metricspaces.tex
 INPUT topics/topology/sections/topologicalspaces.tex
 INPUT topics/topology/sections/topologicalspaces.tex
 INPUT topics/topology/sections/geometricnotions.tex
@@ -628,6 +626,12 @@ INPUT topics/topology/sections/topologicalproperties.tex
 INPUT topics/topology/sections/topologicalproperties.tex
 INPUT topics/topology/sections/hereditary.tex
 INPUT topics/topology/sections/hereditary.tex
+INPUT topics/metric-spaces/main.tex
+INPUT topics/metric-spaces/main.tex
+INPUT topics/metric-spaces/sections/definitions.tex
+INPUT topics/metric-spaces/sections/definitions.tex
+INPUT topics/metric-spaces/sections/examples.tex
+INPUT topics/metric-spaces/sections/examples.tex
 INPUT topics/real-analysis/main.tex
 INPUT topics/real-analysis/main.tex
 INPUT topics/homotopy/main.tex
