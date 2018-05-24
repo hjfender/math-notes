@@ -64,3 +64,39 @@ over $k$. Then $|\textrm{Aut}_k(F)|$ equals the number of distinct roots of $p(x
 $$|\textrm{Aut}_k(F)| \leq [F : k],$$
 wiht equality if and only if $p(x)$ factors over $F$ as a product of distinct linear polynomials.
 \end{corollary}
+
+\subsubsection{Algebraic Extensions}\label{algebraicextension}
+Let $k \subseteq F$ be a field extension, and let $\alpha \in F$. Then $\alpha$ is \emph{algebraic} over $k$,
+\emph{of degree} $n$ if $n = [k(\alpha) : k]$ is finite; $\alpha$ is \emph{transcendental} over $k$ otherwise.\newline
+
+\noindent The extension $k \subseteq F$ is \emph{algebraic} if every $\alpha \in F$ is algebraic over $k$.
+
+\begin{lemma}
+Let $k \subseteq F$ be a finite extension. Then every $\alpha \in F$ is algebraic over $k$, of degree $\leq [F:k]$.
+\end{lemma}
+
+\begin{proposition}
+Let $k \subseteq E \subseteq F$ be field extensions. Then $k \subseteq F$ is finite if and only if both $k\subseteq E$ and $E \subseteq F$
+are finite. In this case,
+$$[F:k] = [F:E][E:k].$$
+\end{proposition}
+
+\begin{corollary}
+Let $k \subseteq F$ be a finite extension, and let $E$ be an intermediate field (that is, $k \subseteq E \subseteq F$).
+Then both $[E : k]$ and $[F : E]$ divide $[F : k]$.
+\end{corollary}
+
+\subsubsection{Finitely Generated Extension}\label{finitelygenext}
+A field extension $k \subseteq F$ is \emph{finitely generated} if there exist $\alpha_1, \dots, \alpha_n \in F$ such that\dots
+$$F = k(\alpha_1)(\alpha_2)\dots(\alpha_n) = k(\alpha_1,\alpha_2,\dots,\alpha_n).$$
+
+\begin{proposition}
+Let $k \subseteq F = k(\alpha_1,\alpha_2,\dots,\alpha_n)$ be a finitely generated field extension. Then the
+following are equivalent:
+\begin{enumerate}
+\item $k \subseteq F$ is a finite extension
+\item $k \subseteq F$ is an algebraic extension
+\item Each $\alpha_i$ is algebraic over $k$.
+\end{enumerate}
+If these conditions are satisfied, then $[F : k] \leq$ the product of the degrees of $\alpha_i$ over $k$.
+\end{proposition}
