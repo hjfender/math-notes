@@ -10,9 +10,16 @@ then $\langle \mathbb{R}^n,d \rangle$ is a metric space.
 
 If for $x,y \in \mathbb{R}^n$\dots
 $$d(x,y) = \max\{|x_1 - y_1|, \dots, |x_n - y_n|\},$$
-then $\langle \mathbb{R}^n,d \rangle$ is a metric space.\newline
+then $\langle \mathbb{R}^n,d \rangle$ is a metric space. The metric
+$d$ is also called the \emph{square metric}\newline
 
 \noindent The set of \hyperref[metricopenball]{open balls} for the previous two metrics form \hyperref[basis]{bases} that generate the same topology.
+
+\subsubsection{Standard Bounded Metric corresponding to a metric}\label{standardbounded}
+
+Let $X$ be a metric space with metric $d$. Define $\overline{d} : X \times X \rightarrow \mathbb{R}$ by the equation\dots
+$$\overline{d} (x,y) = \min \{ d(x,y), 1 \}.$$
+Then $\overline{d}$ is a metric that induces the same topology as $d$.
 
 \subsubsection{Bounded Real Functions Metric Space}\label{bddmetric}
 

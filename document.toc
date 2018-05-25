@@ -503,61 +503,64 @@
 \contentsline {section}{\numberline {14}Metric Spaces}{169}{section.14}
 \contentsline {subsection}{\numberline {14.1}Definition}{169}{subsection.14.1}
 \contentsline {subsubsection}{\numberline {14.1.1}Open Ball}{169}{subsubsection.14.1.1}
-\contentsline {subsubsection}{\numberline {14.1.2}Continuity}{169}{subsubsection.14.1.2}
-\contentsline {subsubsection}{\numberline {14.1.3}Open Set}{169}{subsubsection.14.1.3}
-\contentsline {subsubsection}{\numberline {14.1.4}Lebesgue's Lemma}{169}{subsubsection.14.1.4}
-\contentsline {subsubsubsection}{\numberline {14.1.4.1}Diameter}{169}{subsubsubsection.14.1.4.1}
-\contentsline {subsection}{\numberline {14.2}Examples}{170}{subsection.14.2}
-\contentsline {subsubsection}{\numberline {14.2.1}Euclidean Metric Space}{170}{subsubsection.14.2.1}
-\contentsline {subsubsection}{\numberline {14.2.2}Box Metric Space}{170}{subsubsection.14.2.2}
-\contentsline {subsubsection}{\numberline {14.2.3}Bounded Real Functions Metric Space}{170}{subsubsection.14.2.3}
-\contentsline {subsubsection}{\numberline {14.2.4}Discrete Metric space}{170}{subsubsection.14.2.4}
-\contentsline {section}{\numberline {15}Real Analysis}{171}{section.15}
-\contentsline {section}{\numberline {16}Homotopy}{172}{section.16}
-\contentsline {subsection}{\numberline {16.1}Definition}{172}{subsection.16.1}
-\contentsline {subsubsection}{\numberline {16.1.1}Homotopy of functions}{172}{subsubsection.16.1.1}
-\contentsline {subsubsection}{\numberline {16.1.2}Space of Based Loops}{172}{subsubsection.16.1.2}
-\contentsline {subsubsubsection}{\numberline {16.1.2.1}Loop Homotopy}{172}{subsubsubsection.16.1.2.1}
-\contentsline {subsection}{\numberline {16.2}Fundamental Group}{173}{subsection.16.2}
-\contentsline {subsection}{\numberline {16.3}Retractions}{173}{subsection.16.3}
-\contentsline {subsubsection}{\numberline {16.3.1}Retract}{173}{subsubsection.16.3.1}
-\contentsline {subsubsubsection}{\numberline {16.3.1.1}Deformation Retract}{173}{subsubsubsection.16.3.1.1}
-\contentsline {subsubsubsection}{\numberline {16.3.1.2}Contractible}{173}{subsubsubsection.16.3.1.2}
-\contentsline {subsubsubsection}{\numberline {16.3.1.3}Simply-Connected}{174}{subsubsubsection.16.3.1.3}
-\contentsline {subsection}{\numberline {16.4}Covering Spaces}{174}{subsection.16.4}
-\contentsline {subsubsection}{\numberline {16.4.1}Path Lifting}{174}{subsubsection.16.4.1}
-\contentsline {subsubsection}{\numberline {16.4.2}Homotopy Lifting}{175}{subsubsection.16.4.2}
-\contentsline {subsubsection}{\numberline {16.4.3}Fundamental Group Computations}{176}{subsubsection.16.4.3}
-\contentsline {subsection}{\numberline {16.5}Applications}{179}{subsection.16.5}
-\contentsline {subsection}{\numberline {16.6}Homotopy Type}{180}{subsection.16.6}
-\contentsline {subsubsection}{\numberline {16.6.1}Homotopy Equivalent}{180}{subsubsection.16.6.1}
-\contentsline {subsubsection}{\numberline {16.6.2}Definition}{180}{subsubsection.16.6.2}
-\contentsline {subsubsection}{\numberline {16.6.3}Homotopy Invariance}{181}{subsubsection.16.6.3}
-\contentsline {section}{\numberline {17}Homology}{182}{section.17}
-\contentsline {subsection}{\numberline {17.1}Complexes}{182}{subsection.17.1}
-\contentsline {subsubsection}{\numberline {17.1.1}Exactness}{182}{subsubsection.17.1.1}
-\contentsline {subsubsection}{\numberline {17.1.2}Split}{182}{subsubsection.17.1.2}
-\contentsline {subsection}{\numberline {17.2}Definitions}{183}{subsection.17.2}
-\contentsline {subsection}{\numberline {17.3}Euler Characteristic}{183}{subsection.17.3}
-\contentsline {subsubsection}{\numberline {17.3.1}Grothendieck Group}{184}{subsubsection.17.3.1}
-\contentsline {subsection}{\numberline {17.4}Applications to Simplicial Complexes}{185}{subsection.17.4}
-\contentsline {subsubsection}{\numberline {17.4.1}Space of p-chains}{185}{subsubsection.17.4.1}
-\contentsline {subsubsection}{\numberline {17.4.2}Boundary Homomorphisms}{185}{subsubsection.17.4.2}
-\contentsline {subsubsection}{\numberline {17.4.3}Space of p-cycles}{186}{subsubsection.17.4.3}
-\contentsline {subsubsection}{\numberline {17.4.4}Space of p-boundaries}{186}{subsubsection.17.4.4}
-\contentsline {subsubsection}{\numberline {17.4.5}Chain Homotopies}{186}{subsubsection.17.4.5}
-\contentsline {subsubsection}{\numberline {17.4.6}Topological Invariance}{186}{subsubsection.17.4.6}
-\contentsline {section}{\numberline {18}Fundamental Theorem of Algebra}{189}{section.18}
-\contentsline {subsection}{\numberline {18.1}Gauss's Incomplete Proof}{189}{subsection.18.1}
-\contentsline {subsection}{\numberline {18.2}Homotopy Proof}{191}{subsection.18.2}
-\contentsline {subsection}{\numberline {18.3}Sketch of Proof in Complex Analysis}{192}{subsection.18.3}
-\contentsline {section}{\numberline {19}Dimension}{193}{section.19}
-\contentsline {subsection}{\numberline {19.1}Dimensions are Equinumerous}{193}{subsection.19.1}
-\contentsline {subsection}{\numberline {19.2}Space Filling Curves}{193}{subsection.19.2}
-\contentsline {subsubsection}{\numberline {19.2.1}Peano Curve}{193}{subsubsection.19.2.1}
-\contentsline {subsubsubsection}{\numberline {19.2.1.1}Ternary Expansion}{193}{subsubsubsection.19.2.1.1}
-\contentsline {subsubsection}{\numberline {19.2.2}Definition}{193}{subsubsection.19.2.2}
-\contentsline {subsection}{\numberline {19.3}Connectedness}{195}{subsection.19.3}
-\contentsline {subsection}{\numberline {19.4}Homotopy}{195}{subsection.19.4}
-\contentsline {subsection}{\numberline {19.5}Homology}{196}{subsection.19.5}
-\contentsline {section}{\numberline {20}Algebraic Geometry}{197}{section.20}
+\contentsline {subsubsection}{\numberline {14.1.2}Bounded}{169}{subsubsection.14.1.2}
+\contentsline {subsubsection}{\numberline {14.1.3}Continuity}{169}{subsubsection.14.1.3}
+\contentsline {subsubsection}{\numberline {14.1.4}Convergence}{170}{subsubsection.14.1.4}
+\contentsline {subsubsection}{\numberline {14.1.5}Uniform Convergence}{170}{subsubsection.14.1.5}
+\contentsline {subsubsection}{\numberline {14.1.6}Lebesgue's Lemma}{171}{subsubsection.14.1.6}
+\contentsline {subsubsubsection}{\numberline {14.1.6.1}Diameter}{171}{subsubsubsection.14.1.6.1}
+\contentsline {subsection}{\numberline {14.2}Examples}{171}{subsection.14.2}
+\contentsline {subsubsection}{\numberline {14.2.1}Euclidean Metric Space}{171}{subsubsection.14.2.1}
+\contentsline {subsubsection}{\numberline {14.2.2}Box Metric Space}{171}{subsubsection.14.2.2}
+\contentsline {subsubsection}{\numberline {14.2.3}Standard Bounded Metric corresponding to a metric}{171}{subsubsection.14.2.3}
+\contentsline {subsubsection}{\numberline {14.2.4}Bounded Real Functions Metric Space}{172}{subsubsection.14.2.4}
+\contentsline {subsubsection}{\numberline {14.2.5}Discrete Metric space}{172}{subsubsection.14.2.5}
+\contentsline {section}{\numberline {15}Real Analysis}{173}{section.15}
+\contentsline {section}{\numberline {16}Homotopy}{174}{section.16}
+\contentsline {subsection}{\numberline {16.1}Definition}{174}{subsection.16.1}
+\contentsline {subsubsection}{\numberline {16.1.1}Homotopy of functions}{174}{subsubsection.16.1.1}
+\contentsline {subsubsection}{\numberline {16.1.2}Space of Based Loops}{174}{subsubsection.16.1.2}
+\contentsline {subsubsubsection}{\numberline {16.1.2.1}Loop Homotopy}{174}{subsubsubsection.16.1.2.1}
+\contentsline {subsection}{\numberline {16.2}Fundamental Group}{175}{subsection.16.2}
+\contentsline {subsection}{\numberline {16.3}Retractions}{175}{subsection.16.3}
+\contentsline {subsubsection}{\numberline {16.3.1}Retract}{175}{subsubsection.16.3.1}
+\contentsline {subsubsubsection}{\numberline {16.3.1.1}Deformation Retract}{175}{subsubsubsection.16.3.1.1}
+\contentsline {subsubsubsection}{\numberline {16.3.1.2}Contractible}{175}{subsubsubsection.16.3.1.2}
+\contentsline {subsubsubsection}{\numberline {16.3.1.3}Simply-Connected}{176}{subsubsubsection.16.3.1.3}
+\contentsline {subsection}{\numberline {16.4}Covering Spaces}{176}{subsection.16.4}
+\contentsline {subsubsection}{\numberline {16.4.1}Path Lifting}{176}{subsubsection.16.4.1}
+\contentsline {subsubsection}{\numberline {16.4.2}Homotopy Lifting}{177}{subsubsection.16.4.2}
+\contentsline {subsubsection}{\numberline {16.4.3}Fundamental Group Computations}{178}{subsubsection.16.4.3}
+\contentsline {subsection}{\numberline {16.5}Applications}{181}{subsection.16.5}
+\contentsline {subsection}{\numberline {16.6}Homotopy Type}{182}{subsection.16.6}
+\contentsline {subsubsection}{\numberline {16.6.1}Homotopy Equivalent}{182}{subsubsection.16.6.1}
+\contentsline {subsubsection}{\numberline {16.6.2}Definition}{182}{subsubsection.16.6.2}
+\contentsline {subsubsection}{\numberline {16.6.3}Homotopy Invariance}{183}{subsubsection.16.6.3}
+\contentsline {section}{\numberline {17}Homology}{184}{section.17}
+\contentsline {subsection}{\numberline {17.1}Complexes}{184}{subsection.17.1}
+\contentsline {subsubsection}{\numberline {17.1.1}Exactness}{184}{subsubsection.17.1.1}
+\contentsline {subsubsection}{\numberline {17.1.2}Split}{184}{subsubsection.17.1.2}
+\contentsline {subsection}{\numberline {17.2}Definitions}{185}{subsection.17.2}
+\contentsline {subsection}{\numberline {17.3}Euler Characteristic}{185}{subsection.17.3}
+\contentsline {subsubsection}{\numberline {17.3.1}Grothendieck Group}{186}{subsubsection.17.3.1}
+\contentsline {subsection}{\numberline {17.4}Applications to Simplicial Complexes}{187}{subsection.17.4}
+\contentsline {subsubsection}{\numberline {17.4.1}Space of p-chains}{187}{subsubsection.17.4.1}
+\contentsline {subsubsection}{\numberline {17.4.2}Boundary Homomorphisms}{187}{subsubsection.17.4.2}
+\contentsline {subsubsection}{\numberline {17.4.3}Space of p-cycles}{188}{subsubsection.17.4.3}
+\contentsline {subsubsection}{\numberline {17.4.4}Space of p-boundaries}{188}{subsubsection.17.4.4}
+\contentsline {subsubsection}{\numberline {17.4.5}Chain Homotopies}{188}{subsubsection.17.4.5}
+\contentsline {subsubsection}{\numberline {17.4.6}Topological Invariance}{188}{subsubsection.17.4.6}
+\contentsline {section}{\numberline {18}Fundamental Theorem of Algebra}{191}{section.18}
+\contentsline {subsection}{\numberline {18.1}Gauss's Incomplete Proof}{191}{subsection.18.1}
+\contentsline {subsection}{\numberline {18.2}Homotopy Proof}{193}{subsection.18.2}
+\contentsline {subsection}{\numberline {18.3}Sketch of Proof in Complex Analysis}{194}{subsection.18.3}
+\contentsline {section}{\numberline {19}Dimension}{195}{section.19}
+\contentsline {subsection}{\numberline {19.1}Dimensions are Equinumerous}{195}{subsection.19.1}
+\contentsline {subsection}{\numberline {19.2}Space Filling Curves}{195}{subsection.19.2}
+\contentsline {subsubsection}{\numberline {19.2.1}Peano Curve}{195}{subsubsection.19.2.1}
+\contentsline {subsubsubsection}{\numberline {19.2.1.1}Ternary Expansion}{195}{subsubsubsection.19.2.1.1}
+\contentsline {subsubsection}{\numberline {19.2.2}Definition}{195}{subsubsection.19.2.2}
+\contentsline {subsection}{\numberline {19.3}Connectedness}{197}{subsection.19.3}
+\contentsline {subsection}{\numberline {19.4}Homotopy}{197}{subsection.19.4}
+\contentsline {subsection}{\numberline {19.5}Homology}{198}{subsection.19.5}
+\contentsline {section}{\numberline {20}Algebraic Geometry}{199}{section.20}

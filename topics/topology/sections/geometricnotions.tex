@@ -36,11 +36,14 @@ $\emph{cls } A = \emph{int } A \cup \emph{ bdy } A.$
 
 \subsubsection{Convergence}\label{convergence}
 A sequence $\{ x_n \}$ of points in a topological space $X$ is said to \emph{converge to a point} $x \in X$,
-if for any open set $U$ containing $x$, there is a positive integer $N$ so that $x_n \in U$ whenever $n \geq N$.
+if for any open set $U$ containing $x$, there is a positive integer $N$ so that $x_n \in U$ whenever $n \geq N$.\newline
 
-\begin{proposition}
+\noindent The following lemma emerges out of the intuition of metric spaces\dots
+
+\begin{lemma}[The Sequence Lemma]
+\label{sequencelemma}
 If $A \subseteq X$, where $X$ is a first countable space, then $x$ is in \emph{cls} $A$ if and only if some sequence of points in $A$ converges to $x$.
-\end{proposition}
+\end{lemma}
 
 \begin{proof}
 If $\{ x_n \}$ is a sequence of points in $A$ converging to $x$, then any open set $V$ containing $x$ meets the sequence and we see either $x \in \emph{int} \, A$ or $x \in \emph{bdy} \, A$, so
