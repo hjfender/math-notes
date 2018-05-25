@@ -1,566 +1,568 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}Set Theory}{15}{section.1}
-\contentsline {subsection}{\numberline {1.1}Set Axioms}{15}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Undefined notions}{15}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}Axioms}{15}{subsubsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.3}Universe}{15}{subsubsection.1.1.3}
-\contentsline {subsection}{\numberline {1.2}Set Constructions}{16}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Union}{16}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Intersection}{16}{subsubsection.1.2.2}
-\contentsline {subsubsection}{\numberline {1.2.3}Complement}{16}{subsubsection.1.2.3}
-\contentsline {subsubsection}{\numberline {1.2.4}Symmetric Difference}{17}{subsubsection.1.2.4}
-\contentsline {subsubsection}{\numberline {1.2.5}Power Set}{18}{subsubsection.1.2.5}
-\contentsline {subsubsubsection}{\numberline {1.2.5.1}Characteristic Function of a subset}{18}{subsubsubsection.1.2.5.1}
-\contentsline {subsubsection}{\numberline {1.2.6}$n$-Tuple}{18}{subsubsection.1.2.6}
-\contentsline {subsubsection}{\numberline {1.2.7}Cartesian Product}{18}{subsubsection.1.2.7}
-\contentsline {subsubsection}{\numberline {1.2.8}Quotient by Equivalence Relation}{18}{subsubsection.1.2.8}
-\contentsline {subsubsection}{\numberline {1.2.9}Family}{19}{subsubsection.1.2.9}
-\contentsline {subsection}{\numberline {1.3}Relations}{19}{subsection.1.3}
-\contentsline {subsubsection}{\numberline {1.3.1}Equivalence Relations}{19}{subsubsection.1.3.1}
-\contentsline {subsubsubsection}{\numberline {1.3.1.1}Equivalence Class}{19}{subsubsubsection.1.3.1.1}
-\contentsline {subsubsubsection}{\numberline {1.3.1.2}Set of Equivalence Classes}{19}{subsubsubsection.1.3.1.2}
-\contentsline {subsubsubsection}{\numberline {1.3.1.3}Set Partition}{19}{subsubsubsection.1.3.1.3}
-\contentsline {subsubsubsection}{\numberline {1.3.1.4}Congruence Relation}{19}{subsubsubsection.1.3.1.4}
-\contentsline {subsubsection}{\numberline {1.3.2}Functions}{20}{subsubsection.1.3.2}
-\contentsline {subsubsubsection}{\numberline {1.3.2.1}Injection}{20}{subsubsubsection.1.3.2.1}
-\contentsline {subsubsubsection}{\numberline {1.3.2.2}Surjection}{20}{subsubsubsection.1.3.2.2}
-\contentsline {subsubsubsection}{\numberline {1.3.2.3}Bijection}{20}{subsubsubsection.1.3.2.3}
-\contentsline {subsubsubsection}{\numberline {1.3.2.4}Restriction}{20}{subsubsubsection.1.3.2.4}
-\contentsline {subsubsubsection}{\numberline {1.3.2.5}Image}{20}{subsubsubsection.1.3.2.5}
-\contentsline {subsubsubsection}{\numberline {1.3.2.6}Preimage}{20}{subsubsubsection.1.3.2.6}
-\contentsline {subsubsubsection}{\numberline {1.3.2.7}Function Composition}{21}{subsubsubsection.1.3.2.7}
-\contentsline {subsection}{\numberline {1.4}Natural Numbers}{21}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Successor}{21}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Inductive}{21}{subsubsection.1.4.2}
-\contentsline {subsubsection}{\numberline {1.4.3}Natural Number}{21}{subsubsection.1.4.3}
-\contentsline {subsubsection}{\numberline {1.4.4}Peano's Postulates}{22}{subsubsection.1.4.4}
-\contentsline {subsubsubsection}{\numberline {1.4.4.1}Peano System}{22}{subsubsubsection.1.4.4.1}
-\contentsline {subsubsubsection}{\numberline {1.4.4.2}Transitive Set}{22}{subsubsubsection.1.4.4.2}
-\contentsline {subsubsection}{\numberline {1.4.5}Recursion}{22}{subsubsection.1.4.5}
-\contentsline {subsubsection}{\numberline {1.4.6}Arithmetic}{24}{subsubsection.1.4.6}
-\contentsline {subsubsubsection}{\numberline {1.4.6.1}Addition}{24}{subsubsubsection.1.4.6.1}
-\contentsline {subsubsubsection}{\numberline {1.4.6.2}Multiplication}{25}{subsubsubsection.1.4.6.2}
-\contentsline {subsubsubsection}{\numberline {1.4.6.3}Exponentiation}{25}{subsubsubsection.1.4.6.3}
-\contentsline {subsubsection}{\numberline {1.4.7}Ordering on the natural numbers}{25}{subsubsection.1.4.7}
-\contentsline {subsection}{\numberline {1.5}Constructing Number Systems}{26}{subsection.1.5}
-\contentsline {subsubsection}{\numberline {1.5.1}The Integers}{27}{subsubsection.1.5.1}
-\contentsline {subsubsubsection}{\numberline {1.5.1.1}Addition}{27}{subsubsubsection.1.5.1.1}
-\contentsline {subsubsubsection}{\numberline {1.5.1.2}Multiplication}{27}{subsubsubsection.1.5.1.2}
-\contentsline {subsubsubsection}{\numberline {1.5.1.3}Order}{27}{subsubsubsection.1.5.1.3}
-\contentsline {subsubsection}{\numberline {1.5.2}The Rational Numbers}{27}{subsubsection.1.5.2}
-\contentsline {subsubsubsection}{\numberline {1.5.2.1}Addition}{28}{subsubsubsection.1.5.2.1}
-\contentsline {subsubsubsection}{\numberline {1.5.2.2}Multiplication}{28}{subsubsubsection.1.5.2.2}
-\contentsline {subsubsubsection}{\numberline {1.5.2.3}Order}{28}{subsubsubsection.1.5.2.3}
-\contentsline {subsubsection}{\numberline {1.5.3}The Real Numbers with Cauchy Sequences}{28}{subsubsection.1.5.3}
-\contentsline {subsubsection}{\numberline {1.5.4}The Real Numbers with Dedekind Cuts}{28}{subsubsection.1.5.4}
-\contentsline {subsubsubsection}{\numberline {1.5.4.1}Order}{29}{subsubsubsection.1.5.4.1}
-\contentsline {subsubsubsection}{\numberline {1.5.4.2}Addition}{29}{subsubsubsection.1.5.4.2}
-\contentsline {subsubsubsection}{\numberline {1.5.4.3}Multiplication}{29}{subsubsubsection.1.5.4.3}
-\contentsline {subsection}{\numberline {1.6}Cardinality}{30}{subsection.1.6}
-\contentsline {subsubsection}{\numberline {1.6.1}Equinumerosity}{30}{subsubsection.1.6.1}
-\contentsline {subsubsection}{\numberline {1.6.2}Finite/Infinite}{30}{subsubsection.1.6.2}
-\contentsline {subsubsection}{\numberline {1.6.3}Cardinal Numbers}{31}{subsubsection.1.6.3}
-\contentsline {subsubsubsection}{\numberline {1.6.3.1}Cardinal Arithmetic}{32}{subsubsubsection.1.6.3.1}
-\contentsline {subsubsubsection}{\numberline {1.6.3.2}Ordering Cardinal Numbers}{33}{subsubsubsection.1.6.3.2}
-\contentsline {subsubsubsection}{\numberline {1.6.3.3}Infinite Cardinal Arithmetic}{34}{subsubsubsection.1.6.3.3}
-\contentsline {subsection}{\numberline {1.7}Countable Sets}{34}{subsection.1.7}
-\contentsline {subsection}{\numberline {1.8}Axiom of Choice}{34}{subsection.1.8}
-\contentsline {subsection}{\numberline {1.9}Continuum Hypothesis}{35}{subsection.1.9}
-\contentsline {subsection}{\numberline {1.10}Ordinal Numbers}{35}{subsection.1.10}
-\contentsline {subsubsection}{\numberline {1.10.1}Partial Orderings}{35}{subsubsection.1.10.1}
-\contentsline {subsubsection}{\numberline {1.10.2}Linear Orderings}{35}{subsubsection.1.10.2}
-\contentsline {subsubsection}{\numberline {1.10.3}Well Orderings}{36}{subsubsection.1.10.3}
-\contentsline {subsubsection}{\numberline {1.10.4}Transfinite Recursion}{36}{subsubsection.1.10.4}
-\contentsline {subsubsection}{\numberline {1.10.5}Epsilon Images}{36}{subsubsection.1.10.5}
-\contentsline {subsubsection}{\numberline {1.10.6}Ordinal Numbers}{37}{subsubsection.1.10.6}
-\contentsline {subsubsection}{\numberline {1.10.7}Cardinal Numbers}{37}{subsubsection.1.10.7}
-\contentsline {section}{\numberline {2}Combinatorics}{38}{section.2}
-\contentsline {subsection}{\numberline {2.1}Basic Methods}{38}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Addition}{38}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Subtraction}{38}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Multiplication}{38}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}Division}{38}{subsubsection.2.1.4}
-\contentsline {subsubsection}{\numberline {2.1.5}Binomial Coefficients}{38}{subsubsection.2.1.5}
-\contentsline {subsubsection}{\numberline {2.1.6}Pigeonhole Principle}{39}{subsubsection.2.1.6}
-\contentsline {subsection}{\numberline {2.2}Applications of Basic Methods}{40}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Inclusion-Exclusion}{40}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Multisets}{41}{subsubsection.2.2.2}
-\contentsline {subsubsubsection}{\numberline {2.2.2.1}Multinomial Coefficients}{41}{subsubsubsection.2.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.3}Weak Compositions}{41}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}Compositions}{41}{subsubsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.5}Stirling numbers of the second kind}{42}{subsubsection.2.2.5}
-\contentsline {subsubsubsection}{\numberline {2.2.5.1}Bell numbers}{42}{subsubsubsection.2.2.5.1}
-\contentsline {subsubsection}{\numberline {2.2.6}Partitions of integers}{42}{subsubsection.2.2.6}
-\contentsline {subsubsection}{\numberline {2.2.7}Ferrers shapes}{43}{subsubsection.2.2.7}
-\contentsline {subsubsection}{\numberline {2.2.8}Euler's totient function}{43}{subsubsection.2.2.8}
-\contentsline {subsection}{\numberline {2.3}Permutations}{44}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Twelvefold Way}{44}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Functions from $K$ to $N$}{44}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Injections from $K$ to $N$}{44}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Surjections from $K$ to $N$}{44}{subsubsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.4}Injections from $K$ to $N$, up to a permutation of $K$}{44}{subsubsection.2.4.4}
-\contentsline {subsubsection}{\numberline {2.4.5}Functions from $K$ to $N$, up to a permutation of $K$}{44}{subsubsection.2.4.5}
-\contentsline {subsubsection}{\numberline {2.4.6}Surjections from $K$ to $N$, up to a permutation of $K$}{44}{subsubsection.2.4.6}
-\contentsline {subsubsection}{\numberline {2.4.7}Injections from $K$ to $N$, up to a permutation of $N$}{45}{subsubsection.2.4.7}
-\contentsline {subsubsection}{\numberline {2.4.8}Surjections from $K$ to $N$, up to a permutation of $N$}{45}{subsubsection.2.4.8}
-\contentsline {subsubsection}{\numberline {2.4.9}Functions from $K$ to $N$, up to a permutation of $N$}{45}{subsubsection.2.4.9}
-\contentsline {subsubsection}{\numberline {2.4.10}Functions from $K$ to $N$, up to a permutation of $K$ and $N$}{45}{subsubsection.2.4.10}
-\contentsline {subsubsection}{\numberline {2.4.11}Injections from $K$ to $N$, up to a permutation of $K$ and $N$}{45}{subsubsection.2.4.11}
-\contentsline {subsubsection}{\numberline {2.4.12}Surjections from $K$ to $N$, up to a permutation of $K$ and $N$}{45}{subsubsection.2.4.12}
-\contentsline {subsection}{\numberline {2.5}Graphs}{45}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}Simple Graph}{45}{subsubsection.2.5.1}
-\contentsline {subsubsubsection}{\numberline {2.5.1.1}Walk}{45}{subsubsubsection.2.5.1.1}
-\contentsline {subsubsubsection}{\numberline {2.5.1.2}Cycle}{45}{subsubsubsection.2.5.1.2}
-\contentsline {subsubsection}{\numberline {2.5.2}Graph Isomorphisms}{45}{subsubsection.2.5.2}
-\contentsline {subsubsubsection}{\numberline {2.5.2.1}Group of Automorphisms}{46}{subsubsubsection.2.5.2.1}
-\contentsline {subsubsection}{\numberline {2.5.3}Trees}{46}{subsubsection.2.5.3}
-\contentsline {subsubsubsection}{\numberline {2.5.3.1}Minimally Connected Graph}{46}{subsubsubsection.2.5.3.1}
-\contentsline {section}{\numberline {3}Category Theory}{48}{section.3}
-\contentsline {subsection}{\numberline {3.1}Metacategories}{48}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Undefined notions}{48}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Operations}{48}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}Axioms}{48}{subsubsection.3.1.3}
-\contentsline {subsection}{\numberline {3.2}Categories}{49}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Directed \hyperref [graph]{Graph}}{49}{subsubsection.3.2.1}
-\contentsline {subsubsubsection}{\numberline {3.2.1.1}Set of composable pairs of arrows}{49}{subsubsubsection.3.2.1.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Categories}{49}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Small categories}{49}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Hom Sets}{49}{subsubsection.3.2.4}
-\contentsline {subsubsubsection}{\numberline {3.2.4.1}Alternate Definition of Categories}{49}{subsubsubsection.3.2.4.1}
-\contentsline {subsubsection}{\numberline {3.2.5}Groupoids}{50}{subsubsection.3.2.5}
-\contentsline {subsection}{\numberline {3.3}Morphisms}{50}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Isomorphisms}{50}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Automorphisms}{51}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}Monomorphisms}{51}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Epimorphisms}{51}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Split Morphism}{51}{subsubsection.3.3.5}
-\contentsline {subsection}{\numberline {3.4}Some Objects in Categories}{51}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Initial Objects}{51}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}Final Objects}{51}{subsubsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.3}Null Objects}{52}{subsubsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.4}Group Objects}{52}{subsubsection.3.4.4}
-\contentsline {subsection}{\numberline {3.5}Functors}{52}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Full}{53}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}Faithful}{53}{subsubsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.3}Forgetful}{53}{subsubsection.3.5.3}
-\contentsline {subsubsubsection}{\numberline {3.5.3.1}Group Action}{53}{subsubsubsection.3.5.3.1}
-\contentsline {subsection}{\numberline {3.6}Natural Transformations}{53}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Duality}{54}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Contravariance and Opposites}{54}{subsection.3.8}
-\contentsline {subsubsection}{\numberline {3.8.1}Contravariant Functor}{54}{subsubsection.3.8.1}
-\contentsline {subsubsubsection}{\numberline {3.8.1.1}Covariant Hom-Functor}{54}{subsubsubsection.3.8.1.1}
-\contentsline {subsubsubsection}{\numberline {3.8.1.2}Contravariant Hom-Functor}{55}{subsubsubsection.3.8.1.2}
-\contentsline {subsection}{\numberline {3.9}Category Constructions}{55}{subsection.3.9}
-\contentsline {subsubsection}{\numberline {3.9.1}Products}{55}{subsubsection.3.9.1}
-\contentsline {subsubsubsection}{\numberline {3.9.1.1}Products of Functors}{55}{subsubsubsection.3.9.1.1}
-\contentsline {subsubsubsection}{\numberline {3.9.1.2}Bifunctors}{56}{subsubsubsection.3.9.1.2}
-\contentsline {subsubsubsection}{\numberline {3.9.1.3}Natural transformations between bifunctors}{57}{subsubsubsection.3.9.1.3}
-\contentsline {subsubsubsection}{\numberline {3.9.1.4}The Universal Natural Transformation}{57}{subsubsubsection.3.9.1.4}
-\contentsline {subsubsection}{\numberline {3.9.2}Coproducts}{57}{subsubsection.3.9.2}
-\contentsline {subsubsection}{\numberline {3.9.3}Quotients}{58}{subsubsection.3.9.3}
-\contentsline {subsubsubsection}{\numberline {3.9.3.1}Congruence}{58}{subsubsubsection.3.9.3.1}
-\contentsline {subsubsection}{\numberline {3.9.4}Free Categories}{58}{subsubsection.3.9.4}
-\contentsline {subsubsubsection}{\numberline {3.9.4.1}O-graph}{58}{subsubsubsection.3.9.4.1}
-\contentsline {subsubsubsection}{\numberline {3.9.4.2}Free Category}{59}{subsubsubsection.3.9.4.2}
-\contentsline {subsubsection}{\numberline {3.9.5}Comma Categories}{59}{subsubsection.3.9.5}
-\contentsline {subsubsubsection}{\numberline {3.9.5.1}Category of objects unber b $(b \delimiter "3223379 C)$}{59}{subsubsubsection.3.9.5.1}
-\contentsline {subsubsubsection}{\numberline {3.9.5.2}Category of objects over a $(C \delimiter "3223379 a)$}{60}{subsubsubsection.3.9.5.2}
-\contentsline {subsubsubsection}{\numberline {3.9.5.3}Category of objects $S$-unber b $(b \delimiter "3223379 S)$}{60}{subsubsubsection.3.9.5.3}
-\contentsline {subsubsubsection}{\numberline {3.9.5.4}Category of objects $T$-over a $(T \delimiter "3223379 a)$}{60}{subsubsubsection.3.9.5.4}
-\contentsline {subsubsubsection}{\numberline {3.9.5.5}Comma Category $(T \delimiter "3223379 S)$}{61}{subsubsubsection.3.9.5.5}
-\contentsline {subsection}{\numberline {3.10}Higher Level Categories}{62}{subsection.3.10}
-\contentsline {subsubsection}{\numberline {3.10.1}Functor Categories}{62}{subsubsection.3.10.1}
-\contentsline {subsubsection}{\numberline {3.10.2}2-Categories}{62}{subsubsection.3.10.2}
-\contentsline {subsubsubsection}{\numberline {3.10.2.1}Vertical Composition}{62}{subsubsubsection.3.10.2.1}
-\contentsline {subsubsubsection}{\numberline {3.10.2.2}Horizontal Composition}{62}{subsubsubsection.3.10.2.2}
-\contentsline {subsubsubsection}{\numberline {3.10.2.3}Interchange Law}{63}{subsubsubsection.3.10.2.3}
-\contentsline {subsubsubsection}{\numberline {3.10.2.4}Double Category}{64}{subsubsubsection.3.10.2.4}
-\contentsline {subsubsubsection}{\numberline {3.10.2.5}2-Category}{64}{subsubsubsection.3.10.2.5}
-\contentsline {section}{\numberline {4}Category Examples}{65}{section.4}
-\contentsline {subsection}{\numberline {4.1}The category Set}{65}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Morphisms}{65}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Universal Objects}{65}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}The category Grp}{65}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Morphisms}{66}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Isomorphism Theorems}{66}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Universal Objects}{68}{subsubsection.4.2.3}
-\contentsline {subsection}{\numberline {4.3}The category Ab}{68}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Morphisms}{68}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Universal Objects}{68}{subsubsection.4.3.2}
-\contentsline {subsection}{\numberline {4.4}The category Ring}{68}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}Morphisms}{69}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Isomorphism Theorems}{69}{subsubsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.3}Universal Objects}{70}{subsubsection.4.4.3}
-\contentsline {subsection}{\numberline {4.5}The category R-Mod}{70}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Morphisms}{70}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}Isomorphism Theorems}{71}{subsubsection.4.5.2}
-\contentsline {subsubsection}{\numberline {4.5.3}Universal Objects}{71}{subsubsection.4.5.3}
-\contentsline {section}{\numberline {5}Group Theory}{72}{section.5}
-\contentsline {subsection}{\numberline {5.1}Definition}{72}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Order}{72}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Order of an element}{72}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Order of a group}{73}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Index of a subgroup}{73}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}Lagrange's Theorem}{74}{subsubsection.5.2.4}
-\contentsline {subsubsection}{\numberline {5.2.5}Cauchy's Theorem}{74}{subsubsection.5.2.5}
-\contentsline {subsection}{\numberline {5.3}Homomorphism}{75}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Some Important Morphisms}{75}{subsubsection.5.3.1}
-\contentsline {subsubsubsection}{\numberline {5.3.1.1}Trivial Morphism}{75}{subsubsubsection.5.3.1.1}
-\contentsline {subsubsubsection}{\numberline {5.3.1.2}Exponential Map}{75}{subsubsubsection.5.3.1.2}
-\contentsline {subsubsection}{\numberline {5.3.2}Interaction with order}{75}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Isomophisms}{76}{subsubsection.5.3.3}
-\contentsline {subsection}{\numberline {5.4}Subgroup}{76}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Normal Subgroup}{76}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}Kernel of a Homomorphism}{76}{subsubsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.3}Image of a Homomorphism}{77}{subsubsection.5.4.3}
-\contentsline {subsubsection}{\numberline {5.4.4}Subgroup generated by a subset}{77}{subsubsection.5.4.4}
-\contentsline {subsubsubsection}{\numberline {5.4.4.1}Finitely Generated}{77}{subsubsubsection.5.4.4.1}
-\contentsline {subsubsection}{\numberline {5.4.5}Commutator Subgroup}{77}{subsubsection.5.4.5}
-\contentsline {subsection}{\numberline {5.5}Group Constructions}{78}{subsection.5.5}
-\contentsline {subsubsection}{\numberline {5.5.1}Product of Groups}{78}{subsubsection.5.5.1}
-\contentsline {subsubsection}{\numberline {5.5.2}Semidirect Product}{78}{subsubsection.5.5.2}
-\contentsline {subsubsubsection}{\numberline {5.5.2.1}Motivating Theorems}{78}{subsubsubsection.5.5.2.1}
-\contentsline {subsubsubsection}{\numberline {5.5.2.2}Definition}{79}{subsubsubsection.5.5.2.2}
-\contentsline {subsubsection}{\numberline {5.5.3}Free Product of Groups}{80}{subsubsection.5.5.3}
-\contentsline {subsubsection}{\numberline {5.5.4}Free Groups}{80}{subsubsection.5.5.4}
-\contentsline {subsubsubsection}{\numberline {5.5.4.1}Concrete construction}{80}{subsubsubsection.5.5.4.1}
-\contentsline {subsubsection}{\numberline {5.5.5}Quotient Group}{81}{subsubsection.5.5.5}
-\contentsline {subsubsubsection}{\numberline {5.5.5.1}Quotient Group by $\sim $}{81}{subsubsubsection.5.5.5.1}
-\contentsline {subsubsubsection}{\numberline {5.5.5.2}Cosets}{81}{subsubsubsection.5.5.5.2}
-\contentsline {subsubsubsection}{\numberline {5.5.5.3}Definition}{82}{subsubsubsection.5.5.5.3}
-\contentsline {subsubsubsection}{\numberline {5.5.5.4}Universal Property}{83}{subsubsubsection.5.5.5.4}
-\contentsline {subsection}{\numberline {5.6}Presentations}{83}{subsection.5.6}
-\contentsline {subsubsection}{\numberline {5.6.1}Finitely Presented}{83}{subsubsection.5.6.1}
-\contentsline {subsection}{\numberline {5.7}Group Actions}{83}{subsection.5.7}
-\contentsline {subsubsection}{\numberline {5.7.1}Natural Action}{84}{subsubsection.5.7.1}
-\contentsline {subsubsection}{\numberline {5.7.2}Transitive Actions}{84}{subsubsection.5.7.2}
-\contentsline {subsubsection}{\numberline {5.7.3}Orbit}{84}{subsubsection.5.7.3}
-\contentsline {subsubsection}{\numberline {5.7.4}Stabilizer Subgroup}{84}{subsubsection.5.7.4}
-\contentsline {subsubsection}{\numberline {5.7.5}Category G-Set}{84}{subsubsection.5.7.5}
-\contentsline {subsubsection}{\numberline {5.7.6}Fixed Point Set}{85}{subsubsection.5.7.6}
-\contentsline {subsubsection}{\numberline {5.7.7}Center}{86}{subsubsection.5.7.7}
-\contentsline {subsubsection}{\numberline {5.7.8}Conjugation Action}{86}{subsubsection.5.7.8}
-\contentsline {subsubsubsection}{\numberline {5.7.8.1}Centralizer and Normalizer}{86}{subsubsubsection.5.7.8.1}
-\contentsline {subsubsubsection}{\numberline {5.7.8.2}Conjugacy Class}{87}{subsubsubsection.5.7.8.2}
-\contentsline {subsection}{\numberline {5.8}Sylow Theorems}{87}{subsection.5.8}
-\contentsline {subsubsection}{\numberline {5.8.1}$p$-Sylow subgroups}{87}{subsubsection.5.8.1}
-\contentsline {subsubsection}{\numberline {5.8.2}Sylow I}{87}{subsubsection.5.8.2}
-\contentsline {subsubsection}{\numberline {5.8.3}Sylow II}{88}{subsubsection.5.8.3}
-\contentsline {subsubsection}{\numberline {5.8.4}Sylow III}{89}{subsubsection.5.8.4}
-\contentsline {subsection}{\numberline {5.9}Simple Groups}{89}{subsection.5.9}
-\contentsline {subsection}{\numberline {5.10}Series of Gropus}{89}{subsection.5.10}
-\contentsline {subsubsection}{\numberline {5.10.1}Series of Subgroups}{89}{subsubsection.5.10.1}
-\contentsline {subsubsection}{\numberline {5.10.2}Normal Series}{90}{subsubsection.5.10.2}
-\contentsline {subsubsubsection}{\numberline {5.10.2.1}Maximal Length}{90}{subsubsubsection.5.10.2.1}
-\contentsline {subsubsection}{\numberline {5.10.3}Composition Series}{90}{subsubsection.5.10.3}
-\contentsline {subsubsection}{\numberline {5.10.4}Refinement of a Series}{92}{subsubsection.5.10.4}
-\contentsline {subsubsection}{\numberline {5.10.5}Derived Series}{93}{subsubsection.5.10.5}
-\contentsline {subsubsection}{\numberline {5.10.6}Solvable}{93}{subsubsection.5.10.6}
-\contentsline {section}{\numberline {6}Abelian Group Theory}{94}{section.6}
-\contentsline {subsection}{\numberline {6.1}Definition}{94}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Homomorphisms of Abelian Groups}{94}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Abelian Subgroups}{96}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Cokernel of a Homomorphism}{96}{subsubsection.6.3.1}
-\contentsline {subsection}{\numberline {6.4}Abelian Group Constructions}{96}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}Free Abelian Groups}{96}{subsubsection.6.4.1}
-\contentsline {subsection}{\numberline {6.5}Classification of Finite Abelian Groups}{97}{subsection.6.5}
-\contentsline {section}{\numberline {7}Group Examples}{99}{section.7}
-\contentsline {subsection}{\numberline {7.1}Trivial Group}{99}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}$p$-groups}{99}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}Definition}{99}{subsubsection.7.2.1}
-\contentsline {subsection}{\numberline {7.3}Cyclic Groups}{99}{subsection.7.3}
-\contentsline {subsubsection}{\numberline {7.3.1}Modular Arithmetic}{99}{subsubsection.7.3.1}
-\contentsline {subsubsection}{\numberline {7.3.2}Definition}{99}{subsubsection.7.3.2}
-\contentsline {subsubsection}{\numberline {7.3.3}Presentation}{100}{subsubsection.7.3.3}
-\contentsline {subsubsection}{\numberline {7.3.4}Subgroups}{100}{subsubsection.7.3.4}
-\contentsline {subsection}{\numberline {7.4}Multiplicative group of integers modulo $n$}{101}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}Definition}{101}{subsubsection.7.4.1}
-\contentsline {subsubsection}{\numberline {7.4.2}Applications}{101}{subsubsection.7.4.2}
-\contentsline {subsection}{\numberline {7.5}Symmetric Group}{101}{subsection.7.5}
-\contentsline {subsubsection}{\numberline {7.5.1}Definition}{101}{subsubsection.7.5.1}
-\contentsline {subsubsection}{\numberline {7.5.2}Cycle}{101}{subsubsection.7.5.2}
-\contentsline {subsubsubsection}{\numberline {7.5.2.1}Disjoint Cycles}{102}{subsubsubsection.7.5.2.1}
-\contentsline {subsubsection}{\numberline {7.5.3}Type}{102}{subsubsection.7.5.3}
-\contentsline {subsection}{\numberline {7.6}Alternating Group}{103}{subsection.7.6}
-\contentsline {subsubsection}{\numberline {7.6.1}Sign of a permutation}{103}{subsubsection.7.6.1}
-\contentsline {subsubsection}{\numberline {7.6.2}Transposition}{103}{subsubsection.7.6.2}
-\contentsline {subsubsection}{\numberline {7.6.3}Definition}{103}{subsubsection.7.6.3}
-\contentsline {subsubsection}{\numberline {7.6.4}Conjugacy}{104}{subsubsection.7.6.4}
-\contentsline {subsubsection}{\numberline {7.6.5}Simplicity}{105}{subsubsection.7.6.5}
-\contentsline {subsubsection}{\numberline {7.6.6}Solvability}{106}{subsubsection.7.6.6}
-\contentsline {subsection}{\numberline {7.7}Dihedral Group}{107}{subsection.7.7}
-\contentsline {subsubsection}{\numberline {7.7.1}Definition}{107}{subsubsection.7.7.1}
-\contentsline {subsubsection}{\numberline {7.7.2}Presentation}{107}{subsubsection.7.7.2}
-\contentsline {subsection}{\numberline {7.8}General Linear Group}{107}{subsection.7.8}
-\contentsline {subsubsection}{\numberline {7.8.1}Definition}{107}{subsubsection.7.8.1}
-\contentsline {section}{\numberline {8}Ring Theory}{108}{section.8}
-\contentsline {subsection}{\numberline {8.1}Definitions}{108}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Divisor}{108}{subsubsection.8.1.1}
-\contentsline {subsubsubsection}{\numberline {8.1.1.1}Associates}{108}{subsubsubsection.8.1.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Commutative Rings}{108}{subsubsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.3}Subrings}{109}{subsubsection.8.1.3}
-\contentsline {subsubsection}{\numberline {8.1.4}Characteristic}{109}{subsubsection.8.1.4}
-\contentsline {subsection}{\numberline {8.2}Ideals}{109}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}Principal Ideals}{109}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Finitely Generated}{109}{subsubsection.8.2.2}
-\contentsline {subsubsection}{\numberline {8.2.3}Prime Ideals}{110}{subsubsection.8.2.3}
-\contentsline {subsubsection}{\numberline {8.2.4}Maximal Ideals}{110}{subsubsection.8.2.4}
-\contentsline {subsubsection}{\numberline {8.2.5}Chinese Remainder Theorem}{110}{subsubsection.8.2.5}
-\contentsline {subsection}{\numberline {8.3}Ring Homomorphisms}{111}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}Ring Constructions}{111}{subsection.8.4}
-\contentsline {subsubsection}{\numberline {8.4.1}Products}{111}{subsubsection.8.4.1}
-\contentsline {subsubsection}{\numberline {8.4.2}Quotients}{111}{subsubsection.8.4.2}
-\contentsline {subsection}{\numberline {8.5}Integral Domains}{112}{subsection.8.5}
-\contentsline {subsubsection}{\numberline {8.5.1}Zero-divisors}{112}{subsubsection.8.5.1}
-\contentsline {subsubsection}{\numberline {8.5.2}Definition}{112}{subsubsection.8.5.2}
-\contentsline {subsubsection}{\numberline {8.5.3}Associates in Integral Domains}{112}{subsubsection.8.5.3}
-\contentsline {subsubsection}{\numberline {8.5.4}Prime Element}{113}{subsubsection.8.5.4}
-\contentsline {subsubsection}{\numberline {8.5.5}Irreducible Element}{113}{subsubsection.8.5.5}
-\contentsline {subsubsection}{\numberline {8.5.6}Factorization}{113}{subsubsection.8.5.6}
-\contentsline {subsubsection}{\numberline {8.5.7}Domain with factorization}{113}{subsubsection.8.5.7}
-\contentsline {subsubsection}{\numberline {8.5.8}Greatest Common Divisor}{113}{subsubsection.8.5.8}
-\contentsline {subsubsection}{\numberline {8.5.9}Field of Fractions}{113}{subsubsection.8.5.9}
-\contentsline {subsection}{\numberline {8.6}Noetherian Rings}{114}{subsection.8.6}
-\contentsline {subsubsection}{\numberline {8.6.1}Factorization in Noetherian domains}{115}{subsubsection.8.6.1}
-\contentsline {subsection}{\numberline {8.7}Unique Factorization Domains}{115}{subsection.8.7}
-\contentsline {subsubsection}{\numberline {8.7.1}Definition}{115}{subsubsection.8.7.1}
-\contentsline {subsection}{\numberline {8.8}Principal Ideal Domains}{116}{subsection.8.8}
-\contentsline {subsubsection}{\numberline {8.8.1}Factorization}{116}{subsubsection.8.8.1}
-\contentsline {subsection}{\numberline {8.9}Euclidean Domains}{116}{subsection.8.9}
-\contentsline {subsubsection}{\numberline {8.9.1}Euclidean Valuation}{116}{subsubsection.8.9.1}
-\contentsline {subsubsection}{\numberline {8.9.2}Definition}{117}{subsubsection.8.9.2}
-\contentsline {subsubsection}{\numberline {8.9.3}Euclidean Algorithm}{117}{subsubsection.8.9.3}
-\contentsline {subsection}{\numberline {8.10}Division Rings}{117}{subsection.8.10}
-\contentsline {subsubsection}{\numberline {8.10.1}Units}{117}{subsubsection.8.10.1}
-\contentsline {subsubsection}{\numberline {8.10.2}Definition}{117}{subsubsection.8.10.2}
-\contentsline {subsection}{\numberline {8.11}Polynomial Rings}{118}{subsection.8.11}
-\contentsline {subsubsection}{\numberline {8.11.1}Polynomials}{118}{subsubsection.8.11.1}
-\contentsline {subsubsubsection}{\numberline {8.11.1.1}Monic}{118}{subsubsubsection.8.11.1.1}
-\contentsline {subsubsection}{\numberline {8.11.2}Universal Property}{119}{subsubsection.8.11.2}
-\contentsline {subsubsubsection}{\numberline {8.11.2.1}Evaluation Map and Polynomial Functions}{119}{subsubsubsection.8.11.2.1}
-\contentsline {subsubsection}{\numberline {8.11.3}Quotients of Polynomial Rings}{120}{subsubsection.8.11.3}
-\contentsline {subsubsection}{\numberline {8.11.4}Ideals in Polynomial Rings}{120}{subsubsection.8.11.4}
-\contentsline {subsubsection}{\numberline {8.11.5}Primitivity}{121}{subsubsection.8.11.5}
-\contentsline {subsubsection}{\numberline {8.11.6}Content}{121}{subsubsection.8.11.6}
-\contentsline {subsubsection}{\numberline {8.11.7}Field of rational functions}{121}{subsubsection.8.11.7}
-\contentsline {subsubsection}{\numberline {8.11.8}Factorization in polynomial rings}{121}{subsubsection.8.11.8}
-\contentsline {subsubsection}{\numberline {8.11.9}Irreducibility in polynomial rings}{122}{subsubsection.8.11.9}
-\contentsline {subsubsection}{\numberline {8.11.10}Eisenstein's Criterion}{122}{subsubsection.8.11.10}
-\contentsline {subsubsection}{\numberline {8.11.11}Cyclotomic Polynomials}{123}{subsubsection.8.11.11}
-\contentsline {section}{\numberline {9}Field Theory}{124}{section.9}
-\contentsline {subsection}{\numberline {9.1}Definitions}{124}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Finite Subgroups of Multiplicative Groups of Fields}{124}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Algebraically Closed Fields}{124}{subsection.9.3}
-\contentsline {subsubsection}{\numberline {9.3.1}Polynomials Over Fields}{124}{subsubsection.9.3.1}
-\contentsline {subsection}{\numberline {9.4}Field Extensions}{125}{subsection.9.4}
-\contentsline {subsubsection}{\numberline {9.4.1}Simple Extensions}{126}{subsubsection.9.4.1}
-\contentsline {subsubsection}{\numberline {9.4.2}Group of Automorphisms of an Extension}{126}{subsubsection.9.4.2}
-\contentsline {subsubsection}{\numberline {9.4.3}Algebraic Extensions}{127}{subsubsection.9.4.3}
-\contentsline {subsubsection}{\numberline {9.4.4}Finitely Generated Extension}{127}{subsubsection.9.4.4}
-\contentsline {subsubsection}{\numberline {9.4.5}Algebraic Closure}{127}{subsubsection.9.4.5}
-\contentsline {section}{\numberline {10}Modules}{129}{section.10}
-\contentsline {subsection}{\numberline {10.1}Definitions}{129}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Homomorphisms of $R$-modules}{129}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Constructions}{129}{subsection.10.3}
-\contentsline {subsubsection}{\numberline {10.3.1}Products and Coproducts}{129}{subsubsection.10.3.1}
-\contentsline {subsubsection}{\numberline {10.3.2}Quotient Modules}{130}{subsubsection.10.3.2}
-\contentsline {subsection}{\numberline {10.4}Submodules}{130}{subsection.10.4}
-\contentsline {subsubsection}{\numberline {10.4.1}Generated Submodules}{130}{subsubsection.10.4.1}
-\contentsline {subsubsubsection}{\numberline {10.4.1.1}Finitely Generated}{130}{subsubsubsection.10.4.1.1}
-\contentsline {subsubsection}{\numberline {10.4.2}Noetherian Modules}{130}{subsubsection.10.4.2}
-\contentsline {subsection}{\numberline {10.5}Free Modules}{131}{subsection.10.5}
-\contentsline {subsubsection}{\numberline {10.5.1}Linearly Independent}{131}{subsubsection.10.5.1}
-\contentsline {subsubsection}{\numberline {10.5.2}Generating Set}{132}{subsubsection.10.5.2}
-\contentsline {subsubsection}{\numberline {10.5.3}Basis}{132}{subsubsection.10.5.3}
-\contentsline {subsubsection}{\numberline {10.5.4}Rank}{133}{subsubsection.10.5.4}
-\contentsline {subsection}{\numberline {10.6}Homomorphisms of free modules}{133}{subsection.10.6}
-\contentsline {subsubsection}{\numberline {10.6.1}Matrices}{133}{subsubsection.10.6.1}
-\contentsline {subsubsection}{\numberline {10.6.2}Change of Basis}{134}{subsubsection.10.6.2}
-\contentsline {subsubsection}{\numberline {10.6.3}Equivalent Matrices}{135}{subsubsection.10.6.3}
-\contentsline {subsubsection}{\numberline {10.6.4}Elementary Operations}{135}{subsubsection.10.6.4}
-\contentsline {subsubsection}{\numberline {10.6.5}Gaussian Elimination over Euclidean domains}{136}{subsubsection.10.6.5}
-\contentsline {subsubsection}{\numberline {10.6.6}The Determinant}{137}{subsubsection.10.6.6}
-\contentsline {subsubsection}{\numberline {10.6.7}Cofactors of a square matrix}{137}{subsubsection.10.6.7}
-\contentsline {subsection}{\numberline {10.7}Presentations}{138}{subsection.10.7}
-\contentsline {subsubsection}{\numberline {10.7.1}Torsion}{138}{subsubsection.10.7.1}
-\contentsline {subsubsection}{\numberline {10.7.2}Cyclic}{138}{subsubsection.10.7.2}
-\contentsline {subsubsection}{\numberline {10.7.3}Annihilator}{138}{subsubsection.10.7.3}
-\contentsline {subsubsection}{\numberline {10.7.4}Definition of Presentation}{139}{subsubsection.10.7.4}
-\contentsline {subsubsection}{\numberline {10.7.5}Resolution}{139}{subsubsection.10.7.5}
-\contentsline {subsection}{\numberline {10.8}Classification of Finitely Generated Modules over PIDs}{140}{subsection.10.8}
-\contentsline {subsubsection}{\numberline {10.8.1}Rank of a finitely generated module}{141}{subsubsection.10.8.1}
-\contentsline {subsection}{\numberline {10.9}Linear Transformations}{142}{subsection.10.9}
-\contentsline {subsubsection}{\numberline {10.9.1}Similar Matrices}{142}{subsubsection.10.9.1}
-\contentsline {subsubsection}{\numberline {10.9.2}Similar Homomorphisms}{142}{subsubsection.10.9.2}
-\contentsline {subsubsection}{\numberline {10.9.3}Determinant of a Homomorphism}{142}{subsubsection.10.9.3}
-\contentsline {subsubsection}{\numberline {10.9.4}Trace}{142}{subsubsection.10.9.4}
-\contentsline {subsubsection}{\numberline {10.9.5}Characteristic Polynomial}{143}{subsubsection.10.9.5}
-\contentsline {subsubsection}{\numberline {10.9.6}Annihilator Ideal}{143}{subsubsection.10.9.6}
-\contentsline {subsubsection}{\numberline {10.9.7}Minimal Polynomial}{143}{subsubsection.10.9.7}
-\contentsline {subsubsection}{\numberline {10.9.8}Eigenvalues}{143}{subsubsection.10.9.8}
-\contentsline {subsubsubsection}{\numberline {10.9.8.1}Algebraic Multiplicity}{144}{subsubsubsection.10.9.8.1}
-\contentsline {subsubsection}{\numberline {10.9.9}Eigenvector}{144}{subsubsection.10.9.9}
-\contentsline {subsubsection}{\numberline {10.9.10}Eigenspace}{144}{subsubsection.10.9.10}
-\contentsline {subsubsubsection}{\numberline {10.9.10.1}Geometric Multiplicity}{144}{subsubsubsection.10.9.10.1}
-\contentsline {subsubsection}{\numberline {10.9.11}Diagonalizable}{144}{subsubsection.10.9.11}
-\contentsline {section}{\numberline {11}Linear Algebra}{145}{section.11}
-\contentsline {subsection}{\numberline {11.1}Definitions}{145}{subsection.11.1}
-\contentsline {subsubsection}{\numberline {11.1.1}Vector Space}{145}{subsubsection.11.1.1}
-\contentsline {subsubsection}{\numberline {11.1.2}Dimension}{145}{subsubsection.11.1.2}
-\contentsline {subsubsection}{\numberline {11.1.3}General Linear Group over a Field}{145}{subsubsection.11.1.3}
-\contentsline {subsubsection}{\numberline {11.1.4}Column/Row Space of a Matrix}{145}{subsubsection.11.1.4}
-\contentsline {subsubsection}{\numberline {11.1.5}Column/Row Rank of a Matrix}{146}{subsubsection.11.1.5}
-\contentsline {subsubsection}{\numberline {11.1.6}Rank and Nullity of a linear map}{146}{subsubsection.11.1.6}
-\contentsline {subsection}{\numberline {11.2}Canonical Forms}{146}{subsection.11.2}
-\contentsline {subsubsection}{\numberline {11.2.1}Companion Matrix of a polynomial}{147}{subsubsection.11.2.1}
-\contentsline {subsubsection}{\numberline {11.2.2}Rational Canonical Forms}{148}{subsubsection.11.2.2}
-\contentsline {subsubsection}{\numberline {11.2.3}Jordan Block corresponding to an eigenvalue}{149}{subsubsection.11.2.3}
-\contentsline {subsubsection}{\numberline {11.2.4}Jordan Canonical Form}{149}{subsubsection.11.2.4}
-\contentsline {subsection}{\numberline {11.3}Simplicial Complexes}{149}{subsection.11.3}
-\contentsline {subsubsection}{\numberline {11.3.1}General Position}{149}{subsubsection.11.3.1}
-\contentsline {subsubsection}{\numberline {11.3.2}Simplex}{150}{subsubsection.11.3.2}
-\contentsline {subsubsection}{\numberline {11.3.3}Barycentric Coordinantes}{150}{subsubsection.11.3.3}
-\contentsline {subsubsubsection}{\numberline {11.3.3.1}Barycenter of a simplex}{150}{subsubsubsection.11.3.3.1}
-\contentsline {subsubsection}{\numberline {11.3.4}Geometric Simplicial Complex}{150}{subsubsection.11.3.4}
-\contentsline {subsubsection}{\numberline {11.3.5}Realization of a Geometric Simplicial Complex}{150}{subsubsection.11.3.5}
-\contentsline {subsubsection}{\numberline {11.3.6}Abstract Simplicial Complex}{151}{subsubsection.11.3.6}
-\contentsline {subsubsection}{\numberline {11.3.7}Triangulable}{151}{subsubsection.11.3.7}
-\contentsline {subsubsection}{\numberline {11.3.8}Subcomplex}{151}{subsubsection.11.3.8}
-\contentsline {subsubsection}{\numberline {11.3.9}Simplicial Mappings}{151}{subsubsection.11.3.9}
-\contentsline {subsubsection}{\numberline {11.3.10}Barycentric Subdivision}{151}{subsubsection.11.3.10}
-\contentsline {subsubsection}{\numberline {11.3.11}Diameter of a Simplex}{151}{subsubsection.11.3.11}
-\contentsline {subsubsection}{\numberline {11.3.12}Mesh}{152}{subsubsection.11.3.12}
-\contentsline {subsubsection}{\numberline {11.3.13}Star of a vertex}{153}{subsubsection.11.3.13}
-\contentsline {subsubsection}{\numberline {11.3.14}Open star of a vertex}{153}{subsubsection.11.3.14}
-\contentsline {subsubsection}{\numberline {11.3.15}Simplicial Approximation}{154}{subsubsection.11.3.15}
-\contentsline {subsubsection}{\numberline {11.3.16}Contiguous Mappings}{154}{subsubsection.11.3.16}
-\contentsline {section}{\numberline {12}Algebras}{155}{section.12}
-\contentsline {subsection}{\numberline {12.1}Definitions}{155}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Homomorphisms of $R$-algebras}{155}{subsection.12.2}
-\contentsline {subsection}{\numberline {12.3}Free Algebras}{155}{subsection.12.3}
-\contentsline {subsubsection}{\numberline {12.3.1}Finite Type}{155}{subsubsection.12.3.1}
-\contentsline {section}{\numberline {13}Topology}{156}{section.13}
-\contentsline {subsection}{\numberline {13.1}Topological Spaces}{156}{subsection.13.1}
-\contentsline {subsubsection}{\numberline {13.1.1}Topological Space}{156}{subsubsection.13.1.1}
-\contentsline {subsubsubsection}{\numberline {13.1.1.1}Finer}{156}{subsubsubsection.13.1.1.1}
-\contentsline {subsubsubsection}{\numberline {13.1.1.2}Coarser}{156}{subsubsubsection.13.1.1.2}
-\contentsline {subsubsection}{\numberline {13.1.2}Basis}{156}{subsubsection.13.1.2}
-\contentsline {subsubsection}{\numberline {13.1.3}Continuity}{157}{subsubsection.13.1.3}
-\contentsline {subsubsubsection}{\numberline {13.1.3.1}Open Mappings}{157}{subsubsubsection.13.1.3.1}
-\contentsline {subsubsection}{\numberline {13.1.4}Homeomorphism}{157}{subsubsection.13.1.4}
-\contentsline {subsubsubsection}{\numberline {13.1.4.1}Homeomorphic Spaces}{157}{subsubsubsection.13.1.4.1}
-\contentsline {subsection}{\numberline {13.2}Geometric Notions}{157}{subsection.13.2}
-\contentsline {subsubsection}{\numberline {13.2.1}Closed Subset}{157}{subsubsection.13.2.1}
-\contentsline {subsubsection}{\numberline {13.2.2}Limit Point}{157}{subsubsection.13.2.2}
-\contentsline {subsubsection}{\numberline {13.2.3}Interior}{158}{subsubsection.13.2.3}
-\contentsline {subsubsection}{\numberline {13.2.4}Closure}{158}{subsubsection.13.2.4}
-\contentsline {subsubsection}{\numberline {13.2.5}Boundary}{158}{subsubsection.13.2.5}
-\contentsline {subsubsection}{\numberline {13.2.6}Convergence}{158}{subsubsection.13.2.6}
-\contentsline {subsection}{\numberline {13.3}Separation}{159}{subsection.13.3}
-\contentsline {subsubsection}{\numberline {13.3.1}T1}{159}{subsubsection.13.3.1}
-\contentsline {subsubsection}{\numberline {13.3.2}Hausdorff (T2)}{159}{subsubsection.13.3.2}
-\contentsline {subsubsection}{\numberline {13.3.3}Separable}{159}{subsubsection.13.3.3}
-\contentsline {subsubsubsection}{\numberline {13.3.3.1}Dense}{159}{subsubsubsection.13.3.3.1}
-\contentsline {subsubsubsection}{\numberline {13.3.3.2}Definition}{159}{subsubsubsection.13.3.3.2}
-\contentsline {subsection}{\numberline {13.4}Connectedness}{159}{subsection.13.4}
-\contentsline {subsubsection}{\numberline {13.4.1}Disconnected}{159}{subsubsection.13.4.1}
-\contentsline {subsubsection}{\numberline {13.4.2}Connected}{160}{subsubsection.13.4.2}
-\contentsline {subsubsection}{\numberline {13.4.3}Connected Component}{160}{subsubsection.13.4.3}
-\contentsline {subsubsection}{\numberline {13.4.4}Path Connected}{160}{subsubsection.13.4.4}
-\contentsline {subsubsubsection}{\numberline {13.4.4.1}Path Component}{161}{subsubsubsection.13.4.4.1}
-\contentsline {subsubsection}{\numberline {13.4.5}Locally Path-Connected}{161}{subsubsection.13.4.5}
-\contentsline {subsection}{\numberline {13.5}Compactness}{161}{subsection.13.5}
-\contentsline {subsubsection}{\numberline {13.5.1}Locally Compact}{162}{subsubsection.13.5.1}
-\contentsline {subsection}{\numberline {13.6}Constructions}{162}{subsection.13.6}
-\contentsline {subsubsection}{\numberline {13.6.1}Subspace Topology}{162}{subsubsection.13.6.1}
-\contentsline {subsubsection}{\numberline {13.6.2}Product Topology}{163}{subsubsection.13.6.2}
-\contentsline {subsubsubsection}{\numberline {13.6.2.1}Infinite Product Topology}{163}{subsubsubsection.13.6.2.1}
-\contentsline {subsubsection}{\numberline {13.6.3}Quotient Topology}{164}{subsubsection.13.6.3}
-\contentsline {subsubsubsection}{\numberline {13.6.3.1}Quotient Map}{164}{subsubsubsection.13.6.3.1}
-\contentsline {subsection}{\numberline {13.7}Examples}{164}{subsection.13.7}
-\contentsline {subsubsection}{\numberline {13.7.1}Topology Examples}{164}{subsubsection.13.7.1}
-\contentsline {subsubsubsection}{\numberline {13.7.1.1}Indiscrete Topology}{164}{subsubsubsection.13.7.1.1}
-\contentsline {subsubsubsection}{\numberline {13.7.1.2}Discrete Topology}{164}{subsubsubsection.13.7.1.2}
-\contentsline {subsubsubsection}{\numberline {13.7.1.3}Finite Complement Topology}{164}{subsubsubsection.13.7.1.3}
-\contentsline {subsubsubsection}{\numberline {13.7.1.4}Included Point Topology}{164}{subsubsubsection.13.7.1.4}
-\contentsline {subsubsubsection}{\numberline {13.7.1.5}Compact-open Topology}{165}{subsubsubsection.13.7.1.5}
-\contentsline {subsubsection}{\numberline {13.7.2}Space Examples}{165}{subsubsection.13.7.2}
-\contentsline {subsubsubsection}{\numberline {13.7.2.1}Torus}{165}{subsubsubsection.13.7.2.1}
-\contentsline {subsubsubsection}{\numberline {13.7.2.2}M\"obius Strip}{165}{subsubsubsection.13.7.2.2}
-\contentsline {subsubsubsection}{\numberline {13.7.2.3}Projective Space}{165}{subsubsubsection.13.7.2.3}
-\contentsline {subsubsubsection}{\numberline {13.7.2.4}Cone}{165}{subsubsubsection.13.7.2.4}
-\contentsline {subsubsubsection}{\numberline {13.7.2.5}Suspension}{166}{subsubsubsection.13.7.2.5}
-\contentsline {subsubsubsection}{\numberline {13.7.2.6}Pointed Suspension}{166}{subsubsubsection.13.7.2.6}
-\contentsline {subsubsubsection}{\numberline {13.7.2.7}One-point Compactification}{167}{subsubsubsection.13.7.2.7}
-\contentsline {subsection}{\numberline {13.8}Topological Properties}{167}{subsection.13.8}
-\contentsline {subsubsection}{\numberline {13.8.1}First Countable}{167}{subsubsection.13.8.1}
-\contentsline {subsubsection}{\numberline {13.8.2}Second Countable}{167}{subsubsection.13.8.2}
-\contentsline {subsubsection}{\numberline {13.8.3}Connectedness}{167}{subsubsection.13.8.3}
-\contentsline {subsubsection}{\numberline {13.8.4}Connected Componenents}{167}{subsubsection.13.8.4}
-\contentsline {subsubsection}{\numberline {13.8.5}Path-connectedness}{167}{subsubsection.13.8.5}
-\contentsline {subsubsection}{\numberline {13.8.6}Fundamental Group}{167}{subsubsection.13.8.6}
-\contentsline {subsection}{\numberline {13.9}Hereditary}{168}{subsection.13.9}
-\contentsline {section}{\numberline {14}Metric Spaces}{169}{section.14}
-\contentsline {subsection}{\numberline {14.1}Definition}{169}{subsection.14.1}
-\contentsline {subsubsection}{\numberline {14.1.1}Open Ball}{169}{subsubsection.14.1.1}
-\contentsline {subsubsection}{\numberline {14.1.2}Bounded}{169}{subsubsection.14.1.2}
-\contentsline {subsubsection}{\numberline {14.1.3}Continuity}{169}{subsubsection.14.1.3}
-\contentsline {subsubsection}{\numberline {14.1.4}Convergence}{170}{subsubsection.14.1.4}
-\contentsline {subsubsection}{\numberline {14.1.5}Uniform Convergence}{170}{subsubsection.14.1.5}
-\contentsline {subsubsection}{\numberline {14.1.6}Lebesgue's Lemma}{171}{subsubsection.14.1.6}
-\contentsline {subsubsubsection}{\numberline {14.1.6.1}Diameter}{171}{subsubsubsection.14.1.6.1}
-\contentsline {subsection}{\numberline {14.2}Examples}{171}{subsection.14.2}
-\contentsline {subsubsection}{\numberline {14.2.1}Euclidean Metric Space}{171}{subsubsection.14.2.1}
-\contentsline {subsubsection}{\numberline {14.2.2}Box Metric Space}{171}{subsubsection.14.2.2}
-\contentsline {subsubsection}{\numberline {14.2.3}Standard Bounded Metric corresponding to a metric}{171}{subsubsection.14.2.3}
-\contentsline {subsubsection}{\numberline {14.2.4}Bounded Real Functions Metric Space}{172}{subsubsection.14.2.4}
-\contentsline {subsubsection}{\numberline {14.2.5}Discrete Metric space}{172}{subsubsection.14.2.5}
-\contentsline {section}{\numberline {15}Real Analysis}{173}{section.15}
-\contentsline {section}{\numberline {16}Homotopy}{174}{section.16}
-\contentsline {subsection}{\numberline {16.1}Definition}{174}{subsection.16.1}
-\contentsline {subsubsection}{\numberline {16.1.1}Homotopy of functions}{174}{subsubsection.16.1.1}
-\contentsline {subsubsection}{\numberline {16.1.2}Space of Based Loops}{174}{subsubsection.16.1.2}
-\contentsline {subsubsubsection}{\numberline {16.1.2.1}Loop Homotopy}{174}{subsubsubsection.16.1.2.1}
-\contentsline {subsection}{\numberline {16.2}Fundamental Group}{175}{subsection.16.2}
-\contentsline {subsection}{\numberline {16.3}Retractions}{175}{subsection.16.3}
-\contentsline {subsubsection}{\numberline {16.3.1}Retract}{175}{subsubsection.16.3.1}
-\contentsline {subsubsubsection}{\numberline {16.3.1.1}Deformation Retract}{175}{subsubsubsection.16.3.1.1}
-\contentsline {subsubsubsection}{\numberline {16.3.1.2}Contractible}{175}{subsubsubsection.16.3.1.2}
-\contentsline {subsubsubsection}{\numberline {16.3.1.3}Simply-Connected}{176}{subsubsubsection.16.3.1.3}
-\contentsline {subsection}{\numberline {16.4}Covering Spaces}{176}{subsection.16.4}
-\contentsline {subsubsection}{\numberline {16.4.1}Path Lifting}{176}{subsubsection.16.4.1}
-\contentsline {subsubsection}{\numberline {16.4.2}Homotopy Lifting}{177}{subsubsection.16.4.2}
-\contentsline {subsubsection}{\numberline {16.4.3}Fundamental Group Computations}{178}{subsubsection.16.4.3}
-\contentsline {subsection}{\numberline {16.5}Applications}{181}{subsection.16.5}
-\contentsline {subsection}{\numberline {16.6}Homotopy Type}{182}{subsection.16.6}
-\contentsline {subsubsection}{\numberline {16.6.1}Homotopy Equivalent}{182}{subsubsection.16.6.1}
-\contentsline {subsubsection}{\numberline {16.6.2}Definition}{182}{subsubsection.16.6.2}
-\contentsline {subsubsection}{\numberline {16.6.3}Homotopy Invariance}{183}{subsubsection.16.6.3}
-\contentsline {section}{\numberline {17}Homology}{184}{section.17}
-\contentsline {subsection}{\numberline {17.1}Complexes}{184}{subsection.17.1}
-\contentsline {subsubsection}{\numberline {17.1.1}Exactness}{184}{subsubsection.17.1.1}
-\contentsline {subsubsection}{\numberline {17.1.2}Split}{184}{subsubsection.17.1.2}
-\contentsline {subsection}{\numberline {17.2}Definitions}{185}{subsection.17.2}
-\contentsline {subsection}{\numberline {17.3}Euler Characteristic}{185}{subsection.17.3}
-\contentsline {subsubsection}{\numberline {17.3.1}Grothendieck Group}{186}{subsubsection.17.3.1}
-\contentsline {subsection}{\numberline {17.4}Applications to Simplicial Complexes}{187}{subsection.17.4}
-\contentsline {subsubsection}{\numberline {17.4.1}Space of p-chains}{187}{subsubsection.17.4.1}
-\contentsline {subsubsection}{\numberline {17.4.2}Boundary Homomorphisms}{187}{subsubsection.17.4.2}
-\contentsline {subsubsection}{\numberline {17.4.3}Space of p-cycles}{188}{subsubsection.17.4.3}
-\contentsline {subsubsection}{\numberline {17.4.4}Space of p-boundaries}{188}{subsubsection.17.4.4}
-\contentsline {subsubsection}{\numberline {17.4.5}Chain Homotopies}{188}{subsubsection.17.4.5}
-\contentsline {subsubsection}{\numberline {17.4.6}Topological Invariance}{188}{subsubsection.17.4.6}
-\contentsline {section}{\numberline {18}Fundamental Theorem of Algebra}{191}{section.18}
-\contentsline {subsection}{\numberline {18.1}Gauss's Incomplete Proof}{191}{subsection.18.1}
-\contentsline {subsection}{\numberline {18.2}Homotopy Proof}{193}{subsection.18.2}
-\contentsline {subsection}{\numberline {18.3}Sketch of Proof in Complex Analysis}{194}{subsection.18.3}
-\contentsline {section}{\numberline {19}Dimension}{195}{section.19}
-\contentsline {subsection}{\numberline {19.1}Dimensions are Equinumerous}{195}{subsection.19.1}
-\contentsline {subsection}{\numberline {19.2}Space Filling Curves}{195}{subsection.19.2}
-\contentsline {subsubsection}{\numberline {19.2.1}Peano Curve}{195}{subsubsection.19.2.1}
-\contentsline {subsubsubsection}{\numberline {19.2.1.1}Ternary Expansion}{195}{subsubsubsection.19.2.1.1}
-\contentsline {subsubsection}{\numberline {19.2.2}Definition}{195}{subsubsection.19.2.2}
-\contentsline {subsection}{\numberline {19.3}Connectedness}{197}{subsection.19.3}
-\contentsline {subsection}{\numberline {19.4}Homotopy}{197}{subsection.19.4}
-\contentsline {subsection}{\numberline {19.5}Homology}{198}{subsection.19.5}
-\contentsline {section}{\numberline {20}Algebraic Geometry}{199}{section.20}
+\contentsline {section}{\numberline {1}Set Theory}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Set Axioms}{2}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Undefined notions}{2}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Axioms}{2}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}Universe}{2}{subsubsection.1.1.3}
+\contentsline {subsection}{\numberline {1.2}Set Constructions}{3}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Union}{3}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Intersection}{3}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Complement}{3}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}Symmetric Difference}{4}{subsubsection.1.2.4}
+\contentsline {subsubsection}{\numberline {1.2.5}Power Set}{5}{subsubsection.1.2.5}
+\contentsline {subsubsubsection}{\numberline {1.2.5.1}Characteristic Function of a subset}{5}{subsubsubsection.1.2.5.1}
+\contentsline {subsubsection}{\numberline {1.2.6}$n$-Tuple}{5}{subsubsection.1.2.6}
+\contentsline {subsubsection}{\numberline {1.2.7}Cartesian Product}{5}{subsubsection.1.2.7}
+\contentsline {subsubsection}{\numberline {1.2.8}Quotient by Equivalence Relation}{5}{subsubsection.1.2.8}
+\contentsline {subsubsection}{\numberline {1.2.9}Family}{6}{subsubsection.1.2.9}
+\contentsline {subsection}{\numberline {1.3}Relations}{6}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Equivalence Relations}{6}{subsubsection.1.3.1}
+\contentsline {subsubsubsection}{\numberline {1.3.1.1}Equivalence Class}{6}{subsubsubsection.1.3.1.1}
+\contentsline {subsubsubsection}{\numberline {1.3.1.2}Set of Equivalence Classes}{6}{subsubsubsection.1.3.1.2}
+\contentsline {subsubsubsection}{\numberline {1.3.1.3}Set Partition}{6}{subsubsubsection.1.3.1.3}
+\contentsline {subsubsubsection}{\numberline {1.3.1.4}Congruence Relation}{6}{subsubsubsection.1.3.1.4}
+\contentsline {subsubsection}{\numberline {1.3.2}Functions}{7}{subsubsection.1.3.2}
+\contentsline {subsubsubsection}{\numberline {1.3.2.1}Injection}{7}{subsubsubsection.1.3.2.1}
+\contentsline {subsubsubsection}{\numberline {1.3.2.2}Surjection}{7}{subsubsubsection.1.3.2.2}
+\contentsline {subsubsubsection}{\numberline {1.3.2.3}Bijection}{7}{subsubsubsection.1.3.2.3}
+\contentsline {subsubsubsection}{\numberline {1.3.2.4}Restriction}{7}{subsubsubsection.1.3.2.4}
+\contentsline {subsubsubsection}{\numberline {1.3.2.5}Image}{7}{subsubsubsection.1.3.2.5}
+\contentsline {subsubsubsection}{\numberline {1.3.2.6}Preimage}{7}{subsubsubsection.1.3.2.6}
+\contentsline {subsubsubsection}{\numberline {1.3.2.7}Function Composition}{8}{subsubsubsection.1.3.2.7}
+\contentsline {subsection}{\numberline {1.4}Natural Numbers}{8}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Successor}{8}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Inductive}{8}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}Natural Number}{8}{subsubsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.4}Peano's Postulates}{9}{subsubsection.1.4.4}
+\contentsline {subsubsubsection}{\numberline {1.4.4.1}Peano System}{9}{subsubsubsection.1.4.4.1}
+\contentsline {subsubsubsection}{\numberline {1.4.4.2}Transitive Set}{9}{subsubsubsection.1.4.4.2}
+\contentsline {subsubsection}{\numberline {1.4.5}Recursion}{9}{subsubsection.1.4.5}
+\contentsline {subsubsection}{\numberline {1.4.6}Arithmetic}{11}{subsubsection.1.4.6}
+\contentsline {subsubsubsection}{\numberline {1.4.6.1}Addition}{11}{subsubsubsection.1.4.6.1}
+\contentsline {subsubsubsection}{\numberline {1.4.6.2}Multiplication}{12}{subsubsubsection.1.4.6.2}
+\contentsline {subsubsubsection}{\numberline {1.4.6.3}Exponentiation}{12}{subsubsubsection.1.4.6.3}
+\contentsline {subsubsection}{\numberline {1.4.7}Ordering on the natural numbers}{12}{subsubsection.1.4.7}
+\contentsline {subsection}{\numberline {1.5}Constructing Number Systems}{13}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}The Integers}{14}{subsubsection.1.5.1}
+\contentsline {subsubsubsection}{\numberline {1.5.1.1}Addition}{14}{subsubsubsection.1.5.1.1}
+\contentsline {subsubsubsection}{\numberline {1.5.1.2}Multiplication}{14}{subsubsubsection.1.5.1.2}
+\contentsline {subsubsubsection}{\numberline {1.5.1.3}Order}{14}{subsubsubsection.1.5.1.3}
+\contentsline {subsubsection}{\numberline {1.5.2}The Rational Numbers}{14}{subsubsection.1.5.2}
+\contentsline {subsubsubsection}{\numberline {1.5.2.1}Addition}{15}{subsubsubsection.1.5.2.1}
+\contentsline {subsubsubsection}{\numberline {1.5.2.2}Multiplication}{15}{subsubsubsection.1.5.2.2}
+\contentsline {subsubsubsection}{\numberline {1.5.2.3}Order}{15}{subsubsubsection.1.5.2.3}
+\contentsline {subsubsection}{\numberline {1.5.3}The Real Numbers with Cauchy Sequences}{15}{subsubsection.1.5.3}
+\contentsline {subsubsection}{\numberline {1.5.4}The Real Numbers with Dedekind Cuts}{15}{subsubsection.1.5.4}
+\contentsline {subsubsubsection}{\numberline {1.5.4.1}Order}{16}{subsubsubsection.1.5.4.1}
+\contentsline {subsubsubsection}{\numberline {1.5.4.2}Addition}{16}{subsubsubsection.1.5.4.2}
+\contentsline {subsubsubsection}{\numberline {1.5.4.3}Multiplication}{16}{subsubsubsection.1.5.4.3}
+\contentsline {subsection}{\numberline {1.6}Cardinality}{17}{subsection.1.6}
+\contentsline {subsubsection}{\numberline {1.6.1}Equinumerosity}{17}{subsubsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.2}Finite/Infinite}{17}{subsubsection.1.6.2}
+\contentsline {subsubsection}{\numberline {1.6.3}Cardinal Numbers}{18}{subsubsection.1.6.3}
+\contentsline {subsubsubsection}{\numberline {1.6.3.1}Cardinal Arithmetic}{19}{subsubsubsection.1.6.3.1}
+\contentsline {subsubsubsection}{\numberline {1.6.3.2}Ordering Cardinal Numbers}{20}{subsubsubsection.1.6.3.2}
+\contentsline {subsubsubsection}{\numberline {1.6.3.3}Infinite Cardinal Arithmetic}{21}{subsubsubsection.1.6.3.3}
+\contentsline {subsection}{\numberline {1.7}Countable Sets}{21}{subsection.1.7}
+\contentsline {subsection}{\numberline {1.8}Axiom of Choice}{21}{subsection.1.8}
+\contentsline {subsection}{\numberline {1.9}Continuum Hypothesis}{22}{subsection.1.9}
+\contentsline {subsection}{\numberline {1.10}Ordinal Numbers}{22}{subsection.1.10}
+\contentsline {subsubsection}{\numberline {1.10.1}Partial Orderings}{22}{subsubsection.1.10.1}
+\contentsline {subsubsection}{\numberline {1.10.2}Linear Orderings}{22}{subsubsection.1.10.2}
+\contentsline {subsubsection}{\numberline {1.10.3}Well Orderings}{23}{subsubsection.1.10.3}
+\contentsline {subsubsection}{\numberline {1.10.4}Transfinite Recursion}{23}{subsubsection.1.10.4}
+\contentsline {subsubsection}{\numberline {1.10.5}Epsilon Images}{23}{subsubsection.1.10.5}
+\contentsline {subsubsection}{\numberline {1.10.6}Ordinal Numbers}{24}{subsubsection.1.10.6}
+\contentsline {subsubsection}{\numberline {1.10.7}Cardinal Numbers}{24}{subsubsection.1.10.7}
+\contentsline {section}{\numberline {2}Combinatorics}{25}{section.2}
+\contentsline {subsection}{\numberline {2.1}Basic Methods}{25}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Addition}{25}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Subtraction}{25}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Multiplication}{25}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Division}{25}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}Binomial Coefficients}{25}{subsubsection.2.1.5}
+\contentsline {subsubsection}{\numberline {2.1.6}Pigeonhole Principle}{26}{subsubsection.2.1.6}
+\contentsline {subsection}{\numberline {2.2}Applications of Basic Methods}{27}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Inclusion-Exclusion}{27}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Multisets}{28}{subsubsection.2.2.2}
+\contentsline {subsubsubsection}{\numberline {2.2.2.1}Multinomial Coefficients}{28}{subsubsubsection.2.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.3}Weak Compositions}{28}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Compositions}{28}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}Stirling numbers of the second kind}{29}{subsubsection.2.2.5}
+\contentsline {subsubsubsection}{\numberline {2.2.5.1}Bell numbers}{29}{subsubsubsection.2.2.5.1}
+\contentsline {subsubsection}{\numberline {2.2.6}Partitions of integers}{29}{subsubsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.7}Ferrers shapes}{30}{subsubsection.2.2.7}
+\contentsline {subsubsection}{\numberline {2.2.8}Euler's totient function}{30}{subsubsection.2.2.8}
+\contentsline {subsection}{\numberline {2.3}Permutations}{31}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Twelvefold Way}{31}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Functions from $K$ to $N$}{31}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Injections from $K$ to $N$}{31}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Surjections from $K$ to $N$}{31}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Injections from $K$ to $N$, up to a permutation of $K$}{31}{subsubsection.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.5}Functions from $K$ to $N$, up to a permutation of $K$}{31}{subsubsection.2.4.5}
+\contentsline {subsubsection}{\numberline {2.4.6}Surjections from $K$ to $N$, up to a permutation of $K$}{31}{subsubsection.2.4.6}
+\contentsline {subsubsection}{\numberline {2.4.7}Injections from $K$ to $N$, up to a permutation of $N$}{32}{subsubsection.2.4.7}
+\contentsline {subsubsection}{\numberline {2.4.8}Surjections from $K$ to $N$, up to a permutation of $N$}{32}{subsubsection.2.4.8}
+\contentsline {subsubsection}{\numberline {2.4.9}Functions from $K$ to $N$, up to a permutation of $N$}{32}{subsubsection.2.4.9}
+\contentsline {subsubsection}{\numberline {2.4.10}Functions from $K$ to $N$, up to a permutation of $K$ and $N$}{32}{subsubsection.2.4.10}
+\contentsline {subsubsection}{\numberline {2.4.11}Injections from $K$ to $N$, up to a permutation of $K$ and $N$}{32}{subsubsection.2.4.11}
+\contentsline {subsubsection}{\numberline {2.4.12}Surjections from $K$ to $N$, up to a permutation of $K$ and $N$}{32}{subsubsection.2.4.12}
+\contentsline {subsection}{\numberline {2.5}Graphs}{32}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Simple Graph}{32}{subsubsection.2.5.1}
+\contentsline {subsubsubsection}{\numberline {2.5.1.1}Walk}{32}{subsubsubsection.2.5.1.1}
+\contentsline {subsubsubsection}{\numberline {2.5.1.2}Cycle}{32}{subsubsubsection.2.5.1.2}
+\contentsline {subsubsection}{\numberline {2.5.2}Graph Isomorphisms}{32}{subsubsection.2.5.2}
+\contentsline {subsubsubsection}{\numberline {2.5.2.1}Group of Automorphisms}{33}{subsubsubsection.2.5.2.1}
+\contentsline {subsubsection}{\numberline {2.5.3}Trees}{33}{subsubsection.2.5.3}
+\contentsline {subsubsubsection}{\numberline {2.5.3.1}Minimally Connected Graph}{33}{subsubsubsection.2.5.3.1}
+\contentsline {section}{\numberline {3}Category Theory}{35}{section.3}
+\contentsline {subsection}{\numberline {3.1}Metacategories}{35}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Undefined notions}{35}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Operations}{35}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Axioms}{35}{subsubsection.3.1.3}
+\contentsline {subsection}{\numberline {3.2}Categories}{36}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Directed \hyperref [graph]{Graph}}{36}{subsubsection.3.2.1}
+\contentsline {subsubsubsection}{\numberline {3.2.1.1}Set of composable pairs of arrows}{36}{subsubsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Categories}{36}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Small categories}{36}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Hom Sets}{36}{subsubsection.3.2.4}
+\contentsline {subsubsubsection}{\numberline {3.2.4.1}Alternate Definition of Categories}{36}{subsubsubsection.3.2.4.1}
+\contentsline {subsubsection}{\numberline {3.2.5}Groupoids}{37}{subsubsection.3.2.5}
+\contentsline {subsection}{\numberline {3.3}Morphisms}{37}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Isomorphisms}{37}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Automorphisms}{38}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Monomorphisms}{38}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Epimorphisms}{38}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Split Morphism}{38}{subsubsection.3.3.5}
+\contentsline {subsection}{\numberline {3.4}Some Objects in Categories}{38}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Initial Objects}{38}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Final Objects}{38}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Null Objects}{39}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}Group Objects}{39}{subsubsection.3.4.4}
+\contentsline {subsection}{\numberline {3.5}Functors}{39}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Full}{40}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Faithful}{40}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}Forgetful}{40}{subsubsection.3.5.3}
+\contentsline {subsubsubsection}{\numberline {3.5.3.1}Group Action}{40}{subsubsubsection.3.5.3.1}
+\contentsline {subsection}{\numberline {3.6}Natural Transformations}{40}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Duality}{41}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Contravariance and Opposites}{41}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Contravariant Functor}{41}{subsubsection.3.8.1}
+\contentsline {subsubsubsection}{\numberline {3.8.1.1}Covariant Hom-Functor}{41}{subsubsubsection.3.8.1.1}
+\contentsline {subsubsubsection}{\numberline {3.8.1.2}Contravariant Hom-Functor}{42}{subsubsubsection.3.8.1.2}
+\contentsline {subsection}{\numberline {3.9}Category Constructions}{42}{subsection.3.9}
+\contentsline {subsubsection}{\numberline {3.9.1}Products}{42}{subsubsection.3.9.1}
+\contentsline {subsubsubsection}{\numberline {3.9.1.1}Products of Functors}{42}{subsubsubsection.3.9.1.1}
+\contentsline {subsubsubsection}{\numberline {3.9.1.2}Bifunctors}{43}{subsubsubsection.3.9.1.2}
+\contentsline {subsubsubsection}{\numberline {3.9.1.3}Natural transformations between bifunctors}{44}{subsubsubsection.3.9.1.3}
+\contentsline {subsubsubsection}{\numberline {3.9.1.4}The Universal Natural Transformation}{44}{subsubsubsection.3.9.1.4}
+\contentsline {subsubsection}{\numberline {3.9.2}Coproducts}{44}{subsubsection.3.9.2}
+\contentsline {subsubsection}{\numberline {3.9.3}Quotients}{45}{subsubsection.3.9.3}
+\contentsline {subsubsubsection}{\numberline {3.9.3.1}Congruence}{45}{subsubsubsection.3.9.3.1}
+\contentsline {subsubsection}{\numberline {3.9.4}Free Categories}{45}{subsubsection.3.9.4}
+\contentsline {subsubsubsection}{\numberline {3.9.4.1}O-graph}{45}{subsubsubsection.3.9.4.1}
+\contentsline {subsubsubsection}{\numberline {3.9.4.2}Free Category}{46}{subsubsubsection.3.9.4.2}
+\contentsline {subsubsection}{\numberline {3.9.5}Comma Categories}{46}{subsubsection.3.9.5}
+\contentsline {subsubsubsection}{\numberline {3.9.5.1}Category of objects unber b $(b \delimiter "3223379 C)$}{46}{subsubsubsection.3.9.5.1}
+\contentsline {subsubsubsection}{\numberline {3.9.5.2}Category of objects over a $(C \delimiter "3223379 a)$}{47}{subsubsubsection.3.9.5.2}
+\contentsline {subsubsubsection}{\numberline {3.9.5.3}Category of objects $S$-unber b $(b \delimiter "3223379 S)$}{47}{subsubsubsection.3.9.5.3}
+\contentsline {subsubsubsection}{\numberline {3.9.5.4}Category of objects $T$-over a $(T \delimiter "3223379 a)$}{47}{subsubsubsection.3.9.5.4}
+\contentsline {subsubsubsection}{\numberline {3.9.5.5}Comma Category $(T \delimiter "3223379 S)$}{48}{subsubsubsection.3.9.5.5}
+\contentsline {subsection}{\numberline {3.10}Higher Level Categories}{49}{subsection.3.10}
+\contentsline {subsubsection}{\numberline {3.10.1}Functor Categories}{49}{subsubsection.3.10.1}
+\contentsline {subsubsection}{\numberline {3.10.2}2-Categories}{49}{subsubsection.3.10.2}
+\contentsline {subsubsubsection}{\numberline {3.10.2.1}Vertical Composition}{49}{subsubsubsection.3.10.2.1}
+\contentsline {subsubsubsection}{\numberline {3.10.2.2}Horizontal Composition}{49}{subsubsubsection.3.10.2.2}
+\contentsline {subsubsubsection}{\numberline {3.10.2.3}Interchange Law}{50}{subsubsubsection.3.10.2.3}
+\contentsline {subsubsubsection}{\numberline {3.10.2.4}Double Category}{51}{subsubsubsection.3.10.2.4}
+\contentsline {subsubsubsection}{\numberline {3.10.2.5}2-Category}{51}{subsubsubsection.3.10.2.5}
+\contentsline {section}{\numberline {4}Category Examples}{52}{section.4}
+\contentsline {subsection}{\numberline {4.1}The category Set}{52}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Morphisms}{52}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Universal Objects}{52}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}The category Grp}{52}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Morphisms}{53}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Isomorphism Theorems}{53}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Universal Objects}{55}{subsubsection.4.2.3}
+\contentsline {subsection}{\numberline {4.3}The category Ab}{55}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Morphisms}{55}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Universal Objects}{55}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}The category Ring}{55}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}Morphisms}{56}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Isomorphism Theorems}{56}{subsubsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.3}Universal Objects}{57}{subsubsection.4.4.3}
+\contentsline {subsection}{\numberline {4.5}The category R-Mod}{57}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Morphisms}{57}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Isomorphism Theorems}{58}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}Universal Objects}{58}{subsubsection.4.5.3}
+\contentsline {section}{\numberline {5}Group Theory}{59}{section.5}
+\contentsline {subsection}{\numberline {5.1}Definition}{59}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Order}{59}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Order of an element}{59}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Order of a group}{60}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Index of a subgroup}{60}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Lagrange's Theorem}{61}{subsubsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.5}Cauchy's Theorem}{61}{subsubsection.5.2.5}
+\contentsline {subsection}{\numberline {5.3}Homomorphism}{62}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Some Important Morphisms}{62}{subsubsection.5.3.1}
+\contentsline {subsubsubsection}{\numberline {5.3.1.1}Trivial Morphism}{62}{subsubsubsection.5.3.1.1}
+\contentsline {subsubsubsection}{\numberline {5.3.1.2}Exponential Map}{62}{subsubsubsection.5.3.1.2}
+\contentsline {subsubsection}{\numberline {5.3.2}Interaction with order}{62}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Isomophisms}{63}{subsubsection.5.3.3}
+\contentsline {subsection}{\numberline {5.4}Subgroup}{63}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Normal Subgroup}{63}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Kernel of a Homomorphism}{63}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Image of a Homomorphism}{64}{subsubsection.5.4.3}
+\contentsline {subsubsection}{\numberline {5.4.4}Subgroup generated by a subset}{64}{subsubsection.5.4.4}
+\contentsline {subsubsubsection}{\numberline {5.4.4.1}Finitely Generated}{64}{subsubsubsection.5.4.4.1}
+\contentsline {subsubsection}{\numberline {5.4.5}Commutator Subgroup}{64}{subsubsection.5.4.5}
+\contentsline {subsection}{\numberline {5.5}Group Constructions}{65}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Product of Groups}{65}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}Semidirect Product}{65}{subsubsection.5.5.2}
+\contentsline {subsubsubsection}{\numberline {5.5.2.1}Motivating Theorems}{65}{subsubsubsection.5.5.2.1}
+\contentsline {subsubsubsection}{\numberline {5.5.2.2}Definition}{66}{subsubsubsection.5.5.2.2}
+\contentsline {subsubsection}{\numberline {5.5.3}Free Product of Groups}{67}{subsubsection.5.5.3}
+\contentsline {subsubsection}{\numberline {5.5.4}Free Groups}{67}{subsubsection.5.5.4}
+\contentsline {subsubsubsection}{\numberline {5.5.4.1}Concrete construction}{67}{subsubsubsection.5.5.4.1}
+\contentsline {subsubsection}{\numberline {5.5.5}Quotient Group}{68}{subsubsection.5.5.5}
+\contentsline {subsubsubsection}{\numberline {5.5.5.1}Quotient Group by $\sim $}{68}{subsubsubsection.5.5.5.1}
+\contentsline {subsubsubsection}{\numberline {5.5.5.2}Cosets}{68}{subsubsubsection.5.5.5.2}
+\contentsline {subsubsubsection}{\numberline {5.5.5.3}Definition}{69}{subsubsubsection.5.5.5.3}
+\contentsline {subsubsubsection}{\numberline {5.5.5.4}Universal Property}{70}{subsubsubsection.5.5.5.4}
+\contentsline {subsection}{\numberline {5.6}Presentations}{70}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Finitely Presented}{70}{subsubsection.5.6.1}
+\contentsline {subsection}{\numberline {5.7}Group Actions}{70}{subsection.5.7}
+\contentsline {subsubsection}{\numberline {5.7.1}Natural Action}{71}{subsubsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.2}Transitive Actions}{71}{subsubsection.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.3}Orbit}{71}{subsubsection.5.7.3}
+\contentsline {subsubsection}{\numberline {5.7.4}Stabilizer Subgroup}{71}{subsubsection.5.7.4}
+\contentsline {subsubsection}{\numberline {5.7.5}Category G-Set}{71}{subsubsection.5.7.5}
+\contentsline {subsubsection}{\numberline {5.7.6}Fixed Point Set}{72}{subsubsection.5.7.6}
+\contentsline {subsubsection}{\numberline {5.7.7}Center}{73}{subsubsection.5.7.7}
+\contentsline {subsubsection}{\numberline {5.7.8}Conjugation Action}{73}{subsubsection.5.7.8}
+\contentsline {subsubsubsection}{\numberline {5.7.8.1}Centralizer and Normalizer}{73}{subsubsubsection.5.7.8.1}
+\contentsline {subsubsubsection}{\numberline {5.7.8.2}Conjugacy Class}{74}{subsubsubsection.5.7.8.2}
+\contentsline {subsection}{\numberline {5.8}Sylow Theorems}{74}{subsection.5.8}
+\contentsline {subsubsection}{\numberline {5.8.1}$p$-Sylow subgroups}{74}{subsubsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.2}Sylow I}{74}{subsubsection.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.3}Sylow II}{75}{subsubsection.5.8.3}
+\contentsline {subsubsection}{\numberline {5.8.4}Sylow III}{76}{subsubsection.5.8.4}
+\contentsline {subsection}{\numberline {5.9}Simple Groups}{76}{subsection.5.9}
+\contentsline {subsection}{\numberline {5.10}Series of Gropus}{76}{subsection.5.10}
+\contentsline {subsubsection}{\numberline {5.10.1}Series of Subgroups}{76}{subsubsection.5.10.1}
+\contentsline {subsubsection}{\numberline {5.10.2}Normal Series}{77}{subsubsection.5.10.2}
+\contentsline {subsubsubsection}{\numberline {5.10.2.1}Maximal Length}{77}{subsubsubsection.5.10.2.1}
+\contentsline {subsubsection}{\numberline {5.10.3}Composition Series}{77}{subsubsection.5.10.3}
+\contentsline {subsubsection}{\numberline {5.10.4}Refinement of a Series}{79}{subsubsection.5.10.4}
+\contentsline {subsubsection}{\numberline {5.10.5}Derived Series}{80}{subsubsection.5.10.5}
+\contentsline {subsubsection}{\numberline {5.10.6}Solvable}{80}{subsubsection.5.10.6}
+\contentsline {section}{\numberline {6}Abelian Group Theory}{81}{section.6}
+\contentsline {subsection}{\numberline {6.1}Definition}{81}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Homomorphisms of Abelian Groups}{81}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Abelian Subgroups}{83}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Cokernel of a Homomorphism}{83}{subsubsection.6.3.1}
+\contentsline {subsection}{\numberline {6.4}Abelian Group Constructions}{83}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Free Abelian Groups}{83}{subsubsection.6.4.1}
+\contentsline {subsection}{\numberline {6.5}Classification of Finite Abelian Groups}{84}{subsection.6.5}
+\contentsline {section}{\numberline {7}Group Examples}{86}{section.7}
+\contentsline {subsection}{\numberline {7.1}Trivial Group}{86}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}$p$-groups}{86}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Definition}{86}{subsubsection.7.2.1}
+\contentsline {subsection}{\numberline {7.3}Cyclic Groups}{86}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Modular Arithmetic}{86}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Definition}{86}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Presentation}{87}{subsubsection.7.3.3}
+\contentsline {subsubsection}{\numberline {7.3.4}Subgroups}{87}{subsubsection.7.3.4}
+\contentsline {subsection}{\numberline {7.4}Multiplicative group of integers modulo $n$}{88}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Definition}{88}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}Applications}{88}{subsubsection.7.4.2}
+\contentsline {subsection}{\numberline {7.5}Symmetric Group}{88}{subsection.7.5}
+\contentsline {subsubsection}{\numberline {7.5.1}Definition}{88}{subsubsection.7.5.1}
+\contentsline {subsubsection}{\numberline {7.5.2}Cycle}{88}{subsubsection.7.5.2}
+\contentsline {subsubsubsection}{\numberline {7.5.2.1}Disjoint Cycles}{89}{subsubsubsection.7.5.2.1}
+\contentsline {subsubsection}{\numberline {7.5.3}Type}{89}{subsubsection.7.5.3}
+\contentsline {subsection}{\numberline {7.6}Alternating Group}{90}{subsection.7.6}
+\contentsline {subsubsection}{\numberline {7.6.1}Sign of a permutation}{90}{subsubsection.7.6.1}
+\contentsline {subsubsection}{\numberline {7.6.2}Transposition}{90}{subsubsection.7.6.2}
+\contentsline {subsubsection}{\numberline {7.6.3}Definition}{90}{subsubsection.7.6.3}
+\contentsline {subsubsection}{\numberline {7.6.4}Conjugacy}{91}{subsubsection.7.6.4}
+\contentsline {subsubsection}{\numberline {7.6.5}Simplicity}{92}{subsubsection.7.6.5}
+\contentsline {subsubsection}{\numberline {7.6.6}Solvability}{93}{subsubsection.7.6.6}
+\contentsline {subsection}{\numberline {7.7}Dihedral Group}{94}{subsection.7.7}
+\contentsline {subsubsection}{\numberline {7.7.1}Definition}{94}{subsubsection.7.7.1}
+\contentsline {subsubsection}{\numberline {7.7.2}Presentation}{94}{subsubsection.7.7.2}
+\contentsline {subsection}{\numberline {7.8}General Linear Group}{94}{subsection.7.8}
+\contentsline {subsubsection}{\numberline {7.8.1}Definition}{94}{subsubsection.7.8.1}
+\contentsline {section}{\numberline {8}Ring Theory}{95}{section.8}
+\contentsline {subsection}{\numberline {8.1}Definitions}{95}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Divisor}{95}{subsubsection.8.1.1}
+\contentsline {subsubsubsection}{\numberline {8.1.1.1}Associates}{95}{subsubsubsection.8.1.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Commutative Rings}{95}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Subrings}{96}{subsubsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.4}Characteristic}{96}{subsubsection.8.1.4}
+\contentsline {subsection}{\numberline {8.2}Ideals}{96}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Principal Ideals}{96}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Finitely Generated}{96}{subsubsection.8.2.2}
+\contentsline {subsubsection}{\numberline {8.2.3}Prime Ideals}{97}{subsubsection.8.2.3}
+\contentsline {subsubsection}{\numberline {8.2.4}Maximal Ideals}{97}{subsubsection.8.2.4}
+\contentsline {subsubsection}{\numberline {8.2.5}Chinese Remainder Theorem}{97}{subsubsection.8.2.5}
+\contentsline {subsection}{\numberline {8.3}Ring Homomorphisms}{98}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Ring Constructions}{98}{subsection.8.4}
+\contentsline {subsubsection}{\numberline {8.4.1}Products}{98}{subsubsection.8.4.1}
+\contentsline {subsubsection}{\numberline {8.4.2}Quotients}{98}{subsubsection.8.4.2}
+\contentsline {subsection}{\numberline {8.5}Integral Domains}{99}{subsection.8.5}
+\contentsline {subsubsection}{\numberline {8.5.1}Zero-divisors}{99}{subsubsection.8.5.1}
+\contentsline {subsubsection}{\numberline {8.5.2}Definition}{99}{subsubsection.8.5.2}
+\contentsline {subsubsection}{\numberline {8.5.3}Associates in Integral Domains}{99}{subsubsection.8.5.3}
+\contentsline {subsubsection}{\numberline {8.5.4}Prime Element}{100}{subsubsection.8.5.4}
+\contentsline {subsubsection}{\numberline {8.5.5}Irreducible Element}{100}{subsubsection.8.5.5}
+\contentsline {subsubsection}{\numberline {8.5.6}Factorization}{100}{subsubsection.8.5.6}
+\contentsline {subsubsection}{\numberline {8.5.7}Domain with factorization}{100}{subsubsection.8.5.7}
+\contentsline {subsubsection}{\numberline {8.5.8}Greatest Common Divisor}{100}{subsubsection.8.5.8}
+\contentsline {subsubsection}{\numberline {8.5.9}Field of Fractions}{100}{subsubsection.8.5.9}
+\contentsline {subsection}{\numberline {8.6}Noetherian Rings}{101}{subsection.8.6}
+\contentsline {subsubsection}{\numberline {8.6.1}Factorization in Noetherian domains}{102}{subsubsection.8.6.1}
+\contentsline {subsection}{\numberline {8.7}Unique Factorization Domains}{102}{subsection.8.7}
+\contentsline {subsubsection}{\numberline {8.7.1}Definition}{102}{subsubsection.8.7.1}
+\contentsline {subsection}{\numberline {8.8}Principal Ideal Domains}{103}{subsection.8.8}
+\contentsline {subsubsection}{\numberline {8.8.1}Factorization}{103}{subsubsection.8.8.1}
+\contentsline {subsection}{\numberline {8.9}Euclidean Domains}{103}{subsection.8.9}
+\contentsline {subsubsection}{\numberline {8.9.1}Euclidean Valuation}{103}{subsubsection.8.9.1}
+\contentsline {subsubsection}{\numberline {8.9.2}Definition}{104}{subsubsection.8.9.2}
+\contentsline {subsubsection}{\numberline {8.9.3}Euclidean Algorithm}{104}{subsubsection.8.9.3}
+\contentsline {subsection}{\numberline {8.10}Division Rings}{104}{subsection.8.10}
+\contentsline {subsubsection}{\numberline {8.10.1}Units}{104}{subsubsection.8.10.1}
+\contentsline {subsubsection}{\numberline {8.10.2}Definition}{104}{subsubsection.8.10.2}
+\contentsline {subsection}{\numberline {8.11}Polynomial Rings}{105}{subsection.8.11}
+\contentsline {subsubsection}{\numberline {8.11.1}Polynomials}{105}{subsubsection.8.11.1}
+\contentsline {subsubsubsection}{\numberline {8.11.1.1}Monic}{105}{subsubsubsection.8.11.1.1}
+\contentsline {subsubsection}{\numberline {8.11.2}Universal Property}{106}{subsubsection.8.11.2}
+\contentsline {subsubsubsection}{\numberline {8.11.2.1}Evaluation Map and Polynomial Functions}{106}{subsubsubsection.8.11.2.1}
+\contentsline {subsubsection}{\numberline {8.11.3}Quotients of Polynomial Rings}{107}{subsubsection.8.11.3}
+\contentsline {subsubsection}{\numberline {8.11.4}Ideals in Polynomial Rings}{107}{subsubsection.8.11.4}
+\contentsline {subsubsection}{\numberline {8.11.5}Primitivity}{108}{subsubsection.8.11.5}
+\contentsline {subsubsection}{\numberline {8.11.6}Content}{108}{subsubsection.8.11.6}
+\contentsline {subsubsection}{\numberline {8.11.7}Field of rational functions}{108}{subsubsection.8.11.7}
+\contentsline {subsubsection}{\numberline {8.11.8}Factorization in polynomial rings}{108}{subsubsection.8.11.8}
+\contentsline {subsubsection}{\numberline {8.11.9}Irreducibility in polynomial rings}{109}{subsubsection.8.11.9}
+\contentsline {subsubsection}{\numberline {8.11.10}Eisenstein's Criterion}{109}{subsubsection.8.11.10}
+\contentsline {subsubsection}{\numberline {8.11.11}Cyclotomic Polynomials}{110}{subsubsection.8.11.11}
+\contentsline {section}{\numberline {9}Field Theory}{111}{section.9}
+\contentsline {subsection}{\numberline {9.1}Definitions}{111}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Finite Subgroups of Multiplicative Groups of Fields}{111}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Algebraically Closed Fields}{111}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}Polynomials Over Fields}{111}{subsubsection.9.3.1}
+\contentsline {subsection}{\numberline {9.4}Field Extensions}{112}{subsection.9.4}
+\contentsline {subsubsection}{\numberline {9.4.1}Simple Extensions}{113}{subsubsection.9.4.1}
+\contentsline {subsubsection}{\numberline {9.4.2}Group of Automorphisms of an Extension}{113}{subsubsection.9.4.2}
+\contentsline {subsubsection}{\numberline {9.4.3}Algebraic Extensions}{114}{subsubsection.9.4.3}
+\contentsline {subsubsection}{\numberline {9.4.4}Finitely Generated Extension}{114}{subsubsection.9.4.4}
+\contentsline {subsubsection}{\numberline {9.4.5}Algebraic Closure}{114}{subsubsection.9.4.5}
+\contentsline {section}{\numberline {10}Modules}{116}{section.10}
+\contentsline {subsection}{\numberline {10.1}Definitions}{116}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Homomorphisms of $R$-modules}{116}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Constructions}{116}{subsection.10.3}
+\contentsline {subsubsection}{\numberline {10.3.1}Products and Coproducts}{116}{subsubsection.10.3.1}
+\contentsline {subsubsection}{\numberline {10.3.2}Quotient Modules}{117}{subsubsection.10.3.2}
+\contentsline {subsection}{\numberline {10.4}Submodules}{117}{subsection.10.4}
+\contentsline {subsubsection}{\numberline {10.4.1}Generated Submodules}{117}{subsubsection.10.4.1}
+\contentsline {subsubsubsection}{\numberline {10.4.1.1}Finitely Generated}{117}{subsubsubsection.10.4.1.1}
+\contentsline {subsubsection}{\numberline {10.4.2}Noetherian Modules}{117}{subsubsection.10.4.2}
+\contentsline {subsection}{\numberline {10.5}Free Modules}{118}{subsection.10.5}
+\contentsline {subsubsection}{\numberline {10.5.1}Linearly Independent}{118}{subsubsection.10.5.1}
+\contentsline {subsubsection}{\numberline {10.5.2}Generating Set}{119}{subsubsection.10.5.2}
+\contentsline {subsubsection}{\numberline {10.5.3}Basis}{119}{subsubsection.10.5.3}
+\contentsline {subsubsection}{\numberline {10.5.4}Rank}{120}{subsubsection.10.5.4}
+\contentsline {subsection}{\numberline {10.6}Homomorphisms of free modules}{120}{subsection.10.6}
+\contentsline {subsubsection}{\numberline {10.6.1}Matrices}{120}{subsubsection.10.6.1}
+\contentsline {subsubsection}{\numberline {10.6.2}Change of Basis}{121}{subsubsection.10.6.2}
+\contentsline {subsubsection}{\numberline {10.6.3}Equivalent Matrices}{122}{subsubsection.10.6.3}
+\contentsline {subsubsection}{\numberline {10.6.4}Elementary Operations}{122}{subsubsection.10.6.4}
+\contentsline {subsubsection}{\numberline {10.6.5}Gaussian Elimination over Euclidean domains}{123}{subsubsection.10.6.5}
+\contentsline {subsubsection}{\numberline {10.6.6}The Determinant}{124}{subsubsection.10.6.6}
+\contentsline {subsubsection}{\numberline {10.6.7}Cofactors of a square matrix}{124}{subsubsection.10.6.7}
+\contentsline {subsection}{\numberline {10.7}Presentations}{125}{subsection.10.7}
+\contentsline {subsubsection}{\numberline {10.7.1}Torsion}{125}{subsubsection.10.7.1}
+\contentsline {subsubsection}{\numberline {10.7.2}Cyclic}{125}{subsubsection.10.7.2}
+\contentsline {subsubsection}{\numberline {10.7.3}Annihilator}{125}{subsubsection.10.7.3}
+\contentsline {subsubsection}{\numberline {10.7.4}Definition of Presentation}{126}{subsubsection.10.7.4}
+\contentsline {subsubsection}{\numberline {10.7.5}Resolution}{126}{subsubsection.10.7.5}
+\contentsline {subsection}{\numberline {10.8}Classification of Finitely Generated Modules over PIDs}{127}{subsection.10.8}
+\contentsline {subsubsection}{\numberline {10.8.1}Rank of a finitely generated module}{128}{subsubsection.10.8.1}
+\contentsline {subsection}{\numberline {10.9}Linear Transformations}{129}{subsection.10.9}
+\contentsline {subsubsection}{\numberline {10.9.1}Similar Matrices}{129}{subsubsection.10.9.1}
+\contentsline {subsubsection}{\numberline {10.9.2}Similar Homomorphisms}{129}{subsubsection.10.9.2}
+\contentsline {subsubsection}{\numberline {10.9.3}Determinant of a Homomorphism}{129}{subsubsection.10.9.3}
+\contentsline {subsubsection}{\numberline {10.9.4}Trace}{129}{subsubsection.10.9.4}
+\contentsline {subsubsection}{\numberline {10.9.5}Characteristic Polynomial}{130}{subsubsection.10.9.5}
+\contentsline {subsubsection}{\numberline {10.9.6}Annihilator Ideal}{130}{subsubsection.10.9.6}
+\contentsline {subsubsection}{\numberline {10.9.7}Minimal Polynomial}{130}{subsubsection.10.9.7}
+\contentsline {subsubsection}{\numberline {10.9.8}Eigenvalues}{130}{subsubsection.10.9.8}
+\contentsline {subsubsubsection}{\numberline {10.9.8.1}Algebraic Multiplicity}{131}{subsubsubsection.10.9.8.1}
+\contentsline {subsubsection}{\numberline {10.9.9}Eigenvector}{131}{subsubsection.10.9.9}
+\contentsline {subsubsection}{\numberline {10.9.10}Eigenspace}{131}{subsubsection.10.9.10}
+\contentsline {subsubsubsection}{\numberline {10.9.10.1}Geometric Multiplicity}{131}{subsubsubsection.10.9.10.1}
+\contentsline {subsubsection}{\numberline {10.9.11}Diagonalizable}{131}{subsubsection.10.9.11}
+\contentsline {section}{\numberline {11}Linear Algebra}{132}{section.11}
+\contentsline {subsection}{\numberline {11.1}Definitions}{132}{subsection.11.1}
+\contentsline {subsubsection}{\numberline {11.1.1}Vector Space}{132}{subsubsection.11.1.1}
+\contentsline {subsubsection}{\numberline {11.1.2}Dimension}{132}{subsubsection.11.1.2}
+\contentsline {subsubsection}{\numberline {11.1.3}General Linear Group over a Field}{132}{subsubsection.11.1.3}
+\contentsline {subsubsection}{\numberline {11.1.4}Column/Row Space of a Matrix}{132}{subsubsection.11.1.4}
+\contentsline {subsubsection}{\numberline {11.1.5}Column/Row Rank of a Matrix}{133}{subsubsection.11.1.5}
+\contentsline {subsubsection}{\numberline {11.1.6}Rank and Nullity of a linear map}{133}{subsubsection.11.1.6}
+\contentsline {subsection}{\numberline {11.2}Canonical Forms}{133}{subsection.11.2}
+\contentsline {subsubsection}{\numberline {11.2.1}Companion Matrix of a polynomial}{134}{subsubsection.11.2.1}
+\contentsline {subsubsection}{\numberline {11.2.2}Rational Canonical Forms}{135}{subsubsection.11.2.2}
+\contentsline {subsubsection}{\numberline {11.2.3}Jordan Block corresponding to an eigenvalue}{136}{subsubsection.11.2.3}
+\contentsline {subsubsection}{\numberline {11.2.4}Jordan Canonical Form}{136}{subsubsection.11.2.4}
+\contentsline {subsection}{\numberline {11.3}Simplicial Complexes}{136}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}General Position}{136}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Simplex}{137}{subsubsection.11.3.2}
+\contentsline {subsubsection}{\numberline {11.3.3}Barycentric Coordinantes}{137}{subsubsection.11.3.3}
+\contentsline {subsubsubsection}{\numberline {11.3.3.1}Barycenter of a simplex}{137}{subsubsubsection.11.3.3.1}
+\contentsline {subsubsection}{\numberline {11.3.4}Geometric Simplicial Complex}{137}{subsubsection.11.3.4}
+\contentsline {subsubsection}{\numberline {11.3.5}Realization of a Geometric Simplicial Complex}{137}{subsubsection.11.3.5}
+\contentsline {subsubsection}{\numberline {11.3.6}Abstract Simplicial Complex}{138}{subsubsection.11.3.6}
+\contentsline {subsubsection}{\numberline {11.3.7}Triangulable}{138}{subsubsection.11.3.7}
+\contentsline {subsubsection}{\numberline {11.3.8}Subcomplex}{138}{subsubsection.11.3.8}
+\contentsline {subsubsection}{\numberline {11.3.9}Simplicial Mappings}{138}{subsubsection.11.3.9}
+\contentsline {subsubsection}{\numberline {11.3.10}Barycentric Subdivision}{138}{subsubsection.11.3.10}
+\contentsline {subsubsection}{\numberline {11.3.11}Diameter of a Simplex}{138}{subsubsection.11.3.11}
+\contentsline {subsubsection}{\numberline {11.3.12}Mesh}{139}{subsubsection.11.3.12}
+\contentsline {subsubsection}{\numberline {11.3.13}Star of a vertex}{140}{subsubsection.11.3.13}
+\contentsline {subsubsection}{\numberline {11.3.14}Open star of a vertex}{140}{subsubsection.11.3.14}
+\contentsline {subsubsection}{\numberline {11.3.15}Simplicial Approximation}{141}{subsubsection.11.3.15}
+\contentsline {subsubsection}{\numberline {11.3.16}Contiguous Mappings}{141}{subsubsection.11.3.16}
+\contentsline {section}{\numberline {12}Algebras}{142}{section.12}
+\contentsline {subsection}{\numberline {12.1}Definitions}{142}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Homomorphisms of $R$-algebras}{142}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}Free Algebras}{142}{subsection.12.3}
+\contentsline {subsubsection}{\numberline {12.3.1}Finite Type}{142}{subsubsection.12.3.1}
+\contentsline {section}{\numberline {13}Topology}{143}{section.13}
+\contentsline {subsection}{\numberline {13.1}Topological Spaces}{143}{subsection.13.1}
+\contentsline {subsubsection}{\numberline {13.1.1}Topological Space}{143}{subsubsection.13.1.1}
+\contentsline {subsubsubsection}{\numberline {13.1.1.1}Finer}{143}{subsubsubsection.13.1.1.1}
+\contentsline {subsubsubsection}{\numberline {13.1.1.2}Coarser}{143}{subsubsubsection.13.1.1.2}
+\contentsline {subsubsection}{\numberline {13.1.2}Basis}{143}{subsubsection.13.1.2}
+\contentsline {subsubsection}{\numberline {13.1.3}Continuity}{144}{subsubsection.13.1.3}
+\contentsline {subsubsubsection}{\numberline {13.1.3.1}Open Mappings}{144}{subsubsubsection.13.1.3.1}
+\contentsline {subsubsection}{\numberline {13.1.4}Homeomorphism}{144}{subsubsection.13.1.4}
+\contentsline {subsubsubsection}{\numberline {13.1.4.1}Homeomorphic Spaces}{144}{subsubsubsection.13.1.4.1}
+\contentsline {subsection}{\numberline {13.2}Geometric Notions}{144}{subsection.13.2}
+\contentsline {subsubsection}{\numberline {13.2.1}Closed Subset}{144}{subsubsection.13.2.1}
+\contentsline {subsubsection}{\numberline {13.2.2}Limit Point}{144}{subsubsection.13.2.2}
+\contentsline {subsubsection}{\numberline {13.2.3}Interior}{145}{subsubsection.13.2.3}
+\contentsline {subsubsection}{\numberline {13.2.4}Closure}{145}{subsubsection.13.2.4}
+\contentsline {subsubsection}{\numberline {13.2.5}Boundary}{145}{subsubsection.13.2.5}
+\contentsline {subsubsection}{\numberline {13.2.6}Convergence}{145}{subsubsection.13.2.6}
+\contentsline {subsection}{\numberline {13.3}Separation}{146}{subsection.13.3}
+\contentsline {subsubsection}{\numberline {13.3.1}T1}{146}{subsubsection.13.3.1}
+\contentsline {subsubsection}{\numberline {13.3.2}Hausdorff (T2)}{146}{subsubsection.13.3.2}
+\contentsline {subsubsection}{\numberline {13.3.3}Separable}{146}{subsubsection.13.3.3}
+\contentsline {subsubsubsection}{\numberline {13.3.3.1}Dense}{146}{subsubsubsection.13.3.3.1}
+\contentsline {subsubsubsection}{\numberline {13.3.3.2}Definition}{146}{subsubsubsection.13.3.3.2}
+\contentsline {subsection}{\numberline {13.4}Connectedness}{146}{subsection.13.4}
+\contentsline {subsubsection}{\numberline {13.4.1}Disconnected}{146}{subsubsection.13.4.1}
+\contentsline {subsubsection}{\numberline {13.4.2}Connected}{147}{subsubsection.13.4.2}
+\contentsline {subsubsection}{\numberline {13.4.3}Connected Component}{147}{subsubsection.13.4.3}
+\contentsline {subsubsection}{\numberline {13.4.4}Path Connected}{147}{subsubsection.13.4.4}
+\contentsline {subsubsubsection}{\numberline {13.4.4.1}Path Component}{147}{subsubsubsection.13.4.4.1}
+\contentsline {subsubsection}{\numberline {13.4.5}Locally Path-Connected}{148}{subsubsection.13.4.5}
+\contentsline {subsection}{\numberline {13.5}Compactness}{148}{subsection.13.5}
+\contentsline {subsubsection}{\numberline {13.5.1}Locally Compact}{149}{subsubsection.13.5.1}
+\contentsline {subsection}{\numberline {13.6}Constructions}{149}{subsection.13.6}
+\contentsline {subsubsection}{\numberline {13.6.1}Subspace Topology}{149}{subsubsection.13.6.1}
+\contentsline {subsubsection}{\numberline {13.6.2}Product Topology}{149}{subsubsection.13.6.2}
+\contentsline {subsubsubsection}{\numberline {13.6.2.1}Infinite Product Topology}{150}{subsubsubsection.13.6.2.1}
+\contentsline {subsubsection}{\numberline {13.6.3}Quotient Topology}{150}{subsubsection.13.6.3}
+\contentsline {subsubsubsection}{\numberline {13.6.3.1}Quotient Map}{150}{subsubsubsection.13.6.3.1}
+\contentsline {subsection}{\numberline {13.7}Examples}{151}{subsection.13.7}
+\contentsline {subsubsection}{\numberline {13.7.1}Topology Examples}{151}{subsubsection.13.7.1}
+\contentsline {subsubsubsection}{\numberline {13.7.1.1}Indiscrete Topology}{151}{subsubsubsection.13.7.1.1}
+\contentsline {subsubsubsection}{\numberline {13.7.1.2}Discrete Topology}{151}{subsubsubsection.13.7.1.2}
+\contentsline {subsubsubsection}{\numberline {13.7.1.3}Order Topology}{151}{subsubsubsection.13.7.1.3}
+\contentsline {subsubsubsection}{\numberline {13.7.1.4}Finite Complement Topology}{151}{subsubsubsection.13.7.1.4}
+\contentsline {subsubsubsection}{\numberline {13.7.1.5}Included Point Topology}{151}{subsubsubsection.13.7.1.5}
+\contentsline {subsubsubsection}{\numberline {13.7.1.6}Compact-open Topology}{151}{subsubsubsection.13.7.1.6}
+\contentsline {subsubsection}{\numberline {13.7.2}Space Examples}{152}{subsubsection.13.7.2}
+\contentsline {subsubsubsection}{\numberline {13.7.2.1}Torus}{152}{subsubsubsection.13.7.2.1}
+\contentsline {subsubsubsection}{\numberline {13.7.2.2}M\"obius Strip}{152}{subsubsubsection.13.7.2.2}
+\contentsline {subsubsubsection}{\numberline {13.7.2.3}Projective Space}{152}{subsubsubsection.13.7.2.3}
+\contentsline {subsubsubsection}{\numberline {13.7.2.4}Cone}{152}{subsubsubsection.13.7.2.4}
+\contentsline {subsubsubsection}{\numberline {13.7.2.5}Suspension}{152}{subsubsubsection.13.7.2.5}
+\contentsline {subsubsubsection}{\numberline {13.7.2.6}Pointed Suspension}{153}{subsubsubsection.13.7.2.6}
+\contentsline {subsubsubsection}{\numberline {13.7.2.7}One-point Compactification}{153}{subsubsubsection.13.7.2.7}
+\contentsline {subsection}{\numberline {13.8}Topological Properties}{154}{subsection.13.8}
+\contentsline {subsubsection}{\numberline {13.8.1}First Countable}{154}{subsubsection.13.8.1}
+\contentsline {subsubsection}{\numberline {13.8.2}Second Countable}{154}{subsubsection.13.8.2}
+\contentsline {subsubsection}{\numberline {13.8.3}Connectedness}{154}{subsubsection.13.8.3}
+\contentsline {subsubsection}{\numberline {13.8.4}Connected Componenents}{154}{subsubsection.13.8.4}
+\contentsline {subsubsection}{\numberline {13.8.5}Path-connectedness}{154}{subsubsection.13.8.5}
+\contentsline {subsubsection}{\numberline {13.8.6}Fundamental Group}{154}{subsubsection.13.8.6}
+\contentsline {subsection}{\numberline {13.9}Hereditary}{154}{subsection.13.9}
+\contentsline {section}{\numberline {14}Metric Spaces}{155}{section.14}
+\contentsline {subsection}{\numberline {14.1}Definition}{155}{subsection.14.1}
+\contentsline {subsubsection}{\numberline {14.1.1}Open Ball}{155}{subsubsection.14.1.1}
+\contentsline {subsubsection}{\numberline {14.1.2}Bounded}{155}{subsubsection.14.1.2}
+\contentsline {subsubsection}{\numberline {14.1.3}Continuity}{155}{subsubsection.14.1.3}
+\contentsline {subsection}{\numberline {14.2}Examples}{156}{subsection.14.2}
+\contentsline {subsubsection}{\numberline {14.2.1}Euclidean Metric Space}{156}{subsubsection.14.2.1}
+\contentsline {subsubsection}{\numberline {14.2.2}Box Metric Space}{156}{subsubsection.14.2.2}
+\contentsline {subsubsection}{\numberline {14.2.3}Standard Bounded Metric corresponding to a metric}{156}{subsubsection.14.2.3}
+\contentsline {subsubsection}{\numberline {14.2.4}Bounded Real Functions Metric Space}{156}{subsubsection.14.2.4}
+\contentsline {subsubsection}{\numberline {14.2.5}Discrete Metric space}{156}{subsubsection.14.2.5}
+\contentsline {subsection}{\numberline {14.3}Convergence}{157}{subsection.14.3}
+\contentsline {subsubsection}{\numberline {14.3.1}Uniform Convergence}{157}{subsubsection.14.3.1}
+\contentsline {subsubsection}{\numberline {14.3.2}Lebesgue's Lemma}{158}{subsubsection.14.3.2}
+\contentsline {subsubsubsection}{\numberline {14.3.2.1}Diameter}{158}{subsubsubsection.14.3.2.1}
+\contentsline {subsection}{\numberline {14.4}Compactness}{158}{subsection.14.4}
+\contentsline {section}{\numberline {15}Real Analysis}{159}{section.15}
+\contentsline {section}{\numberline {16}Homotopy}{160}{section.16}
+\contentsline {subsection}{\numberline {16.1}Definition}{160}{subsection.16.1}
+\contentsline {subsubsection}{\numberline {16.1.1}Homotopy of functions}{160}{subsubsection.16.1.1}
+\contentsline {subsubsection}{\numberline {16.1.2}Space of Based Loops}{160}{subsubsection.16.1.2}
+\contentsline {subsubsubsection}{\numberline {16.1.2.1}Loop Homotopy}{160}{subsubsubsection.16.1.2.1}
+\contentsline {subsection}{\numberline {16.2}Fundamental Group}{161}{subsection.16.2}
+\contentsline {subsection}{\numberline {16.3}Retractions}{161}{subsection.16.3}
+\contentsline {subsubsection}{\numberline {16.3.1}Retract}{161}{subsubsection.16.3.1}
+\contentsline {subsubsubsection}{\numberline {16.3.1.1}Deformation Retract}{161}{subsubsubsection.16.3.1.1}
+\contentsline {subsubsubsection}{\numberline {16.3.1.2}Contractible}{161}{subsubsubsection.16.3.1.2}
+\contentsline {subsubsubsection}{\numberline {16.3.1.3}Simply-Connected}{162}{subsubsubsection.16.3.1.3}
+\contentsline {subsection}{\numberline {16.4}Covering Spaces}{162}{subsection.16.4}
+\contentsline {subsubsection}{\numberline {16.4.1}Path Lifting}{162}{subsubsection.16.4.1}
+\contentsline {subsubsection}{\numberline {16.4.2}Homotopy Lifting}{163}{subsubsection.16.4.2}
+\contentsline {subsubsection}{\numberline {16.4.3}Fundamental Group Computations}{164}{subsubsection.16.4.3}
+\contentsline {subsection}{\numberline {16.5}Applications}{167}{subsection.16.5}
+\contentsline {subsection}{\numberline {16.6}Homotopy Type}{168}{subsection.16.6}
+\contentsline {subsubsection}{\numberline {16.6.1}Homotopy Equivalent}{168}{subsubsection.16.6.1}
+\contentsline {subsubsection}{\numberline {16.6.2}Definition}{168}{subsubsection.16.6.2}
+\contentsline {subsubsection}{\numberline {16.6.3}Homotopy Invariance}{169}{subsubsection.16.6.3}
+\contentsline {section}{\numberline {17}Homology}{170}{section.17}
+\contentsline {subsection}{\numberline {17.1}Complexes}{170}{subsection.17.1}
+\contentsline {subsubsection}{\numberline {17.1.1}Exactness}{170}{subsubsection.17.1.1}
+\contentsline {subsubsection}{\numberline {17.1.2}Split}{170}{subsubsection.17.1.2}
+\contentsline {subsection}{\numberline {17.2}Definitions}{171}{subsection.17.2}
+\contentsline {subsection}{\numberline {17.3}Euler Characteristic}{171}{subsection.17.3}
+\contentsline {subsubsection}{\numberline {17.3.1}Grothendieck Group}{172}{subsubsection.17.3.1}
+\contentsline {subsection}{\numberline {17.4}Applications to Simplicial Complexes}{173}{subsection.17.4}
+\contentsline {subsubsection}{\numberline {17.4.1}Space of p-chains}{173}{subsubsection.17.4.1}
+\contentsline {subsubsection}{\numberline {17.4.2}Boundary Homomorphisms}{173}{subsubsection.17.4.2}
+\contentsline {subsubsection}{\numberline {17.4.3}Space of p-cycles}{174}{subsubsection.17.4.3}
+\contentsline {subsubsection}{\numberline {17.4.4}Space of p-boundaries}{174}{subsubsection.17.4.4}
+\contentsline {subsubsection}{\numberline {17.4.5}Chain Homotopies}{174}{subsubsection.17.4.5}
+\contentsline {subsubsection}{\numberline {17.4.6}Topological Invariance}{174}{subsubsection.17.4.6}
+\contentsline {section}{\numberline {18}Fundamental Theorem of Algebra}{177}{section.18}
+\contentsline {subsection}{\numberline {18.1}Gauss's Incomplete Proof}{177}{subsection.18.1}
+\contentsline {subsection}{\numberline {18.2}Homotopy Proof}{179}{subsection.18.2}
+\contentsline {subsection}{\numberline {18.3}Sketch of Proof in Complex Analysis}{180}{subsection.18.3}
+\contentsline {section}{\numberline {19}Dimension}{181}{section.19}
+\contentsline {subsection}{\numberline {19.1}Dimensions are Equinumerous}{181}{subsection.19.1}
+\contentsline {subsection}{\numberline {19.2}Space Filling Curves}{181}{subsection.19.2}
+\contentsline {subsubsection}{\numberline {19.2.1}Peano Curve}{181}{subsubsection.19.2.1}
+\contentsline {subsubsubsection}{\numberline {19.2.1.1}Ternary Expansion}{181}{subsubsubsection.19.2.1.1}
+\contentsline {subsubsection}{\numberline {19.2.2}Definition}{181}{subsubsection.19.2.2}
+\contentsline {subsection}{\numberline {19.3}Connectedness}{183}{subsection.19.3}
+\contentsline {subsection}{\numberline {19.4}Homotopy}{183}{subsection.19.4}
+\contentsline {subsection}{\numberline {19.5}Homology}{184}{subsection.19.5}
+\contentsline {section}{\numberline {20}Algebraic Geometry}{185}{section.20}

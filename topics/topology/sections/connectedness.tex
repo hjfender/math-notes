@@ -25,29 +25,6 @@ If $\{ A_i | i \in J \}$ is a collection of connected subspaces of a space $X$ w
 If $W \subseteq (\mathbb{R}, \emph{ usual})$ is connected, then $W = (a,b),[a,b),(a,b],[a,b]$ for $-\infty \leq a \leq b \leq \infty$.
 \end{proposition}
 
-\begin{theorem}[Intermediate Value Theorem]
-If $f:[a,b] \rightarrow \mathbb{R}$ is continuous function and $f(a) < c < f(b)$ or $f(a) > c > f(b)$, then there is a value $x_0 \in [a,b]$ with $f(x_0) = c$.
-\end{theorem}
-
-\begin{corollary}
-Suppose $g : S^1 \rightarrow \mathbb{R}$ is continuous. Then there is a point $x_0 \in S^1$ with $g(x_0) = g(-x_0)$.
-\end{corollary}
-
-\begin{proof}
-Define $\hat{g} : S^1 \rightarrow \mathbb{R}$ by $\hat{g} = g(x) - g(-x)$. Wrap $[0,1]$ onto $S^1$ by $w(t) = (\cos (2 \pi t), \sin (2 \pi t)).$ Then
-$w(0) = -w(1/2).$
-
-Let $F = \tilde g \circ w$. It follows that\dots
-\begin{align*}
-F(0) = \tilde g(w(0)) &= g(w(0)) - g(-w(0))\\
-					  &= -[g(-w(0)) - g(w(0))]\\
-					  &= -[g(w(1/2)) - g(-w(1/2))]\\
-					  &=-F(1/2).
-\end{align*}
-If $F(0) > 0$, then $F(1/2) < 0$ and since $F$ is continuous, it must take the value $0$ for some $t$ between $0$ and $1/2$. Similarly for $F(0) < 0$.
-If $F(t) = 0$, then let $x_0 = w(t)$ and $g(x_0) = g(-x_0)$.
-\end{proof}
-
 \begin{proposition}
 If $A$ is a connected subspace of a space $X$ and $A \subseteq B \subseteq \emph{cls } A$, then $B$ is connected.
 \end{proposition}

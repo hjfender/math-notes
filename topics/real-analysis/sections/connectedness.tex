@@ -1,0 +1,66 @@
+\subsection{Consequences of Connectedness\label{realconnectedness}
+
+\subsubsection{Linear Continuum}\label{linearcontinuum}
+A nonempty, linearly ordered set $L$ having more than one element is called a \emph{linear continuum} if the following hold:
+\begin{enumerate}
+\item $L$ has the least upper bound property.
+\item If $x < y$, there exists $z$ such that $x < z < y$.
+\end{enumerate}
+
+\begin{theorem}
+If $L$ is a linear continuum in the \hyperref[ordertopology]{order topology}, then $L$ is connected, and so are intervals and rays in $L$.
+\end{theorem}
+
+\begin{proof}
+A subspace $Y$ of $L$ is said to be \emph{convex} if for every pair of points $a,b$ in $Y$ with $a<b$, the
+entire interval $[a,b]$ of points of $L$ lies in $Y$. We prove that if $Y$ is a convex subspace of $L$, then
+$Y$ is connected.
+
+So suppose that $Y$ is the union of the disjoint nonempty sets $A$ and $B$, each of which is open in $Y$. Choose
+$a \in A$ and $b \in B$; suppose for convenience that $a < b$. The interval $[a,b]$ of points of $L$ is contained in $Y$.
+Hence $[a,b]$ is the union of the disjoint sets\dots
+$$A_0 = A \cap [a,b] \; \textrm{and} \; B_0 = B \cap [a,b],$$
+each of which is open in $[a,b]$ in the subspace topology, which is the same as the order topology. The sets $A_0$ and $B_0$
+are nonempty because $a \in A_0$ and $b \in B_0$. Thus, $A_0$ and $B_0$ constitute a separation of $[a,b]$.
+
+Let $c = \sup A_0$. We show that $c$ belongs neither to $A_0$ nor to $B_0$, which contradicts the fact that $[a,b]$
+is the union of $A_0$ and $B_0$.
+
+\emph{Case I}. Suppose $c \in B_0$. Then $c \neq a$, so either $c = b$ or $a < c < b$. In either case, it follows from the fact
+that $B_0$ is open in $[a,b]$ that there is some interval of the form $(d,c]$ contained in $B_0$. If $c=b$, we have a contradiction
+at once, for $d$ is a smaller upper bound on $A_0$ that $c$. If $c < b$, we note that $(c,b]$ does not intersect $A_0$ (because $c$ is
+an upper bound on $A_0$). Then\dots
+$$(d,b] = (d,c] \cup (c,b]$$
+does not interset $A_0$. Again, $d$ is a smaller upper bound on $A_0$ than $c$, contrary to construction.
+
+\emph{Case II}. Suppose that $c \in A_0$. Then $c \neq b$, so either $c = a$ or $a < c < b$. Because $A_0$ is open in $[a,b]$,
+there must be some interval of the form $[c,e)$ contained in $A_0$. Because of the order property $(2)$ of the linear continuum $L$, we
+can choose a point $z$ of $L$ such that $c < z < e$. Then $z \in A_0$, contrary to the fact that $c$ is an upper bound for $A_0$.
+\end{proof}
+
+\begin{corollary}
+The real line $\mathbb{R}$ is connected and so are intervals and rays in $\mathbb{R}$.
+\end{corollary}
+
+\begin{theorem}[Intermediate Value Theorem]
+If $f:[a,b] \rightarrow \mathbb{R}$ is continuous function and $f(a) < c < f(b)$ or $f(a) > c > f(b)$, then there is a value $x_0 \in [a,b]$ with $f(x_0) = c$.
+\end{theorem}
+
+\begin{corollary}
+Suppose $g : S^1 \rightarrow \mathbb{R}$ is continuous. Then there is a point $x_0 \in S^1$ with $g(x_0) = g(-x_0)$.
+\end{corollary}
+
+\begin{proof}
+Define $\hat{g} : S^1 \rightarrow \mathbb{R}$ by $\hat{g} = g(x) - g(-x)$. Wrap $[0,1]$ onto $S^1$ by $w(t) = (\cos (2 \pi t), \sin (2 \pi t)).$ Then
+$w(0) = -w(1/2).$
+
+Let $F = \tilde g \circ w$. It follows that\dots
+\begin{align*}
+F(0) = \tilde g(w(0)) &= g(w(0)) - g(-w(0))\\
+                    &= -[g(-w(0)) - g(w(0))]\\
+                    &= -[g(w(1/2)) - g(-w(1/2))]\\
+                    &=-F(1/2).
+\end{align*}
+If $F(0) > 0$, then $F(1/2) < 0$ and since $F$ is continuous, it must take the value $0$ for some $t$ between $0$ and $1/2$. Similarly for $F(0) < 0$.
+If $F(t) = 0$, then let $x_0 = w(t)$ and $g(x_0) = g(-x_0)$.
+\end{proof}
