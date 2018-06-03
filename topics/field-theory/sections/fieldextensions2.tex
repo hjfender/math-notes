@@ -1,0 +1,81 @@
+\subsection{Field Extensions II}
+
+\subsubsection{Splitting Field}
+Let $k$ be a field, and let $f(x) \in k[x]$ be a polynomial of degree $d$.
+The \emph{splitting field} for $f(x)$ over $k$ is an extension $F$ of $k$ such that\dots
+$$f(x) = c \prod^d_{i=1}(x - \alpha_i)$$
+splits in $F[x]$, and further $F = k(\alpha_1, \dots, \alpha_d)$ is generated over $k$ by
+the roots of $f(x)$ in $F$.
+
+\begin{lemma}
+Let $k$ be a field, and let $f(x) \in k[x]$. Then the splitting field $F$ for $f(x)$ over $k$ is
+unique up to isomorphism, and $[F:k] \leq (\textrm{deg } f)!$.
+
+In fact, if $\iota : k' \rightarrow k$ is any isomorphism of fields and $g(x) \in k'[x]$ is such that
+$f(x) = \iota(g(x))$, then $\iota$ extends to an isomorphism of any splitting field of $g(x)$ over $k'$
+to any splitting field of $f(x)$ over $k$.
+\end{lemma}
+
+\begin{proof}
+
+\end{proof}
+
+\subsubsection{Normal Extension}
+A field extension $k \subseteq F$ is \emph{normal} if for every irreducible polynomial $f(x) \in k[x]$,
+$f(x)$ has a root in $F$ if and only if $f(x)$ splits as a product of linear factors over $F$.
+
+\begin{theorem}
+A field extension $k \subseteq F$ is finite and normal if and only if $F$ is the splitting field of some
+polynomial $f(x) \in k[x]$.
+\end{theorem}
+
+\begin{proof}
+
+\end{proof}
+
+\subsubsection{Separable Polynomials}
+Let $k$ be a field. A polynomial $f(x) \in k[x]$ is \emph{separable} if it has \emph{no} multiple
+factors over its splitting field; $f(x)$ is \emph{inseparable} if it \emph{has} multiple factors over
+its splitting field.
+
+\begin{lemma}
+Let $k$ be a field, and let $f(x) \in k[x]$. Then $f(x)$ is separable if and only if $f(x)$ and $f'(x)$
+are relatively prime.
+\end{lemma}
+
+\begin{proof}
+
+\end{proof}
+
+\begin{lemma}
+Let $k$ be a field, and let $f(x) \in k[x]$ be an inseparable irreducible polynomial. Then $f'(x) = 0$.
+\end{lemma}
+
+\subsubsection{Frobenius Homomorphism}
+Let $k$ be a field of characteristic $p > 0$. The \emph{Frobenius homomorphism} is
+the map $k \rightarrow k$ defined by $x \mapsto x^p$.
+
+\subsubsection{Perfect Field}
+A field $k$ is \emph{perfect} if char $k = 0$ or if char $k > 0$ and the Frobenius homomorphhism is surjective.
+
+\begin{proposition}
+Let $k$ be a field. Then $k$ is perfect if and only if all irreducible polynomials in $k[x]$
+are separable.
+\end{proposition}
+
+\begin{proof}
+
+\end{proof}
+
+\begin{corollary}
+Finite fields are perfect. Therefore, over finite fields, irreducible polynomials are separable.
+\end{corollary}
+
+\subsubsection{Separable Extensions}
+An algebraic field extension $k \subseteq F$ is \emph{separable} if every $\alpha \in F$ is separable over $k$.
+
+\begin{proposition}
+A field $k$ is perfect if and only if every algebraic extension of $k$ is separable.
+\end{proposition}
+
+\subsubsection{Separable Degree}
