@@ -1,0 +1,51 @@
+\subsection{Basics}
+
+\subsubsection{Affine Space}
+For $K$ a field, $\mathbb{A}^n_K$ denotes the \emph{affine space} of dimension $n$ over $K$, that is, the set of $n$-tuples of elements of $K$:
+$$\mathbb{A}^n_K = \{(c_1,\dots,c_n) | c_i \in K \}.$$
+Elements of $\mathbb{A}^n_K$ are called \emph{points}.
+
+\subsubsection{Elementary Correspondence}
+
+$$\mathcal{I}(S) := \{ f(\underline{x}) \in K[x_1, \dots, x_n] | \forall p \in S, f(p) = 0 \},$$
+$$\mathcal{V}(I) := \{ p = (c_1,\dots, c_n) \in \mathbb{A}^n_K | \forall f \in I, f(c_1, \dots, c_n) = 0\}.$$
+
+\subsubsection{Affine Algebraic Set}
+An \emph{(affine) algebraic set} is a subset $S \subseteq \mathbb{A}^n_K$ such that there exists an ideal $I \subseteq K[x_1, \dots, x_n]$
+for which $S = \mathcal{V}(I)$.
+
+\subsubsection{Radical of an Ideal}
+Let $I$ be an ideal in a commutative ring $R$. The \emph{radical} of $I$ is the ideal\dots
+$$\sqrt{I} := \{ r \in R | \exists k \geq 0, r^k \in I \}.$$
+
+\subsubsection{Radical Ideal}
+An ideal $I$ is a \emph{radical ideal} if $I = \sqrt{I}$.
+
+\begin{lemma}
+Let $K$ be a field, and let $S$ be a subset of $\mathbb{A}^n_K$. Then the ideal $\mathcaal{I}(S)$ is a radical
+ideal of $K[x_1, \dots, x_n]$.
+\end{lemma}
+
+\begin{proposition}[Weak Nullstellensatz]
+Let $K$ be an algebraically closed field, and let $I \subseteq K[x_1,\dots,x_n]$ be an ideal.
+Then $\mathcal{I}(I) = \emptyset$ is and only if $I = (1)$.
+\end{proposition}
+
+\begin{proposition}[Strong Nullstellensatz]
+Let $K$ be an algebraically closed field, and let $I \subseteq K[x_1,\dots,x_n]$ be an ideal. Then\dots
+$$\mathcal{I}(\mathcal{V}(I)) = \sqrt{I}.$$
+\end{proposition}
+
+\begin{corollary}
+Let $K$ be an algebraically closed field. Then for any $n \geq 0$ the functions\dots
+\[
+    \begin{tikzcd}[every arrow/.append style={shift left}]
+        \{ \textrm{algebraic subsets of } \mathbb{A}^n_K \} \arrow{r}{\mathcal{I}} &\{ \textrm{radical ideal in } K[x_1, \dots, x_n] \} \arrow{l}{\mathcal{V}}
+    \end{tikzcd}
+\]
+are inverses of each other.
+\end{corollary}
+
+\subsubsection{Coordinate Ring}
+Let $S \subsetEq \mathbb{A}^n_K$ be an algebraic set. The \emph{coordinate ring} of $S$ is the quotient\dots
+$$K[S] := \frac{K[x_1,\dots,x_n]}{\mathcal{I}(S)}.$$

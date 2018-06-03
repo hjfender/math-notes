@@ -1,0 +1,29 @@
+\subsection{Nullstellensatz}
+
+\begin{theorem}
+Let $k \subseteq F$ be a field extension, and assume that $F$ is a finite-type $k$-algebra. Then $k \subseteq F$ is a finite (hence algebraic) extension.
+\end{theorem}
+
+\begin{proof}(Assuming $k$ is uncountable)\newline
+Let $K \subseteq F$ be a field extension, and assume that $F$ is finitely generated as an algebra over $k$; in particular, it is finitely
+generated as a field extension. We have to prove that $k \subseteq F$ is a finite extension, or equivalently that it is algebraic, that is, that
+every $\alpha \in F \setminus k$ is the root of a nonzero $f(x) \in k[x]$.
+
+Now, by hypothesis $F$ is the quotient of a polynomial ring over $k$:
+$$k[x_1,\dots,x_n] \twoheadrightarrow F;$$
+this implies that there is a \emph{countable} basis of $F$ as a vector space over $k$, because this is the case for $k[x_1,\dots,x_n]$. Consider
+then the set\dots
+$$\left\{ \frac{1}{\alpha - c} \right\}_{c \in k}:$$
+this is an uncountable subset of $F$; therefore it is linearly dependent over $k$. That is, there exist distince $c_1, \dtos, c_m \in k$ and nonzero
+coefficients $\lambda_1,\dots,\lambda_m \in k$, such that\dots
+$$\frac{\lambda_1}{\alpha - c_1} + \cdots + \frac{\lambda_m}{\alpha - c_m} = 0.$$
+Expressing teh left-hand side with a common denonminator gives\dots
+$$\frac{f(\alpha)}{g(\alpha)} = 0,$$
+for $f(x) \neq 0$ in $k[x]$ and $g(\alpha) \neq 0$. This implies $f(\alpha) = 0$ for a nonzero $f(x) \in k[x]$, and we are done.
+\end{proof}
+
+\begin{corollary}
+Let $K$ be an algebraically closed field, and let $I$ be an ideal of $K[x_1,\dots,x_n]$. Then $I$ is maximal if and only if\dots
+$$I = (x_1 - c_1, \dots, x_n - c_n),$$
+for $c_1,\dots,c_n \in K$.
+\end{corollary}
